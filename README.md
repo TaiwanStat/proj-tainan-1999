@@ -6,3 +6,4 @@
 - import 真正的資料，使它自動產生
 - HTML真的寫39個div
 - 以javascript替代寫39個div，這實在太low了...
+- 不要使用d3的color scale category...他的顏色好像不是綁定index的
