@@ -1,1 +1,8 @@
 # proj-tainan-1999
+
+### TODO LIST
+- 加上legend(因為空間太小我沒加)
+- 修正自動找到下標div而append text的功能
+- import 真正的資料，使它自動產生
+- HTML真的寫39個div
+- 以javascript替代寫39個div，這實在太low了...
