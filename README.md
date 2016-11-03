@@ -1,5 +1,8 @@
 # proj-tainan-1999
 
+### File_info
+- all_item.json：我的假資料
+
 ### TODO LIST
 - 加上legend(因為空間太小我沒加)
 - 修正自動找到下標div而append text的功能
