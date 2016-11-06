@@ -1,4 +1,4 @@
-# tanian-1999
+# Tanian-1999
 
 It&#39;s a Tainan-1999 visulization by Taiwanstat
 
@@ -24,6 +24,11 @@ $ ./bin/build -w
 - Use `gulp` to construct it .
 - `canner-core` is your main component which you also use in `handlebar.js`.
 
+#### usage of map / donutChart 
+- [MAP.md](./MAP.md)
+  - [ching_map.html](ching_map.hbs)
+- [donutChart.md](./donutChart.md)
+  - [donutChart.html](donutChart.hbs)
 
 ## Developer
 
@@ -83,3 +88,4 @@ Use [gulp](http://gulpjs.com) and [canner-core](https://www.npmjs.com/package/ca
 + gulp-clean-css
 + canner-core
 + minist
+

@@ -22,8 +22,8 @@ var route = [
       path: './',
     },
     partials: './partial.js',
-    layout:  "./layout/map.hbs",
-    filename: "./map.html"
+    layout:  "./layout/ching_map.hbs",
+    filename: "./ching_map.html"
   }
 ];
 module.exports = route;

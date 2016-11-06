@@ -1,60 +1,21 @@
 @import 'setting';
+@import 'header';
+@import 'map';
+@import 'overview';
 
-.header{
-	@extend %flex_align_center;
-	justify-content: space-between;
-
-	width: 90%;
-  padding: 10px 5px;
-  margin: auto;
-
-	letter-spacing: $letter-spacing-s;
-  border-bottom: solid 1px $gray;
-
-	.header_left{
-		@extend %flex_align_center;
-
-		> img{
-			width: 100px;
-		}
-
-		#header_title{
-			letter-spacing: $letter-spacing-m;
-	    font-weight: bolder;
-	    font-size: 27px;
-	    margin-top: 9px;
-		}
-	}
-
-	ul.header_right{
-		@extend %position_relative;
-		@extend %flex_align_center;
-		justify-content: space-around;
-		align-self: flex-end;
-		width: 35%;
-    top: 5px;
-	}
-
-	li.item{
-		@extend %flex_align_center;
-		align-self: flex-end;
-		color: $gray;
-
-		> img{
-			width:20%
-		}
-
-		> p{
-			@extend %position_relative;
-			top: -3px;
-			padding-left: 5px;
-		}
-
-		&:hover{
-			cursor: pointer;
-			color: $black;
-		}
-	}
-
+.disable{
+	display: none !important;
 }
+
+.section{
+	@extend %section_setting;
+	@include animation(show 0.1s linear);		
+}
+
+@include keyframes(show) {
+	from{ opacity: 0;}
+	to{ opacity: 1;}
+}
+
+
 

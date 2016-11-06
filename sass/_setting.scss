@@ -22,8 +22,15 @@ body{
 // -----------------
 // MODULE
 // -----------------
+
 %position_relative{
 	position: relative;
+}
+
+%section_setting{
+	width: 90%;
+  padding: 10px 5px;
+  margin: auto;
 }
 
 %flex_align_center{
