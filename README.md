@@ -26,9 +26,7 @@ $ ./bin/build -w
 
 #### usage of map / donutChart 
 - [MAP.md](./MAP.md)
-  - [ching_map.html](ching_map.hbs)
 - [donutChart.md](./donutChart.md)
-  - [donutChart.html](donutChart.hbs)
 
 ## Developer
 
