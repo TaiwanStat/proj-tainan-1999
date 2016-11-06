@@ -26,7 +26,7 @@ $ ./bin/build -w
 
 #### usage of map / donutChart 
 - [MAP.md](./MAP.md)
-- [donutChart.md](./donutChart.md)
+- [donutChart.md](./DonutChart.md)
 
 ## Developer
 
