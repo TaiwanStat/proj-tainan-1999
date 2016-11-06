@@ -5,8 +5,7 @@ var route = [
   {
     data: {
       path: './',
-      title: 'Hello guys',
-      first_word: 'It is a good template'
+      title: 'Tainan-1999'
     },
     partials: './partial.js',
     layout:  "./layout/index.hbs",

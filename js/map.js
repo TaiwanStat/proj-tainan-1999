@@ -23,7 +23,7 @@ d3.json("../../src/county.json", function(topodata) {
         .data(subunits.features)
         .enter().append("path")
         .attr("class", function(d) {
-            return d.properties.C_Name === "臺南市" ? "subunit " : "foo";//tag foo to be removed later
+            return d.properties.C_Name === "臺南市" ? "subunit " : "foo"; //tag foo to be removed later
         })
         .style("fill", function(d) {
             return "hsl(" + Math.random() * 360 + ",50%,60%)";

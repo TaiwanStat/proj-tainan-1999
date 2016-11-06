@@ -2,6 +2,7 @@
 
 <html style = "height:100%;width:100%;margin:0px;">
 <head>
+  
   {{> head}}
 
   <title> {{title}}</title>
@@ -10,10 +11,36 @@
 </head>
 <body>
 
-<h1>{{first_word}}</h1>
+	<header class = "header">
+		<div class = "header_left">
+			<img src = "{{path}}dist/img/color.jpg">
+			<div>
+				<p>台南市政府</p>
+				<h1 id = "header_title">OPEN 19999 統計資訊</h1>
+			</div>
+		</div>
+		<ul class = "header_right">
+			<li class = "item">
+				<img src = "./dist/img/search.svg">
+				<p>各區比較</p>
+			</li>
+			<li class = "item">
+				<img src = "./dist/img/search.svg">
+				<p>地圖查詢</p>
+			</li>
+			<li class = "item">
+				<img src = "./dist/img/search.svg">
+				<p>案件統計</p>
+			</li>
+		</ul>
+	</header>
 
+<!-- <img src = "{{path}}dist/img/color.jpg"> -->
 
 </body>
 
-<script type="text/javascript" src = "./dist/js/index.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript" src="http://d3js.org/topojson.v1.min.js"></script>
+<script type="text/javascript" src = "{{path}}src/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src = "{{path}}dist/js/index.js"></script>
 </html>
