@@ -37,7 +37,7 @@ function createDonut(filename, name, column_object) {
         });
         //TODO
         //should be removed
-        console.log(array);
+        // console.log(array);
         var count = 0,
             sum = 0;
         for (var foo in array) { //前三高
@@ -47,7 +47,7 @@ function createDonut(filename, name, column_object) {
             count = count + 1;
         }
         //TODO should be removed
-        console.log(count);
+        // console.log(count);
         //製造「例外」欄位
         var temp = [];
         temp.push(16);
@@ -77,7 +77,7 @@ function createDonut(filename, name, column_object) {
             .data(pie(
                 array.map( //遍尋處理每個array element，並取得特定欄位= 數量
                     function(element, index, array) {
-                        console.log(element[1]);
+                        // console.log(element[1]);
                         return element[1];
                     })
             ))
@@ -87,7 +87,7 @@ function createDonut(filename, name, column_object) {
                 "class": "arc",
                 "transform": "translate(" + (width / 2) + ", " + (width / 2) + ")",
             });
-        console.log(array);
+        // console.log(array);
         var color = d3.scale.category20();
         //    for(var foo ; foo<20; foo++){
         //        console.log(color(foo));
@@ -99,12 +99,12 @@ function createDonut(filename, name, column_object) {
                     //TODO?
                     //不知道為什麼沒有綁定顏色
                     //我一直以為他是scale= =
-                    console.log(color(array[i][0]));
+                    // console.log(color(array[i][0]));
                     return color(array[i][0]);
                 },
                 "d": arc,
                 "class": function(d, i) {
-                    console.log(i);
+                    // console.log(i);
                     //給最大的一點特效！！
                     if (i == 0) {
                         return "path_special";
@@ -126,7 +126,7 @@ function createDonut(filename, name, column_object) {
                     .text(this.id);
             })
             .on("mouseout", function() {
-                console.log(this.id);
+                // console.log(this.id);
                 svg.selectAll(".subject_" + this.id).remove();
             })
         d3.selectAll(".path_special")

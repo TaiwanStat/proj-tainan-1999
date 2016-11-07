@@ -1,1 +1,1 @@
-var G={last:$("#overview"),now:$("#overview"),select:function(s){G.last=G.now,G.now=$("#"+s),G.last.toggleClass("disable"),G.now.toggleClass("disable"),window.location.hash=s}};$(".item").click(function(){G.select(this.id.split("_")[1]),console.log("state: "+this.id.split("_")[1])});
+$(".item").click(function(){G.select(this.id.split("_")[1]),console.log("state: "+this.id.split("_")[1])});
