@@ -1,5 +1,5 @@
 /*
-G: 
+【 G 】 
 
 - parameter
 @last	: last state
@@ -28,6 +28,19 @@ G:
 			listData:[{...},{...},{...}]
 		}]
 
+- the new list data:
+listData:
+{
+	description: "大內區環湖里57-2號前面 路燈故障",
+  status: "已完工",
+  serviceName: "民生管線",
+  serviceRequestId: "UN201607200642",
+  area: "大內區",
+  serviceItem: "9盞以下路燈故障",
+  updateTime: "2016-07-22 10:57:40",
+  requestedTime": "2016-07-20 14:27:00"
+}
+
 
 Global fun:
 
@@ -44,18 +57,6 @@ Global fun:
 		CaseCount: ..,
 		ListData: [{...}]
 	}
-
-newListData:
-{
-	description: "大內區環湖里57-2號前面 路燈故障",
-  status: "已完工",
-  serviceName: "民生管線",
-  serviceRequestId: "UN201607200642",
-  area: "大內區",
-  serviceItem: "9盞以下路燈故障",
-  updateTime: "2016-07-22 10:57:40",
-  requestedTime": "2016-07-20 14:27:00"
-}
 -----
 
 ask 啟軒 promise
@@ -67,6 +68,8 @@ Data 測試：
 // 一直error loading
 
 先設立一種data取用方式 取用api --> 先幫學弟抓好 overview 所需資料 --> 輸入時間所需資料
+
+// 約超過35秒會要求逾時
 
 */
 
@@ -150,7 +153,7 @@ function _getAreasData(startDate, endDate, areasArray){
 				status: value.status,
 	  		serviceName: value.service_name,
 	  		serviceRequestId: value.service_request_id,
-	  		serviceItems: value.subproject,
+	  		serviceItems: (value.subproject === '妨礙安寧')? '妨害安寧':value.subproject,
 	  		requestedTime: value.requested_datetime,
 	  		finishedTime: value.updated_datetime,
 	  		area: value.area
@@ -164,7 +167,6 @@ function _getAreasData(startDate, endDate, areasArray){
 		});
 
 		console.log(currentArea);
-		console.log(newListData);
 	}
 	// ask --> 明明是異步 why 成功？
 	return mergeArray;
@@ -172,7 +174,7 @@ function _getAreasData(startDate, endDate, areasArray){
 
 
 // Items
-// console.log(G.getItemsData('2016-07-01', '2016-07-03', ['新化區', '新營區']));
+console.log(G.getItemsData('2016-07-01', '2016-07-03', ['新化區']));
 function _getItemsData(startDate, endDate, areas){
 	var itemsDataArray = [];
 	var areaData = this.getAreasData(startDate, endDate, areas);
@@ -230,7 +232,6 @@ function getAPIsearch(startDate, endDate, area, serviceName){
     dataType: 'json',
     data: JSON.stringify(send),
     success: function(data, textStatus, xhr) {
-    	// console.log(data);
     	obj = data;
     },
     error: function(xhr, textStatus, errorThrown) {
@@ -251,7 +252,6 @@ function getAPIone(sn){
     async: false,
     type: 'Get',
     success: function(data, textStatus, xhr) {
-    	// console.log(data);
     	obj = data;
     },
     error: function(xhr, textStatus, errorThrown) {
