@@ -68,15 +68,14 @@ var DB = {
 	key : "0x8209A3AA4B5607A5C644BE908F83A350361A8B8ECFCDCCE5E105379B92C62F1E",
 	url : "http://1999.tainan.gov.tw:83/api/",
 	areasTotal : 37,
-	area: [],
+	areas: [],
 	serviceName: [],
 	serviceItems: [],
-	oneMonth: {},
-	oneYear: {},
-	oneWeek: {}
+	monthAreaData: [],
+	monthItemsData: []
 }
 
-DB.area = [
+DB.areas = [
 	'新化區', '新營區', '鹽水區', '白河區', '柳營區', '後壁區', '東山區', '麻豆區', 
 	'下營區', '六甲區', '官田區', '大內區', '佳里區', '學甲區', '西港區', '七股區',
 	'將軍區', '北門區', '善化區', '新市區', '安定區', '山上區', '玉井區', '楠西區',
@@ -99,13 +98,13 @@ DB.serviceName = [
 DB.serviceItems = [
 	"違規停車",
 	"9盞以下路燈故障", "10盞以上路燈故障",
-	"妨害安寧", "場所連續噪音",
+	"妨礙安寧", "場所連續噪音",
 	"騎樓舉發",
-	"路面坑洞", "寬平管線、孔蓋損壞", "路面下陷、凹陷", "路面掏空、塌陷", "路樹傾倒", "地下道積水",
-	"人孔蓋或溝蓋聲響、鬆動", "人孔蓋凹陷坑洞",
+	"路面坑洞", "寬頻管線、孔蓋損壞", "路面下陷、凹陷", "路面掏空、塌陷", "路樹傾倒", "地下道積水",
+	"人孔蓋聲響、凹陷、漏水", "人孔蓋凹陷坑洞",
 	"號誌故障", "號誌秒差調整", "公車動態 LED 跑馬燈資訊異常", "交通疏導", "佔用道路",
-	"空氣污染", "其他污染舉發", "環境髒亂", "道路散落物", "小廣告、旗幟", "大型廢棄物清運", "市區道路路面油漬",
-	"電信孔蓋鬆動、電信線路掉落", "停電、漏電...「電」", "停水、漏水...「水」...", "天然氣外洩", "瓦斯管溝修補、孔蓋鬆動",
+	"空氣汙染", "其他汙染舉發", "環境髒亂", "道路散落物", "小廣告、旗幟", "大型廢棄物清運", "市區道路路面油漬",
+	"電信孔蓋鬆動、電信線路掉落、電信桿傾倒", "停電、漏電、電線掉落、孔蓋鬆動", "漏水、停水、消防栓漏水或損壞", "天然氣外洩", "瓦斯管溝修補、孔蓋鬆動",
 	"遊蕩犬隻捕捉管制", "犬貓急難救援"
 ];
 
@@ -159,16 +158,41 @@ function _getAreasData(startDate, endDate, areaArray){
 
 // Items
 // 先call getAreas 合併
-G.getItemsData('2016-07-01', '2016-07-10', '違規停車');
+// G.monthItemsData = G.getItemsData('2016-07-01', '2016-07-30');
 
-function _getItemsData(startDate, endDate, items){
+function _getItemsData(startDate, endDate){
 	var itemsDataArray = [];
-	var areaData = this.getAreasData(startDate, endDate, ['新化區', '新營區'], items);
+	var areaData = this.getAreasData(startDate, endDate, ['南化區', '左鎮區', '仁德區', '歸仁區', '關廟區', '龍崎區', '永康區', '東區',
+	'南區', '北區' , '中西區', '安南區',  '安平區']);
+
+	initItemArray(itemsDataArray);
 	areaData.forEach(function(value, index){
 		value.listData.forEach(function(value , index){
-			console.log(1);
+			var index = DB.serviceItems.indexOf(value.serviceItems);
+			// DB.serviceItems != value.serviceItems 
+			if( index === -1){
+				console.log(value.serviceItems);
+			} else{
+				itemsDataArray[index].caseCount++ ;
+				itemsDataArray[index].listData.push(value);
+			}
+
 		})
+		// console.log(test);
 	})
+	console.log(itemsDataArray);
+
+}
+
+function initItemArray(array){
+	DB.serviceItems.forEach(function(value, index){
+		array.push({
+			item: value,
+			caseCount: 0,
+			listData: []
+		})
+	})	
+	return array;
 }
 
 // getAPIone('UN201607020156');
