@@ -1,59 +1,73 @@
 /*
 G: 
 
-parameter ---
+- parameter
 @last	: last state
 @now : current state
 
-method ---
+- method:
 @select : select state
-@getData : get data select 'time' 'area'
+@getAreasData : get data select 'time' 'area', return order by 'area'
+@getItemsData : get data select 'time' 'area', return order by 'item'
+	
+	ex:
+		G.getAreasData('2016-07-01', '2016-07-10', ['新化區', '新營區', ...])
 
-ex:
-	G.getData('2016-07-01', '2016-07-10', ['新化區', '新營區', ...])
+		return array = [{
+			area: '新化區',
+			caseCount: 1,
+			listData:[{...},{...}]
+		}]
 
-@
-*/
 
-/*
+		G.getItemsData('2016-07-01', '2016-07-03', ['新化區', '新營區', ...])
+
+		return array = [{
+			item: '違規道路',
+			caseCount: 3,
+			listData:[{...},{...},{...}]
+		}]
+
+
 Global fun:
-@getAPIsearch
-@getAPIone
 
+* It can choose 'serveceName' *
+@getAPIsearch(startDate, endDate, area, serviceName)
+	return {
+		CaseCount: ..,
+		ListData: [...]
+	}
+
+* use requestId to search *
+@getAPIone(sn)
+	return {
+		CaseCount: ..,
+		ListData: [{...}]
+	}
+
+newListData:
+{
+	description: "大內區環湖里57-2號前面 路燈故障",
+  status: "已完工",
+  serviceName: "民生管線",
+  serviceRequestId: "UN201607200642",
+  area: "大內區",
+  serviceItem: "9盞以下路燈故障",
+  updateTime: "2016-07-22 10:57:40",
+  requestedTime": "2016-07-20 14:27:00"
+}
+-----
 
 ask 啟軒 promise
+
 Data 測試：
 // 成功的 Msg = ''
 // 失敗的 Msg = '查無案件資料'
 // 若是不放service-name 會搜尋滿久的。
-一開始只有 data.caseCoount , data.ListCount 有用
+// 一直error loading
 
 先設立一種data取用方式 取用api --> 先幫學弟抓好 overview 所需資料 --> 輸入時間所需資料
-overview.listData{
-  "description": "大內區環湖里57-2號前面 路燈故障",
-  "status": "已完工",
-  "service_name": "民生管線",
-  "service_request_id": "UN201607200642",
-  "area": "大內區",
-  "subproject": "9盞以下路燈故障",
-  "updated_datetime": "2016-07-22 10:57:40",
-  "requested_datetime": "2016-07-20 14:27:00"
-}
 
-items:{
-	item: '違規道路'
-	caseCount
-	listData:[{
-	  "description": "大內區環湖里57-2號前面 路燈故障",
-	  "status": "已完工",
-	  "service_name": "民生管線",
-	  "service_request_id": "UN201607200642",
-	  "area": "大內區",
-	  "subproject": "9盞以下路燈故障",
-	  "updated_datetime": "2016-07-22 10:57:40",
-	  "requested_datetime": "2016-07-20 14:27:00"
-	}]
-}
 */
 
 var G = {
@@ -61,7 +75,7 @@ var G = {
 	now: $('#overview'),
 	select: _select,
 	getAreasData: _getAreasData,
-	getItemsData: _getItemsData,
+	getItemsData: _getItemsData
 };
 
 var DB = {
@@ -119,13 +133,14 @@ function _select(id){
 }
 
 // Overview , map
-function _getAreasData(startDate, endDate, areaArray){
+// console.log(G.getAreasData('2016-07-01', '2016-07-03', ['新化區', '新營區']));
+function _getAreasData(startDate, endDate, areasArray){
 	
 	var mergeArray = [];
-	areaArray = areaArray || [];
+	areasArray = areasArray || [];
 
-	while( areaArray.length !== 0 ){
-		var currentArea = areaArray.pop();
+	while( areasArray.length !== 0 ){
+		var currentArea = areasArray.pop();
 		var data = getAPIsearch(startDate, endDate, currentArea);
 		var newListData = [];
 
@@ -147,23 +162,20 @@ function _getAreasData(startDate, endDate, areaArray){
 			caseCount: data.CaseCount,
 			listData: newListData
 		});
-	}
 
-	// ask --> 明明是異步 why 成功？
-	if(areaArray.length === 0){
-		console.log(2);
-		return mergeArray;
+		console.log(currentArea);
+		console.log(newListData);
 	}
+	// ask --> 明明是異步 why 成功？
+	return mergeArray;
 }
 
-// Items
-// 先call getAreas 合併
-// G.monthItemsData = G.getItemsData('2016-07-01', '2016-07-30');
 
-function _getItemsData(startDate, endDate){
+// Items
+// console.log(G.getItemsData('2016-07-01', '2016-07-03', ['新化區', '新營區']));
+function _getItemsData(startDate, endDate, areas){
 	var itemsDataArray = [];
-	var areaData = this.getAreasData(startDate, endDate, ['南化區', '左鎮區', '仁德區', '歸仁區', '關廟區', '龍崎區', '永康區', '東區',
-	'南區', '北區' , '中西區', '安南區',  '安平區']);
+	var areaData = this.getAreasData(startDate, endDate, areas);
 
 	initItemArray(itemsDataArray);
 	areaData.forEach(function(value, index){
@@ -176,12 +188,10 @@ function _getItemsData(startDate, endDate){
 				itemsDataArray[index].caseCount++ ;
 				itemsDataArray[index].listData.push(value);
 			}
-
 		})
-		// console.log(test);
 	})
-	console.log(itemsDataArray);
 
+	return itemsDataArray;
 }
 
 function initItemArray(array){
@@ -196,7 +206,7 @@ function initItemArray(array){
 }
 
 // getAPIone('UN201607020156');
-// getAPIsearch('新化區', '2016-07-01', '2016-07-30', '違規停車');
+// console.log(getAPIsearch('2016-07-02', '2016-07-07', '歸仁區', '違規停車'));
 function getAPIsearch(startDate, endDate, area, serviceName){
 	var obj = {};
 	var send = {
