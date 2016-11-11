@@ -136,7 +136,7 @@ function _select(id){
 }
 
 // Overview , map
-// console.log(G.getAreasData('2016-07-01', '2016-07-03', ['新化區', '新營區']));
+// console.log(G.getAreasData('2016-07-01', '2016-07-03', DB.areas));
 function _getAreasData(startDate, endDate, areasArray){
 	
 	var mergeArray = [];
@@ -174,7 +174,7 @@ function _getAreasData(startDate, endDate, areasArray){
 
 
 // Items
-// console.log(G.getItemsData('2016-07-01', '2016-07-03', ['新化區']));
+// console.log(G.getItemsData('2016-07-01', '2016-07-03', ['新化區','新營區']));
 function _getItemsData(startDate, endDate, areas){
 	var itemsDataArray = [];
 	var areaData = this.getAreasData(startDate, endDate, areas);

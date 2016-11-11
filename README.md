@@ -2,6 +2,11 @@
 
 It&#39;s a Tainan-1999 visulization by Taiwanstat
 
+
+#### Prerequisites
+- [npm](https://www.npmjs.com) ( we assume you have pre-installed [node.js](https://nodejs.org/en/) ).
+- For **`Ubuntu`** , you must have to install `ruby` and `ruby-compass`
+  - command: **`sudo apt install ruby-compass`**
 ## Getting Started
 
 #### Install package
@@ -86,4 +91,5 @@ Use [gulp](http://gulpjs.com) and [canner-core](https://www.npmjs.com/package/ca
 + gulp-clean-css
 + canner-core
 + minist
+
 
