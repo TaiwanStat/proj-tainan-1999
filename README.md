@@ -7,6 +7,8 @@ It&#39;s a Tainan-1999 visulization by Taiwanstat
 - [npm](https://www.npmjs.com) ( we assume you have pre-installed [node.js](https://nodejs.org/en/) ).
 - For **`Ubuntu`** , you must have to install `ruby` and `ruby-compass`
   - command: **`sudo apt install ruby-compass`**
+
+
 ## Getting Started
 
 #### Install package
@@ -14,7 +16,7 @@ It&#39;s a Tainan-1999 visulization by Taiwanstat
 npm install -i
 ```
 
-## Usage
+### Usage
 
 build sass , js 
 ```
