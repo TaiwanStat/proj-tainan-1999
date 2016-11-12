@@ -85,6 +85,7 @@ function createDonut(array, name, column_object){
                     "transform": "translate(" + (width/2) + ", " + (width/2) + ")",
                 });
 
+    var div = d3.select("body").append("div").attr("class", "toolTip");
     var color = ['#E57373','#DCE775','#F06292','#BA68C8','#7986CB','#4DB6AC','#81C784','#FF8A65','#A1887F','#E0E0E0']
     var path = arcs.append("path")
                     .attr({
@@ -103,19 +104,30 @@ function createDonut(array, name, column_object){
                             return array[i][2];
                         }
                     })
-                    .on("mouseover", function(){
-                        svg.append("text")
-                            .attr({
-                                "class": "subject_" + this.id,
-                                "x": (width/2),
-                                "y": (width/2),
-                                "text-anchor": "middle"
-                            })
-                            .text(this.id);
+                    .on("mousemove", function(d){
+                        console.log(d3.select(this));
+
+                        div.style("left", d3.event.pageX+10+"px");
+                        div.style("top", d3.event.pageY-25+"px");
+                        div.style("display", "inline-block");
+                        div.html((d[2])+"<br>"+(d.data.value)+"%");
                     })
-                    .on("mouseout", function(){
-                        svg.selectAll(".subject_" + this.id).remove();
-                    })
+                    .on("mouseout", function(d){
+                        div.style("display", "none");
+                    });
+                    // .on("mouseover", function(){
+                    //     svg.append("text")
+                    //         .attr({
+                    //             "class": "subject_" + this.id,
+                    //             "x": (width/2),
+                    //             "y": (width/2),
+                    //             "text-anchor": "middle"
+                    //         })
+                    //         .text(this.id);
+                    // })
+                    // .on("mouseout", function(){
+                    //     svg.selectAll(".subject_" + this.id).remove();
+                    // })
 
     d3.selectAll(".path_special")
       .attr({
@@ -138,8 +150,6 @@ function createDonut(array, name, column_object){
        .text(function(d){
             return name;
        })
-
-    console.log(array);
 
     var items = Object.keys(service_name);
     var lengedColor = array.map(function(d) {
@@ -173,4 +183,5 @@ function createDonut(array, name, column_object){
               .attr('x', legendRectSize + legendSpacing)
               .attr('y', legendRectSize - legendSpacing)
               .text(function(d) { return d[1]; });
+
 }
