@@ -1,0 +1,1764 @@
+[
+  {
+    "item":"違規停車",
+    "caseCount":10505,
+    "listData":[
+      {
+        "description":"違反交通規則",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607290092",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-29 10:04:00",
+        "finishedTime":"2016-08-03 10:24:06",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區中正路57號)和新營世家大樓中間的巷內 紅線違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607250017",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-25 07:29:00",
+        "finishedTime":"2016-07-29 21:29:26",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區中正路39巷 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607240260",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-24 21:26:00",
+        "finishedTime":"2016-07-25 05:36:53",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區三民路(民權路^信義街) 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607220422",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-22 21:16:00",
+        "finishedTime":"2016-07-23 07:35:56",
+        "area":"新營區"
+      },
+      {
+        "description":"同案件A-TB-2016-47830---違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607220204",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-22 12:39:00",
+        "finishedTime":"2016-07-22 14:02:00",
+        "area":"新營區"
+      },
+      {
+        "description":"車牌：3502-D6，違反交通規則(詳附件)。",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607220203",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-22 12:38:00",
+        "finishedTime":"2016-07-29 21:34:21",
+        "area":"新營區"
+      },
+      {
+        "description":"車牌：D4-5358，違反交通規則(詳附件)。",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607210273",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-21 17:17:00",
+        "finishedTime":"2016-07-29 21:37:08",
+        "area":"新營區"
+      },
+      {
+        "description":"車牌：D4-5358，違反交通規則(詳附件)。",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607210273",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-21 17:17:00",
+        "finishedTime":"2016-07-29 21:37:08",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區三民路跟復興路口 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607200596",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-20 12:25:00",
+        "finishedTime":"2016-07-20 16:54:25",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區中正路224號 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607190019",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-19 08:09:00",
+        "finishedTime":"2016-07-19 14:30:39",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區東仁街43巷裡面 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607180010",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-18 07:25:00",
+        "finishedTime":"2016-07-18 09:42:46",
+        "area":"新營區"
+      },
+      {
+        "description":"違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607160253",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-16 17:59:00",
+        "finishedTime":"2016-07-25 16:41:03",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區民治路南新國中靠近民生路 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607160095",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-16 11:19:00",
+        "finishedTime":"2016-07-16 14:42:05",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區大同路跟民治路口 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607160058",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-16 09:48:00",
+        "finishedTime":"2016-07-16 14:35:11",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區東仁街43巷內 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607140368",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-14 19:59:00",
+        "finishedTime":"2016-07-15 06:40:28",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區民權路96-1號後門 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607140312",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-14 17:29:00",
+        "finishedTime":"2016-07-19 14:33:24",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區復興路 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607130372",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-13 20:31:00",
+        "finishedTime":"2016-07-14 14:22:31",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區三民路前 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607110405",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-11 19:52:00",
+        "finishedTime":"2016-07-11 21:47:47",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區三民路上從多那之到中油加油站",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607100181",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-10 16:01:00",
+        "finishedTime":"2016-07-10 18:53:04",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區同濟街10號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607090296",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-09 18:07:00",
+        "finishedTime":"2016-07-14 16:51:44",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區民族路199號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607060019",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-06 07:44:00",
+        "finishedTime":"2016-07-08 10:28:40",
+        "area":"新營區"
+      },
+      {
+        "description":"違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607030287",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-03 22:52:00",
+        "finishedTime":"2016-07-08 10:32:40",
+        "area":"新營區"
+      },
+      {
+        "description":"違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020148",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 14:23:00",
+        "finishedTime":"2016-07-08 10:14:35",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區國道一號南下新營休息區 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010459",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 10:11:00",
+        "finishedTime":"2016-07-04 09:35:33",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區國道一號南下新營休息區 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010459",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 10:11:00",
+        "finishedTime":"2016-07-04 09:35:33",
+        "area":"新營區"
+      },
+      {
+        "description":"違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606290373",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-29 19:09:00",
+        "finishedTime":"2016-07-05 17:08:18",
+        "area":"新營區"
+      },
+      {
+        "description":"違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606290373",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-29 19:09:00",
+        "finishedTime":"2016-07-05 17:08:18",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區太子路200巷 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606260218",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-26 18:00:00",
+        "finishedTime":"2016-06-29 17:27:18",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區新進路二段151號 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606190583",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-19 18:25:00",
+        "finishedTime":"2016-06-19 22:06:43",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區民治路61-1號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606180350",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-18 20:49:00",
+        "finishedTime":"2016-06-28 15:26:58",
+        "area":"新營區"
+      },
+      {
+        "description":"併案A-TB-2016-39077--違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606180103",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-18 10:44:00",
+        "finishedTime":"2016-06-18 11:47:00",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區復興路689號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606180101",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-18 10:44:00",
+        "finishedTime":"2016-06-23 15:50:06",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區復興路689號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606180101",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-18 10:44:00",
+        "finishedTime":"2016-06-23 15:50:06",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區健康路 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606170367",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-17 19:24:00",
+        "finishedTime":"2016-06-17 23:41:54",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區富源街8號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606160237",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-16 15:49:00",
+        "finishedTime":"2016-06-16 18:26:45",
+        "area":"新營區"
+      },
+      {
+        "description":"同A-TB-2016-38331 併案 違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606150335",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-15 18:41:00",
+        "finishedTime":"2016-06-15 18:52:00",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區三民路91-2號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606150333",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-15 18:40:00",
+        "finishedTime":"2016-06-20 09:35:57",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區三民路91-2號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606150318",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-15 18:11:00",
+        "finishedTime":"2016-06-20 09:41:09",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區富源街7號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606141242",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-14 23:28:00",
+        "finishedTime":"2016-06-16 11:48:46",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區隋唐街(金華路～民治路) 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606130694",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-13 17:48:00",
+        "finishedTime":"2016-06-13 21:39:22",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區東安街97號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606100242",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-10 18:30:00",
+        "finishedTime":"2016-06-11 04:31:21",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區民治東路1號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606080354",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-08 18:39:00",
+        "finishedTime":"2016-06-09 07:21:45",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區大同路6號對面 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606070331",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-07 19:38:00",
+        "finishedTime":"2016-06-08 03:12:36",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區義和街 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606070029",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-07 08:42:00",
+        "finishedTime":"2016-06-07 17:38:16",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區義和街 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606070029",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-07 08:42:00",
+        "finishedTime":"2016-06-07 17:38:16",
+        "area":"新營區"
+      },
+      {
+        "description":"車輛超越停等區及開窗吸菸",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606050178",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-05 19:11:00",
+        "finishedTime":"2016-06-14 09:05:30",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區東興路528號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606040269",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-04 17:36:00",
+        "finishedTime":"2016-06-04 18:47:49",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區東興路528號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606040269",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-04 17:36:00",
+        "finishedTime":"2016-06-04 18:47:49",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區太子路191號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606040210",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-04 15:19:00",
+        "finishedTime":"2016-06-04 17:21:51",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區樂仁幼稚園 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606030271",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-03 17:11:00",
+        "finishedTime":"2016-06-03 19:31:07",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區民治路上吉的堡美語 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606030027",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-03 08:08:00",
+        "finishedTime":"2016-06-03 18:57:42",
+        "area":"新營區"
+      },
+      {
+        "description":"東區崇學路94號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606010280",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-01 16:42:00",
+        "finishedTime":"2016-06-01 19:07:06",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區民治路8-68號附近 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606010059",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-01 08:40:00",
+        "finishedTime":"2016-06-01 14:57:48",
+        "area":"新營區"
+      },
+      {
+        "description":"新化區健康路47巷20號路口轉彎處 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607230051",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-23 09:52:00",
+        "finishedTime":"2016-07-23 13:56:24",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區中興路856號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607170124",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-17 13:30:00",
+        "finishedTime":"2016-07-21 12:54:12",
+        "area":"新化區"
+      },
+      {
+        "description":"違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607140327",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-14 18:17:00",
+        "finishedTime":"2016-07-14 18:20:00",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區正新路97號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607120033",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-12 08:21:00",
+        "finishedTime":"2016-07-20 10:50:54",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區中正路與中興路交叉口 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607090052",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-09 09:26:00",
+        "finishedTime":"2016-07-11 10:01:57",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區正新國小大門口 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607070436",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-07 09:17:00",
+        "finishedTime":"2016-07-07 16:24:04",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區信義路169號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020156",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 14:50:00",
+        "finishedTime":"2016-07-02 16:57:04",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區中正路312號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606280224",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-28 14:06:00",
+        "finishedTime":"2016-07-04 09:12:10",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區正新國小(正新路93-95號)校門口 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606270189",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-27 12:26:00",
+        "finishedTime":"2016-07-04 09:10:13",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區中山路中正路路口 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606190417",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-19 09:00:00",
+        "finishedTime":"2016-06-28 09:07:44",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區中正路 武德殿前 新化老街旁 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606180226",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-18 15:32:00",
+        "finishedTime":"2016-06-18 17:51:00",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區復興路239號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606180207",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-18 14:39:00",
+        "finishedTime":"2016-06-30 11:28:22",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區中正路420號～440號及和平街武德殿前面 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606180057",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-18 09:33:00",
+        "finishedTime":"2016-06-18 16:08:45",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區中正路/和平街口，新化老街武德殿正門口 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606180027",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-18 08:13:00",
+        "finishedTime":"2016-06-18 14:19:36",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區新化老街旁邊武德殿 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606150025",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-15 08:30:00",
+        "finishedTime":"2016-06-15 15:54:59",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區和平街23號前面 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606100162",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-10 15:16:00",
+        "finishedTime":"2016-06-10 18:03:00",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區協興里太平街108號 空氣汙染",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606100065",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-10 10:38:00",
+        "finishedTime":"2016-06-12 18:37:21",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區新化老街旁邊武德殿前 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606080164",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-08 12:07:00",
+        "finishedTime":"2016-06-08 16:24:29",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區和平街的武德殿前 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606070014",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-07 07:43:00",
+        "finishedTime":"2016-06-07 17:26:10",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區護安街和和平街口 機車違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606050100",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-06-05 13:38:00",
+        "finishedTime":"2016-06-05 18:54:14",
+        "area":"新化區"
+      }
+    ]
+  },
+  {
+    "item":"9盞以下路燈故障",
+    "caseCount":1123,
+    "listData":[
+      {
+        "description":"新營區長榮路一段473號前方往東西向 路燈不亮",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201607280223",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-07-28 15:02:00",
+        "finishedTime":"2016-08-01 09:20:00",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區太南里298號 路燈故障",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201607110318",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-07-11 18:09:00",
+        "finishedTime":"2016-07-13 16:01:34",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區隨唐街115巷9弄口靠近全聯周邊 路燈不亮",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201607090358",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-07-09 20:28:00",
+        "finishedTime":"2016-07-11 19:09:14",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區金華路二段*新北街 交叉處 路燈不亮",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201607040361",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-07-04 17:31:00",
+        "finishedTime":"2016-07-06 11:54:15",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區民生路43-61號 路燈不亮",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201607040169",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-07-04 11:23:00",
+        "finishedTime":"2016-07-06 11:51:19",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區金華路二段與新北街交叉口 路燈不亮",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201606300270",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-06-30 17:15:00",
+        "finishedTime":"2016-07-06 11:44:53",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區中山路597號 路燈故障",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201606270303",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-06-27 16:09:00",
+        "finishedTime":"2016-06-28 17:47:55",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區中山路597號 路燈",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201606250299",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-06-25 19:33:00",
+        "finishedTime":"2016-06-27 12:07:33",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區金華路二段161號前 路燈不亮",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201606170429",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-06-17 22:49:00",
+        "finishedTime":"2016-06-27 11:07:45",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區太南里316號 路燈不亮",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201606141196",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-06-14 20:26:00",
+        "finishedTime":"2016-06-20 10:03:17",
+        "area":"新營區"
+      },
+      {
+        "description":"新化區建國街31號前 路燈",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201607200722",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-07-20 17:17:00",
+        "finishedTime":"2016-07-25 16:32:54",
+        "area":"新化區"
+      }
+    ]
+  },
+  {
+    "item":"10盞以上路燈故障",
+    "caseCount":1,
+    "listData":[
+      {
+        "description":"新營區隋唐街115巷 路燈故障",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201607100230",
+        "serviceItems":"10盞以上路燈故障",
+        "requestedTime":"2016-07-10 19:43:00",
+        "finishedTime":"2016-07-11 19:05:34",
+        "area":"新營區"
+      }
+    ]
+  },
+  {
+    "item":"妨礙安寧",
+    "caseCount":0,
+    "listData":[
+
+    ]
+  },
+  {
+    "item":"場所連續噪音",
+    "caseCount":5,
+    "listData":[
+      {
+        "description":"新營區民治路156巷 連續噪音/妨害安寧",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201607260250",
+        "serviceItems":"場所連續噪音",
+        "requestedTime":"2016-07-26 15:28:00",
+        "finishedTime":"2016-08-05 10:49:51",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區長榮路二段1020號 噪音",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201606260236",
+        "serviceItems":"場所連續噪音",
+        "requestedTime":"2016-06-26 20:04:00",
+        "finishedTime":"2016-06-28 01:04:36",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區復興路684號 噪音",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201606240298",
+        "serviceItems":"場所連續噪音",
+        "requestedTime":"2016-06-24 17:31:00",
+        "finishedTime":"2016-06-30 09:54:54",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區東明街28巷13號 連續噪音",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201606150346",
+        "serviceItems":"場所連續噪音",
+        "requestedTime":"2016-06-15 19:17:00",
+        "finishedTime":"2016-06-16 17:26:56",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區東興街43巷40號斜對面 噪音",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201606100012",
+        "serviceItems":"場所連續噪音",
+        "requestedTime":"2016-06-10 07:28:00",
+        "finishedTime":"2016-06-10 21:06:53",
+        "area":"新營區"
+      }
+    ]
+  },
+  {
+    "item":"騎樓舉發",
+    "caseCount":0,
+    "listData":[
+
+    ]
+  },
+  {
+    "item":"路面坑洞",
+    "caseCount":9,
+    "listData":[
+      {
+        "description":"道路維修",
+        "status":"已完工",
+        "serviceName":"道路維修",
+        "serviceRequestId":"UN201607190262",
+        "serviceItems":"路面坑洞",
+        "requestedTime":"2016-07-19 15:13:00",
+        "finishedTime":"2016-07-26 16:42:50",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區南74 6k-9k 路面坑洞",
+        "status":"已完工",
+        "serviceName":"道路維修",
+        "serviceRequestId":"UN201607150013",
+        "serviceItems":"路面坑洞",
+        "requestedTime":"2016-07-15 07:21:00",
+        "finishedTime":"2016-07-18 16:21:00",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區復興路805號 路面坑洞",
+        "status":"已完工",
+        "serviceName":"道路維修",
+        "serviceRequestId":"UN201607090295",
+        "serviceItems":"路面坑洞",
+        "requestedTime":"2016-07-09 18:04:00",
+        "finishedTime":"2016-07-12 08:37:06",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區四維路跟新中路口在四維路上 坑洞",
+        "status":"已完工",
+        "serviceName":"道路維修",
+        "serviceRequestId":"UN201606200092",
+        "serviceItems":"路面坑洞",
+        "requestedTime":"2016-06-20 09:50:00",
+        "finishedTime":"2016-06-28 15:58:55",
+        "area":"新營區"
+      },
+      {
+        "description":"道路維修",
+        "status":"已完工",
+        "serviceName":"道路維修",
+        "serviceRequestId":"UN201606160218",
+        "serviceItems":"路面坑洞",
+        "requestedTime":"2016-06-16 14:47:00",
+        "finishedTime":"2016-06-17 11:07:57",
+        "area":"新營區"
+      },
+      {
+        "description":"道路維修",
+        "status":"已完工",
+        "serviceName":"道路維修",
+        "serviceRequestId":"UN201606160218",
+        "serviceItems":"路面坑洞",
+        "requestedTime":"2016-06-16 14:47:00",
+        "finishedTime":"2016-06-17 11:07:57",
+        "area":"新營區"
+      },
+      {
+        "description":"道路維修",
+        "status":"已完工",
+        "serviceName":"道路維修",
+        "serviceRequestId":"UN201606160218",
+        "serviceItems":"路面坑洞",
+        "requestedTime":"2016-06-16 14:47:00",
+        "finishedTime":"2016-06-17 11:07:57",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區中正路天鵝湖往北(南85、南74線方向)快接近岔路 坑洞",
+        "status":"已完工",
+        "serviceName":"道路維修",
+        "serviceRequestId":"UN201606141103",
+        "serviceItems":"路面坑洞",
+        "requestedTime":"2016-06-14 17:03:00",
+        "finishedTime":"2016-06-16 08:41:07",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區長榮路上靠近復興路 路面坑洞",
+        "status":"已完工",
+        "serviceName":"道路維修",
+        "serviceRequestId":"UN201606140896",
+        "serviceItems":"路面坑洞",
+        "requestedTime":"2016-06-14 09:50:00",
+        "finishedTime":"2016-06-16 08:52:07",
+        "area":"新營區"
+      }
+    ]
+  },
+  {
+    "item":"寬頻管線、孔蓋損壞",
+    "caseCount":0,
+    "listData":[
+
+    ]
+  },
+  {
+    "item":"路面下陷、凹陷",
+    "caseCount":1,
+    "listData":[
+      {
+        "description":"新營區府西路87巷32號 路面凹陷",
+        "status":"已完工",
+        "serviceName":"道路維修",
+        "serviceRequestId":"UN201606150347",
+        "serviceItems":"路面下陷、凹陷",
+        "requestedTime":"2016-06-15 19:13:00",
+        "finishedTime":"2016-06-16 15:04:04",
+        "area":"新營區"
+      }
+    ]
+  },
+  {
+    "item":"路面掏空、塌陷",
+    "caseCount":0,
+    "listData":[
+
+    ]
+  },
+  {
+    "item":"路樹傾倒",
+    "caseCount":2,
+    "listData":[
+      {
+        "description":"新化區大坑里205號 路樹倒塌",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607130175",
+        "serviceItems":"路樹傾倒",
+        "requestedTime":"2016-07-13 12:41:00",
+        "finishedTime":"2016-07-15 15:44:16",
+        "area":"新化區"
+      },
+      {
+        "description":"台177道路,4.5公里處 路樹",
+        "status":"已完工",
+        "serviceName":"道路維修",
+        "serviceRequestId":"UN201607080104",
+        "serviceItems":"路樹傾倒",
+        "requestedTime":"2016-07-08 09:58:00",
+        "finishedTime":"2016-07-13 08:37:10",
+        "area":"新化區"
+      }
+    ]
+  },
+  {
+    "item":"地下道積水",
+    "caseCount":0,
+    "listData":[
+
+    ]
+  },
+  {
+    "item":"人孔蓋聲響、凹陷、漏水",
+    "caseCount":1,
+    "listData":[
+      {
+        "description":"新營區延平路138號 孔蓋鬆動",
+        "status":"已完工",
+        "serviceName":"民生管線",
+        "serviceRequestId":"UN201607210108",
+        "serviceItems":"人孔蓋聲響、凹陷、漏水",
+        "requestedTime":"2016-07-21 11:00:00",
+        "finishedTime":"2016-07-25 16:22:48",
+        "area":"新營區"
+      }
+    ]
+  },
+  {
+    "item":"人孔蓋凹陷坑洞",
+    "caseCount":0,
+    "listData":[
+
+    ]
+  },
+  {
+    "item":"號誌故障",
+    "caseCount":1,
+    "listData":[
+      {
+        "description":"新營區長榮路 號誌燈故障",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607050331",
+        "serviceItems":"號誌故障",
+        "requestedTime":"2016-07-05 19:14:00",
+        "finishedTime":"2016-07-07 08:51:10",
+        "area":"新營區"
+      }
+    ]
+  },
+  {
+    "item":"號誌秒差調整",
+    "caseCount":0,
+    "listData":[
+
+    ]
+  },
+  {
+    "item":"公車動態 LED 跑馬燈資訊異常",
+    "caseCount":0,
+    "listData":[
+
+    ]
+  },
+  {
+    "item":"交通疏導",
+    "caseCount":1,
+    "listData":[
+      {
+        "description":"新營區太子宮往鹽水方向 交通疏導",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607030210",
+        "serviceItems":"交通疏導",
+        "requestedTime":"2016-07-03 18:01:00",
+        "finishedTime":"2016-07-03 21:53:30",
+        "area":"新營區"
+      }
+    ]
+  },
+  {
+    "item":"佔用道路",
+    "caseCount":10,
+    "listData":[
+      {
+        "description":"新營區南新街14號 招牌佔用道路",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607260287",
+        "serviceItems":"佔用道路",
+        "requestedTime":"2016-07-26 16:47:00",
+        "finishedTime":"2016-08-03 10:31:34",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區文昌街48號前 佔用道路",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201606290149",
+        "serviceItems":"佔用道路",
+        "requestedTime":"2016-06-29 11:34:00",
+        "finishedTime":"2016-06-29 18:07:02",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區建業路167巷3弄口 佔用道路",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201606290052",
+        "serviceItems":"佔用道路",
+        "requestedTime":"2016-06-29 09:09:00",
+        "finishedTime":"2016-06-29 17:39:25",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區建業路167巷3弄口 佔用道路",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201606280171",
+        "serviceItems":"佔用道路",
+        "requestedTime":"2016-06-28 12:09:00",
+        "finishedTime":"2016-06-28 15:19:50",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區民權路和武昌街口 佔用道路",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606250019",
+        "serviceItems":"佔用道路",
+        "requestedTime":"2016-06-25 07:05:00",
+        "finishedTime":"2016-06-25 13:19:22",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區民權路和武昌街口 佔用道路",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201606150019",
+        "serviceItems":"佔用道路",
+        "requestedTime":"2016-06-15 08:11:00",
+        "finishedTime":"2016-06-15 15:54:26",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區民權路和武昌街口 佔用道路",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201606140829",
+        "serviceItems":"佔用道路",
+        "requestedTime":"2016-06-14 07:38:00",
+        "finishedTime":"2016-06-14 13:12:36",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區南新街13巷16號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201606120097",
+        "serviceItems":"佔用道路",
+        "requestedTime":"2016-06-12 11:45:00",
+        "finishedTime":"2016-06-16 14:16:46",
+        "area":"新營區"
+      },
+      {
+        "description":"新化區忠孝路41號前面 占用道路",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607190116",
+        "serviceItems":"佔用道路",
+        "requestedTime":"2016-07-19 10:27:00",
+        "finishedTime":"2016-07-25 10:41:27",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區中山路256號 佔用道路",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201606110275",
+        "serviceItems":"佔用道路",
+        "requestedTime":"2016-06-11 15:41:00",
+        "finishedTime":"2016-06-11 17:54:04",
+        "area":"新化區"
+      }
+    ]
+  },
+  {
+    "item":"空氣汙染",
+    "caseCount":18,
+    "listData":[
+      {
+        "description":"新營區民生路跟復興路口 空氣汙染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607230240",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-23 19:24:00",
+        "finishedTime":"2016-07-25 10:28:53",
+        "area":"新營區"
+      },
+      {
+        "description":"測試案件",
+        "status":"",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607180275",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-18 15:14:00",
+        "finishedTime":"2016-07-18 15:25:00",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區土庫里生達製藥 空氣汙染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607170186",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-17 16:48:00",
+        "finishedTime":"2016-07-18 10:31:48",
+        "area":"新營區"
+      },
+      {
+        "description":"反應 生達化學製藥廠 空氣污染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607020006",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-02 02:22:00",
+        "finishedTime":"2016-07-02 21:06:40",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區東興三街22巷15號 空氣污染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607020004",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-02 00:59:00",
+        "finishedTime":"2016-07-02 21:09:11",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區開元路168號 空氣汙染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607010693",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-01 19:38:00",
+        "finishedTime":"2016-07-04 09:23:46",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區土庫里生達製藥 空氣汙染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607010674",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-01 18:32:00",
+        "finishedTime":"2016-07-04 09:07:04",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區東泰八街/東仁街口 空氣汙染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201606280437",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-06-28 23:17:00",
+        "finishedTime":"2016-06-30 07:57:43",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區土庫里靠近堤防處上(往頂窩方向) 空汙",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201606210399",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-06-21 21:03:00",
+        "finishedTime":"2016-06-23 11:39:09",
+        "area":"新營區"
+      },
+      {
+        "description":"新營工業區的新工路上 空氣汙染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201606070244",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-06-07 16:32:00",
+        "finishedTime":"2016-06-08 14:58:05",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區舊廍里15號 空氣汙染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201606040364",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-06-04 23:46:00",
+        "finishedTime":"2016-06-06 08:30:51",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區民治路吉的堡 違停",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201606030025",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-06-03 08:05:00",
+        "finishedTime":"2016-06-03 21:14:09",
+        "area":"新營區"
+      },
+      {
+        "description":"新化區三角里頂山腳54號",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607280096",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-28 10:09:00",
+        "finishedTime":"2016-07-29 18:38:24",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區中山路660巷 化學刺鼻味空氣汙染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607270388",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-27 22:00:00",
+        "finishedTime":"2016-07-29 16:52:12",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區護安街42號",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607240212",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-24 18:26:00",
+        "finishedTime":"2016-07-27 16:54:34",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區護安街42號 空氣汙染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607230296",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-23 23:17:00",
+        "finishedTime":"2016-07-25 14:36:35",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區中山路111巷103號旁 空氣汙染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607050309",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-05 18:17:00",
+        "finishedTime":"2016-07-07 17:14:22",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區南170線統一社區旁 空氣汙染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201606170102",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-06-17 10:31:00",
+        "finishedTime":"2016-06-18 17:42:44",
+        "area":"新化區"
+      }
+    ]
+  },
+  {
+    "item":"其他汙染舉發",
+    "caseCount":1,
+    "listData":[
+      {
+        "description":"新化區竹仔腳統一社區旁邊的營造場 汙染舉發",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201606180252",
+        "serviceItems":"其他汙染舉發",
+        "requestedTime":"2016-06-18 16:35:00",
+        "finishedTime":"2016-06-20 17:15:00",
+        "area":"新化區"
+      }
+    ]
+  },
+  {
+    "item":"環境髒亂",
+    "caseCount":0,
+    "listData":[
+
+    ]
+  },
+  {
+    "item":"道路散落物",
+    "caseCount":2,
+    "listData":[
+      {
+        "description":"新營區延平路109-6號 貓屍",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607220410",
+        "serviceItems":"道路散落物",
+        "requestedTime":"2016-07-22 20:37:00",
+        "finishedTime":"2016-07-24 12:55:55",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區長榮路未到福園殯葬前 道路散落物",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201606130503",
+        "serviceItems":"道路散落物",
+        "requestedTime":"2016-06-13 11:50:00",
+        "finishedTime":"2016-06-14 08:35:09",
+        "area":"新營區"
+      }
+    ]
+  },
+  {
+    "item":"小廣告、旗幟",
+    "caseCount":0,
+    "listData":[
+
+    ]
+  },
+  {
+    "item":"大型廢棄物清運",
+    "caseCount":0,
+    "listData":[
+
+    ]
+  },
+  {
+    "item":"市區道路路面油漬",
+    "caseCount":1,
+    "listData":[
+      {
+        "description":"新營區三民路與民族路口 路面油漬",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607120354",
+        "serviceItems":"市區道路路面油漬",
+        "requestedTime":"2016-07-12 18:57:00",
+        "finishedTime":"2016-07-13 13:52:53",
+        "area":"新營區"
+      }
+    ]
+  },
+  {
+    "item":"電信孔蓋鬆動、電信線路掉落、電信桿傾倒",
+    "caseCount":0,
+    "listData":[
+
+    ]
+  },
+  {
+    "item":"停電、漏電、電線掉落、孔蓋鬆動",
+    "caseCount":5,
+    "listData":[
+      {
+        "description":"新營區鐵線里鐵線橋附近 停電",
+        "status":"已完工",
+        "serviceName":"民生管線",
+        "serviceRequestId":"UN201606200378",
+        "serviceItems":"停電、漏電、電線掉落、孔蓋鬆動",
+        "requestedTime":"2016-06-20 19:08:00",
+        "finishedTime":"2016-06-21 14:03:59",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區工業街55之16號週邊 停電",
+        "status":"已完工",
+        "serviceName":"民生管線",
+        "serviceRequestId":"UN201606150048",
+        "serviceItems":"停電、漏電、電線掉落、孔蓋鬆動",
+        "requestedTime":"2016-06-15 09:23:00",
+        "finishedTime":"2016-06-16 10:47:04",
+        "area":"新營區"
+      },
+      {
+        "description":"新化區那拔林514號週邊 停電",
+        "status":"已完工",
+        "serviceName":"民生管線",
+        "serviceRequestId":"UN201607080157",
+        "serviceItems":"停電、漏電、電線掉落、孔蓋鬆動",
+        "requestedTime":"2016-07-08 12:09:00",
+        "finishedTime":"2016-07-11 15:46:13",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區崙頂里299號 停電",
+        "status":"已完工",
+        "serviceName":"民生管線",
+        "serviceRequestId":"UN201606230411",
+        "serviceItems":"停電、漏電、電線掉落、孔蓋鬆動",
+        "requestedTime":"2016-06-23 21:33:00",
+        "finishedTime":"2016-06-24 09:34:31",
+        "area":"新化區"
+      },
+      {
+        "description":"台南市新化區正新路97號 民生管線",
+        "status":"已完工",
+        "serviceName":"民生管線",
+        "serviceRequestId":"UN201606210039",
+        "serviceItems":"停電、漏電、電線掉落、孔蓋鬆動",
+        "requestedTime":"2016-06-21 08:52:00",
+        "finishedTime":"2016-06-23 11:16:49",
+        "area":"新化區"
+      }
+    ]
+  },
+  {
+    "item":"漏水、停水、消防栓漏水或損壞",
+    "caseCount":1,
+    "listData":[
+      {
+        "description":"新營區金華路跟復興路口,在金華路上 漏水",
+        "status":"已完工",
+        "serviceName":"民生管線",
+        "serviceRequestId":"UN201607270021",
+        "serviceItems":"漏水、停水、消防栓漏水或損壞",
+        "requestedTime":"2016-07-27 08:03:00",
+        "finishedTime":"2016-07-29 14:05:41",
+        "area":"新營區"
+      }
+    ]
+  },
+  {
+    "item":"天然氣外洩",
+    "caseCount":0,
+    "listData":[
+
+    ]
+  },
+  {
+    "item":"瓦斯管溝修補、孔蓋鬆動",
+    "caseCount":0,
+    "listData":[
+
+    ]
+  },
+  {
+    "item":"遊蕩犬隻捕捉管制",
+    "caseCount":5,
+    "listData":[
+      {
+        "description":"新營區三民路35號第三市場附近 捕犬",
+        "status":"已完工",
+        "serviceName":"動物救援",
+        "serviceRequestId":"UN201607150405",
+        "serviceItems":"遊蕩犬隻捕捉管制",
+        "requestedTime":"2016-07-15 21:51:00",
+        "finishedTime":"2016-07-18 14:33:22",
+        "area":"新營區"
+      },
+      {
+        "description":"新營火車站到三民路新營國小 捕犬",
+        "status":"已完工",
+        "serviceName":"動物救援",
+        "serviceRequestId":"UN201607050023",
+        "serviceItems":"遊蕩犬隻捕捉管制",
+        "requestedTime":"2016-07-05 08:21:00",
+        "finishedTime":"2016-07-07 09:44:46",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區民治路29巷　流浪犬捕抓",
+        "status":"已完工",
+        "serviceName":"動物救援",
+        "serviceRequestId":"UN201606200050",
+        "serviceItems":"遊蕩犬隻捕捉管制",
+        "requestedTime":"2016-06-20 08:46:00",
+        "finishedTime":"2016-06-21 09:17:26",
+        "area":"新營區"
+      },
+      {
+        "description":"新化區中正路200巷45號 捕捉流浪狗",
+        "status":"已完工",
+        "serviceName":"動物救援",
+        "serviceRequestId":"UN201607270333",
+        "serviceItems":"遊蕩犬隻捕捉管制",
+        "requestedTime":"2016-07-27 19:08:00",
+        "finishedTime":"2016-07-29 09:15:25",
+        "area":"新化區"
+      },
+      {
+        "description":"新化區台19線旁新化體育公園 補犬",
+        "status":"已完工",
+        "serviceName":"動物救援",
+        "serviceRequestId":"UN201606280123",
+        "serviceItems":"遊蕩犬隻捕捉管制",
+        "requestedTime":"2016-06-28 10:46:00",
+        "finishedTime":"2016-07-01 14:10:49",
+        "area":"新化區"
+      }
+    ]
+  },
+  {
+    "item":"犬貓急難救援",
+    "caseCount":7,
+    "listData":[
+      {
+        "description":"新營區東光街86巷3號 貓困水溝救援",
+        "status":"已完工",
+        "serviceName":"動物救援",
+        "serviceRequestId":"UN201607260305",
+        "serviceItems":"犬貓急難救援",
+        "requestedTime":"2016-07-26 17:36:00",
+        "finishedTime":"2016-07-27 14:15:35",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區新東里東光街86巷1號 貓咪受困",
+        "status":"已完工",
+        "serviceName":"動物救援",
+        "serviceRequestId":"UN201607250342",
+        "serviceItems":"犬貓急難救援",
+        "requestedTime":"2016-07-25 18:54:00",
+        "finishedTime":"2016-07-26 17:12:45",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區新工路*新圳路 動物救援",
+        "status":"已完工",
+        "serviceName":"動物救援",
+        "serviceRequestId":"UN201607200757",
+        "serviceItems":"犬貓急難救援",
+        "requestedTime":"2016-07-20 18:24:00",
+        "finishedTime":"2016-07-21 16:06:06",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區長榮路上(接近家樂福) 犬貓救援",
+        "status":"已完工",
+        "serviceName":"動物救援",
+        "serviceRequestId":"UN201606300332",
+        "serviceItems":"犬貓急難救援",
+        "requestedTime":"2016-06-30 19:37:00",
+        "finishedTime":"2016-07-01 17:29:35",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區國1號交流道-帝寶車燈後面水溝裡面 動物救援",
+        "status":"已完工",
+        "serviceName":"動物救援",
+        "serviceRequestId":"UN201606260042",
+        "serviceItems":"犬貓急難救援",
+        "requestedTime":"2016-06-26 08:55:00",
+        "finishedTime":"2016-06-27 17:49:34",
+        "area":"新營區"
+      },
+      {
+        "description":"新營高中(新營區民權路101號)後方的圳溝 犬貓救援",
+        "status":"已完工",
+        "serviceName":"動物救援",
+        "serviceRequestId":"UN201606141179",
+        "serviceItems":"犬貓急難救援",
+        "requestedTime":"2016-06-14 19:46:00",
+        "finishedTime":"2016-06-15 15:08:40",
+        "area":"新營區"
+      },
+      {
+        "description":"新化區中山路1-47號 動物救援",
+        "status":"已完工",
+        "serviceName":"動物救援",
+        "serviceRequestId":"UN201606280383",
+        "serviceItems":"犬貓急難救援",
+        "requestedTime":"2016-06-28 19:55:00",
+        "finishedTime":"2016-06-29 12:36:35",
+        "area":"新化區"
+      }
+    ]
+  }
+]
