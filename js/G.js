@@ -42,7 +42,7 @@ listData:
 }
 
 
-Global fun:
+Global function:
 
 * It can choose 'serveceName' *
 @getAPIsearch(startDate, endDate, area, serviceName)
@@ -67,8 +67,6 @@ Data 測試：
 // 若是不放service-name 會搜尋滿久的。
 // 一直error loading
 
-先設立一種data取用方式 取用api --> 先幫學弟抓好 overview 所需資料 --> 輸入時間所需資料
-
 // 約超過35秒會要求逾時
 
 */
@@ -77,6 +75,8 @@ var G = {
 	last: $('#overview'),
 	now: $('#overview'),
 	select: _select,
+	colorServiceName: [],
+	colorServiceItem: [],
 	getAreasData: _getAreasData,
 	getItemsData: _getItemsData
 };
@@ -91,6 +91,31 @@ var DB = {
 	monthAreaData: [],
 	monthItemsData: []
 }
+
+G.colorServiceName = [
+	"#E57373",
+	"#DCE775",
+	"#F06292",
+	"#BA68C8",
+	"#7986CB",
+	"#4DB6AC",
+	"#81C784",
+	"#FF8A65",
+	"#A1887F"
+]
+
+G.colorServiceItem = [
+	"#E57373",
+	"#D4E157","#CDDC39",
+	"#AB47BC","#8E24AA",
+	"#BA68C8",
+	"#9FA8DA","#7986CB","#5C6BC0","#3F51B5","#3949AB","#303F9F",
+	"#283593","#1A237E",
+	"#B2DFDB","#4DB6AC","#009688","#00796B","#004D40",
+	"#A5D6A7","#81C784","#66BB6A","#66BB6A","#43A047","#388E3C","#2E7D32",
+	"#FFCCBC","#FF8A65","#FF5722","#E64A19","#BF360C",
+	"#8D6E63","#6D4C41"
+];
 
 DB.areas = [
 	'新化區', '新營區', '鹽水區', '白河區', '柳營區', '後壁區', '東山區', '麻豆區', 
@@ -168,13 +193,15 @@ function _getAreasData(startDate, endDate, areasArray){
 
 		console.log(currentArea);
 	}
-	// ask --> 明明是異步 why 成功？
 	return mergeArray;
 }
 
 
 // Items
-// console.log(G.getItemsData('2016-07-01', '2016-07-03', ['新化區','新營區']));
+// var textObject = G.getItemsData('2016-07-01', '2016-07-03', ['新化區','新營區']);
+// document.write(JSON.stringify(textObject));
+// console.log(textObject);
+
 function _getItemsData(startDate, endDate, areas){
 	var itemsDataArray = [];
 	var areaData = this.getAreasData(startDate, endDate, areas);
