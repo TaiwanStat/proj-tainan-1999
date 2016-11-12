@@ -1,0 +1,3836 @@
+[
+    {
+        "item": "違規停車",
+        "caseCount": "42",
+        "listData": [
+            {
+                "serviceRequestId": "UN201607300408",
+                "area": "安南區",
+                "description": "安南區台江大道一段 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-30 02:29:00",
+                "updateTime": "2016-08-10 10:13:57",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607270381",
+                "area": "安南區",
+                "description": "安南區工明五路1巷 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-27 21:45:00",
+                "updateTime": "2016-07-29 08:31:50",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607270167",
+                "area": "安南區",
+                "description": "安南區長和路一段仁愛橋旁  道路坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-27 12:38:00",
+                "updateTime": "2016-07-29 12:01:59",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607260275",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-26 16:18:00",
+                "updateTime": "2016-08-02 10:02:50",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220427",
+                "area": "安南區",
+                "description": "安南區總安街一段110巷口路面下陷",
+                "serviceName": "道路維修",
+                "serviceItem": "路面下陷、凹陷",
+                "requestedTime": "2016-07-22 21:47:00",
+                "updateTime": "2016-07-26 16:54:30",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220310",
+                "area": "安南區",
+                "description": "安南區長溪路二段，施工回填不實",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 16:42:00",
+                "updateTime": "2016-08-03 08:51:55",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220260",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 14:43:00",
+                "updateTime": "2016-07-22 14:49:00",
+                "status": ""
+            },
+            {
+                "serviceRequestId": "UN201607220258",
+                "area": "安南區",
+                "description": "回填路面不實",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 14:42:00",
+                "updateTime": "2016-08-03 08:52:15",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220035",
+                "area": "安南區",
+                "description": "安南區北安路北安橋 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 08:17:00",
+                "updateTime": "2016-07-25 15:11:00",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607210391",
+                "area": "安南區",
+                "description": "路面折射鏡壞掉  道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-21 22:54:00",
+                "updateTime": "2016-07-26 17:41:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607210095",
+                "area": "安南區",
+                "description": "安南區北安橋往北安路二段下橋處 道路坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-21 10:43:00",
+                "updateTime": "2016-07-25 11:18:35",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607200855",
+                "area": "安南區",
+                "description": "安南區北安路三段*培安四街  路樹倒塌",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-20 22:39:00",
+                "updateTime": "2016-07-23 11:01:04",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607200524",
+                "area": "安南區",
+                "description": "安南區府安路四段到府安路五段 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-20 10:21:00",
+                "updateTime": "2016-07-21 17:31:52",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190410",
+                "area": "安南區",
+                "description": "安南區郡安路三段236巷28弄 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 22:29:00",
+                "updateTime": "2016-08-08 11:53:12",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190166",
+                "area": "安南區",
+                "description": "安南區義安街172號   路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 11:46:00",
+                "updateTime": "2016-07-20 16:30:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190008",
+                "area": "安南區",
+                "description": "安南區海佃路一段270巷9號 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 06:29:00",
+                "updateTime": "2016-07-28 17:35:55",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180376",
+                "area": "安南區",
+                "description": "安南區海尾路  路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-18 18:36:00",
+                "updateTime": "2016-07-20 09:48:23",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180298",
+                "area": "安南區",
+                "description": "安南海佃路一段270巷11號前面 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-18 15:55:00",
+                "updateTime": "2016-07-28 17:36:59",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180250",
+                "area": "安南區",
+                "description": "安南區長溪路三段201號旁邊 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-18 14:37:00",
+                "updateTime": "2016-07-21 17:33:32",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607170203",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-17 17:22:00",
+                "updateTime": "2016-07-18 17:21:25",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140381",
+                "area": "安南區",
+                "description": "安南區長和一街31號  坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面掏空、塌陷",
+                "requestedTime": "2016-07-14 20:33:00",
+                "updateTime": "2016-07-15 15:22:53",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140357",
+                "area": "安南區",
+                "description": "安南區長和一街31號 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 19:30:00",
+                "updateTime": "2016-07-15 15:25:25",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140343",
+                "area": "安南區",
+                "description": "安南區安吉路 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 18:48:00",
+                "updateTime": "2016-07-15 15:27:54",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140317",
+                "area": "安南區",
+                "description": "安南區四草大道靠本田路口 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 17:42:00",
+                "updateTime": "2016-07-15 15:31:30",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140157",
+                "area": "安南區",
+                "description": "安南區府安路五段,7-11前方 路面凹陷",
+                "serviceName": "道路維修",
+                "serviceItem": "路面下陷、凹陷",
+                "requestedTime": "2016-07-14 11:30:00",
+                "updateTime": "2016-07-15 15:15:37",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140004",
+                "area": "安南區",
+                "description": "安南區安中路三段22號  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 00:31:00",
+                "updateTime": "2016-07-14 09:25:07",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607130016",
+                "area": "安南區",
+                "description": "安南區海中街769號及775號前 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-13 07:29:00",
+                "updateTime": "2016-07-15 16:03:13",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120296",
+                "area": "安南區",
+                "description": "安南區長溪路三段275號前 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 16:52:00",
+                "updateTime": "2016-07-13 15:08:53",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120284",
+                "area": "安南區",
+                "description": "安南區海佃路二段830號 路面掏空",
+                "serviceName": "道路維修",
+                "serviceItem": "路面掏空、塌陷",
+                "requestedTime": "2016-07-12 16:37:00",
+                "updateTime": "2016-07-13 17:20:18",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120278",
+                "area": "安南區",
+                "description": "安南區開安路187號及201號前  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 16:24:00",
+                "updateTime": "2016-07-13 10:07:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120158",
+                "area": "安南區",
+                "description": "安南區安西路93號前面 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-12 11:43:00",
+                "updateTime": "2016-07-15 08:54:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120045",
+                "area": "安南區",
+                "description": "安南區歷史博物館旁往南科的方向 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 08:41:00",
+                "updateTime": "2016-07-14 16:33:26",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120039",
+                "area": "安南區",
+                "description": "安南區安和路五段104號前面 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 08:34:00",
+                "updateTime": "2016-07-13 15:37:28",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100228",
+                "area": "安南區",
+                "description": "安南區安吉路一段汽車道上和台江大道口　路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-10 19:25:00",
+                "updateTime": "2016-07-12 15:00:23",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100038",
+                "area": "安南區",
+                "description": "安南區郡安路六段19號前面 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-10 08:38:00",
+                "updateTime": "2016-07-19 17:07:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100035",
+                "area": "安南區",
+                "description": "安南區九份子重劃區 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-10 08:11:00",
+                "updateTime": "2016-07-13 14:58:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080143",
+                "area": "安南區",
+                "description": "安南區本源一街70號(海東國小後方)   路樹倒塌",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 11:21:00",
+                "updateTime": "2016-07-11 09:47:44",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080077",
+                "area": "安南區",
+                "description": "安南區海東國小後面的本淵一街 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 08:55:00",
+                "updateTime": "2016-07-11 09:49:37",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080059",
+                "area": "安南區",
+                "description": "安南區長和路四段186巷1號  路樹",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 08:30:00",
+                "updateTime": "2016-07-13 17:12:20",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607060276",
+                "area": "安南區",
+                "description": "安南區安昌街275巷69-1號前　路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-06 18:11:00",
+                "updateTime": "2016-07-15 11:18:49",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607020296",
+                "area": "安南區",
+                "description": "安和路四段439號前 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "寬頻管線、孔蓋損壞",
+                "requestedTime": "2016-07-02 21:57:00",
+                "updateTime": "2016-07-07 16:01:06",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607010489",
+                "area": "安南區",
+                "description": "安南區安昌街275巷69-1號前  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-01 10:56:00",
+                "updateTime": "2016-07-15 11:19:59",
+                "status": "已完工"
+            }
+        ]
+    },
+    {
+        "item": "路燈故障",
+        "caseCount": "10",
+        "listData": [
+            {
+                "serviceRequestId": "UN201607300408",
+                "area": "安南區",
+                "description": "安南區台江大道一段 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-30 02:29:00",
+                "updateTime": "2016-08-10 10:13:57",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607270381",
+                "area": "安南區",
+                "description": "安南區工明五路1巷 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-27 21:45:00",
+                "updateTime": "2016-07-29 08:31:50",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607270167",
+                "area": "安南區",
+                "description": "安南區長和路一段仁愛橋旁  道路坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-27 12:38:00",
+                "updateTime": "2016-07-29 12:01:59",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607260275",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-26 16:18:00",
+                "updateTime": "2016-08-02 10:02:50",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220427",
+                "area": "安南區",
+                "description": "安南區總安街一段110巷口路面下陷",
+                "serviceName": "道路維修",
+                "serviceItem": "路面下陷、凹陷",
+                "requestedTime": "2016-07-22 21:47:00",
+                "updateTime": "2016-07-26 16:54:30",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220310",
+                "area": "安南區",
+                "description": "安南區長溪路二段，施工回填不實",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 16:42:00",
+                "updateTime": "2016-08-03 08:51:55",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220260",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 14:43:00",
+                "updateTime": "2016-07-22 14:49:00",
+                "status": ""
+            },
+            {
+                "serviceRequestId": "UN201607220258",
+                "area": "安南區",
+                "description": "回填路面不實",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 14:42:00",
+                "updateTime": "2016-08-03 08:52:15",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220035",
+                "area": "安南區",
+                "description": "安南區北安路北安橋 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 08:17:00",
+                "updateTime": "2016-07-25 15:11:00",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607210391",
+                "area": "安南區",
+                "description": "路面折射鏡壞掉  道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-21 22:54:00",
+                "updateTime": "2016-07-26 17:41:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607210095",
+                "area": "安南區",
+                "description": "安南區北安橋往北安路二段下橋處 道路坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-21 10:43:00",
+                "updateTime": "2016-07-25 11:18:35",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607200855",
+                "area": "安南區",
+                "description": "安南區北安路三段*培安四街  路樹倒塌",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-20 22:39:00",
+                "updateTime": "2016-07-23 11:01:04",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607200524",
+                "area": "安南區",
+                "description": "安南區府安路四段到府安路五段 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-20 10:21:00",
+                "updateTime": "2016-07-21 17:31:52",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190410",
+                "area": "安南區",
+                "description": "安南區郡安路三段236巷28弄 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 22:29:00",
+                "updateTime": "2016-08-08 11:53:12",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190166",
+                "area": "安南區",
+                "description": "安南區義安街172號   路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 11:46:00",
+                "updateTime": "2016-07-20 16:30:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190008",
+                "area": "安南區",
+                "description": "安南區海佃路一段270巷9號 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 06:29:00",
+                "updateTime": "2016-07-28 17:35:55",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180376",
+                "area": "安南區",
+                "description": "安南區海尾路  路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-18 18:36:00",
+                "updateTime": "2016-07-20 09:48:23",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180298",
+                "area": "安南區",
+                "description": "安南海佃路一段270巷11號前面 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-18 15:55:00",
+                "updateTime": "2016-07-28 17:36:59",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180250",
+                "area": "安南區",
+                "description": "安南區長溪路三段201號旁邊 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-18 14:37:00",
+                "updateTime": "2016-07-21 17:33:32",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607170203",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-17 17:22:00",
+                "updateTime": "2016-07-18 17:21:25",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140381",
+                "area": "安南區",
+                "description": "安南區長和一街31號  坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面掏空、塌陷",
+                "requestedTime": "2016-07-14 20:33:00",
+                "updateTime": "2016-07-15 15:22:53",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140357",
+                "area": "安南區",
+                "description": "安南區長和一街31號 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 19:30:00",
+                "updateTime": "2016-07-15 15:25:25",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140343",
+                "area": "安南區",
+                "description": "安南區安吉路 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 18:48:00",
+                "updateTime": "2016-07-15 15:27:54",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140317",
+                "area": "安南區",
+                "description": "安南區四草大道靠本田路口 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 17:42:00",
+                "updateTime": "2016-07-15 15:31:30",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140157",
+                "area": "安南區",
+                "description": "安南區府安路五段,7-11前方 路面凹陷",
+                "serviceName": "道路維修",
+                "serviceItem": "路面下陷、凹陷",
+                "requestedTime": "2016-07-14 11:30:00",
+                "updateTime": "2016-07-15 15:15:37",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140004",
+                "area": "安南區",
+                "description": "安南區安中路三段22號  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 00:31:00",
+                "updateTime": "2016-07-14 09:25:07",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607130016",
+                "area": "安南區",
+                "description": "安南區海中街769號及775號前 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-13 07:29:00",
+                "updateTime": "2016-07-15 16:03:13",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120296",
+                "area": "安南區",
+                "description": "安南區長溪路三段275號前 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 16:52:00",
+                "updateTime": "2016-07-13 15:08:53",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120284",
+                "area": "安南區",
+                "description": "安南區海佃路二段830號 路面掏空",
+                "serviceName": "道路維修",
+                "serviceItem": "路面掏空、塌陷",
+                "requestedTime": "2016-07-12 16:37:00",
+                "updateTime": "2016-07-13 17:20:18",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120278",
+                "area": "安南區",
+                "description": "安南區開安路187號及201號前  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 16:24:00",
+                "updateTime": "2016-07-13 10:07:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120158",
+                "area": "安南區",
+                "description": "安南區安西路93號前面 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-12 11:43:00",
+                "updateTime": "2016-07-15 08:54:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120045",
+                "area": "安南區",
+                "description": "安南區歷史博物館旁往南科的方向 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 08:41:00",
+                "updateTime": "2016-07-14 16:33:26",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120039",
+                "area": "安南區",
+                "description": "安南區安和路五段104號前面 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 08:34:00",
+                "updateTime": "2016-07-13 15:37:28",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100228",
+                "area": "安南區",
+                "description": "安南區安吉路一段汽車道上和台江大道口　路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-10 19:25:00",
+                "updateTime": "2016-07-12 15:00:23",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100038",
+                "area": "安南區",
+                "description": "安南區郡安路六段19號前面 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-10 08:38:00",
+                "updateTime": "2016-07-19 17:07:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100035",
+                "area": "安南區",
+                "description": "安南區九份子重劃區 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-10 08:11:00",
+                "updateTime": "2016-07-13 14:58:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080143",
+                "area": "安南區",
+                "description": "安南區本源一街70號(海東國小後方)   路樹倒塌",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 11:21:00",
+                "updateTime": "2016-07-11 09:47:44",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080077",
+                "area": "安南區",
+                "description": "安南區海東國小後面的本淵一街 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 08:55:00",
+                "updateTime": "2016-07-11 09:49:37",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080059",
+                "area": "安南區",
+                "description": "安南區長和路四段186巷1號  路樹",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 08:30:00",
+                "updateTime": "2016-07-13 17:12:20",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607060276",
+                "area": "安南區",
+                "description": "安南區安昌街275巷69-1號前　路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-06 18:11:00",
+                "updateTime": "2016-07-15 11:18:49",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607020296",
+                "area": "安南區",
+                "description": "安和路四段439號前 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "寬頻管線、孔蓋損壞",
+                "requestedTime": "2016-07-02 21:57:00",
+                "updateTime": "2016-07-07 16:01:06",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607010489",
+                "area": "安南區",
+                "description": "安南區安昌街275巷69-1號前  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-01 10:56:00",
+                "updateTime": "2016-07-15 11:19:59",
+                "status": "已完工"
+            }
+        ]
+    },
+    {
+        "item": "噪音舉發",
+        "caseCount": "10",
+        "listData": [
+            {
+                "serviceRequestId": "UN201607300408",
+                "area": "安南區",
+                "description": "安南區台江大道一段 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-30 02:29:00",
+                "updateTime": "2016-08-10 10:13:57",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607270381",
+                "area": "安南區",
+                "description": "安南區工明五路1巷 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-27 21:45:00",
+                "updateTime": "2016-07-29 08:31:50",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607270167",
+                "area": "安南區",
+                "description": "安南區長和路一段仁愛橋旁  道路坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-27 12:38:00",
+                "updateTime": "2016-07-29 12:01:59",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607260275",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-26 16:18:00",
+                "updateTime": "2016-08-02 10:02:50",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220427",
+                "area": "安南區",
+                "description": "安南區總安街一段110巷口路面下陷",
+                "serviceName": "道路維修",
+                "serviceItem": "路面下陷、凹陷",
+                "requestedTime": "2016-07-22 21:47:00",
+                "updateTime": "2016-07-26 16:54:30",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220310",
+                "area": "安南區",
+                "description": "安南區長溪路二段，施工回填不實",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 16:42:00",
+                "updateTime": "2016-08-03 08:51:55",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220260",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 14:43:00",
+                "updateTime": "2016-07-22 14:49:00",
+                "status": ""
+            },
+            {
+                "serviceRequestId": "UN201607220258",
+                "area": "安南區",
+                "description": "回填路面不實",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 14:42:00",
+                "updateTime": "2016-08-03 08:52:15",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220035",
+                "area": "安南區",
+                "description": "安南區北安路北安橋 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 08:17:00",
+                "updateTime": "2016-07-25 15:11:00",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607210391",
+                "area": "安南區",
+                "description": "路面折射鏡壞掉  道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-21 22:54:00",
+                "updateTime": "2016-07-26 17:41:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607210095",
+                "area": "安南區",
+                "description": "安南區北安橋往北安路二段下橋處 道路坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-21 10:43:00",
+                "updateTime": "2016-07-25 11:18:35",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607200855",
+                "area": "安南區",
+                "description": "安南區北安路三段*培安四街  路樹倒塌",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-20 22:39:00",
+                "updateTime": "2016-07-23 11:01:04",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607200524",
+                "area": "安南區",
+                "description": "安南區府安路四段到府安路五段 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-20 10:21:00",
+                "updateTime": "2016-07-21 17:31:52",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190410",
+                "area": "安南區",
+                "description": "安南區郡安路三段236巷28弄 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 22:29:00",
+                "updateTime": "2016-08-08 11:53:12",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190166",
+                "area": "安南區",
+                "description": "安南區義安街172號   路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 11:46:00",
+                "updateTime": "2016-07-20 16:30:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190008",
+                "area": "安南區",
+                "description": "安南區海佃路一段270巷9號 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 06:29:00",
+                "updateTime": "2016-07-28 17:35:55",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180376",
+                "area": "安南區",
+                "description": "安南區海尾路  路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-18 18:36:00",
+                "updateTime": "2016-07-20 09:48:23",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180298",
+                "area": "安南區",
+                "description": "安南海佃路一段270巷11號前面 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-18 15:55:00",
+                "updateTime": "2016-07-28 17:36:59",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180250",
+                "area": "安南區",
+                "description": "安南區長溪路三段201號旁邊 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-18 14:37:00",
+                "updateTime": "2016-07-21 17:33:32",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607170203",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-17 17:22:00",
+                "updateTime": "2016-07-18 17:21:25",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140381",
+                "area": "安南區",
+                "description": "安南區長和一街31號  坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面掏空、塌陷",
+                "requestedTime": "2016-07-14 20:33:00",
+                "updateTime": "2016-07-15 15:22:53",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140357",
+                "area": "安南區",
+                "description": "安南區長和一街31號 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 19:30:00",
+                "updateTime": "2016-07-15 15:25:25",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140343",
+                "area": "安南區",
+                "description": "安南區安吉路 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 18:48:00",
+                "updateTime": "2016-07-15 15:27:54",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140317",
+                "area": "安南區",
+                "description": "安南區四草大道靠本田路口 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 17:42:00",
+                "updateTime": "2016-07-15 15:31:30",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140157",
+                "area": "安南區",
+                "description": "安南區府安路五段,7-11前方 路面凹陷",
+                "serviceName": "道路維修",
+                "serviceItem": "路面下陷、凹陷",
+                "requestedTime": "2016-07-14 11:30:00",
+                "updateTime": "2016-07-15 15:15:37",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140004",
+                "area": "安南區",
+                "description": "安南區安中路三段22號  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 00:31:00",
+                "updateTime": "2016-07-14 09:25:07",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607130016",
+                "area": "安南區",
+                "description": "安南區海中街769號及775號前 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-13 07:29:00",
+                "updateTime": "2016-07-15 16:03:13",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120296",
+                "area": "安南區",
+                "description": "安南區長溪路三段275號前 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 16:52:00",
+                "updateTime": "2016-07-13 15:08:53",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120284",
+                "area": "安南區",
+                "description": "安南區海佃路二段830號 路面掏空",
+                "serviceName": "道路維修",
+                "serviceItem": "路面掏空、塌陷",
+                "requestedTime": "2016-07-12 16:37:00",
+                "updateTime": "2016-07-13 17:20:18",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120278",
+                "area": "安南區",
+                "description": "安南區開安路187號及201號前  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 16:24:00",
+                "updateTime": "2016-07-13 10:07:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120158",
+                "area": "安南區",
+                "description": "安南區安西路93號前面 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-12 11:43:00",
+                "updateTime": "2016-07-15 08:54:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120045",
+                "area": "安南區",
+                "description": "安南區歷史博物館旁往南科的方向 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 08:41:00",
+                "updateTime": "2016-07-14 16:33:26",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120039",
+                "area": "安南區",
+                "description": "安南區安和路五段104號前面 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 08:34:00",
+                "updateTime": "2016-07-13 15:37:28",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100228",
+                "area": "安南區",
+                "description": "安南區安吉路一段汽車道上和台江大道口　路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-10 19:25:00",
+                "updateTime": "2016-07-12 15:00:23",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100038",
+                "area": "安南區",
+                "description": "安南區郡安路六段19號前面 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-10 08:38:00",
+                "updateTime": "2016-07-19 17:07:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100035",
+                "area": "安南區",
+                "description": "安南區九份子重劃區 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-10 08:11:00",
+                "updateTime": "2016-07-13 14:58:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080143",
+                "area": "安南區",
+                "description": "安南區本源一街70號(海東國小後方)   路樹倒塌",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 11:21:00",
+                "updateTime": "2016-07-11 09:47:44",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080077",
+                "area": "安南區",
+                "description": "安南區海東國小後面的本淵一街 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 08:55:00",
+                "updateTime": "2016-07-11 09:49:37",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080059",
+                "area": "安南區",
+                "description": "安南區長和路四段186巷1號  路樹",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 08:30:00",
+                "updateTime": "2016-07-13 17:12:20",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607060276",
+                "area": "安南區",
+                "description": "安南區安昌街275巷69-1號前　路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-06 18:11:00",
+                "updateTime": "2016-07-15 11:18:49",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607020296",
+                "area": "安南區",
+                "description": "安和路四段439號前 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "寬頻管線、孔蓋損壞",
+                "requestedTime": "2016-07-02 21:57:00",
+                "updateTime": "2016-07-07 16:01:06",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607010489",
+                "area": "安南區",
+                "description": "安南區安昌街275巷69-1號前  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-01 10:56:00",
+                "updateTime": "2016-07-15 11:19:59",
+                "status": "已完工"
+            }
+        ]
+    },    
+    {
+        "item": "騎樓舉發",
+        "caseCount": "1",
+        "listData": [
+            {
+                "serviceRequestId": "UN201607300408",
+                "area": "安南區",
+                "description": "安南區台江大道一段 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-30 02:29:00",
+                "updateTime": "2016-08-10 10:13:57",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607270381",
+                "area": "安南區",
+                "description": "安南區工明五路1巷 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-27 21:45:00",
+                "updateTime": "2016-07-29 08:31:50",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607270167",
+                "area": "安南區",
+                "description": "安南區長和路一段仁愛橋旁  道路坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-27 12:38:00",
+                "updateTime": "2016-07-29 12:01:59",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607260275",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-26 16:18:00",
+                "updateTime": "2016-08-02 10:02:50",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220427",
+                "area": "安南區",
+                "description": "安南區總安街一段110巷口路面下陷",
+                "serviceName": "道路維修",
+                "serviceItem": "路面下陷、凹陷",
+                "requestedTime": "2016-07-22 21:47:00",
+                "updateTime": "2016-07-26 16:54:30",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220310",
+                "area": "安南區",
+                "description": "安南區長溪路二段，施工回填不實",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 16:42:00",
+                "updateTime": "2016-08-03 08:51:55",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220260",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 14:43:00",
+                "updateTime": "2016-07-22 14:49:00",
+                "status": ""
+            },
+            {
+                "serviceRequestId": "UN201607220258",
+                "area": "安南區",
+                "description": "回填路面不實",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 14:42:00",
+                "updateTime": "2016-08-03 08:52:15",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220035",
+                "area": "安南區",
+                "description": "安南區北安路北安橋 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 08:17:00",
+                "updateTime": "2016-07-25 15:11:00",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607210391",
+                "area": "安南區",
+                "description": "路面折射鏡壞掉  道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-21 22:54:00",
+                "updateTime": "2016-07-26 17:41:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607210095",
+                "area": "安南區",
+                "description": "安南區北安橋往北安路二段下橋處 道路坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-21 10:43:00",
+                "updateTime": "2016-07-25 11:18:35",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607200855",
+                "area": "安南區",
+                "description": "安南區北安路三段*培安四街  路樹倒塌",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-20 22:39:00",
+                "updateTime": "2016-07-23 11:01:04",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607200524",
+                "area": "安南區",
+                "description": "安南區府安路四段到府安路五段 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-20 10:21:00",
+                "updateTime": "2016-07-21 17:31:52",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190410",
+                "area": "安南區",
+                "description": "安南區郡安路三段236巷28弄 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 22:29:00",
+                "updateTime": "2016-08-08 11:53:12",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190166",
+                "area": "安南區",
+                "description": "安南區義安街172號   路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 11:46:00",
+                "updateTime": "2016-07-20 16:30:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190008",
+                "area": "安南區",
+                "description": "安南區海佃路一段270巷9號 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 06:29:00",
+                "updateTime": "2016-07-28 17:35:55",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180376",
+                "area": "安南區",
+                "description": "安南區海尾路  路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-18 18:36:00",
+                "updateTime": "2016-07-20 09:48:23",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180298",
+                "area": "安南區",
+                "description": "安南海佃路一段270巷11號前面 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-18 15:55:00",
+                "updateTime": "2016-07-28 17:36:59",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180250",
+                "area": "安南區",
+                "description": "安南區長溪路三段201號旁邊 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-18 14:37:00",
+                "updateTime": "2016-07-21 17:33:32",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607170203",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-17 17:22:00",
+                "updateTime": "2016-07-18 17:21:25",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140381",
+                "area": "安南區",
+                "description": "安南區長和一街31號  坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面掏空、塌陷",
+                "requestedTime": "2016-07-14 20:33:00",
+                "updateTime": "2016-07-15 15:22:53",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140357",
+                "area": "安南區",
+                "description": "安南區長和一街31號 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 19:30:00",
+                "updateTime": "2016-07-15 15:25:25",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140343",
+                "area": "安南區",
+                "description": "安南區安吉路 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 18:48:00",
+                "updateTime": "2016-07-15 15:27:54",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140317",
+                "area": "安南區",
+                "description": "安南區四草大道靠本田路口 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 17:42:00",
+                "updateTime": "2016-07-15 15:31:30",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140157",
+                "area": "安南區",
+                "description": "安南區府安路五段,7-11前方 路面凹陷",
+                "serviceName": "道路維修",
+                "serviceItem": "路面下陷、凹陷",
+                "requestedTime": "2016-07-14 11:30:00",
+                "updateTime": "2016-07-15 15:15:37",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140004",
+                "area": "安南區",
+                "description": "安南區安中路三段22號  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 00:31:00",
+                "updateTime": "2016-07-14 09:25:07",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607130016",
+                "area": "安南區",
+                "description": "安南區海中街769號及775號前 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-13 07:29:00",
+                "updateTime": "2016-07-15 16:03:13",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120296",
+                "area": "安南區",
+                "description": "安南區長溪路三段275號前 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 16:52:00",
+                "updateTime": "2016-07-13 15:08:53",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120284",
+                "area": "安南區",
+                "description": "安南區海佃路二段830號 路面掏空",
+                "serviceName": "道路維修",
+                "serviceItem": "路面掏空、塌陷",
+                "requestedTime": "2016-07-12 16:37:00",
+                "updateTime": "2016-07-13 17:20:18",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120278",
+                "area": "安南區",
+                "description": "安南區開安路187號及201號前  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 16:24:00",
+                "updateTime": "2016-07-13 10:07:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120158",
+                "area": "安南區",
+                "description": "安南區安西路93號前面 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-12 11:43:00",
+                "updateTime": "2016-07-15 08:54:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120045",
+                "area": "安南區",
+                "description": "安南區歷史博物館旁往南科的方向 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 08:41:00",
+                "updateTime": "2016-07-14 16:33:26",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120039",
+                "area": "安南區",
+                "description": "安南區安和路五段104號前面 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 08:34:00",
+                "updateTime": "2016-07-13 15:37:28",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100228",
+                "area": "安南區",
+                "description": "安南區安吉路一段汽車道上和台江大道口　路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-10 19:25:00",
+                "updateTime": "2016-07-12 15:00:23",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100038",
+                "area": "安南區",
+                "description": "安南區郡安路六段19號前面 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-10 08:38:00",
+                "updateTime": "2016-07-19 17:07:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100035",
+                "area": "安南區",
+                "description": "安南區九份子重劃區 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-10 08:11:00",
+                "updateTime": "2016-07-13 14:58:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080143",
+                "area": "安南區",
+                "description": "安南區本源一街70號(海東國小後方)   路樹倒塌",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 11:21:00",
+                "updateTime": "2016-07-11 09:47:44",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080077",
+                "area": "安南區",
+                "description": "安南區海東國小後面的本淵一街 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 08:55:00",
+                "updateTime": "2016-07-11 09:49:37",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080059",
+                "area": "安南區",
+                "description": "安南區長和路四段186巷1號  路樹",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 08:30:00",
+                "updateTime": "2016-07-13 17:12:20",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607060276",
+                "area": "安南區",
+                "description": "安南區安昌街275巷69-1號前　路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-06 18:11:00",
+                "updateTime": "2016-07-15 11:18:49",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607020296",
+                "area": "安南區",
+                "description": "安和路四段439號前 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "寬頻管線、孔蓋損壞",
+                "requestedTime": "2016-07-02 21:57:00",
+                "updateTime": "2016-07-07 16:01:06",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607010489",
+                "area": "安南區",
+                "description": "安南區安昌街275巷69-1號前  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-01 10:56:00",
+                "updateTime": "2016-07-15 11:19:59",
+                "status": "已完工"
+            }
+        ]
+    },    
+    {
+        "item": "道路維修",
+        "caseCount": "12",
+        "listData": [
+            {
+                "serviceRequestId": "UN201607300408",
+                "area": "安南區",
+                "description": "安南區台江大道一段 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-30 02:29:00",
+                "updateTime": "2016-08-10 10:13:57",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607270381",
+                "area": "安南區",
+                "description": "安南區工明五路1巷 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-27 21:45:00",
+                "updateTime": "2016-07-29 08:31:50",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607270167",
+                "area": "安南區",
+                "description": "安南區長和路一段仁愛橋旁  道路坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-27 12:38:00",
+                "updateTime": "2016-07-29 12:01:59",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607260275",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-26 16:18:00",
+                "updateTime": "2016-08-02 10:02:50",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220427",
+                "area": "安南區",
+                "description": "安南區總安街一段110巷口路面下陷",
+                "serviceName": "道路維修",
+                "serviceItem": "路面下陷、凹陷",
+                "requestedTime": "2016-07-22 21:47:00",
+                "updateTime": "2016-07-26 16:54:30",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220310",
+                "area": "安南區",
+                "description": "安南區長溪路二段，施工回填不實",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 16:42:00",
+                "updateTime": "2016-08-03 08:51:55",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220260",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 14:43:00",
+                "updateTime": "2016-07-22 14:49:00",
+                "status": ""
+            },
+            {
+                "serviceRequestId": "UN201607220258",
+                "area": "安南區",
+                "description": "回填路面不實",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 14:42:00",
+                "updateTime": "2016-08-03 08:52:15",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220035",
+                "area": "安南區",
+                "description": "安南區北安路北安橋 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 08:17:00",
+                "updateTime": "2016-07-25 15:11:00",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607210391",
+                "area": "安南區",
+                "description": "路面折射鏡壞掉  道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-21 22:54:00",
+                "updateTime": "2016-07-26 17:41:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607210095",
+                "area": "安南區",
+                "description": "安南區北安橋往北安路二段下橋處 道路坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-21 10:43:00",
+                "updateTime": "2016-07-25 11:18:35",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607200855",
+                "area": "安南區",
+                "description": "安南區北安路三段*培安四街  路樹倒塌",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-20 22:39:00",
+                "updateTime": "2016-07-23 11:01:04",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607200524",
+                "area": "安南區",
+                "description": "安南區府安路四段到府安路五段 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-20 10:21:00",
+                "updateTime": "2016-07-21 17:31:52",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190410",
+                "area": "安南區",
+                "description": "安南區郡安路三段236巷28弄 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 22:29:00",
+                "updateTime": "2016-08-08 11:53:12",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190166",
+                "area": "安南區",
+                "description": "安南區義安街172號   路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 11:46:00",
+                "updateTime": "2016-07-20 16:30:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190008",
+                "area": "安南區",
+                "description": "安南區海佃路一段270巷9號 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 06:29:00",
+                "updateTime": "2016-07-28 17:35:55",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180376",
+                "area": "安南區",
+                "description": "安南區海尾路  路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-18 18:36:00",
+                "updateTime": "2016-07-20 09:48:23",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180298",
+                "area": "安南區",
+                "description": "安南海佃路一段270巷11號前面 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-18 15:55:00",
+                "updateTime": "2016-07-28 17:36:59",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180250",
+                "area": "安南區",
+                "description": "安南區長溪路三段201號旁邊 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-18 14:37:00",
+                "updateTime": "2016-07-21 17:33:32",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607170203",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-17 17:22:00",
+                "updateTime": "2016-07-18 17:21:25",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140381",
+                "area": "安南區",
+                "description": "安南區長和一街31號  坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面掏空、塌陷",
+                "requestedTime": "2016-07-14 20:33:00",
+                "updateTime": "2016-07-15 15:22:53",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140357",
+                "area": "安南區",
+                "description": "安南區長和一街31號 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 19:30:00",
+                "updateTime": "2016-07-15 15:25:25",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140343",
+                "area": "安南區",
+                "description": "安南區安吉路 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 18:48:00",
+                "updateTime": "2016-07-15 15:27:54",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140317",
+                "area": "安南區",
+                "description": "安南區四草大道靠本田路口 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 17:42:00",
+                "updateTime": "2016-07-15 15:31:30",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140157",
+                "area": "安南區",
+                "description": "安南區府安路五段,7-11前方 路面凹陷",
+                "serviceName": "道路維修",
+                "serviceItem": "路面下陷、凹陷",
+                "requestedTime": "2016-07-14 11:30:00",
+                "updateTime": "2016-07-15 15:15:37",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140004",
+                "area": "安南區",
+                "description": "安南區安中路三段22號  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 00:31:00",
+                "updateTime": "2016-07-14 09:25:07",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607130016",
+                "area": "安南區",
+                "description": "安南區海中街769號及775號前 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-13 07:29:00",
+                "updateTime": "2016-07-15 16:03:13",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120296",
+                "area": "安南區",
+                "description": "安南區長溪路三段275號前 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 16:52:00",
+                "updateTime": "2016-07-13 15:08:53",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120284",
+                "area": "安南區",
+                "description": "安南區海佃路二段830號 路面掏空",
+                "serviceName": "道路維修",
+                "serviceItem": "路面掏空、塌陷",
+                "requestedTime": "2016-07-12 16:37:00",
+                "updateTime": "2016-07-13 17:20:18",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120278",
+                "area": "安南區",
+                "description": "安南區開安路187號及201號前  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 16:24:00",
+                "updateTime": "2016-07-13 10:07:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120158",
+                "area": "安南區",
+                "description": "安南區安西路93號前面 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-12 11:43:00",
+                "updateTime": "2016-07-15 08:54:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120045",
+                "area": "安南區",
+                "description": "安南區歷史博物館旁往南科的方向 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 08:41:00",
+                "updateTime": "2016-07-14 16:33:26",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120039",
+                "area": "安南區",
+                "description": "安南區安和路五段104號前面 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 08:34:00",
+                "updateTime": "2016-07-13 15:37:28",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100228",
+                "area": "安南區",
+                "description": "安南區安吉路一段汽車道上和台江大道口　路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-10 19:25:00",
+                "updateTime": "2016-07-12 15:00:23",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100038",
+                "area": "安南區",
+                "description": "安南區郡安路六段19號前面 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-10 08:38:00",
+                "updateTime": "2016-07-19 17:07:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100035",
+                "area": "安南區",
+                "description": "安南區九份子重劃區 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-10 08:11:00",
+                "updateTime": "2016-07-13 14:58:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080143",
+                "area": "安南區",
+                "description": "安南區本源一街70號(海東國小後方)   路樹倒塌",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 11:21:00",
+                "updateTime": "2016-07-11 09:47:44",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080077",
+                "area": "安南區",
+                "description": "安南區海東國小後面的本淵一街 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 08:55:00",
+                "updateTime": "2016-07-11 09:49:37",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080059",
+                "area": "安南區",
+                "description": "安南區長和路四段186巷1號  路樹",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 08:30:00",
+                "updateTime": "2016-07-13 17:12:20",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607060276",
+                "area": "安南區",
+                "description": "安南區安昌街275巷69-1號前　路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-06 18:11:00",
+                "updateTime": "2016-07-15 11:18:49",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607020296",
+                "area": "安南區",
+                "description": "安和路四段439號前 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "寬頻管線、孔蓋損壞",
+                "requestedTime": "2016-07-02 21:57:00",
+                "updateTime": "2016-07-07 16:01:06",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607010489",
+                "area": "安南區",
+                "description": "安南區安昌街275巷69-1號前  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-01 10:56:00",
+                "updateTime": "2016-07-15 11:19:59",
+                "status": "已完工"
+            }
+        ]
+    },    
+    {
+        "item": "交通運輸",
+        "caseCount": "12",
+        "listData": [
+            {
+                "serviceRequestId": "UN201607300408",
+                "area": "安南區",
+                "description": "安南區台江大道一段 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-30 02:29:00",
+                "updateTime": "2016-08-10 10:13:57",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607270381",
+                "area": "安南區",
+                "description": "安南區工明五路1巷 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-27 21:45:00",
+                "updateTime": "2016-07-29 08:31:50",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607270167",
+                "area": "安南區",
+                "description": "安南區長和路一段仁愛橋旁  道路坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-27 12:38:00",
+                "updateTime": "2016-07-29 12:01:59",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607260275",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-26 16:18:00",
+                "updateTime": "2016-08-02 10:02:50",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220427",
+                "area": "安南區",
+                "description": "安南區總安街一段110巷口路面下陷",
+                "serviceName": "道路維修",
+                "serviceItem": "路面下陷、凹陷",
+                "requestedTime": "2016-07-22 21:47:00",
+                "updateTime": "2016-07-26 16:54:30",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220310",
+                "area": "安南區",
+                "description": "安南區長溪路二段，施工回填不實",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 16:42:00",
+                "updateTime": "2016-08-03 08:51:55",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220260",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 14:43:00",
+                "updateTime": "2016-07-22 14:49:00",
+                "status": ""
+            },
+            {
+                "serviceRequestId": "UN201607220258",
+                "area": "安南區",
+                "description": "回填路面不實",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 14:42:00",
+                "updateTime": "2016-08-03 08:52:15",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220035",
+                "area": "安南區",
+                "description": "安南區北安路北安橋 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 08:17:00",
+                "updateTime": "2016-07-25 15:11:00",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607210391",
+                "area": "安南區",
+                "description": "路面折射鏡壞掉  道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-21 22:54:00",
+                "updateTime": "2016-07-26 17:41:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607210095",
+                "area": "安南區",
+                "description": "安南區北安橋往北安路二段下橋處 道路坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-21 10:43:00",
+                "updateTime": "2016-07-25 11:18:35",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607200855",
+                "area": "安南區",
+                "description": "安南區北安路三段*培安四街  路樹倒塌",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-20 22:39:00",
+                "updateTime": "2016-07-23 11:01:04",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607200524",
+                "area": "安南區",
+                "description": "安南區府安路四段到府安路五段 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-20 10:21:00",
+                "updateTime": "2016-07-21 17:31:52",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190410",
+                "area": "安南區",
+                "description": "安南區郡安路三段236巷28弄 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 22:29:00",
+                "updateTime": "2016-08-08 11:53:12",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190166",
+                "area": "安南區",
+                "description": "安南區義安街172號   路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 11:46:00",
+                "updateTime": "2016-07-20 16:30:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190008",
+                "area": "安南區",
+                "description": "安南區海佃路一段270巷9號 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 06:29:00",
+                "updateTime": "2016-07-28 17:35:55",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180376",
+                "area": "安南區",
+                "description": "安南區海尾路  路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-18 18:36:00",
+                "updateTime": "2016-07-20 09:48:23",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180298",
+                "area": "安南區",
+                "description": "安南海佃路一段270巷11號前面 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-18 15:55:00",
+                "updateTime": "2016-07-28 17:36:59",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180250",
+                "area": "安南區",
+                "description": "安南區長溪路三段201號旁邊 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-18 14:37:00",
+                "updateTime": "2016-07-21 17:33:32",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607170203",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-17 17:22:00",
+                "updateTime": "2016-07-18 17:21:25",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140381",
+                "area": "安南區",
+                "description": "安南區長和一街31號  坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面掏空、塌陷",
+                "requestedTime": "2016-07-14 20:33:00",
+                "updateTime": "2016-07-15 15:22:53",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140357",
+                "area": "安南區",
+                "description": "安南區長和一街31號 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 19:30:00",
+                "updateTime": "2016-07-15 15:25:25",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140343",
+                "area": "安南區",
+                "description": "安南區安吉路 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 18:48:00",
+                "updateTime": "2016-07-15 15:27:54",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140317",
+                "area": "安南區",
+                "description": "安南區四草大道靠本田路口 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 17:42:00",
+                "updateTime": "2016-07-15 15:31:30",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140157",
+                "area": "安南區",
+                "description": "安南區府安路五段,7-11前方 路面凹陷",
+                "serviceName": "道路維修",
+                "serviceItem": "路面下陷、凹陷",
+                "requestedTime": "2016-07-14 11:30:00",
+                "updateTime": "2016-07-15 15:15:37",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140004",
+                "area": "安南區",
+                "description": "安南區安中路三段22號  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 00:31:00",
+                "updateTime": "2016-07-14 09:25:07",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607130016",
+                "area": "安南區",
+                "description": "安南區海中街769號及775號前 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-13 07:29:00",
+                "updateTime": "2016-07-15 16:03:13",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120296",
+                "area": "安南區",
+                "description": "安南區長溪路三段275號前 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 16:52:00",
+                "updateTime": "2016-07-13 15:08:53",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120284",
+                "area": "安南區",
+                "description": "安南區海佃路二段830號 路面掏空",
+                "serviceName": "道路維修",
+                "serviceItem": "路面掏空、塌陷",
+                "requestedTime": "2016-07-12 16:37:00",
+                "updateTime": "2016-07-13 17:20:18",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120278",
+                "area": "安南區",
+                "description": "安南區開安路187號及201號前  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 16:24:00",
+                "updateTime": "2016-07-13 10:07:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120158",
+                "area": "安南區",
+                "description": "安南區安西路93號前面 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-12 11:43:00",
+                "updateTime": "2016-07-15 08:54:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120045",
+                "area": "安南區",
+                "description": "安南區歷史博物館旁往南科的方向 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 08:41:00",
+                "updateTime": "2016-07-14 16:33:26",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120039",
+                "area": "安南區",
+                "description": "安南區安和路五段104號前面 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 08:34:00",
+                "updateTime": "2016-07-13 15:37:28",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100228",
+                "area": "安南區",
+                "description": "安南區安吉路一段汽車道上和台江大道口　路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-10 19:25:00",
+                "updateTime": "2016-07-12 15:00:23",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100038",
+                "area": "安南區",
+                "description": "安南區郡安路六段19號前面 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-10 08:38:00",
+                "updateTime": "2016-07-19 17:07:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100035",
+                "area": "安南區",
+                "description": "安南區九份子重劃區 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-10 08:11:00",
+                "updateTime": "2016-07-13 14:58:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080143",
+                "area": "安南區",
+                "description": "安南區本源一街70號(海東國小後方)   路樹倒塌",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 11:21:00",
+                "updateTime": "2016-07-11 09:47:44",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080077",
+                "area": "安南區",
+                "description": "安南區海東國小後面的本淵一街 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 08:55:00",
+                "updateTime": "2016-07-11 09:49:37",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080059",
+                "area": "安南區",
+                "description": "安南區長和路四段186巷1號  路樹",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 08:30:00",
+                "updateTime": "2016-07-13 17:12:20",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607060276",
+                "area": "安南區",
+                "description": "安南區安昌街275巷69-1號前　路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-06 18:11:00",
+                "updateTime": "2016-07-15 11:18:49",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607020296",
+                "area": "安南區",
+                "description": "安和路四段439號前 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "寬頻管線、孔蓋損壞",
+                "requestedTime": "2016-07-02 21:57:00",
+                "updateTime": "2016-07-07 16:01:06",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607010489",
+                "area": "安南區",
+                "description": "安南區安昌街275巷69-1號前  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-01 10:56:00",
+                "updateTime": "2016-07-15 11:19:59",
+                "status": "已完工"
+            }
+        ]
+    },   
+    {
+        "item": "民生管線",
+        "caseCount": "12",
+        "listData": [
+            {
+                "serviceRequestId": "UN201607300408",
+                "area": "安南區",
+                "description": "安南區台江大道一段 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-30 02:29:00",
+                "updateTime": "2016-08-10 10:13:57",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607270381",
+                "area": "安南區",
+                "description": "安南區工明五路1巷 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-27 21:45:00",
+                "updateTime": "2016-07-29 08:31:50",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607270167",
+                "area": "安南區",
+                "description": "安南區長和路一段仁愛橋旁  道路坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-27 12:38:00",
+                "updateTime": "2016-07-29 12:01:59",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607260275",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-26 16:18:00",
+                "updateTime": "2016-08-02 10:02:50",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220427",
+                "area": "安南區",
+                "description": "安南區總安街一段110巷口路面下陷",
+                "serviceName": "道路維修",
+                "serviceItem": "路面下陷、凹陷",
+                "requestedTime": "2016-07-22 21:47:00",
+                "updateTime": "2016-07-26 16:54:30",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220310",
+                "area": "安南區",
+                "description": "安南區長溪路二段，施工回填不實",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 16:42:00",
+                "updateTime": "2016-08-03 08:51:55",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220260",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 14:43:00",
+                "updateTime": "2016-07-22 14:49:00",
+                "status": ""
+            },
+            {
+                "serviceRequestId": "UN201607220258",
+                "area": "安南區",
+                "description": "回填路面不實",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 14:42:00",
+                "updateTime": "2016-08-03 08:52:15",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220035",
+                "area": "安南區",
+                "description": "安南區北安路北安橋 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 08:17:00",
+                "updateTime": "2016-07-25 15:11:00",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607210391",
+                "area": "安南區",
+                "description": "路面折射鏡壞掉  道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-21 22:54:00",
+                "updateTime": "2016-07-26 17:41:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607210095",
+                "area": "安南區",
+                "description": "安南區北安橋往北安路二段下橋處 道路坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-21 10:43:00",
+                "updateTime": "2016-07-25 11:18:35",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607200855",
+                "area": "安南區",
+                "description": "安南區北安路三段*培安四街  路樹倒塌",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-20 22:39:00",
+                "updateTime": "2016-07-23 11:01:04",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607200524",
+                "area": "安南區",
+                "description": "安南區府安路四段到府安路五段 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-20 10:21:00",
+                "updateTime": "2016-07-21 17:31:52",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190410",
+                "area": "安南區",
+                "description": "安南區郡安路三段236巷28弄 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 22:29:00",
+                "updateTime": "2016-08-08 11:53:12",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190166",
+                "area": "安南區",
+                "description": "安南區義安街172號   路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 11:46:00",
+                "updateTime": "2016-07-20 16:30:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190008",
+                "area": "安南區",
+                "description": "安南區海佃路一段270巷9號 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 06:29:00",
+                "updateTime": "2016-07-28 17:35:55",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180376",
+                "area": "安南區",
+                "description": "安南區海尾路  路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-18 18:36:00",
+                "updateTime": "2016-07-20 09:48:23",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180298",
+                "area": "安南區",
+                "description": "安南海佃路一段270巷11號前面 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-18 15:55:00",
+                "updateTime": "2016-07-28 17:36:59",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180250",
+                "area": "安南區",
+                "description": "安南區長溪路三段201號旁邊 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-18 14:37:00",
+                "updateTime": "2016-07-21 17:33:32",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607170203",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-17 17:22:00",
+                "updateTime": "2016-07-18 17:21:25",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140381",
+                "area": "安南區",
+                "description": "安南區長和一街31號  坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面掏空、塌陷",
+                "requestedTime": "2016-07-14 20:33:00",
+                "updateTime": "2016-07-15 15:22:53",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140357",
+                "area": "安南區",
+                "description": "安南區長和一街31號 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 19:30:00",
+                "updateTime": "2016-07-15 15:25:25",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140343",
+                "area": "安南區",
+                "description": "安南區安吉路 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 18:48:00",
+                "updateTime": "2016-07-15 15:27:54",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140317",
+                "area": "安南區",
+                "description": "安南區四草大道靠本田路口 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 17:42:00",
+                "updateTime": "2016-07-15 15:31:30",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140157",
+                "area": "安南區",
+                "description": "安南區府安路五段,7-11前方 路面凹陷",
+                "serviceName": "道路維修",
+                "serviceItem": "路面下陷、凹陷",
+                "requestedTime": "2016-07-14 11:30:00",
+                "updateTime": "2016-07-15 15:15:37",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140004",
+                "area": "安南區",
+                "description": "安南區安中路三段22號  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 00:31:00",
+                "updateTime": "2016-07-14 09:25:07",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607130016",
+                "area": "安南區",
+                "description": "安南區海中街769號及775號前 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-13 07:29:00",
+                "updateTime": "2016-07-15 16:03:13",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120296",
+                "area": "安南區",
+                "description": "安南區長溪路三段275號前 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 16:52:00",
+                "updateTime": "2016-07-13 15:08:53",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120284",
+                "area": "安南區",
+                "description": "安南區海佃路二段830號 路面掏空",
+                "serviceName": "道路維修",
+                "serviceItem": "路面掏空、塌陷",
+                "requestedTime": "2016-07-12 16:37:00",
+                "updateTime": "2016-07-13 17:20:18",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120278",
+                "area": "安南區",
+                "description": "安南區開安路187號及201號前  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 16:24:00",
+                "updateTime": "2016-07-13 10:07:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120158",
+                "area": "安南區",
+                "description": "安南區安西路93號前面 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-12 11:43:00",
+                "updateTime": "2016-07-15 08:54:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120045",
+                "area": "安南區",
+                "description": "安南區歷史博物館旁往南科的方向 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 08:41:00",
+                "updateTime": "2016-07-14 16:33:26",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120039",
+                "area": "安南區",
+                "description": "安南區安和路五段104號前面 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 08:34:00",
+                "updateTime": "2016-07-13 15:37:28",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100228",
+                "area": "安南區",
+                "description": "安南區安吉路一段汽車道上和台江大道口　路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-10 19:25:00",
+                "updateTime": "2016-07-12 15:00:23",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100038",
+                "area": "安南區",
+                "description": "安南區郡安路六段19號前面 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-10 08:38:00",
+                "updateTime": "2016-07-19 17:07:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100035",
+                "area": "安南區",
+                "description": "安南區九份子重劃區 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-10 08:11:00",
+                "updateTime": "2016-07-13 14:58:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080143",
+                "area": "安南區",
+                "description": "安南區本源一街70號(海東國小後方)   路樹倒塌",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 11:21:00",
+                "updateTime": "2016-07-11 09:47:44",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080077",
+                "area": "安南區",
+                "description": "安南區海東國小後面的本淵一街 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 08:55:00",
+                "updateTime": "2016-07-11 09:49:37",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080059",
+                "area": "安南區",
+                "description": "安南區長和路四段186巷1號  路樹",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 08:30:00",
+                "updateTime": "2016-07-13 17:12:20",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607060276",
+                "area": "安南區",
+                "description": "安南區安昌街275巷69-1號前　路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-06 18:11:00",
+                "updateTime": "2016-07-15 11:18:49",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607020296",
+                "area": "安南區",
+                "description": "安和路四段439號前 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "寬頻管線、孔蓋損壞",
+                "requestedTime": "2016-07-02 21:57:00",
+                "updateTime": "2016-07-07 16:01:06",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607010489",
+                "area": "安南區",
+                "description": "安南區安昌街275巷69-1號前  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-01 10:56:00",
+                "updateTime": "2016-07-15 11:19:59",
+                "status": "已完工"
+            }
+        ]
+    },
+    {
+        "item": "髒亂及污染",
+        "caseCount": "12",
+        "listData": [
+            {
+                "serviceRequestId": "UN201607300408",
+                "area": "安南區",
+                "description": "安南區台江大道一段 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-30 02:29:00",
+                "updateTime": "2016-08-10 10:13:57",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607270381",
+                "area": "安南區",
+                "description": "安南區工明五路1巷 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-27 21:45:00",
+                "updateTime": "2016-07-29 08:31:50",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607270167",
+                "area": "安南區",
+                "description": "安南區長和路一段仁愛橋旁  道路坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-27 12:38:00",
+                "updateTime": "2016-07-29 12:01:59",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607260275",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-26 16:18:00",
+                "updateTime": "2016-08-02 10:02:50",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220427",
+                "area": "安南區",
+                "description": "安南區總安街一段110巷口路面下陷",
+                "serviceName": "道路維修",
+                "serviceItem": "路面下陷、凹陷",
+                "requestedTime": "2016-07-22 21:47:00",
+                "updateTime": "2016-07-26 16:54:30",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220310",
+                "area": "安南區",
+                "description": "安南區長溪路二段，施工回填不實",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 16:42:00",
+                "updateTime": "2016-08-03 08:51:55",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220260",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 14:43:00",
+                "updateTime": "2016-07-22 14:49:00",
+                "status": ""
+            },
+            {
+                "serviceRequestId": "UN201607220258",
+                "area": "安南區",
+                "description": "回填路面不實",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 14:42:00",
+                "updateTime": "2016-08-03 08:52:15",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220035",
+                "area": "安南區",
+                "description": "安南區北安路北安橋 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 08:17:00",
+                "updateTime": "2016-07-25 15:11:00",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607210391",
+                "area": "安南區",
+                "description": "路面折射鏡壞掉  道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-21 22:54:00",
+                "updateTime": "2016-07-26 17:41:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607210095",
+                "area": "安南區",
+                "description": "安南區北安橋往北安路二段下橋處 道路坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-21 10:43:00",
+                "updateTime": "2016-07-25 11:18:35",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607200855",
+                "area": "安南區",
+                "description": "安南區北安路三段*培安四街  路樹倒塌",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-20 22:39:00",
+                "updateTime": "2016-07-23 11:01:04",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607200524",
+                "area": "安南區",
+                "description": "安南區府安路四段到府安路五段 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-20 10:21:00",
+                "updateTime": "2016-07-21 17:31:52",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190410",
+                "area": "安南區",
+                "description": "安南區郡安路三段236巷28弄 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 22:29:00",
+                "updateTime": "2016-08-08 11:53:12",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190166",
+                "area": "安南區",
+                "description": "安南區義安街172號   路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 11:46:00",
+                "updateTime": "2016-07-20 16:30:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190008",
+                "area": "安南區",
+                "description": "安南區海佃路一段270巷9號 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 06:29:00",
+                "updateTime": "2016-07-28 17:35:55",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180376",
+                "area": "安南區",
+                "description": "安南區海尾路  路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-18 18:36:00",
+                "updateTime": "2016-07-20 09:48:23",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180298",
+                "area": "安南區",
+                "description": "安南海佃路一段270巷11號前面 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-18 15:55:00",
+                "updateTime": "2016-07-28 17:36:59",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180250",
+                "area": "安南區",
+                "description": "安南區長溪路三段201號旁邊 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-18 14:37:00",
+                "updateTime": "2016-07-21 17:33:32",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607170203",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-17 17:22:00",
+                "updateTime": "2016-07-18 17:21:25",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140381",
+                "area": "安南區",
+                "description": "安南區長和一街31號  坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面掏空、塌陷",
+                "requestedTime": "2016-07-14 20:33:00",
+                "updateTime": "2016-07-15 15:22:53",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140357",
+                "area": "安南區",
+                "description": "安南區長和一街31號 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 19:30:00",
+                "updateTime": "2016-07-15 15:25:25",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140343",
+                "area": "安南區",
+                "description": "安南區安吉路 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 18:48:00",
+                "updateTime": "2016-07-15 15:27:54",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140317",
+                "area": "安南區",
+                "description": "安南區四草大道靠本田路口 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 17:42:00",
+                "updateTime": "2016-07-15 15:31:30",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140157",
+                "area": "安南區",
+                "description": "安南區府安路五段,7-11前方 路面凹陷",
+                "serviceName": "道路維修",
+                "serviceItem": "路面下陷、凹陷",
+                "requestedTime": "2016-07-14 11:30:00",
+                "updateTime": "2016-07-15 15:15:37",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140004",
+                "area": "安南區",
+                "description": "安南區安中路三段22號  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 00:31:00",
+                "updateTime": "2016-07-14 09:25:07",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607130016",
+                "area": "安南區",
+                "description": "安南區海中街769號及775號前 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-13 07:29:00",
+                "updateTime": "2016-07-15 16:03:13",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120296",
+                "area": "安南區",
+                "description": "安南區長溪路三段275號前 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 16:52:00",
+                "updateTime": "2016-07-13 15:08:53",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120284",
+                "area": "安南區",
+                "description": "安南區海佃路二段830號 路面掏空",
+                "serviceName": "道路維修",
+                "serviceItem": "路面掏空、塌陷",
+                "requestedTime": "2016-07-12 16:37:00",
+                "updateTime": "2016-07-13 17:20:18",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120278",
+                "area": "安南區",
+                "description": "安南區開安路187號及201號前  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 16:24:00",
+                "updateTime": "2016-07-13 10:07:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120158",
+                "area": "安南區",
+                "description": "安南區安西路93號前面 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-12 11:43:00",
+                "updateTime": "2016-07-15 08:54:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120045",
+                "area": "安南區",
+                "description": "安南區歷史博物館旁往南科的方向 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 08:41:00",
+                "updateTime": "2016-07-14 16:33:26",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120039",
+                "area": "安南區",
+                "description": "安南區安和路五段104號前面 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 08:34:00",
+                "updateTime": "2016-07-13 15:37:28",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100228",
+                "area": "安南區",
+                "description": "安南區安吉路一段汽車道上和台江大道口　路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-10 19:25:00",
+                "updateTime": "2016-07-12 15:00:23",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100038",
+                "area": "安南區",
+                "description": "安南區郡安路六段19號前面 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-10 08:38:00",
+                "updateTime": "2016-07-19 17:07:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100035",
+                "area": "安南區",
+                "description": "安南區九份子重劃區 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-10 08:11:00",
+                "updateTime": "2016-07-13 14:58:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080143",
+                "area": "安南區",
+                "description": "安南區本源一街70號(海東國小後方)   路樹倒塌",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 11:21:00",
+                "updateTime": "2016-07-11 09:47:44",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080077",
+                "area": "安南區",
+                "description": "安南區海東國小後面的本淵一街 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 08:55:00",
+                "updateTime": "2016-07-11 09:49:37",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080059",
+                "area": "安南區",
+                "description": "安南區長和路四段186巷1號  路樹",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 08:30:00",
+                "updateTime": "2016-07-13 17:12:20",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607060276",
+                "area": "安南區",
+                "description": "安南區安昌街275巷69-1號前　路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-06 18:11:00",
+                "updateTime": "2016-07-15 11:18:49",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607020296",
+                "area": "安南區",
+                "description": "安和路四段439號前 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "寬頻管線、孔蓋損壞",
+                "requestedTime": "2016-07-02 21:57:00",
+                "updateTime": "2016-07-07 16:01:06",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607010489",
+                "area": "安南區",
+                "description": "安南區安昌街275巷69-1號前  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-01 10:56:00",
+                "updateTime": "2016-07-15 11:19:59",
+                "status": "已完工"
+            }
+        ]
+    },
+    {
+        "item": "動物救援",
+        "caseCount": "12",
+        "listData": [
+            {
+                "serviceRequestId": "UN201607300408",
+                "area": "安南區",
+                "description": "安南區台江大道一段 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-30 02:29:00",
+                "updateTime": "2016-08-10 10:13:57",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607270381",
+                "area": "安南區",
+                "description": "安南區工明五路1巷 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-27 21:45:00",
+                "updateTime": "2016-07-29 08:31:50",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607270167",
+                "area": "安南區",
+                "description": "安南區長和路一段仁愛橋旁  道路坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-27 12:38:00",
+                "updateTime": "2016-07-29 12:01:59",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607260275",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-26 16:18:00",
+                "updateTime": "2016-08-02 10:02:50",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220427",
+                "area": "安南區",
+                "description": "安南區總安街一段110巷口路面下陷",
+                "serviceName": "道路維修",
+                "serviceItem": "路面下陷、凹陷",
+                "requestedTime": "2016-07-22 21:47:00",
+                "updateTime": "2016-07-26 16:54:30",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220310",
+                "area": "安南區",
+                "description": "安南區長溪路二段，施工回填不實",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 16:42:00",
+                "updateTime": "2016-08-03 08:51:55",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220260",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 14:43:00",
+                "updateTime": "2016-07-22 14:49:00",
+                "status": ""
+            },
+            {
+                "serviceRequestId": "UN201607220258",
+                "area": "安南區",
+                "description": "回填路面不實",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 14:42:00",
+                "updateTime": "2016-08-03 08:52:15",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607220035",
+                "area": "安南區",
+                "description": "安南區北安路北安橋 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-22 08:17:00",
+                "updateTime": "2016-07-25 15:11:00",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607210391",
+                "area": "安南區",
+                "description": "路面折射鏡壞掉  道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-21 22:54:00",
+                "updateTime": "2016-07-26 17:41:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607210095",
+                "area": "安南區",
+                "description": "安南區北安橋往北安路二段下橋處 道路坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-21 10:43:00",
+                "updateTime": "2016-07-25 11:18:35",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607200855",
+                "area": "安南區",
+                "description": "安南區北安路三段*培安四街  路樹倒塌",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-20 22:39:00",
+                "updateTime": "2016-07-23 11:01:04",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607200524",
+                "area": "安南區",
+                "description": "安南區府安路四段到府安路五段 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-20 10:21:00",
+                "updateTime": "2016-07-21 17:31:52",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190410",
+                "area": "安南區",
+                "description": "安南區郡安路三段236巷28弄 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 22:29:00",
+                "updateTime": "2016-08-08 11:53:12",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190166",
+                "area": "安南區",
+                "description": "安南區義安街172號   路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 11:46:00",
+                "updateTime": "2016-07-20 16:30:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607190008",
+                "area": "安南區",
+                "description": "安南區海佃路一段270巷9號 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-19 06:29:00",
+                "updateTime": "2016-07-28 17:35:55",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180376",
+                "area": "安南區",
+                "description": "安南區海尾路  路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-18 18:36:00",
+                "updateTime": "2016-07-20 09:48:23",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180298",
+                "area": "安南區",
+                "description": "安南海佃路一段270巷11號前面 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-18 15:55:00",
+                "updateTime": "2016-07-28 17:36:59",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607180250",
+                "area": "安南區",
+                "description": "安南區長溪路三段201號旁邊 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-18 14:37:00",
+                "updateTime": "2016-07-21 17:33:32",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607170203",
+                "area": "安南區",
+                "description": "道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-17 17:22:00",
+                "updateTime": "2016-07-18 17:21:25",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140381",
+                "area": "安南區",
+                "description": "安南區長和一街31號  坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面掏空、塌陷",
+                "requestedTime": "2016-07-14 20:33:00",
+                "updateTime": "2016-07-15 15:22:53",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140357",
+                "area": "安南區",
+                "description": "安南區長和一街31號 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 19:30:00",
+                "updateTime": "2016-07-15 15:25:25",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140343",
+                "area": "安南區",
+                "description": "安南區安吉路 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 18:48:00",
+                "updateTime": "2016-07-15 15:27:54",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140317",
+                "area": "安南區",
+                "description": "安南區四草大道靠本田路口 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 17:42:00",
+                "updateTime": "2016-07-15 15:31:30",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140157",
+                "area": "安南區",
+                "description": "安南區府安路五段,7-11前方 路面凹陷",
+                "serviceName": "道路維修",
+                "serviceItem": "路面下陷、凹陷",
+                "requestedTime": "2016-07-14 11:30:00",
+                "updateTime": "2016-07-15 15:15:37",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607140004",
+                "area": "安南區",
+                "description": "安南區安中路三段22號  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-14 00:31:00",
+                "updateTime": "2016-07-14 09:25:07",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607130016",
+                "area": "安南區",
+                "description": "安南區海中街769號及775號前 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-13 07:29:00",
+                "updateTime": "2016-07-15 16:03:13",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120296",
+                "area": "安南區",
+                "description": "安南區長溪路三段275號前 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 16:52:00",
+                "updateTime": "2016-07-13 15:08:53",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120284",
+                "area": "安南區",
+                "description": "安南區海佃路二段830號 路面掏空",
+                "serviceName": "道路維修",
+                "serviceItem": "路面掏空、塌陷",
+                "requestedTime": "2016-07-12 16:37:00",
+                "updateTime": "2016-07-13 17:20:18",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120278",
+                "area": "安南區",
+                "description": "安南區開安路187號及201號前  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 16:24:00",
+                "updateTime": "2016-07-13 10:07:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120158",
+                "area": "安南區",
+                "description": "安南區安西路93號前面 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-12 11:43:00",
+                "updateTime": "2016-07-15 08:54:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120045",
+                "area": "安南區",
+                "description": "安南區歷史博物館旁往南科的方向 坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 08:41:00",
+                "updateTime": "2016-07-14 16:33:26",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607120039",
+                "area": "安南區",
+                "description": "安南區安和路五段104號前面 路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-12 08:34:00",
+                "updateTime": "2016-07-13 15:37:28",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100228",
+                "area": "安南區",
+                "description": "安南區安吉路一段汽車道上和台江大道口　路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-10 19:25:00",
+                "updateTime": "2016-07-12 15:00:23",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100038",
+                "area": "安南區",
+                "description": "安南區郡安路六段19號前面 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-10 08:38:00",
+                "updateTime": "2016-07-19 17:07:19",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607100035",
+                "area": "安南區",
+                "description": "安南區九份子重劃區 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-10 08:11:00",
+                "updateTime": "2016-07-13 14:58:46",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080143",
+                "area": "安南區",
+                "description": "安南區本源一街70號(海東國小後方)   路樹倒塌",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 11:21:00",
+                "updateTime": "2016-07-11 09:47:44",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080077",
+                "area": "安南區",
+                "description": "安南區海東國小後面的本淵一街 路樹傾倒",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 08:55:00",
+                "updateTime": "2016-07-11 09:49:37",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607080059",
+                "area": "安南區",
+                "description": "安南區長和路四段186巷1號  路樹",
+                "serviceName": "道路維修",
+                "serviceItem": "路樹傾倒",
+                "requestedTime": "2016-07-08 08:30:00",
+                "updateTime": "2016-07-13 17:12:20",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607060276",
+                "area": "安南區",
+                "description": "安南區安昌街275巷69-1號前　路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-06 18:11:00",
+                "updateTime": "2016-07-15 11:18:49",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607020296",
+                "area": "安南區",
+                "description": "安和路四段439號前 道路維修",
+                "serviceName": "道路維修",
+                "serviceItem": "寬頻管線、孔蓋損壞",
+                "requestedTime": "2016-07-02 21:57:00",
+                "updateTime": "2016-07-07 16:01:06",
+                "status": "已完工"
+            },
+            {
+                "serviceRequestId": "UN201607010489",
+                "area": "安南區",
+                "description": "安南區安昌街275巷69-1號前  路面坑洞",
+                "serviceName": "道路維修",
+                "serviceItem": "路面坑洞",
+                "requestedTime": "2016-07-01 10:56:00",
+                "updateTime": "2016-07-15 11:19:59",
+                "status": "已完工"
+            }
+        ]
+    }
+]

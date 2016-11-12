@@ -1,0 +1,63 @@
+#pie-chart{
+    text-align:center;
+}
+.bar {
+    /*fill: steelblue;*/
+    border-radius: 2px;
+}
+.path, .path_special{
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+/*    backface-visibility: hidden;*/
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.path:hover,.path:focus,.path:active {
+    transform: scale(1.1);
+}
+.path_special:hover,.path_special:focus,.path_special:active {
+    transform: scale(1.1);
+}
+
+.grid .tick {
+    stroke: #E0E0E0;
+    ;
+    stroke-opacity: 0.7;
+    shape-rendering: crispEdges;
+}
+
+.grid path {
+    stroke-width: 0;
+}
+
+.axis text {
+    font: 15px sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+    color: #3d3d3d;
+    letter-spacing: 1.5px;
+}
+
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #E0E0E0;
+    shape-rendering: crispEdges;
+}
+
+.axis path {
+    display: none;
+}
+.x {
+	display: none;
+}
+text.bartip {
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 13px;
+	font-weight: 200;
+}
