@@ -1,4 +1,4 @@
-var service_name = {"違規停車": 0,"路燈故障": 1 ,"噪音舉發": 2,"騎樓舉發": 3,"道路維修": 4,"交通運輸": 5,"髒亂及污染": 6,"民生管線": 7,"動物救援": 8};
+var service_name = {"違規停車": 0,"路燈故障": 1 ,"噪音舉發": 2,"騎樓舉發": 3,"道路維修": 4,"交通運輸": 5,"髒亂及污染": 6,"民生管線": 7,"動物救援": 8 , "其他":9};
 
 function filtJSON(json, key, value) {
     var count = 0;
@@ -17,8 +17,7 @@ d3.json("fake_areas.json", function(error, data){
     if (error){
         console.log(error);
     }
-    console.log("Data read >> outside");
-    //console.log(data);
+
     data.map(function(d){
         var areaName = d.area;
         var array = [];//array用來儲存過濾後可畫圖的資料
@@ -117,13 +116,61 @@ function createDonut(array, name, column_object){
                     .on("mouseout", function(){
                         svg.selectAll(".subject_" + this.id).remove();
                     })
+
     d3.selectAll(".path_special")
-        .attr({
+      .attr({
             "d": arc3,
-        })
+      })
+
     path.transition()
-         .duration(1000)
-         .attr({
+        .duration(1000)
+        .attr({
             "d": arc2
         });
+
+    svg.append("text")//區域名稱，放在圖下
+       .attr({
+            "id": "district",
+            "x": width/2 - 23,
+            "y": height - 30
+       })
+       .style("font-size","20px")
+       .text(function(d){
+            return name;
+       })
+
+    console.log(array);
+
+    var items = Object.keys(service_name);
+    var lengedColor = array.map(function(d) {
+        return [color[d[0]], items[d[0]]];
+    })
+
+    var legendRectSize = 18;
+    var legendSpacing = 4;
+    var legend = svg.selectAll('.legend')
+                    .data(lengedColor)
+                    .enter()
+                    .append('g')
+                    .attr('class', 'legend')
+                    .attr('transform', function(d, i) {
+                        var height = legendRectSize + legendSpacing;
+                        var offset =  height * lengedColor.length / 2;
+                        var horz = 10 * legendRectSize;
+                        var vert = i * height +  4.1*offset;
+                        return 'translate(' + horz + ',' + vert + ')';
+                    });
+
+        legend.append('rect')
+              .attr('width', legendRectSize)
+              .attr('height', legendRectSize)
+              .style('fill', function(d) {
+                    return d[0];
+              })
+              .style('stroke', color);
+
+        legend.append('text')
+              .attr('x', legendRectSize + legendSpacing)
+              .attr('y', legendRectSize - legendSpacing)
+              .text(function(d) { return d[1]; });
 }
