@@ -20,7 +20,7 @@ python -m http.server 8000
 ```
 > and browse the site of 127.0.0.1:8000 in your browser
 ## files
-bubble_chart
+bubble_chart  
 |--index.html  
 |--**main.js**  
 |--main.css  
