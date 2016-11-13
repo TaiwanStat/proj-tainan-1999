@@ -18,7 +18,8 @@ python -m SimpleHTTPServer 8000
 ```
 python -m http.server 8000
 ```
-> and browse the site of 127.0.0.1:8000 in your browser
+> and browse the site of 127.0.0.1:8000 in your browser  
+
 ## files
 bubble_chart  
 |--index.html  
@@ -35,8 +36,9 @@ bubble_chart
 |--main.css  
 |--main.js  
 
-- faked.json and faked2.json are faked data, you can edit it or add more faked data to test the effect!
-- the main.js is my primary code!
+- faked.json and faked2.json are faked data, you can edit it or add more faked data to test the effect!  
+- the main.js is my primary code!  
+
 ## code 
 - draw(data)
 -- this function provide the method to draw initial bubble chart, and its DOM
@@ -47,7 +49,7 @@ bubble_chart
 -- this function provide the method to add the event listener to scroll bar's option button
 - data_filter(data)
 -- this function provide the method to filter the api's data to the more simple data that pack layout can accept!
--- **you should use this function to filter data before call draw or change function!**
+-- **you should use this function to filter data before call draw or change function!**  
 
 ## TODOList
 *查看todo tag*
