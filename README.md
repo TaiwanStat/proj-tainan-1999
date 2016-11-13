@@ -41,15 +41,15 @@ bubble_chart
 - the main.js is my primary code!  
 
 ## code 
-- draw(data)
--- this function provide the method to draw initial bubble chart, and its DOM
+- draw(data)  
+-- this function provide the method to draw initial bubble chart, and its DOM  
 -- theoretically, the input data should be the data of first date, which I set it to 2016-11-09, but it is **not neccessary**
-- change(data)
--- this function provide the method to update the bubble chart and its DOM
-- option()
--- this function provide the method to add the event listener to scroll bar's option button
-- data_filter(data)
--- this function provide the method to filter the api's data to the more simple data that pack layout can accept!
+- change(data)  
+-- this function provide the method to update the bubble chart and its DOM  
+- option()  
+-- this function provide the method to add the event listener to scroll bar's option button  
+- data_filter(data)  
+-- this function provide the method to filter the api's data to the more simple data that pack layout can accept!  
 -- **you should use this function to filter data before call draw or change function!**  
 
 ## TODOList
