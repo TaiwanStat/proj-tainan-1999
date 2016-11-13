@@ -31,8 +31,8 @@ bubble_chart
 |--d3.slider.css  
 |--d3.slider.js  
 |--d3.v3.min.js  
-|--==**faked.json**==  
-|--==**faked2.json**==  
+|--**faked.json**  
+|--**faked2.json**  
 |--index.html  
 |--main.css  
 |--main.js  
