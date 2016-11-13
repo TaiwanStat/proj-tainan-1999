@@ -21,19 +21,19 @@ python -m http.server 8000
 > and browse the site of 127.0.0.1:8000 in your browser
 ## files
 bubble_chart
-|--index.html
-|--**main.js**
-|--main.css
-|---font-awesome
-|--G.js
-|--d3.slider.css
-|--d3.slider.js
-|--d3.v3.min.js
-|--==**faked.json**==
-|--==**faked2.json**==
-|--index.html
-|--main.css
-|--main.js
+|--index.html  
+|--**main.js**  
+|--main.css  
+|---font-awesome  
+|--G.js  
+|--d3.slider.css  
+|--d3.slider.js  
+|--d3.v3.min.js  
+|--==**faked.json**==  
+|--==**faked2.json**==  
+|--index.html  
+|--main.css  
+|--main.js  
 
 - faked.json and faked2.json are faked data, you can edit it or add more faked data to test the effect!
 - the main.js is my primary code!
@@ -51,8 +51,8 @@ bubble_chart
 
 ## TODOList
 *查看todo tag*
-- [ ]將其改成api call的方式
-- [ ]修正文字效果及測試轉場動畫
-- [ ]左上角文案
+- [ ] 將其改成api call的方式
+- [ ] 修正文字效果及測試轉場動畫
+- [ ] 左上角文案
 - [ ] merge後微調
-- [ ]寫出cache版本
+- [ ] 寫出cache版本
