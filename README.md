@@ -2,7 +2,8 @@
 
 # Summary
 - this is 少量多餐版本
-- 可以繪製bubble chart, 並選擇request的數據!
+- 可以繪製bubble chart, 並選擇request的數據!  
+
 ## Usage
 
 ```
