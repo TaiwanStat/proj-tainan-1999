@@ -5,7 +5,7 @@
     /*fill: steelblue;*/
     border-radius: 2px;
 }
-.path, .path_special{
+.pie-path{
     display: inline-block;
     vertical-align: middle;
     transform: translateZ(0);
@@ -16,12 +16,10 @@
     transition-property: transform;
 }
 
-.path:hover,.path:focus,.path:active {
-    transform: scale(1.1);
+.pie-path:hover,.pie-path:focus,.pie-path:active {
+    transform: scale(1.05);
 }
-.path_special:hover,.path_special:focus,.path_special:active {
-    transform: scale(1.1);
-}
+
 
 .grid .tick {
     stroke: #E0E0E0;
