@@ -1,0 +1,21 @@
+@import 'setting';
+@import 'header';
+@import 'map';
+@import 'overview';
+
+.disable{
+	display: none !important;
+}
+
+.section{
+	@extend %section_setting;
+	@include animation(show 0.1s linear);		
+}
+
+@include keyframes(show) {
+	from{ opacity: 0;}
+	to{ opacity: 1;}
+}
+
+
+
