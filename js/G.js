@@ -86,6 +86,7 @@ var DB = {
 	url : "http://1999.tainan.gov.tw:83/api/",
 	areasTotal : 37,
 	areas: [],
+	areasE: {},
 	serviceName: [],
 	serviceItems: [],
 	monthAreaData: [],
@@ -124,6 +125,19 @@ DB.areas = [
 	'南化區', '左鎮區', '仁德區', '歸仁區', '關廟區', '龍崎區', '永康區', '東區',
 	'南區', '北區' , '中西區', '安南區',  '安平區'
 ];
+
+DB.areasE = {
+	'新化區':'Xinhua', '新營區':'Xinying', '鹽水區':'Yanshui', '白河區':'Baihe',
+  '柳營區':'Liuying', '後壁區':'Houbi', '東山區':'Dongshan', '麻豆區':'Madou',
+  '下營區':'Xiaying', '六甲區':'Liujia', '官田區':'Guantian', '大內區':'Danei',
+  '佳里區':'Jiali', '學甲區':'Xuejia', '西港區':'Xigang', '七股區':'Qigu',
+  '將軍區':'Jiangjun', '北門區':'Beimen', '善化區':'Shanhua', '新市區':'Xinshi',
+  '安定區':'Anding', '山上區':'Shanshang', '玉井區':'Yujing', '楠西區':'Nanxi',
+  '南化區':'Nanhua', '左鎮區':'Zuozhen', '仁德區':'Rende', '歸仁區':'Guiren',
+  '關廟區':'Guanmiao', '龍崎區':'Longqi', '永康區':'Yongkang', '東區':'East',
+  '南區':'South', '北區':'North' , '中西區':'WestCentral', '安南區':'Annan',
+  '安平區':'Anping' , '全區':'All'
+}
 
 DB.serviceName = [
 	"違規停車",
