@@ -5,7 +5,7 @@ module.exports= function (hbs) {
   hbs.registerPartial('head', getPartials('head'));
   hbs.registerPartial('header', getPartials('header'));
   hbs.registerPartial('overview', getPartials('overview'));
-  hbs.registerPartial('map', getPartials('map'));
+  hbs.registerPartial('focus', getPartials('focus'));
 };
 
 function getPartials(filename) {
