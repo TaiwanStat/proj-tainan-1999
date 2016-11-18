@@ -17,7 +17,7 @@
 }
 
 .pie-path:hover,.pie-path:focus,.pie-path:active {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 
@@ -39,8 +39,6 @@
     color: #3d3d3d;
     letter-spacing: 1.5px;
 }
-
-
 .axis path,
 .axis line {
     fill: none;
@@ -54,8 +52,20 @@
 .x {
 	display: none;
 }
+text {
+  font: 10px sans-serif;
+}
+
+form {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
 text.bartip {
 	font-family: 'Noto Sans TC', sans-serif;
 	font-size: 13px;
 	font-weight: 200;
+}
+text.area_name{
+    font-size: 20px;
 }

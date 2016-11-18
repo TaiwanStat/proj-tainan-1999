@@ -7,23 +7,26 @@ var margin = {
         bottom: 40,
         left: 400
     },
-    width = 960 - margin.left - margin.right,
-    height = 1500 - margin.top - margin.bottom;
+    bar_width = 960 - margin.left - margin.right,
+    bar_height = 1500 - margin.top - margin.bottom;
 
+var pie_height = 600,
+    pie_width = 1000;
+var areaName
 
 var svg = d3.select("#bar-chart").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
+    .attr("width", bar_width + margin.left + margin.right)
+    .attr("height", bar_height + margin.top + margin.bottom)
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-var pie_svg = d3.select("#pie-chart")
-    .append("svg")
-    .attr({
-        "width": 500,
-        "height": 500,
-    });
+var pie_svg = d3.select("#pie-chart").append("svg")
+    .attr("width", pie_width)
+    .attr("height", pie_height)
+    .append("g")
+    .attr("transform", "translate(" + pie_width / 2 + "," + pie_height / 2 + ")");
 
+var radius = Math.min(pie_width, pie_height) / 2;
 var color = [
     "#E57373 ",
     "#D4E157 ", "#CDDC39 ",
@@ -60,8 +63,9 @@ d3.json("fack_areas.json", function(error, data) {
     }
     //console.log(data);
     //shall select correct area
+   
     var d = data[0];
-    var areaName = d.area;
+    areaName = d.area;
     var array = []; //array用來儲存過濾後可畫圖的資料
     var count = 0;
     var sum = 0;
@@ -92,11 +96,11 @@ d3.json("fack_areas.json", function(error, data) {
     //creatDonut
     var pie = d3.layout.pie();
     var arc = d3.svg.arc()
-        .innerRadius(width - 430)
-        .outerRadius(width - 470);
+        .innerRadius(radius / 3)
+        .outerRadius(radius / 4);
     var arc2 = d3.svg.arc()
-        .innerRadius(width - 420)
-        .outerRadius(width - 470);
+        .innerRadius(radius / 2)
+        .outerRadius(radius / 3);
 
     var arcs = pie_svg.selectAll("g.arc")
         .data(pie(
@@ -108,8 +112,7 @@ d3.json("fack_areas.json", function(error, data) {
         .enter()
         .append("g")
         .attr({
-            "class": "arc",
-            "transform": "translate(" + (width / 2) + ", " + (width / 2) + ")",
+            "class": "arc"
         });
 
     var color2 = ['#E57373', '#DCE775', '#F06292', '#BA68C8', '#7986CB', '#4DB6AC', '#81C784', '#FF8A65', '#A1887F', '#E0E0E0']
@@ -119,24 +122,24 @@ d3.json("fack_areas.json", function(error, data) {
                 return color2[array[i][0]]; //color的array
             },
             "d": arc,
-            "class": "path",
+            "class": "pie-path",
             "id": function(d, i) {
                 return array[i][2];
             }
         })
-        .on("mouseover", function() {
-            pie_svg.append("text")
-                .attr({
-                    "class": "subject_" + this.id,
-                    "x": (width / 2),
-                    "y": (width / 2),
-                    "text-anchor": "middle"
-                })
-                .text(this.id);
-        })
-        .on("mouseout", function() {
-            pie_svg.selectAll(".subject_" + this.id).remove();
-        })
+        // .on("mouseover", function() {
+        //     pie_svg.append("text")
+        //         .attr({
+        //             "class": "subject_" + this.id,
+        //             "x": (radius / 2),
+        //             "y": (radius / 2),
+        //             "text-anchor": "middle"
+        //         })
+        //         .text(this.id);
+        // })
+        // .on("mouseout", function() {
+        //     pie_svg.selectAll(".subject_" + this.id).remove();
+        // })
 
     path.transition()
         .duration(1000)
@@ -153,37 +156,35 @@ d3.json("fack_areas.json", function(error, data) {
 //bar chart****************************************************
 d3.json("fack_items.json", function(error, data) {
 
-
-    // data.sort(function(a,b) { return +a.caseCount - +b.caseCount; }).reverse();
-    // console.log(d3.extent(data, function(d) { return d.caseCount; }));
-    // console.log(d3.map(data,function(d) { return d.item; }));
-
-    // $.each(data, function(key, value) {
-    //     if (value.caseCount == 0) {
-    //         data.splice(key, key);
-    //     }
-    // });
-
-    // for (var key in data) {
-    //     console.log(data[key]);
-    //     if (data.hasOwnProperty(key)) {
-    //         //Now, object[key] is the current value
-    //         if (data[key].caseCount == 0 )
-    //             data.remove(key);
-    //     }
-    // }
     // console.log(data);
+    // console.log(data);
+    // data = data.filter(barhasCase);//順序會改變
 
+    var dataNoEmpty = [];
 
-    var x = d3.scale.linear().domain(d3.extent(data, function(d) {
+    for(var key in data){
+        if(data[key].caseCount>0)
+            dataNoEmpty.push(data[key]);
+    }
+    function hasCase(value){
+        return value>0;
+    }
+    function barhasCase(value,index,arr){
+        console.log(index)
+        return value.caseCount>0;
+    }
+
+    var array = dataNoEmpty.map(function(d) {
+        return d.item;
+    });
+
+    var x = d3.scale.linear().domain(d3.extent(dataNoEmpty, function(d) {
             return d.caseCount;
         })).nice()
-        .range([0, width]);
+        .range([0, bar_width]);
 
-    var y = d3.scale.ordinal().domain(data.map(function(d) {
-            return d.item;
-        }))
-        .rangeRoundBands([0, height], 0.1);
+    var y = d3.scale.ordinal().domain(array)
+        .rangeRoundBands([0, bar_height], 0.1);
 
     var xAxis = d3.svg.axis()
         .scale(x)
@@ -208,13 +209,13 @@ d3.json("fack_items.json", function(error, data) {
     }
     svg.append("g")
         .attr("class", "grid")
-        .attr("transform", "translate(0," + height + ")")
+        .attr("transform", "translate(0," + bar_height + ")")
         .call(make_x_axis()
-            .tickSize(-height, 0, 0)
+            .tickSize(-bar_height, 0, 0)
             .tickFormat("")
         )
 
-    var bars = svg.selectAll(".bar").data(data).enter()
+    var bars = svg.selectAll(".bar").data(dataNoEmpty).enter()
         .append("g").attr("class", "bar");
 
     var bar = bars.append("rect")
@@ -250,34 +251,44 @@ d3.json("fack_items.json", function(error, data) {
 
 
     //sort the data
-    data.sort(function(a, b) {
-        return +a.caseCount - +b.caseCount;
-    }).reverse();
+    dataNoEmpty.sort(function(a, b) {
+        return d3.descending(a.caseCount, b.caseCount);
+    });
+
+    console.log("data:")
+    console.log(dataNoEmpty);
 
     //the second pie
 
-    var pie2 = d3.layout.pie();
+    var pie = d3.layout.pie().sort(null);
+    var piepie = d3.layout.pie().sort(null);
+    var array = dataNoEmpty.map(function(d) {
+        return d.caseCount;
+    });
+    // console.log(array);
+    var array = array.filter(hasCase);
+    var pie2 = pie(array);
+
+    console.log("first pie2")
+    console.log(pie(array))
+    // console.log(array);
+
     var donut2_arc1 = d3.svg.arc()
-        .innerRadius((width - 370))
-        .outerRadius((width - 320));
+        .innerRadius((radius / 3))
+        .outerRadius((radius / 4));
     var donut2_arc2 = d3.svg.arc()
-        .innerRadius((width - 400))
-        .outerRadius((width - 350));
+        .innerRadius((radius - 100))
+        .outerRadius((radius - 50));
 
     var arcs = pie_svg.selectAll("g.arcs")
-        .data(pie2(data.map(function(d) {
-            console.log(d.item)
-            console.log(d.caseCount)
-            return d.caseCount;
-        })))
+        .data(pie2)
         .enter()
         .append("g")
         .attr({
             "class": "arcs",
-            "transform": "translate(" + (width / 2) + ", " + (width / 2) + ")",
         });
 
-    var item_name = data.map(function(d) {
+    var item_name = dataNoEmpty.map(function(d) {
         return d.item;
     })
 
@@ -287,24 +298,24 @@ d3.json("fack_items.json", function(error, data) {
                 return color[i]; //color的array
             },
             "d": donut2_arc1,
-            "class": "path",
+            "class": "pie-path",
             "id": function(d, i) {
                 return item_name[i] + "_inner";
             }
         })
-        .on("mouseover", function(d, i) {
-            pie_svg.append("text")
-                .attr({
-                    "class": "subject_" + this.id + "_inner",
-                    "x": (width / 2),
-                    "y": (width / 2),
-                    "text-anchor": "middle"
-                })
-                .text(item_name[i]);
-        })
-        .on("mouseout", function() {
-            pie_svg.selectAll(".subject_" + this.id + "_inner").remove();
-        })
+        // .on("mouseover", function(d, i) {
+        //     pie_svg.append("text")
+        //         .attr({
+        //             "class": "subject_" + this.id + "_inner",
+        //             "x": (radius / 2),
+        //             "y": (radius / 2),
+        //             "text-anchor": "middle"
+        //         })
+        //         .text(item_name[i]);
+        // })
+        // .on("mouseout", function() {
+        //     pie_svg.selectAll(".subject_" + this.id + "_inner").remove();
+        // })
 
     path.transition()
         .duration(1000)
@@ -314,74 +325,66 @@ d3.json("fack_items.json", function(error, data) {
 
     //pie marker
 
-    // pie_svg.selectAll("text").data(data)
-    //     .enter()
-    //     .append("text")
-    //     .attr("text-anchor", "middle")
-    //     .attr("x", function(d) {
-    //         var a = d.startAngle + (d.endAngle - d.startAngle) / 2 - Math.PI / 2;
-    //         d.cx = Math.cos(a) * (width - 75);
-    //         return d.x = Math.cos(a) * (width - 20);
-    //     })
-    //     .attr("y", function(d) {
-    //         var a = d.startAngle + (d.endAngle - d.startAngle) / 2 - Math.PI / 2;
-    //         d.cy = Math.sin(a) * (width - 75);
-    //         return d.y = Math.sin(a) * (width - 20);
-    //     })
-    //     .text(function(d) {
-    //         return d.value; })
-    //     .each(function(d) {
-    //         var bbox = this.getBBox();
-    //         d.sx = d.x - bbox.width / 2 - 2;
-    //         d.ox = d.x + bbox.width / 2 + 2;
-    //         d.sy = d.oy = d.y + 5;
-    //     });
+    pie2.forEach(function(d){
+        var a = d.a = d.startAngle + (d.endAngle - d.startAngle) / 2 - Math.PI / 2;
+        d.cy = Math.sin(a) * (radius - 75);
+        d.cx = Math.cos(a) * (radius - 75);
+    })
 
-    // pie_svg.append("defs").append("marker")
-    //     .attr("id", "circ")
-    //     .attr("markerWidth", 6)
-    //     .attr("markerHeight", 6)
-    //     .attr("refX", 1)
-    //     .attr("refY", 1)
-    //     .append("circle")
-    //     .attr("cx", 0)
-    //     .attr("cy", 0)
-    //     .attr("r", 0);
+    var tmp = [];
 
-    // pie_svg.selectAll("path.pointer").data(data).enter()
-    //     .append("path")
-    //     .attr("class", "pointer")
-    //     .style("fill", "none")
-    //     .style("stroke", "black")
-    //     .attr("marker-end", "url(#circ)")
-    //     .attr("d", function(d) {
-    //         if (d.cx > d.ox) {
-    //             return "M" + d.sx + "," + d.sy + "L" + d.ox + "," + d.oy + " " + d.cx + "," + d.cy;
-    //         } else {
-    //             return "M" + d.ox + "," + d.oy + "L" + d.sx + "," + d.sy + " " + d.cx + "," + d.cy;
-    //         }
-    //     });
+console.log(pie2);
+    pie_svg.selectAll("text").data(pie2)
+        .enter()
+        .append("text")
+        .attr("text-anchor", "middle")
+        .attr("x", function(d,i) {
+            return d.x = Math.cos(d.a) * (radius - 20);
+        })
+        .attr("y", function(d,i) {
+            return d.y = Math.sin(d.a) * (radius - 20);
+        })
+        .text(function(d, i) {
+
+            return item_name[i];
+        })
+        .each(function(d, i) {
+        var bbox = this.getBBox();
+        d.sx = d.x - bbox.width/2 - 2;
+        d.ox = d.x + bbox.width/2 + 2;
+        d.sy = d.oy = d.y + 5;
+        tmp.push(d);
+
+
+        if (i === pie2.length-1) {
+           
+            drawPath(pie_svg, tmp);
+        }
+    });
+
+pie_svg.append("defs").append("marker")
+    .attr("id", "circ")
+    .attr("markerWidth", 6)
+    .attr("markerHeight", 6)
+    .attr("refX", 3)
+    .attr("refY", 3)
+    .append("circle")
+    .attr("cx", 3)
+    .attr("cy", 3)
+    .attr("r", 3);
+
+
 
     //the second pie end
 
-    //remove empty item
-    var puredata = [];
-    for (var i = 0; i < data.length; i++) {
-        if (data[i].caseCount != 0) {
-            var t = {};
-            t.caseCount = data[i].caseCount;
-            t.item = data[i].item;
-            puredata.push(t);
-        }
-    }
 
 
-    y = d3.scale.ordinal().domain(data.map(function(d) {
+    y = d3.scale.ordinal().domain(dataNoEmpty.map(function(d) {
             return d.item;
         }))
-        .rangeRoundBands([0, height], 0.1);
+        .rangeRoundBands([0, bar_height], 0.1);
 
-    bar.data(data)
+    bar.data(dataNoEmpty)
         // .sort(sortItems)
         .transition()
         .delay(function(d, i) {
@@ -402,6 +405,7 @@ d3.json("fack_items.json", function(error, data) {
         .tickSize(0)
         .tickPadding(10);
 
+        //長條圖旁邊的數字
     bars.append("text").text(function(d) {
             return d.caseCount + "件";
         })
@@ -422,6 +426,34 @@ d3.json("fack_items.json", function(error, data) {
         .attr("class", "y axis")
         .attr("transform", "translate(" + x(0) + ",0)")
         .call(yAxis);
+
+         pie_svg.append("text")
+        .attr({
+            "class": "area_name",
+            "x": 0,
+            "y": 0,
+            "text-anchor": "middle"
+        })
+        .text(areaName);
+        console.log(areaName);
 });
+
+function drawPath(pie_svg, pie2){ 
+    console.log(pie2);
+    pie_svg.selectAll("path.pointer").data(pie2).enter()
+    .append("path")
+    .attr("class", "pointer")
+    .style("fill", "none")
+    .style("stroke", "black")
+    .style("stroke-width",.5)
+    .attr("marker-end", "url(#circ)")
+    .attr("d", function(d) {
+        if (d.cx > d.ox) {
+            return "M" + d.sx + "," + d.sy + "L" + d.ox + "," + d.oy + " " + d.cx + "," + d.cy;
+        } else {
+            return "M" + d.ox + "," + d.oy + "L" + d.sx + "," + d.sy + " " + d.cx + "," + d.cy;
+        }
+    });
+}
 
 //bar chart****************************************************
