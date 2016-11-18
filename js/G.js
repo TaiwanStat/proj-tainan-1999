@@ -140,7 +140,7 @@ DB.serviceName = [
 DB.serviceItems = [
 	"違規停車",
 	"9盞以下路燈故障", "10盞以上路燈故障",
-	"妨礙安寧", "場所連續噪音",
+	"妨害安寧", "場所連續噪音",
 	"騎樓舉發",
 	"路面坑洞", "寬頻管線、孔蓋損壞", "路面下陷、凹陷", "路面掏空、塌陷", "路樹傾倒", "地下道積水",
 	"人孔蓋聲響、凹陷、漏水", "人孔蓋凹陷坑洞",
@@ -178,7 +178,7 @@ function _getAreasData(startDate, endDate, areasArray){
 				status: value.status,
 	  		serviceName: value.service_name,
 	  		serviceRequestId: value.service_request_id,
-	  		serviceItems: (value.subproject === '妨礙安寧')? '妨害安寧':value.subproject,
+	  		serviceItems: formatItemName(value.subproject),
 	  		requestedTime: value.requested_datetime,
 	  		finishedTime: value.updated_datetime,
 	  		area: value.area
@@ -194,14 +194,27 @@ function _getAreasData(startDate, endDate, areasArray){
 		console.log(currentArea);
 	}
 	return mergeArray;
+
+
+	function formatItemName(name){
+		var outputName = name;
+
+		if (outputName === '妨礙安寧')
+			outputName = '妨害安寧'
+		else if (outputName == '路面油漬')
+			outputName = '市區道路路面油漬';
+		else if (outputName === '公車動態LED跑馬燈資訊顯示異常')
+			outputName = '公車動態 LED 跑馬燈資訊異常'
+
+		return outputName;
+	}	
 }
 
 
 // Items
-// var textObject = G.getItemsData('2016-07-01', '2016-07-03', ['新化區','新營區']);
+// var textObject = G.getItemsData('2016-06-01', '2016-07-30', ['新化區', '新營區', '鹽水區', '白河區']);
 // document.write(JSON.stringify(textObject));
 // console.log(textObject);
-
 function _getItemsData(startDate, endDate, areas){
 	var itemsDataArray = [];
 	var areaData = this.getAreasData(startDate, endDate, areas);
@@ -212,6 +225,7 @@ function _getItemsData(startDate, endDate, areas){
 			var index = DB.serviceItems.indexOf(value.serviceItems);
 			// DB.serviceItems != value.serviceItems 
 			if( index === -1){
+				console.log(value);
 				console.log(value.serviceItems);
 			} else{
 				itemsDataArray[index].caseCount++ ;
