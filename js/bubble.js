@@ -14,15 +14,18 @@
 		"#FFCCBC", "#FF8A65", "#FF5722", "#E64A19", "#BF360C",
 		"#8D6E63", "#6D4C41"
 	];
-	var area = [
-	    '新化區', '新營區', '鹽水區', '白河區', '柳營區', '後壁區', '東山區', '麻豆區',
-	    '下營區', '六甲區', '官田區', '大內區', '佳里區', '學甲區', '西港區', '七股區',
-	    '將軍區', '北門區', '善化區', '新市區', '安定區', '山上區', '玉井區', '楠西區',
-	    '南化區', '左鎮區', '仁德區', '歸仁區', '關廟區', '龍崎區', '永康區', '東區',
-	    '南區', '北區' , '中西區', '安南區',  '安平區'
-	];
+	// var area = [
+	//     '新化區', '新營區', '鹽水區', '白河區', '柳營區', '後壁區', '東山區', '麻豆區',
+	//     '下營區', '六甲區', '官田區', '大內區', '佳里區', '學甲區', '西港區', '七股區',
+	//     '將軍區', '北門區', '善化區', '新市區', '安定區', '山上區', '玉井區', '楠西區',
+	//     '南化區', '左鎮區', '仁德區', '歸仁區', '關廟區', '龍崎區', '永康區', '東區',
+	//     '南區', '北區' , '中西區', '安南區',  '安平區'
+	// ];
+    var tooltip_div = d3.select("#bubbule_tooltip").append("div")
+        .attr("class", "bubble_tooltip")
+        .attr("opacity", 1);
 	var height = 600;
-	var data;
+	// var data;
 	var json_data;
 	var padding = 6;
 	var json_data;
@@ -31,7 +34,7 @@
 	     if (error){
 	         console.log(error);
 	     }
-	     console.log(data);
+	     // console.log(data);
 	     draw(data);
 	 });
 	//TODO:改成call api 並且改變最早時間
@@ -48,7 +51,7 @@
 				.attr({
 					"width": width,
 					"height": height,
-					"class": "bubble_chart",
+					"id": "bubble_chart",
 				});
 	//繪製option內容
 	option();
@@ -62,10 +65,12 @@
 	d3.select('#scroll_bar').call(
 		d3.slider().min(0).max(duration_day).step(1)
 			.on("slide", function(evt, value) {
+                // console.log("entered!");
 				now_bar_value = value;
-				var duration_set = moment.duration({'days' : value});
+				var duration_set = moment.duration({'days' : now_bar_value});
 				select_date = moment("2016-11-09").add(duration_set);
-				d3.select('#show_date').text(dateGOGO(select_date._d));
+                // console.log(dateGOGO(select_date._d));
+				d3.selectAll("#show_date").text(dateGOGO(select_date._d));
 				//改成call api
 	//			json_data = G.getItemsData('2016-11-09', dateGOGO(select_date._d), ['新化區', '新營區']);
 				d3.json("../../src/faked2.json", function(error, data){
@@ -79,13 +84,42 @@
 	//繪製最初的svg，因為之後都只會更新dom，所以不會再呼叫他了！
 	function draw(data){
 	    // console.log(data);
-	    var detail = data.map(function(d) {
-	        return d.item;
-	    });
-	    console.log(detail);
-	    for(var foo in detail){
-
-	    }
+        var detail = {};
+        for(var foo in DB.serviceItems)
+        {
+            detail[DB.serviceItems[foo]] = "";
+        }
+        console.log(detail);
+        console.log(data);
+        for(var foo in data)
+        {
+            var district ={};
+            for(var bar in DB.areas)
+            {
+                district[DB.areas[bar]] = 0;
+            }
+            // console.log(district);
+            // console.log(district);
+            // console.log("fuck");
+            for(var bar in data[foo].listData)
+            {
+                district[data[foo].listData[bar].area]++;
+            }
+            // district = district.sort();
+            console.log(district);
+            district_sorted = Object.keys(district).sort(function(a,b){return district[b]-district[a]})
+            // console.log(district_sorted);
+            // console.log(123);
+            // console.log(detail[data[foo].item])
+            detail[data[foo].item] = district_sorted[0]  + district[district_sorted[0]] + "件<br>"
+                                        + district_sorted[1]  + district[district_sorted[1]] + "件<br>"
+                                        + district_sorted[2]  + district[district_sorted[2]] + "件<br>";
+            // console.log(district_sorted[0] + ":" + district[district_sorted[0]] + "件<br>"
+                                        // + district_sorted[1] + ":" + district[district_sorted[1]] + "件<br>"
+                                        // + district_sorted[2] + ":" + district[district_sorted[2]] + "件<br>");
+        }
+        console.log(detail)
+	    // console.log(detail);
 	    var filted_data = data_filter(data);
 	    // for(var foo in filter)
 	    console.log(123);
@@ -133,9 +167,6 @@
 							opacity: 0
 	                    })
 						.on("mouseover", function(){
-	                        // console.log(d3.event.pageX);
-	                        // console.log("r:" + d3.select(this).attr("r"))
-
 							d3.select(this).attr({
 								"stroke": "rgba(0, 0, 0, 0.2)",
 								"stroke-width": 3,
@@ -146,18 +177,18 @@
 	                                   .style({
 	                                        "opacity": 0.9
 	                                   });
-	                        tooltip_div.html(d3.select(this).attr("id").slice(2)+"<br>")
-	                                    .style({
-	                                        "left": (d3.event.pageX + 20) + "px",
-	                                        "top": (d3.event.pageY + 20) + "px"
-	                                    })
+	                        tooltip_div.html(d3.select(this).attr("id").slice(2)+":<br>" + detail[d3.select(this).attr("id").slice(2)])
+                                        .style({
+                                            "left": (d3.event.pageX) + "px",
+                                            "top": (d3.event.pageY) + "px"
+                                        });
 	                    })
 						.on("mouseout", function(){
 	                        tooltip_div.transition()
-	                                   .duration(100)
-	                                   .style({
-	                                        "opacity": 0
-	                                   });
+                                   .duration(100)
+                                   .style({
+                                        "opacity": 0
+                                   });
 							d3.select(this).attr({
 									"stroke-width": 1,
 							});
@@ -205,6 +236,30 @@
 	}
 	//更新svg的dom！因為api data的順序已經寫死，所以可以利用其對應關係做出更新
 	function change(data){
+        var detail = {};
+        for(var foo in DB.serviceItems)
+        {
+            detail[DB.serviceItems[foo]] = "";
+        }
+        console.log(detail);
+        console.log(data);
+        for(var foo in data)
+        {
+            var district ={};
+            for(var bar in DB.areas)
+            {
+                district[DB.areas[bar]] = 0;
+            }
+            for(var bar in data[foo].listData)
+            {
+                district[data[foo].listData[bar].area]++;
+            }
+            console.log(district);
+            district_sorted = Object.keys(district).sort(function(a,b){return district[b]-district[a]})
+            detail[data[foo].item] = district_sorted[0]  + district[district_sorted[0]] + "件<br>"
+                                        + district_sorted[1]  + district[district_sorted[1]] + "件<br>"
+                                        + district_sorted[2]  + district[district_sorted[2]] + "件<br>";
+        }
 	    var filted_data = data_filter(data);
 	    var all_event_number = [];
 	    var init_value = 0;
@@ -226,6 +281,33 @@
 	                        );
 	    var draw_node = svg.selectAll("circle")
 	                    .data(bubble_data2)
+                        .on("mouseover", function(){
+                            d3.select(this).attr({
+                                "stroke": "rgba(0, 0, 0, 0.2)",
+                                "stroke-width": 3,
+                            })
+                            d3.select("#description").text(d3.select(this).attr("id").slice(2));
+                            tooltip_div.transition()
+                                       .duration(100)
+                                       .style({
+                                            "opacity": 0.9
+                                       });
+                            tooltip_div.html(d3.select(this).attr("id").slice(2)+":<br>" + detail[d3.select(this).attr("id").slice(2)])
+                                        .style({
+                                            "left": (d3.event.pageX) + "px",
+                                            "top": (d3.event.pageY) + "px"
+                                        });
+                        })
+                        .on("mouseout", function(){
+                            tooltip_div.transition()
+                                   .duration(100)
+                                   .style({
+                                        "opacity": 0
+                                   });
+                            d3.select(this).attr({
+                                    "stroke-width": 1,
+                            });
+                        });
 		draw_node.transition()
 				.duration(1000)
 				.attr({
@@ -360,8 +442,4 @@
 			});
 		d3.select("#show_date").text()
 	}
-
-	var tooltip_div = d3.select("body").append("div")
-	    .attr("class", "tooltip")
-	    .style("opacity", 0);
 })()

@@ -49,7 +49,7 @@ html {
 	display: block;
 	margin: 0em auto;
 	margin-top:0.4em;
-	max-width: 15em;
+	max-width: 20em;
 
 }
 #scroll_bar_container {
@@ -83,16 +83,19 @@ html {
     max-width: 50em;
     display: block;
 }
-div.tooltip {
+div.bubble_tooltip {
     position: absolute;
     text-align: center;
-    width: 60px;
-    height: 28px;
+    /*width: 150px;*/
+    max-width: 400px;
+    /*height: 28px;*/
+    max-height: 100px;
     padding: 2px;
-    font: 12px sans-serif;
-    background: #eee;
-    border: 0px;
-    border-radius: 8px;
+    /*font: 12px sans-serif;*/
+    color: #eee;
+    background: #123;
+    border: 1px;
+    border-radius: 5px;
     pointer-events: none;
 }
 
