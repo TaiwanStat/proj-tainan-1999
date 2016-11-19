@@ -32,8 +32,8 @@ $ ./bin/build -w
 - `canner-core` is your main component which you also use in `handlebar.js`.
 
 #### usage of map / donutChart 
-- [MAP.md](./MAP.md)
-- [donutChart.md](./DonutChart.md)
+- [OVERVIEW.md](./OVERVIEW.md)
+- [FOCUS.md](./FOCUS.md)
 
 ## Developer
 
