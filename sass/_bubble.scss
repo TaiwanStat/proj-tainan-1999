@@ -17,6 +17,7 @@ html {
     float:right;
     display: table-row;
     width: 30em;
+    line-height:14px;
 }
 #title {
     text-align:center;
@@ -99,6 +100,7 @@ div.bubble_tooltip {
     pointer-events: none;
 }
 
+
 @-webkit-keyframes opacity {
     0% {
         opacity: 0;
@@ -115,4 +117,29 @@ div.bubble_tooltip {
     100% {
         opacity: 1;
     }
+}
+input[type="range"]{
+    -webkit-appearance: none;
+    border-radius:2px;
+    width:400px;
+    height:3px;
+    background-image:-webkit-linear-gradient(left ,#222 0%,#222 0%,#222 0%, #eee 100%);
+    box-shadow:inset #eee 0 0 5px;
+    outline : none;
+    transition:.1s;
+    display:inline-block;
+    margin:0em auto;
+    vertical-align:middle;
+    /*border:1px solid #eee;*/
+    /*box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);*/
+}
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  position: relative;
+  width:10px;
+  height:10px;
+  background:#222;
+  border-radius:50%;
+  left: 0%;
+  /*transition-duration: 0.1s*/
 }
