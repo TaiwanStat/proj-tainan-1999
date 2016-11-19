@@ -130,16 +130,27 @@ input[type="range"]{
     display:inline-block;
     margin:0em auto;
     vertical-align:middle;
+    /*left: 100%;*/
     /*border:1px solid #eee;*/
     /*box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);*/
+}
+input[type="range"]::-moz-range-progress{
+    background:#222;
+    border-radius:2px;
+        display:inline-block;
+    margin:0em auto;
+    height:3px;
+    left:0%;
 }
 input[type="range"]::-webkit-slider-thumb{
   -webkit-appearance: none;
   position: relative;
-  width:10px;
-  height:10px;
-  background:#222;
+  width:15px;
+  height:15px;
+  background:#eee;
   border-radius:50%;
+  border:1px solid #cccccc;
+  /*pointer-events: none;*/
   left: 0%;
   /*transition-duration: 0.1s*/
 }

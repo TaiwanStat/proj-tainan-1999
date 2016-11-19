@@ -88,6 +88,8 @@
             'background-image':'-webkit-linear-gradient(left ,#222 0%,#222 '+ n +'%,#eee '+ n +'%, #eee 100%)'
         });
         var duration_set = moment.duration({'days' : (duration_day/100)*n});
+        console.log(n);
+        $('<style>input[type="range"]::-webkit-slider-thumb{left:' + n + '%;}</style>').appendTo("head");
         // console.log((duration_day/100)*n + 1);
         // console.log(n);
         select_date = moment("2016-11-09").add(duration_set);
@@ -413,7 +415,7 @@
 						slider_value = parseInt(slider_value) + (100/duration_day);
                         console.log(slider_value);
                         change_slider(slider_value);
-                        d3.select('input[type="range"]').style("left",slider_value + "%");
+                        $('input').css("left",slider_value + "%");
 	// 					d3.select(".d3-slider-handle")
 	// 						.style({
 	// 							left: function(){
@@ -430,7 +432,7 @@
 						// 	}
 						// 	change(data);
 						// })
-						if(dateGOGO(select_date._d) === dateGOGO(now_date._d)){
+						if(dateGOGO(select_date._d) === dateGOGO(now_date._d)|| slider_value>=100){
 							clearInterval(event);
 						}
 					}else{
