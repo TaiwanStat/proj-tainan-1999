@@ -75,21 +75,21 @@
                 slider_value = slider.val();
                 // if(slider_value)
                 // console.log(slider_value);
-                // change_slider2(slider_value);
+                change_slider2(slider_value);
             });
           });
-    // function change_slider2(n){
-    //     slider.css({
-    //         'background-image':'-webkit-linear-gradient(left ,#222 0%,#222 '+ n +'%,#eee '+ n +'%, #eee 100%)'
-    //     });
-    // }
+    function change_slider2(n){
+        slider.css({
+            'background-image':'-webkit-linear-gradient(left ,#222 0%,#222 '+ n +'%,#eee '+ n +'%, #eee 100%)'
+        });
+    }
     function change_slider(n){
+        // $('#header_id').remove();
         slider.css({
             'background-image':'-webkit-linear-gradient(left ,#222 0%,#222 '+ n +'%,#eee '+ n +'%, #eee 100%)'
         });
         var duration_set = moment.duration({'days' : (duration_day/100)*n});
         console.log(n);
-        $('<style>input[type="range"]::-webkit-slider-thumb{left:' + n + '%;}</style>').appendTo("head");
         // console.log((duration_day/100)*n + 1);
         // console.log(n);
         select_date = moment("2016-11-09").add(duration_set);
@@ -395,65 +395,78 @@
 		return {children: new_data};
 	}
 	//繪製option
+    var clicked = false;
 	function option() {
 		//event紀錄interval事件，將其包於option可助於clearInterval刪除該事件
 		var event;
 		//對三個icon做出相對應的動作
 		d3.select("#play_icon")
 			.on("click", function(){
-				//以set interval來達到輪播更動
-				event = setInterval(function(){
-					//以now_bar_value紀錄當前bar的數值，對齊作加減，假如等於now_data即不再更新
-					if(dateGOGO(select_date._d) != dateGOGO(now_date._d))
-					{
-						var duration_set = moment.duration({'days' : 1});
-						// console.log(select_date);
-						select_date = select_date.add(duration_set);
-						// console.log(dateGOGO(select_date._d));
-						d3.select('#show_date').text(dateGOGO(select_date._d));
-                        console.log(slider_value);
-						slider_value = parseInt(slider_value) + (100/duration_day);
-                        console.log(slider_value);
-                        change_slider(slider_value);
-                        $('input').css("left",slider_value + "%");
-	// 					d3.select(".d3-slider-handle")
-	// 						.style({
-	// 							left: function(){
-	// 								//更新bar的數值，sytle:"left"
-	// //								console.log((now_bar_value / duration_day)*100 + "%")
-	// 								return ((now_bar_value / duration_day)*100) + "%";
-	// 							}
-	// 						});
-					//TODO：改成api call的方式！
-	//					json_data = G.getItemsData('2016-11-09', dateGOGO(select_date._d), ['新化區', '新營區']);
-						// d3.json("../../src/faked2.json", function(error, data){
-						// 	if (error){
-						// 		console.log(error);
-						// 	}
-						// 	change(data);
-						// })
-						if(dateGOGO(select_date._d) === dateGOGO(now_date._d)|| slider_value>=100){
-							clearInterval(event);
-						}
-					}else{
-						clearIntnterval(event);
-					}
-					},2000)
+                if(clicked == false){
+                    clicked = true;
+    				//以set interval來達到輪播更動
+                    // $('<style>input[type="range"]::-webkit-slider-thumb{left:' + 0 + '%;}</style>').appendTo("head");
+    				event = setInterval(function(){
+    					//以now_bar_value紀錄當前bar的數值，對齊作加減，假如等於now_data即不再更新
+                        // $('#header_id').remove();
+    					if(dateGOGO(select_date._d) != dateGOGO(now_date._d) && slider_value<100)
+    					{
+    						var duration_set = moment.duration({'days' : 1});
+    						// console.log(select_date);
+    						select_date = select_date.add(duration_set);
+    						// console.log(dateGOGO(select_date._d));
+    						d3.select('#show_date').text(dateGOGO(select_date._d));
+                            console.log(slider_value);
+    						slider_value = parseInt(slider_value) + (100/duration_day);
+                            console.log(slider_value);
+                            change_slider(parseInt(slider_value));
+                            // console.log(slider_value);
+                            // $('#header_id').remove();
+                            // $('<style id="header_id">input[type="range"]::-webkit-slider-thumb{left:' + parseInt(slider_value) + '%;}</style>').appendTo("head");
+                            x = document.getElementById("slider_input");
+                            x.value = parseInt(slider_value);
+        // 					d3.select(".d3-slider-handle")
+    	// 						.style({
+    	// 							left: function(){
+    	// 								//更新bar的數值，sytle:"left"
+    	// //								console.log((now_bar_value / duration_day)*100 + "%")
+    	// 								return ((now_bar_value / duration_day)*100) + "%";
+    	// 							}
+    	// 						});
+    					//TODO：改成api call的方式！
+    	//					json_data = G.getItemsData('2016-11-09', dateGOGO(select_date._d), ['新化區', '新營區']);
+    						// d3.json("../../src/faked2.json", function(error, data){
+    						// 	if (error){
+    						// 		console.log(error);
+    						// 	}
+    						// 	change(data);
+    						// })
+    						if(dateGOGO(select_date._d) === dateGOGO(now_date._d)|| slider_value>=100){
+    							clearInterval(event);
+    						}
+    					}else{
+    						clearIntnterval(event);
+    					}
+    					},2000)
+                }
 			});
 
 		d3.select("#pause_icon")
 			.on("click", function(){
+                clicked = false;
+                // $('#header_id').remove();
 				clearInterval(event);
 			});
 		d3.select("#stop_icon")
 			.on("click", function(){
+                clicked = false;
 			//因為stop，將bar_value改回0，並更新svg!
-				now_bar_value = 0;
 				d3.select('#show_date').text(dateGOGO(select_date._d));
                 slider_value = 0;
                 console.log(slider_value);
                 change_slider(slider_value)
-                d3.select('input').attr('value',0);
+                x = document.getElementById("slider_input");
+                x.value = parseInt(slider_value);
 				clearInterval(event);
 			});
 		d3.select("#show_date").text()
