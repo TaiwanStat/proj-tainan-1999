@@ -173,13 +173,13 @@ function _select(itemId){
 	this.last.toggleClass('disable');
 	this.now.toggleClass('disable');
 
+	// set hash
+	window.location.hash = itemId ;
+	
 	// select nav item 
 	$('.active').removeClass('active')
 	$('#' + itemId).addClass('active');
-
 	$('html,body').scrollTop(0);
-	// set hash
-	// window.location.hash = itemId ;
 }
 
 function _focusArea(area, i){

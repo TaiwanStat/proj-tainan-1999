@@ -1,6 +1,12 @@
 (function() {
   var service_name = { "違規停車": 0, "路燈故障": 1, "噪音舉發": 2, "騎樓舉發": 3, "道路維修": 4, "交通運輸": 5, "髒亂及污染": 6, "民生管線": 7, "動物救援": 8, "其他": 9 };
+  var width;
+  var height;
+  var lengendXparameter;
+  var lengendYparameter;
 
+  // set donutChart size;
+  setSize();
   d3.json("../../src/fack_areas.json", function(error, data) {
     if (error) {
       console.log(error);
@@ -43,8 +49,6 @@
   //createDonut("all_item.json", "東區" , "column")
   //filename: json filename, name: 區名, column_object: 預計要榜定的tag class
   function createDonut(array, name, column_object, areaIndex) {
-    var width = 450
-    var height = 450;
     var pie = d3.layout.pie();
     var svg = d3.select("." + column_object)
       .append("svg")
@@ -134,7 +138,7 @@
       .attr({
         'id': name.eName,
         'class': 'overview_areaName',
-        "x": width / 2 - 23,
+        "x": width / 2 - 33,
         "y": height - 30
       })
       .text(function(d) {
@@ -159,8 +163,8 @@
       .attr('transform', function(d, i) {
         var height = legendRectSize + legendSpacing;
         var offset = height * lengedColor.length / 2;
-        var horz = 10 * legendRectSize;
-        var vert = i * height + 4.1 * offset;
+        var horz = lengendXparameter * legendRectSize;
+        var vert = i * height + lengendYparameter * offset;
         return 'translate(' + horz + ',' + vert + ')';
       });
 
@@ -188,5 +192,20 @@
       }
     }
     return count;
+  }
+
+  function setSize(){
+    if ( $(window).width() <= 1280){
+      width = 380;
+      height = 380;
+      lengendXparameter = 8.2;
+      lengendYparameter = 3.5;
+    }
+    else{
+      width = 450;
+      height = 450;
+      lengendXparameter = 10;
+      lengendYparameter = 4.1;
+    }
   }
 })()
