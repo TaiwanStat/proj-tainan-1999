@@ -1,61 +1,96 @@
+# Tanian-1999
+
+It&#39;s a Tainan-1999 visulization by Taiwanstat
 
 
-# Summary
-- this is 少量多餐版本
-- 可以繪製bubble chart, 並選擇request的數據!  
+#### Prerequisites
+- [npm](https://www.npmjs.com) ( we assume you have pre-installed [node.js](https://nodejs.org/en/) ).
+- For **`Ubuntu`** , you must have to install `ruby` and `ruby-compass`
+  - command: **`sudo apt install ruby-compass`**
 
-## Usage
 
+## Getting Started
+
+#### Install package
 ```
-git clone https://github.com/chihsuan/proj-tainan-1999.git --branch bubble_chart --single-branch
-
-cd ~/proj-tainan-1999
+npm install -i
 ```
-- python2
-```
-python -m SimpleHTTPServer 8000
-```
-- python3
-```
-python -m http.server 8000
-```
-> and browse the site of 127.0.0.1:8000 in your browser  
 
-## files
-bubble_chart  
-|--index.html  
-|--**main.js**  
-|--main.css  
-|---font-awesome  
-|--G.js  
-|--d3.slider.css  
-|--d3.slider.js  
-|--d3.v3.min.js  
-|--**faked.json**  
-|--**faked2.json**  
-|--index.html  
-|--main.css  
-|--main.js  
+### Usage
 
-- faked.json and faked2.json are faked data, you can edit it or add more faked data to test the effect!  
-- the main.js is my primary code!  
+build sass , js 
+```
+$ gulp
+```
 
-## code 
-- draw(data)  
--- this function provide the method to draw initial bubble chart, and its DOM  
--- theoretically, the input data should be the data of first date, which I set it to 2016-11-09, but it is **not neccessary**
-- change(data)  
--- this function provide the method to update the bubble chart and its DOM  
-- option()  
--- this function provide the method to add the event listener to scroll bar's option button  
-- data_filter(data)  
--- this function provide the method to filter the api's data to the more simple data that pack layout can accept!  
--- **you should use this function to filter data before call draw or change function!**  
+build hbs to html, and watch
+```
+$ ./bin/build -w
+```
 
-## TODOList
-*查看todo tag*
-- [ ] 將其改成api call的方式
-- [ ] 修正文字效果及測試轉場動畫
-- [ ] 左上角文案
-- [ ] merge後微調
-- [ ] 寫出cache版本
+- Use `gulp` to construct it .
+- `canner-core` is your main component which you also use in `handlebar.js`.
+
+#### usage of map / donutChart 
+- [OVERVIEW.md](./OVERVIEW.md)
+- [FOCUS.md](./FOCUS.md)
+
+## Developer
+
+### gulp
+
+build sass , js , then watch
+```
+$ gulp
+``` 
+
+minify css , js
+```
+$ gulp minify-css
+$ gulp minify-js
+```
+
+
+concate all lib **js** or **css** file to one file ,  reduce request
+```
+$ gulp concate-css
+$ gulp concate-js
+```
+
+compress img ( It's usually use on final in your project)
+```
+$ gulp image
+```
+
+### canner-core
+
+build **hbs to html**
+```
+$ ./bin/build 
+```
+
++ -w : watch
++ -m : minify code
+
+## License
+ © [Taiwanstat]()
+
+---
+### About [GoGo Frontend ](GoGoFrontend.md)
+It helps you to construct and orginize your static code , quickly minify html , css , js , img.  
+
+Use [gulp](http://gulpjs.com) and [canner-core](https://www.npmjs.com/package/canner-core)
+( The html's template is [hbs](http://handlebarsjs.com) )
+
++ gulp
++ gulp-compass
++ gulp-concat
++ gulp-imagemin
++ gulp-minify-css
++ gulp-plumber
++ gulp-rename
++ gulp-uglify
++ gulp-clean-css
++ canner-core
++ minist
+

@@ -1,0 +1,3099 @@
+[
+  {
+    "area":"安平區",
+    "caseCount":"14",
+    "listData":[
+      {
+        "description":"安平區州平三街10號 妨礙安寧",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201607020295",
+        "serviceItems":"妨害安寧",
+        "requestedTime":"2016-07-02 21:53:00",
+        "finishedTime":"2016-07-03 07:47:52",
+        "area":"安平區"
+      },
+      {
+        "description":"妨礙安寧",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201607020294",
+        "serviceItems":"妨害安寧",
+        "requestedTime":"2016-07-02 21:52:00",
+        "finishedTime":"2016-07-12 08:44:10",
+        "area":"安平區"
+      },
+      {
+        "description":"安平區世平四街38號噪音舉發",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201607020277",
+        "serviceItems":"場所連續噪音",
+        "requestedTime":"2016-07-02 20:43:00",
+        "finishedTime":"2016-07-03 07:42:55",
+        "area":"安平區"
+      },
+      {
+        "description":"違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020243",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 19:15:00",
+        "finishedTime":"2016-07-03 07:29:17",
+        "area":"安平區"
+      },
+      {
+        "description":"安平區州平三街10號 妨礙安寧",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201607020203",
+        "serviceItems":"妨害安寧",
+        "requestedTime":"2016-07-02 17:04:00",
+        "finishedTime":"2016-07-02 19:36:42",
+        "area":"安平區"
+      },
+      {
+        "description":"安平區安北路149之1號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020139",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 13:47:00",
+        "finishedTime":"2016-07-02 16:53:59",
+        "area":"安平區"
+      },
+      {
+        "description":"安平區華平路656號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020108",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 12:08:00",
+        "finishedTime":"2016-07-02 16:39:08",
+        "area":"安平區"
+      },
+      {
+        "description":"安平樹屋對面紅線區^樹屋停車場 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020081",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 11:07:00",
+        "finishedTime":"2016-07-02 16:38:04",
+        "area":"安平區"
+      },
+      {
+        "description":"安平區永華九街41號與43號前方中間 汙水孔蓋鬆動",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201607020073",
+        "serviceItems":"瓦斯管溝修補、孔蓋鬆動",
+        "requestedTime":"2016-07-02 10:48:00",
+        "finishedTime":"2016-07-05 11:06:55",
+        "area":"安平區"
+      },
+      {
+        "description":"安平區慶平路*永華八街 路面凹陷",
+        "status":"已完工",
+        "serviceName":"道路維修",
+        "serviceRequestId":"UN201607010752",
+        "serviceItems":"路面下陷、凹陷",
+        "requestedTime":"2016-07-01 23:13:00",
+        "finishedTime":"2016-07-05 08:29:00",
+        "area":"安平區"
+      },
+      {
+        "description":"安平區安平路183號旁空地 妨礙安寧",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201607010686",
+        "serviceItems":"妨害安寧",
+        "requestedTime":"2016-07-01 19:07:00",
+        "finishedTime":"2016-07-01 21:26:00",
+        "area":"安平區"
+      },
+      {
+        "description":"景觀燈",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201607010669",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-07-01 18:20:00",
+        "finishedTime":"2016-07-13 09:08:40",
+        "area":"安平區"
+      },
+      {
+        "description":"安平區建平路跟建平十一街口 動物救援",
+        "status":"已完工",
+        "serviceName":"動物救援",
+        "serviceRequestId":"UN201607010539",
+        "serviceItems":"犬貓急難救援",
+        "requestedTime":"2016-07-01 13:19:00",
+        "finishedTime":"2016-07-01 17:36:50",
+        "area":"安平區"
+      },
+      {
+        "description":"安平區華平路650號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010516",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 11:59:00",
+        "finishedTime":"2016-07-01 18:11:00",
+        "area":"安平區"
+      }
+    ]
+  },
+  {
+    "area":"安南區",
+    "caseCount":"18",
+    "listData":[
+      {
+        "description":"安南區安和路一段288巷 漏水",
+        "status":"已完工",
+        "serviceName":"民生管線",
+        "serviceRequestId":"UN201607020312",
+        "serviceItems":"漏水、停水、消防栓漏水或損壞",
+        "requestedTime":"2016-07-02 23:50:00",
+        "finishedTime":"2016-07-05 11:14:24",
+        "area":"安南區"
+      },
+      {
+        "description":"安和路四段439號前 道路維修",
+        "status":"已完工",
+        "serviceName":"道路維修",
+        "serviceRequestId":"UN201607020296",
+        "serviceItems":"寬頻管線、孔蓋損壞",
+        "requestedTime":"2016-07-02 21:57:00",
+        "finishedTime":"2016-07-07 16:01:06",
+        "area":"安南區"
+      },
+      {
+        "description":"安南區安和路四段 路燈故障",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201607020293",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-07-02 21:49:00",
+        "finishedTime":"2016-07-05 10:08:13",
+        "area":"安南區"
+      },
+      {
+        "description":"安南區北汕尾二路800巷9弄 妨礙安寧",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201607020232",
+        "serviceItems":"妨害安寧",
+        "requestedTime":"2016-07-02 18:46:00",
+        "finishedTime":"2016-07-02 19:22:12",
+        "area":"安南區"
+      },
+      {
+        "description":"髒亂及汙染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607020144",
+        "serviceItems":"環境髒亂",
+        "requestedTime":"2016-07-02 14:09:00",
+        "finishedTime":"2016-07-06 08:04:46",
+        "area":"安南區"
+      },
+      {
+        "description":"安南區本田路三段668巷口 消防栓漏水",
+        "status":"已完工",
+        "serviceName":"民生管線",
+        "serviceRequestId":"UN201607020131",
+        "serviceItems":"漏水、停水、消防栓漏水或損壞",
+        "requestedTime":"2016-07-02 13:11:00",
+        "finishedTime":"2016-07-05 11:16:24",
+        "area":"安南區"
+      },
+      {
+        "description":"安南區怡安路二段113之15號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020122",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 12:41:00",
+        "finishedTime":"2016-07-02 16:49:03",
+        "area":"安南區"
+      },
+      {
+        "description":"安南區海佃路一段211號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020060",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 10:29:00",
+        "finishedTime":"2016-07-06 09:51:39",
+        "area":"安南區"
+      },
+      {
+        "description":"安南區北汕尾一路439巷73弄242號 路燈故障",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201607010741",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-07-01 22:12:00",
+        "finishedTime":"2016-07-05 10:03:20",
+        "area":"安南區"
+      },
+      {
+        "description":"安南區北汕尾二路800巷9弄內 妨礙安寧",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201607010725",
+        "serviceItems":"妨害安寧",
+        "requestedTime":"2016-07-01 21:03:00",
+        "finishedTime":"2016-07-02 01:34:12",
+        "area":"安南區"
+      },
+      {
+        "description":"安南區北汕尾二路800巷 連續噪音",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607010697",
+        "serviceItems":"場所連續噪音",
+        "requestedTime":"2016-07-01 19:45:00",
+        "finishedTime":"2016-07-02 21:08:22",
+        "area":"安南區"
+      },
+      {
+        "description":"安南區北汕尾二路800巷 妨礙安寧",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201607010643",
+        "serviceItems":"妨害安寧",
+        "requestedTime":"2016-07-01 17:07:00",
+        "finishedTime":"2016-07-01 18:35:11",
+        "area":"安南區"
+      },
+      {
+        "description":"夜間行車",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607010570",
+        "serviceItems":"號誌故障",
+        "requestedTime":"2016-07-01 14:26:00",
+        "finishedTime":"2016-07-06 16:28:00",
+        "area":"安南區"
+      },
+      {
+        "description":"安南區安昌街275巷69-1號前 路面坑洞",
+        "status":"已完工",
+        "serviceName":"道路維修",
+        "serviceRequestId":"UN201607010489",
+        "serviceItems":"路面坑洞",
+        "requestedTime":"2016-07-01 10:56:00",
+        "finishedTime":"2016-07-15 11:19:59",
+        "area":"安南區"
+      },
+      {
+        "description":"安南區城西街二段389號開始 路燈",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201607010414",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-07-01 08:38:00",
+        "finishedTime":"2016-07-04 09:08:53",
+        "area":"安南區"
+      },
+      {
+        "description":"安南區安和路四段和安和路四段106巷路口 號誌故障",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607010392",
+        "serviceItems":"號誌故障",
+        "requestedTime":"2016-07-01 07:22:00",
+        "finishedTime":"2016-07-01 14:18:00",
+        "area":"安南區"
+      },
+      {
+        "description":"安南區安和路和安豐五街路口 號誌故障",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607010390",
+        "serviceItems":"號誌故障",
+        "requestedTime":"2016-07-01 07:16:00",
+        "finishedTime":"2016-07-01 14:20:00",
+        "area":"安南區"
+      },
+      {
+        "description":"安和路和安豐六街路口 號誌故障",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607010389",
+        "serviceItems":"號誌故障",
+        "requestedTime":"2016-07-01 07:12:00",
+        "finishedTime":"2016-07-01 14:27:00",
+        "area":"安南區"
+      }
+    ]
+  },
+  {
+    "area":"中西區",
+    "caseCount":"71",
+    "listData":[
+      {
+        "description":"中西區慈英街跟觀亭街口(湊火乾串燒店) 空氣污染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607030001",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-02 23:58:00",
+        "finishedTime":"2016-07-03 20:54:37",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區民族路二段76號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020303",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 22:21:00",
+        "finishedTime":"2016-07-03 07:48:56",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區民族路二段違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020299",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 22:04:00",
+        "finishedTime":"2016-07-03 07:48:25",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區正興街*海安路二段 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020290",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 21:33:00",
+        "finishedTime":"2016-07-03 07:45:08",
+        "area":"中西區"
+      },
+      {
+        "description":"民族路二段違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020270",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 20:22:00",
+        "finishedTime":"2016-07-03 07:41:14",
+        "area":"中西區"
+      },
+      {
+        "description":"違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020267",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 20:13:00",
+        "finishedTime":"2016-07-04 18:08:02",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區和善街119-121號 違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020263",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 20:10:00",
+        "finishedTime":"2016-07-02 20:33:00",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區和善街119-121號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020262",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 20:09:00",
+        "finishedTime":"2016-07-04 18:08:32",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區和善街117-119號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020261",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 20:08:00",
+        "finishedTime":"2016-07-04 18:09:07",
+        "area":"中西區"
+      },
+      {
+        "description":"違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020256",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 19:56:00",
+        "finishedTime":"2016-07-02 20:21:00",
+        "area":"中西區"
+      },
+      {
+        "description":"違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020255",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 19:51:00",
+        "finishedTime":"2016-07-02 20:46:00",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區北門路一段 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020253",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 19:50:00",
+        "finishedTime":"2016-07-03 07:33:29",
+        "area":"中西區"
+      },
+      {
+        "description":"違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020250",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 19:48:00",
+        "finishedTime":"2016-07-02 20:21:00",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區西門路二段 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020247",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 19:39:00",
+        "finishedTime":"2016-07-03 07:39:17",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區西華南街違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020246",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 19:38:00",
+        "finishedTime":"2016-07-03 07:39:59",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區南門路243之3號 路燈故障",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201607020194",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-07-02 16:36:00",
+        "finishedTime":"2016-07-05 10:18:03",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區中山路185號.153號.125號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020184",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 16:12:00",
+        "finishedTime":"2016-07-02 19:16:08",
+        "area":"中西區"
+      },
+      {
+        "description":"違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020167",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 15:21:00",
+        "finishedTime":"2016-07-04 18:04:42",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區樹林街二段 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020161",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 15:03:00",
+        "finishedTime":"2016-07-02 19:14:42",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區中正路台灣文學館消防局對面 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020158",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 14:52:00",
+        "finishedTime":"2016-07-02 16:58:46",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區中正路3號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020154",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 14:48:00",
+        "finishedTime":"2016-07-02 16:57:56",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區西華南街65號周邊 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020151",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 14:36:00",
+        "finishedTime":"2016-07-02 16:56:06",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區中正路3號 佔用道路違停",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607020149",
+        "serviceItems":"佔用道路",
+        "requestedTime":"2016-07-02 14:24:00",
+        "finishedTime":"2016-07-02 16:55:00",
+        "area":"中西區"
+      },
+      {
+        "description":"同A-TB-2016-42754併案 違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020147",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 14:21:00",
+        "finishedTime":"2016-07-02 14:32:00",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區民權路二段254號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020110",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 12:16:00",
+        "finishedTime":"2016-07-02 16:40:17",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區民權路二段254號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020110",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 12:16:00",
+        "finishedTime":"2016-07-02 16:40:17",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區民權路二段254號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020110",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 12:16:00",
+        "finishedTime":"2016-07-02 16:40:17",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區府緯街9巷口 妨礙安寧",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201607020109",
+        "serviceItems":"妨害安寧",
+        "requestedTime":"2016-07-02 11:14:00",
+        "finishedTime":"2016-07-02 16:39:39",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區府前路二段208號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020106",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 12:05:00",
+        "finishedTime":"2016-07-02 16:38:39",
+        "area":"中西區"
+      },
+      {
+        "description":"違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020098",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 11:49:00",
+        "finishedTime":"2016-07-02 12:46:00",
+        "area":"中西區"
+      },
+      {
+        "description":"違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020098",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 11:49:00",
+        "finishedTime":"2016-07-02 12:46:00",
+        "area":"中西區"
+      },
+      {
+        "description":"違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020098",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 11:49:00",
+        "finishedTime":"2016-07-02 12:50:00",
+        "area":"中西區"
+      },
+      {
+        "description":"違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020098",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 11:49:00",
+        "finishedTime":"2016-07-02 12:50:00",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區民權路二段254號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020097",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 11:49:00",
+        "finishedTime":"2016-07-02 16:48:24",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區民權路二段254號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020097",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 11:49:00",
+        "finishedTime":"2016-07-02 16:48:24",
+        "area":"中西區"
+      },
+      {
+        "description":"違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020095",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 11:44:00",
+        "finishedTime":"2016-07-02 12:26:00",
+        "area":"中西區"
+      },
+      {
+        "description":"違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020094",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 11:44:00",
+        "finishedTime":"2016-07-02 12:28:00",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區健康路一段30號 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020091",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 11:39:00",
+        "finishedTime":"2016-07-02 16:50:51",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區民族路2段新光三越外面 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020090",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 11:39:00",
+        "finishedTime":"2016-07-04 18:05:28",
+        "area":"中西區"
+      },
+      {
+        "description":"違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020089",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 11:39:00",
+        "finishedTime":"2016-07-02 12:43:00",
+        "area":"中西區"
+      },
+      {
+        "description":"違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020076",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 11:05:00",
+        "finishedTime":"2016-07-02 11:16:00",
+        "area":"中西區"
+      },
+      {
+        "description":"違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020076",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 11:05:00",
+        "finishedTime":"2016-07-02 11:16:00",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區民權路二段254號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020075",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 11:05:00",
+        "finishedTime":"2016-07-02 16:07:15",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區民權路二段254號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020075",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 11:05:00",
+        "finishedTime":"2016-07-02 16:07:15",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區協和街186號旁的防火巷違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020035",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 09:31:00",
+        "finishedTime":"2016-07-02 16:00:45",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區慶中街6號 噪音汙染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607020027",
+        "serviceItems":"其他汙染舉發",
+        "requestedTime":"2016-07-02 09:05:00",
+        "finishedTime":"2016-07-13 16:22:16",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區民權路二段跟永福路口 妨礙安寧",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201607020012",
+        "serviceItems":"妨害安寧",
+        "requestedTime":"2016-07-02 07:55:00",
+        "finishedTime":"2016-07-12 15:51:42",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區民族路二段371號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010742",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 22:15:00",
+        "finishedTime":"2016-07-05 10:00:36",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區民族路二段371號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010742",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 22:15:00",
+        "finishedTime":"2016-07-05 10:00:36",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區海安路二段*正興街口轉角人行道 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010738",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 21:50:00",
+        "finishedTime":"2016-07-02 01:45:21",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區康樂街79號 路燈故障",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201607010711",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-07-01 20:31:00",
+        "finishedTime":"2016-07-05 10:11:01",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區金華路二段148號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010710",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 20:26:00",
+        "finishedTime":"2016-07-02 01:29:46",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區府前路二段237巷26號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010706",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 20:10:00",
+        "finishedTime":"2016-07-01 22:27:02",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區民族路與新美街口 佔用道路/道路散落物",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607010680",
+        "serviceItems":"道路散落物",
+        "requestedTime":"2016-07-01 18:59:00",
+        "finishedTime":"2016-07-12 15:52:57",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區西華南街65號周邊/中山路164巷沿線 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010665",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 18:11:00",
+        "finishedTime":"2016-07-01 22:20:17",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區中山路166號Focus百貨周圍 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010631",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 16:47:00",
+        "finishedTime":"2016-07-01 21:16:50",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區中華西路二646巷口 佔用道路",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010616",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 16:20:00",
+        "finishedTime":"2016-07-01 19:05:47",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區五妃街72號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010601",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 15:52:00",
+        "finishedTime":"2016-07-04 18:06:28",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區中山路125號 143號 185號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010590",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 15:23:00",
+        "finishedTime":"2016-07-01 18:26:51",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區民權路一段226號 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010561",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 14:09:00",
+        "finishedTime":"2016-07-01 18:21:43",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區西華南街65號周邊 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010557",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 14:07:00",
+        "finishedTime":"2016-07-01 18:20:54",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區中華西路跟和緯路口 佔用道路",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607010553",
+        "serviceItems":"佔用道路",
+        "requestedTime":"2016-07-01 13:48:00",
+        "finishedTime":"2016-07-01 18:18:03",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區西門路二段387號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010527",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 12:36:00",
+        "finishedTime":"2016-07-01 18:08:54",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區西門路2段387號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010518",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 12:05:00",
+        "finishedTime":"2016-07-01 18:14:07",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區北門路一段45號前 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010512",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 11:49:00",
+        "finishedTime":"2016-07-01 18:00:39",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區萬昌街37號及39號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010502",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 11:24:00",
+        "finishedTime":"2016-07-01 17:57:04",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區民生路263號到271號後方 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010455",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 10:05:00",
+        "finishedTime":"2016-07-01 17:50:56",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區大勇街101號 空氣汙染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607010409",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-01 08:29:00",
+        "finishedTime":"2016-07-01 11:34:27",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區金華新路43號 場所連續造音",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201607010387",
+        "serviceItems":"場所連續噪音",
+        "requestedTime":"2016-07-01 04:51:00",
+        "finishedTime":"2016-07-01 11:26:28",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區府前路二段149號違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010380",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 00:34:00",
+        "finishedTime":"2016-07-01 06:19:00",
+        "area":"中西區"
+      },
+      {
+        "description":"中西區府前路二段149號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010378",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 00:34:00",
+        "finishedTime":"2016-07-05 10:38:46",
+        "area":"中西區"
+      }
+    ]
+  },
+  {
+    "area":"北區",
+    "caseCount":"33",
+    "listData":[
+      {
+        "description":"北區民德路95巷69號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020300",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 22:04:00",
+        "finishedTime":"2016-07-03 07:46:35",
+        "area":"北區"
+      },
+      {
+        "description":"北區開元路183巷16號 捕抓流浪狗",
+        "status":"已完工",
+        "serviceName":"動物救援",
+        "serviceRequestId":"UN201607020276",
+        "serviceItems":"遊蕩犬隻捕捉管制",
+        "requestedTime":"2016-07-02 20:40:00",
+        "finishedTime":"2016-07-05 08:42:00",
+        "area":"北區"
+      },
+      {
+        "description":"北區南園街109巷35號 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020274",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 20:39:00",
+        "finishedTime":"2016-07-03 07:41:57",
+        "area":"北區"
+      },
+      {
+        "description":"北門路光南對面人行道違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020266",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 20:12:00",
+        "finishedTime":"2016-07-03 07:38:08",
+        "area":"北區"
+      },
+      {
+        "description":"北區北門路敦煌書局 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020257",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 19:58:00",
+        "finishedTime":"2016-07-03 07:31:00",
+        "area":"北區"
+      },
+      {
+        "description":"北區公園北路5號 貓",
+        "status":"已完工",
+        "serviceName":"動物救援",
+        "serviceRequestId":"UN201607020252",
+        "serviceItems":"犬貓急難救援",
+        "requestedTime":"2016-07-02 19:47:00",
+        "finishedTime":"2016-07-05 08:31:43",
+        "area":"北區"
+      },
+      {
+        "description":"北區公園路和成功路口 號誌故障",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607020251",
+        "serviceItems":"號誌故障",
+        "requestedTime":"2016-07-02 19:49:00",
+        "finishedTime":"2016-07-05 08:12:55",
+        "area":"北區"
+      },
+      {
+        "description":"北區文成三路761號 孔蓋噪音",
+        "status":"已完工",
+        "serviceName":"民生管線",
+        "serviceRequestId":"UN201607020227",
+        "serviceItems":"人孔蓋聲響、凹陷、漏水",
+        "requestedTime":"2016-07-02 18:12:00",
+        "finishedTime":"2016-07-11 20:24:00",
+        "area":"北區"
+      },
+      {
+        "description":"北區公園路512號 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020224",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 18:20:00",
+        "finishedTime":"2016-07-02 19:20:45",
+        "area":"北區"
+      },
+      {
+        "description":"北區西門路四段19巷口 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020222",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 18:17:00",
+        "finishedTime":"2016-07-02 19:21:24",
+        "area":"北區"
+      },
+      {
+        "description":"違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020195",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 16:39:00",
+        "finishedTime":"2016-07-02 16:46:00",
+        "area":"北區"
+      },
+      {
+        "description":"違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020195",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 16:39:00",
+        "finishedTime":"2016-07-02 16:46:00",
+        "area":"北區"
+      },
+      {
+        "description":"北區北忠街58巷56號前機車整違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020175",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 15:42:00",
+        "finishedTime":"2016-07-02 19:15:39",
+        "area":"北區"
+      },
+      {
+        "description":"北區開南街169號 妨礙安寧",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201607020104",
+        "serviceItems":"妨害安寧",
+        "requestedTime":"2016-07-02 11:54:00",
+        "finishedTime":"2016-07-02 16:11:34",
+        "area":"北區"
+      },
+      {
+        "description":"北區北園街開元寺前面台電變電箱旁 違規設攤",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607020099",
+        "serviceItems":"佔用道路",
+        "requestedTime":"2016-07-02 11:51:00",
+        "finishedTime":"2016-07-02 16:12:00",
+        "area":"北區"
+      },
+      {
+        "description":"北區小北路*中正南路號誌燈故障",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607020062",
+        "serviceItems":"號誌故障",
+        "requestedTime":"2016-07-02 10:30:00",
+        "finishedTime":"2016-07-05 08:19:00",
+        "area":"北區"
+      },
+      {
+        "description":"北區北門路跟公園北路口 交通疏導",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607020013",
+        "serviceItems":"交通疏導",
+        "requestedTime":"2016-07-02 08:04:00",
+        "finishedTime":"2016-07-02 16:00:04",
+        "area":"北區"
+      },
+      {
+        "description":"北區公園南路356號髒亂及汙染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607010743",
+        "serviceItems":"其他汙染舉發",
+        "requestedTime":"2016-07-01 22:24:00",
+        "finishedTime":"2016-07-04 16:57:08",
+        "area":"北區"
+      },
+      {
+        "description":"北區公園北路132號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010721",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 20:55:00",
+        "finishedTime":"2016-07-02 01:37:10",
+        "area":"北區"
+      },
+      {
+        "description":"北區公園北路132號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010721",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 20:55:00",
+        "finishedTime":"2016-07-02 01:37:10",
+        "area":"北區"
+      },
+      {
+        "description":"北區公園北路132號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010721",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 20:55:00",
+        "finishedTime":"2016-07-02 01:37:10",
+        "area":"北區"
+      },
+      {
+        "description":"北區和緯路二段 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010666",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 18:11:00",
+        "finishedTime":"2016-07-01 21:25:02",
+        "area":"北區"
+      },
+      {
+        "description":"併案A-TB-2016-42578----違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010635",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 16:51:00",
+        "finishedTime":"2016-07-01 17:01:00",
+        "area":"北區"
+      },
+      {
+        "description":"北區成功路8號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010634",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 16:49:00",
+        "finishedTime":"2016-08-16 08:49:00",
+        "area":"北區"
+      },
+      {
+        "description":"北區成功路8號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010634",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 16:49:00",
+        "finishedTime":"2016-08-16 08:49:00",
+        "area":"北區"
+      },
+      {
+        "description":"北區北園街開元寺前面-北園街89號 占用道路",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607010567",
+        "serviceItems":"佔用道路",
+        "requestedTime":"2016-07-01 14:21:00",
+        "finishedTime":"2016-07-01 18:22:00",
+        "area":"北區"
+      },
+      {
+        "description":"北區成功路69號 坑洞",
+        "status":"已完工",
+        "serviceName":"道路維修",
+        "serviceRequestId":"UN201607010491",
+        "serviceItems":"路面坑洞",
+        "requestedTime":"2016-07-01 10:57:00",
+        "finishedTime":"2016-07-04 10:17:40",
+        "area":"北區"
+      },
+      {
+        "description":"北區西門路三段159號前面 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010477",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 10:29:00",
+        "finishedTime":"2016-07-01 17:53:28",
+        "area":"北區"
+      },
+      {
+        "description":"北區正覺街125號 空汙",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607010444",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-01 09:42:00",
+        "finishedTime":"2016-07-02 16:07:27",
+        "area":"北區"
+      },
+      {
+        "description":"北區長北街210巷6弄1號 佔用道路",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607010426",
+        "serviceItems":"佔用道路",
+        "requestedTime":"2016-07-01 09:01:00",
+        "finishedTime":"2016-07-13 08:32:44",
+        "area":"北區"
+      },
+      {
+        "description":"北區和緯路一段157號 妨礙安寧",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201607010399",
+        "serviceItems":"妨害安寧",
+        "requestedTime":"2016-07-01 08:04:00",
+        "finishedTime":"2016-07-01 17:56:32",
+        "area":"北區"
+      },
+      {
+        "description":"北區北園街46巷 噪音",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201607010395",
+        "serviceItems":"妨害安寧",
+        "requestedTime":"2016-07-01 07:52:00",
+        "finishedTime":"2016-07-01 16:36:29",
+        "area":"北區"
+      },
+      {
+        "description":"北區海安路三段245號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010379",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 00:34:00",
+        "finishedTime":"2016-07-18 09:00:58",
+        "area":"北區"
+      }
+    ]
+  },
+  {
+    "area":"南區",
+    "caseCount":"21",
+    "listData":[
+      {
+        "description":"南區西門路一段333巷6-1號 鐵板噪音",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201607020275",
+        "serviceItems":"停電、漏電、電線掉落、孔蓋鬆動",
+        "requestedTime":"2016-07-02 20:29:00",
+        "finishedTime":"2016-07-04 14:54:12",
+        "area":"南區"
+      },
+      {
+        "description":"南區金華路二段76號 空氣汙染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607020272",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-02 20:29:00",
+        "finishedTime":"2016-07-03 21:03:53",
+        "area":"南區"
+      },
+      {
+        "description":"南區金華路二段123號 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020271",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 20:25:00",
+        "finishedTime":"2016-07-03 07:43:39",
+        "area":"南區"
+      },
+      {
+        "description":"文南路沿線兩側違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020233",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 18:49:00",
+        "finishedTime":"2016-07-03 07:28:29",
+        "area":"南區"
+      },
+      {
+        "description":"南區大同路二段406巷11弄12皓^14號之間 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020093",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 11:39:00",
+        "finishedTime":"2016-07-02 16:10:47",
+        "area":"南區"
+      },
+      {
+        "description":"南區金華路二段76號 汙染舉發",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607020082",
+        "serviceItems":"其他汙染舉發",
+        "requestedTime":"2016-07-02 11:17:00",
+        "finishedTime":"2016-07-06 08:50:29",
+        "area":"南區"
+      },
+      {
+        "description":"安南區海佃路一段188巷口 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020057",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 10:28:00",
+        "finishedTime":"2016-07-06 09:42:33",
+        "area":"南區"
+      },
+      {
+        "description":"同UN201607020057 併案 違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020052",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 10:25:00",
+        "finishedTime":"2016-07-02 11:09:00",
+        "area":"南區"
+      },
+      {
+        "description":"南區西門路一段333巷24號 妨礙安寧",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607020015",
+        "serviceItems":"妨害安寧",
+        "requestedTime":"2016-07-02 08:07:00",
+        "finishedTime":"2016-07-02 15:58:18",
+        "area":"南區"
+      },
+      {
+        "description":"南區金華路二段76號 空汙",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607010744",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-01 22:05:00",
+        "finishedTime":"2016-07-03 00:02:58",
+        "area":"南區"
+      },
+      {
+        "description":"南區新興路533巷43弄20號-40多號 路燈故障",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201607010731",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-07-01 21:20:00",
+        "finishedTime":"2016-07-05 10:12:00",
+        "area":"南區"
+      },
+      {
+        "description":"南區大成路一段193巷203號-2 路燈不亮",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201607010723",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-07-01 20:49:00",
+        "finishedTime":"2016-07-05 10:10:00",
+        "area":"南區"
+      },
+      {
+        "description":"文南路沿線兩側違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010701",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 19:56:00",
+        "finishedTime":"2016-07-02 01:17:34",
+        "area":"南區"
+      },
+      {
+        "description":"南區文南路285號 佔用騎樓",
+        "status":"已完工",
+        "serviceName":"騎樓舉發",
+        "serviceRequestId":"UN201607010673",
+        "serviceItems":"騎樓舉發",
+        "requestedTime":"2016-07-01 18:26:00",
+        "finishedTime":"2016-07-02 15:59:11",
+        "area":"南區"
+      },
+      {
+        "description":"汽車違停機車待轉區",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010658",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 17:51:00",
+        "finishedTime":"2016-07-13 14:00:38",
+        "area":"南區"
+      },
+      {
+        "description":"南區西門路一段639號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010641",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 17:05:00",
+        "finishedTime":"2016-07-01 19:07:05",
+        "area":"南區"
+      },
+      {
+        "description":"南區中華西路一段與新和路口 空氣污染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607010599",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-01 15:45:00",
+        "finishedTime":"2016-07-06 11:07:40",
+        "area":"南區"
+      },
+      {
+        "description":"南區新都路353巷巷口 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010554",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 13:54:00",
+        "finishedTime":"2016-07-01 18:19:02",
+        "area":"南區"
+      },
+      {
+        "description":"南區夏林路84號對面 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010507",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 11:34:00",
+        "finishedTime":"2016-07-01 17:59:11",
+        "area":"南區"
+      },
+      {
+        "description":"違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010480",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 10:36:00",
+        "finishedTime":"2016-07-11 16:15:38",
+        "area":"南區"
+      },
+      {
+        "description":"南區國民路133號前面 路面坑洞",
+        "status":"已完工",
+        "serviceName":"道路維修",
+        "serviceRequestId":"UN201607010421",
+        "serviceItems":"路面坑洞",
+        "requestedTime":"2016-07-01 08:54:00",
+        "finishedTime":"2016-07-01 15:57:30",
+        "area":"南區"
+      }
+    ]
+  },
+  {
+    "area":"東區",
+    "caseCount":"62",
+    "listData":[
+      {
+        "description":"東區裕農路572號 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020307",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 22:44:00",
+        "finishedTime":"2016-07-03 07:49:27",
+        "area":"東區"
+      },
+      {
+        "description":"東區大學路西段違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020268",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 20:14:00",
+        "finishedTime":"2016-07-03 07:40:35",
+        "area":"東區"
+      },
+      {
+        "description":"東區崇明路266巷15號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020264",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 20:12:00",
+        "finishedTime":"2016-08-01 21:14:41",
+        "area":"東區"
+      },
+      {
+        "description":"大學路、勝利路交叉口騎樓舉發",
+        "status":"已完工",
+        "serviceName":"騎樓舉發",
+        "serviceRequestId":"UN201607020258",
+        "serviceItems":"騎樓舉發",
+        "requestedTime":"2016-07-02 20:03:00",
+        "finishedTime":"2016-07-03 07:32:35",
+        "area":"東區"
+      },
+      {
+        "description":"東區中華東路一段217巷 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020240",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 19:10:00",
+        "finishedTime":"2016-07-03 07:27:58",
+        "area":"東區"
+      },
+      {
+        "description":"違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020238",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 19:06:00",
+        "finishedTime":"2016-07-02 19:58:00",
+        "area":"東區"
+      },
+      {
+        "description":"違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020237",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 19:05:00",
+        "finishedTime":"2016-07-02 19:58:00",
+        "area":"東區"
+      },
+      {
+        "description":"東區長榮路三段 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020236",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 19:02:00",
+        "finishedTime":"2016-08-01 21:25:03",
+        "area":"東區"
+      },
+      {
+        "description":"違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020235",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 19:01:00",
+        "finishedTime":"2016-07-18 09:21:58",
+        "area":"東區"
+      },
+      {
+        "description":"違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020235",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 19:01:00",
+        "finishedTime":"2016-07-18 09:21:58",
+        "area":"東區"
+      },
+      {
+        "description":"東區裕農路上後甲圓環億哥牛肉湯",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020208",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 17:20:00",
+        "finishedTime":"2016-07-02 19:19:33",
+        "area":"東區"
+      },
+      {
+        "description":"東區仁和路250號前 車輛違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020205",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 17:09:00",
+        "finishedTime":"2016-07-02 19:18:44",
+        "area":"東區"
+      },
+      {
+        "description":"東區勝利路118號 九乘九文具店前方 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020190",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 16:20:00",
+        "finishedTime":"2016-07-02 19:16:27",
+        "area":"東區"
+      },
+      {
+        "description":"東區東安路65號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020174",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 15:40:00",
+        "finishedTime":"2016-08-01 22:16:13",
+        "area":"東區"
+      },
+      {
+        "description":"東區建東街裕農路口 道路散落物",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607020163",
+        "serviceItems":"其他汙染舉發",
+        "requestedTime":"2016-07-02 15:01:00",
+        "finishedTime":"2016-07-03 22:56:27",
+        "area":"東區"
+      },
+      {
+        "description":"東區中華東路一段143號附近(國賓對面) 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020162",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 15:08:00",
+        "finishedTime":"2016-08-01 21:22:58",
+        "area":"東區"
+      },
+      {
+        "description":"東區大同路二段543號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020153",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 14:22:00",
+        "finishedTime":"2016-07-02 16:56:37",
+        "area":"東區"
+      },
+      {
+        "description":"東區裕農路660號旁 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020123",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 12:44:00",
+        "finishedTime":"2016-08-01 21:20:14",
+        "area":"東區"
+      },
+      {
+        "description":"東區裕農路660號旁 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020123",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 12:44:00",
+        "finishedTime":"2016-08-01 21:20:14",
+        "area":"東區"
+      },
+      {
+        "description":"東區裕農路660號旁 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020123",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 12:44:00",
+        "finishedTime":"2016-08-01 21:20:14",
+        "area":"東區"
+      },
+      {
+        "description":"東區崇善路55號前面 妨礙安寧",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201607020118",
+        "serviceItems":"妨害安寧",
+        "requestedTime":"2016-07-02 12:27:00",
+        "finishedTime":"2016-07-02 16:44:25",
+        "area":"東區"
+      },
+      {
+        "description":"東區德光街27號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020117",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 12:31:00",
+        "finishedTime":"2016-07-02 16:42:49",
+        "area":"東區"
+      },
+      {
+        "description":"東區東門路二段372號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020084",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 11:21:00",
+        "finishedTime":"2016-07-02 16:09:01",
+        "area":"東區"
+      },
+      {
+        "description":"東區中華東路二段355號前 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020078",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 11:00:00",
+        "finishedTime":"2016-07-02 16:05:09",
+        "area":"東區"
+      },
+      {
+        "description":"違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020066",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 10:37:00",
+        "finishedTime":"2016-07-18 09:24:40",
+        "area":"東區"
+      },
+      {
+        "description":"東區小東路198巷6弄11號和13號中間 佔用道路",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607020053",
+        "serviceItems":"佔用道路",
+        "requestedTime":"2016-07-02 10:23:00",
+        "finishedTime":"2016-07-02 16:01:27",
+        "area":"東區"
+      },
+      {
+        "description":"東區裕和路272號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010755",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 23:41:00",
+        "finishedTime":"2016-08-01 21:18:54",
+        "area":"東區"
+      },
+      {
+        "description":"東區仁和路76號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010751",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 23:12:00",
+        "finishedTime":"2016-08-01 21:17:46",
+        "area":"東區"
+      },
+      {
+        "description":"東區仁和路76號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010751",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 23:12:00",
+        "finishedTime":"2016-08-01 21:17:46",
+        "area":"東區"
+      },
+      {
+        "description":"東區仁和路76號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010751",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 23:12:00",
+        "finishedTime":"2016-08-01 21:17:46",
+        "area":"東區"
+      },
+      {
+        "description":"東區長榮路一段234巷24號噪音舉發",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201607010740",
+        "serviceItems":"妨害安寧",
+        "requestedTime":"2016-07-01 22:10:00",
+        "finishedTime":"2016-07-02 01:46:52",
+        "area":"東區"
+      },
+      {
+        "description":"東區育樂街35-38號 路燈故障",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201607010730",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-07-01 21:11:00",
+        "finishedTime":"2016-07-05 10:19:21",
+        "area":"東區"
+      },
+      {
+        "description":"東區崇善路873號 妨礙安寧",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201607010726",
+        "serviceItems":"妨害安寧",
+        "requestedTime":"2016-07-01 21:00:00",
+        "finishedTime":"2016-07-02 01:31:06",
+        "area":"東區"
+      },
+      {
+        "description":"東區崇善路25巷55號 空汙",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607010719",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-01 20:42:00",
+        "finishedTime":"2016-07-02 21:17:07",
+        "area":"東區"
+      },
+      {
+        "description":"違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010716",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 20:40:00",
+        "finishedTime":"2016-07-01 21:32:00",
+        "area":"東區"
+      },
+      {
+        "description":"違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010715",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 20:39:00",
+        "finishedTime":"2016-07-01 21:32:00",
+        "area":"東區"
+      },
+      {
+        "description":"違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010714",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 20:39:00",
+        "finishedTime":"2016-07-01 21:31:00",
+        "area":"東區"
+      },
+      {
+        "description":"東區育樂街61號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010713",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 20:39:00",
+        "finishedTime":"2016-08-01 21:16:26",
+        "area":"東區"
+      },
+      {
+        "description":"東區崇學路261巷巷內中間該盞 路燈不亮",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201607010712",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-07-01 20:26:00",
+        "finishedTime":"2016-07-04 09:11:19",
+        "area":"東區"
+      },
+      {
+        "description":"東區東和路(郵局東興路^光明街)違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010708",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 20:16:00",
+        "finishedTime":"2016-07-02 01:28:04",
+        "area":"東區"
+      },
+      {
+        "description":"東區中華東路二段355號 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010704",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 20:01:00",
+        "finishedTime":"2016-07-02 01:25:56",
+        "area":"東區"
+      },
+      {
+        "description":"中華東路三段399巷11弄8號 騎樓舉發",
+        "status":"已完工",
+        "serviceName":"騎樓舉發",
+        "serviceRequestId":"UN201607010694",
+        "serviceItems":"騎樓舉發",
+        "requestedTime":"2016-07-01 19:42:00",
+        "finishedTime":"2016-07-01 21:29:59",
+        "area":"東區"
+      },
+      {
+        "description":"東區裕平路328號旁 空氣汙染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607010670",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-01 18:23:00",
+        "finishedTime":"2016-07-04 09:01:35",
+        "area":"東區"
+      },
+      {
+        "description":"東區東門路二段30號、34號、38號前 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010650",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 17:14:00",
+        "finishedTime":"2016-07-01 18:39:32",
+        "area":"東區"
+      },
+      {
+        "description":"東區林森路近東寧路口 路燈放亮",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201607010640",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-07-01 16:52:00",
+        "finishedTime":"2016-07-05 09:31:00",
+        "area":"東區"
+      },
+      {
+        "description":"東區莊敬路100號 違停",
+        "status":"已完工",
+        "serviceName":"騎樓舉發",
+        "serviceRequestId":"UN201607010607",
+        "serviceItems":"騎樓舉發",
+        "requestedTime":"2016-07-01 15:59:00",
+        "finishedTime":"2016-08-01 21:55:12",
+        "area":"東區"
+      },
+      {
+        "description":"東區莊敬路100號 違停",
+        "status":"已完工",
+        "serviceName":"騎樓舉發",
+        "serviceRequestId":"UN201607010607",
+        "serviceItems":"騎樓舉發",
+        "requestedTime":"2016-07-01 15:59:00",
+        "finishedTime":"2016-08-01 21:55:12",
+        "area":"東區"
+      },
+      {
+        "description":"東區崇善路753號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010548",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 13:29:00",
+        "finishedTime":"2016-08-01 21:50:11",
+        "area":"東區"
+      },
+      {
+        "description":"東區崇善路25巷66號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010544",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 13:24:00",
+        "finishedTime":"2016-08-01 21:48:28",
+        "area":"東區"
+      },
+      {
+        "description":"東區崇善路25巷66號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010544",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 13:24:00",
+        "finishedTime":"2016-08-01 21:48:28",
+        "area":"東區"
+      },
+      {
+        "description":"東區長榮路三段66巷25號和東寧路93巷 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010513",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 11:52:00",
+        "finishedTime":"2016-08-01 21:46:35",
+        "area":"東區"
+      },
+      {
+        "description":"東區崇善十五街和崇善路交叉口 號誌",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607010511",
+        "serviceItems":"號誌故障",
+        "requestedTime":"2016-07-01 11:50:00",
+        "finishedTime":"2016-07-01 16:39:50",
+        "area":"東區"
+      },
+      {
+        "description":"道路維修",
+        "status":"已完工",
+        "serviceName":"道路維修",
+        "serviceRequestId":"UN201607010478",
+        "serviceItems":"路面坑洞",
+        "requestedTime":"2016-07-01 10:31:00",
+        "finishedTime":"2016-07-19 08:21:08",
+        "area":"東區"
+      },
+      {
+        "description":"違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010465",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 10:15:00",
+        "finishedTime":"2016-07-01 10:29:00",
+        "area":"東區"
+      },
+      {
+        "description":"違規停車",
+        "status":"",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010464",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 10:15:00",
+        "finishedTime":"2016-07-01 10:29:00",
+        "area":"東區"
+      },
+      {
+        "description":"違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010463",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 10:15:00",
+        "finishedTime":"2016-07-12 09:58:19",
+        "area":"東區"
+      },
+      {
+        "description":"東區崇善十二街56巷和崇善十三街交叉口 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010451",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 09:52:00",
+        "finishedTime":"2016-07-01 17:59:56",
+        "area":"東區"
+      },
+      {
+        "description":"柏油道路破損，致使雜草叢生。",
+        "status":"已完工",
+        "serviceName":"道路維修",
+        "serviceRequestId":"UN201607010440",
+        "serviceItems":"路面坑洞",
+        "requestedTime":"2016-07-01 09:37:00",
+        "finishedTime":"2016-07-19 08:20:30",
+        "area":"東區"
+      },
+      {
+        "description":"東區勝利路118號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010385",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 03:45:00",
+        "finishedTime":"2016-07-12 10:01:00",
+        "area":"東區"
+      },
+      {
+        "description":"東區勝利路118號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010385",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 03:45:00",
+        "finishedTime":"2016-07-12 10:01:00",
+        "area":"東區"
+      },
+      {
+        "description":"東區勝利路118號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010385",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 03:45:00",
+        "finishedTime":"2016-07-12 10:01:00",
+        "area":"東區"
+      },
+      {
+        "description":"東區府連路223號髒亂及汙染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607010377",
+        "serviceItems":"環境髒亂",
+        "requestedTime":"2016-07-01 00:03:00",
+        "finishedTime":"2016-07-06 14:24:24",
+        "area":"東區"
+      }
+    ]
+  },
+  {
+    "area":"永康區",
+    "caseCount":"29",
+    "listData":[
+      {
+        "description":"違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020311",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 23:22:00",
+        "finishedTime":"2016-07-06 09:52:02",
+        "area":"永康區"
+      },
+      {
+        "description":"違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020310",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 23:15:00",
+        "finishedTime":"2016-07-07 17:09:05",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區中正路633號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020285",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 21:21:00",
+        "finishedTime":"2016-07-06 09:51:19",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區中正南路*尚頂路 路面漏水",
+        "status":"已完工",
+        "serviceName":"民生管線",
+        "serviceRequestId":"UN201607020278",
+        "serviceItems":"漏水、停水、消防栓漏水或損壞",
+        "requestedTime":"2016-07-02 20:51:00",
+        "finishedTime":"2016-07-05 11:15:48",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區中山南路119巷53號 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020172",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 15:34:00",
+        "finishedTime":"2016-07-02 19:15:03",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區小東路679號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020168",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 15:22:00",
+        "finishedTime":"2016-07-11 09:45:22",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區小東路679號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020168",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 15:22:00",
+        "finishedTime":"2016-07-11 09:45:22",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區大橋一街中間 佔用道路",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607020136",
+        "serviceItems":"佔用道路",
+        "requestedTime":"2016-07-02 13:39:00",
+        "finishedTime":"2016-07-02 16:53:27",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區永大二路1號 違反交通規則",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020124",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 12:45:00",
+        "finishedTime":"2016-07-06 09:46:48",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區大灣路870號違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020114",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 12:22:00",
+        "finishedTime":"2016-07-06 09:45:58",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區大橋一街73巷和大橋一街222號交叉T型路口 佔用道路",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020088",
+        "serviceItems":"佔用道路",
+        "requestedTime":"2016-07-02 11:27:00",
+        "finishedTime":"2016-07-02 16:09:58",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區國光三街56號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020080",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 11:14:00",
+        "finishedTime":"2016-07-06 09:47:32",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區公園路(中正南路)和小北路路口 號誌",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607020054",
+        "serviceItems":"號誌故障",
+        "requestedTime":"2016-07-02 09:59:00",
+        "finishedTime":"2016-07-04 15:24:59",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區中央路和中山南路交叉口 號誌",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607020031",
+        "serviceItems":"號誌故障",
+        "requestedTime":"2016-07-02 09:26:00",
+        "finishedTime":"2016-07-04 15:22:27",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區中山南路119巷53號 紅線違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010737",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 22:00:00",
+        "finishedTime":"2016-07-02 01:44:01",
+        "area":"永康區"
+      },
+      {
+        "description":"勝利里勝利街116巷違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010695",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 19:44:00",
+        "finishedTime":"2016-07-01 21:31:58",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區環工路上(外勞便利商店、外勞宿舍)狗屍",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607010675",
+        "serviceItems":"道路散落物",
+        "requestedTime":"2016-07-01 18:36:00",
+        "finishedTime":"2016-07-03 22:55:06",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區大武街33號超商周圍 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010671",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 18:25:00",
+        "finishedTime":"2016-07-01 21:33:20",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區中山南路910號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010629",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 16:45:00",
+        "finishedTime":"2016-07-01 21:15:04",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區中山南路758號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010628",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 16:38:00",
+        "finishedTime":"2016-07-06 09:49:55",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區中華路1號國泰銀行周圍以及21號大眾銀行周邊 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010568",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 14:22:00",
+        "finishedTime":"2016-07-01 18:25:18",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區中山南路119巷53號對面停車場 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010488",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 10:56:00",
+        "finishedTime":"2016-07-01 17:55:06",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區崑大路195號 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010423",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 08:53:00",
+        "finishedTime":"2016-07-01 17:50:07",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區新中街與新民街交叉口 路燈故障",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201607010418",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-07-01 08:48:00",
+        "finishedTime":"2016-07-07 14:25:12",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區中山路226號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010411",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 08:36:00",
+        "finishedTime":"2016-07-15 11:03:12",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區中山路226號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010411",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 08:36:00",
+        "finishedTime":"2016-07-15 11:03:12",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區中山路323號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010410",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 08:33:00",
+        "finishedTime":"2016-07-07 09:22:24",
+        "area":"永康區"
+      },
+      {
+        "description":"永康區中正二街336巷往東橋一路方向 道路散落物",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607010403",
+        "serviceItems":"道路散落物",
+        "requestedTime":"2016-07-01 08:22:00",
+        "finishedTime":"2016-07-01 14:28:14",
+        "area":"永康區"
+      },
+      {
+        "description":"亂丟垃圾",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607010393",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-01 07:26:00",
+        "finishedTime":"2016-07-06 11:42:20",
+        "area":"永康區"
+      }
+    ]
+  },
+  {
+    "area":"龍崎區",
+    "caseCount":"0",
+    "listData":[
+
+    ]
+  },
+  {
+    "area":"關廟區",
+    "caseCount":"2",
+    "listData":[
+      {
+        "description":"關廟區關新路二段462巷口 漏水",
+        "status":"已完工",
+        "serviceName":"民生管線",
+        "serviceRequestId":"UN201607020206",
+        "serviceItems":"漏水、停水、消防栓漏水或損壞",
+        "requestedTime":"2016-07-02 17:13:00",
+        "finishedTime":"2016-07-06 16:30:13",
+        "area":"關廟區"
+      },
+      {
+        "description":"關廟區南雄路一段507號往深坑方向路面凹陷",
+        "status":"已完工",
+        "serviceName":"道路維修",
+        "serviceRequestId":"UN201607020042",
+        "serviceItems":"路面下陷、凹陷",
+        "requestedTime":"2016-07-02 09:32:00",
+        "finishedTime":"2016-07-14 15:56:35",
+        "area":"關廟區"
+      }
+    ]
+  },
+  {
+    "area":"歸仁區",
+    "caseCount":"5",
+    "listData":[
+      {
+        "description":"歸仁區大仁街85號 妨礙安寧",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607020145",
+        "serviceItems":"妨害安寧",
+        "requestedTime":"2016-07-02 14:04:00",
+        "finishedTime":"2016-07-11 10:24:30",
+        "area":"歸仁區"
+      },
+      {
+        "description":"歸仁區台39線凱旋路六甲路口 交通疏導",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607020113",
+        "serviceItems":"交通疏導",
+        "requestedTime":"2016-07-02 11:58:00",
+        "finishedTime":"2016-07-02 16:41:47",
+        "area":"歸仁區"
+      },
+      {
+        "description":"歸仁區南興街和民生二街交叉口 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020072",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 10:53:00",
+        "finishedTime":"2016-07-02 16:50:21",
+        "area":"歸仁區"
+      },
+      {
+        "description":"歸仁區六甲三街7巷39號交通運輸",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607020029",
+        "serviceItems":"號誌故障",
+        "requestedTime":"2016-07-02 09:09:00",
+        "finishedTime":"2016-07-05 15:42:15",
+        "area":"歸仁區"
+      },
+      {
+        "description":"違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010468",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 10:18:00",
+        "finishedTime":"2016-07-12 10:12:23",
+        "area":"歸仁區"
+      }
+    ]
+  },
+  {
+    "area":"仁德區",
+    "caseCount":"2",
+    "listData":[
+      {
+        "description":"仁德區義林八街 空氣污染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607020002",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-02 00:48:00",
+        "finishedTime":"2016-07-03 00:13:14",
+        "area":"仁德區"
+      },
+      {
+        "description":"仁德區忠義路341巷7-21號社區信箱前紅線 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010531",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 12:53:00",
+        "finishedTime":"2016-07-01 18:10:15",
+        "area":"仁德區"
+      }
+    ]
+  },
+  {
+    "area":"左鎮區",
+    "caseCount":"0",
+    "listData":[
+
+    ]
+  },
+  {
+    "area":"南化區",
+    "caseCount":"0",
+    "listData":[
+
+    ]
+  },
+  {
+    "area":"楠西區",
+    "caseCount":"0",
+    "listData":[
+
+    ]
+  },
+  {
+    "area":"玉井區",
+    "caseCount":"1",
+    "listData":[
+      {
+        "description":"玉井區民生路16號 妨礙安寧",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201607020289",
+        "serviceItems":"妨害安寧",
+        "requestedTime":"2016-07-02 21:34:00",
+        "finishedTime":"2016-07-03 07:45:47",
+        "area":"玉井區"
+      }
+    ]
+  },
+  {
+    "area":"山上區",
+    "caseCount":"0",
+    "listData":[
+
+    ]
+  },
+  {
+    "area":"安定區",
+    "caseCount":"0",
+    "listData":[
+
+    ]
+  },
+  {
+    "area":"新市區",
+    "caseCount":"3",
+    "listData":[
+      {
+        "description":"新市區中正路320號速邁樂加油站 妨礙安寧",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201607020119",
+        "serviceItems":"妨害安寧",
+        "requestedTime":"2016-07-02 12:34:00",
+        "finishedTime":"2016-07-02 16:43:22",
+        "area":"新市區"
+      },
+      {
+        "description":"被狗追",
+        "status":"已完工",
+        "serviceName":"動物救援",
+        "serviceRequestId":"UN201607010595",
+        "serviceItems":"遊蕩犬隻捕捉管制",
+        "requestedTime":"2016-07-01 15:39:00",
+        "finishedTime":"2016-07-07 08:54:20",
+        "area":"新市區"
+      },
+      {
+        "description":"新市區豐華里往安定港口方向,南134線上 道路掉落物",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607010441",
+        "serviceItems":"道路散落物",
+        "requestedTime":"2016-07-01 09:36:00",
+        "finishedTime":"2016-07-01 15:07:00",
+        "area":"新市區"
+      }
+    ]
+  },
+  {
+    "area":"善化區",
+    "caseCount":"3",
+    "listData":[
+      {
+        "description":"善化區中山路131號邊 佔用道路",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607020164",
+        "serviceItems":"佔用道路",
+        "requestedTime":"2016-07-02 15:09:00",
+        "finishedTime":"2016-07-02 16:59:47",
+        "area":"善化區"
+      },
+      {
+        "description":"善化區中山路136號對面 雜物",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607010727",
+        "serviceItems":"佔用道路",
+        "requestedTime":"2016-07-01 21:08:00",
+        "finishedTime":"2016-07-15 08:11:29",
+        "area":"善化區"
+      },
+      {
+        "description":"善化區中山路136號 佔用道路",
+        "status":"已完工",
+        "serviceName":"交通運輸",
+        "serviceRequestId":"UN201607010724",
+        "serviceItems":"佔用道路",
+        "requestedTime":"2016-07-01 20:59:00",
+        "finishedTime":"2016-07-02 01:41:45",
+        "area":"善化區"
+      }
+    ]
+  },
+  {
+    "area":"北門區",
+    "caseCount":"0",
+    "listData":[
+
+    ]
+  },
+  {
+    "area":"將軍區",
+    "caseCount":"0",
+    "listData":[
+
+    ]
+  },
+  {
+    "area":"七股區",
+    "caseCount":"0",
+    "listData":[
+
+    ]
+  },
+  {
+    "area":"西港區",
+    "caseCount":"1",
+    "listData":[
+      {
+        "description":"違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010525",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 12:34:00",
+        "finishedTime":"2016-07-12 11:17:04",
+        "area":"西港區"
+      }
+    ]
+  },
+  {
+    "area":"學甲區",
+    "caseCount":"0",
+    "listData":[
+
+    ]
+  },
+  {
+    "area":"佳里區",
+    "caseCount":"6",
+    "listData":[
+      {
+        "description":"佳里區佳東路,緣內多游泳池外汽車道上 道路散落物",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607020199",
+        "serviceItems":"道路散落物",
+        "requestedTime":"2016-07-02 16:51:00",
+        "finishedTime":"2016-07-03 22:59:46",
+        "area":"佳里區"
+      },
+      {
+        "description":"佳里區六合街9號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020130",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 13:08:00",
+        "finishedTime":"2016-07-02 16:52:55",
+        "area":"佳里區"
+      },
+      {
+        "description":"佳里區林園街74-84號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020129",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 13:07:00",
+        "finishedTime":"2016-07-02 16:52:22",
+        "area":"佳里區"
+      },
+      {
+        "description":"佳里區忠孝東路53號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020127",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 13:03:00",
+        "finishedTime":"2016-07-02 16:51:47",
+        "area":"佳里區"
+      },
+      {
+        "description":"佳里區佳興國中斜對面100公尺 路燈不亮",
+        "status":"未處理",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201607010591",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-07-01 15:17:00",
+        "finishedTime":"",
+        "area":"佳里區"
+      },
+      {
+        "description":"佳里區義民街256號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010581",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 14:59:00",
+        "finishedTime":"2016-07-12 11:21:12",
+        "area":"佳里區"
+      }
+    ]
+  },
+  {
+    "area":"大內區",
+    "caseCount":"1",
+    "listData":[
+      {
+        "description":"大內區石仔瀨180號 停電",
+        "status":"已完工",
+        "serviceName":"民生管線",
+        "serviceRequestId":"UN201607020007",
+        "serviceItems":"停電、漏電、電線掉落、孔蓋鬆動",
+        "requestedTime":"2016-07-02 03:48:00",
+        "finishedTime":"2016-07-04 14:52:18",
+        "area":"大內區"
+      }
+    ]
+  },
+  {
+    "area":"官田區",
+    "caseCount":"0",
+    "listData":[
+
+    ]
+  },
+  {
+    "area":"六甲區",
+    "caseCount":"3",
+    "listData":[
+      {
+        "description":"六甲區菁埔里252號 路燈",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201607020016",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-07-02 08:09:00",
+        "finishedTime":"2016-07-04 17:05:23",
+        "area":"六甲區"
+      },
+      {
+        "description":"六甲區台一線右轉進去六甲區北上方向 道路散落物",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607010659",
+        "serviceItems":"道路散落物",
+        "requestedTime":"2016-07-01 17:46:00",
+        "finishedTime":"2016-07-03 23:01:23",
+        "area":"六甲區"
+      },
+      {
+        "description":"六甲區中山路43巷/中正路485巷 違停",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010652",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 17:41:00",
+        "finishedTime":"2016-07-01 21:19:43",
+        "area":"六甲區"
+      }
+    ]
+  },
+  {
+    "area":"下營區",
+    "caseCount":"0",
+    "listData":[
+
+    ]
+  },
+  {
+    "area":"麻豆區",
+    "caseCount":"1",
+    "listData":[
+      {
+        "description":"麻豆區磚井里21之2號 妨礙安寧",
+        "status":"已完工",
+        "serviceName":"噪音舉發",
+        "serviceRequestId":"UN201607010386",
+        "serviceItems":"妨害安寧",
+        "requestedTime":"2016-07-01 04:12:00",
+        "finishedTime":"2016-07-01 17:44:43",
+        "area":"麻豆區"
+      }
+    ]
+  },
+  {
+    "area":"東山區",
+    "caseCount":"1",
+    "listData":[
+      {
+        "description":"東山區嶺南里 路燈故障",
+        "status":"已完工",
+        "serviceName":"路燈故障",
+        "serviceRequestId":"UN201607010718",
+        "serviceItems":"9盞以下路燈故障",
+        "requestedTime":"2016-07-01 20:44:00",
+        "finishedTime":"2016-07-04 08:24:17",
+        "area":"東山區"
+      }
+    ]
+  },
+  {
+    "area":"後壁區",
+    "caseCount":"0",
+    "listData":[
+
+    ]
+  },
+  {
+    "area":"柳營區",
+    "caseCount":"0",
+    "listData":[
+
+    ]
+  },
+  {
+    "area":"白河區",
+    "caseCount":"0",
+    "listData":[
+
+    ]
+  },
+  {
+    "area":"鹽水區",
+    "caseCount":"1",
+    "listData":[
+      {
+        "description":"鹽水區井水里19號 貓咪受困",
+        "status":"已完工",
+        "serviceName":"動物救援",
+        "serviceRequestId":"UN201607020229",
+        "serviceItems":"犬貓急難救援",
+        "requestedTime":"2016-07-02 18:23:00",
+        "finishedTime":"2016-07-04 15:15:08",
+        "area":"鹽水區"
+      }
+    ]
+  },
+  {
+    "area":"新營區",
+    "caseCount":"7",
+    "listData":[
+      {
+        "description":"違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020148",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 14:23:00",
+        "finishedTime":"2016-07-08 10:14:35",
+        "area":"新營區"
+      },
+      {
+        "description":"反應 生達化學製藥廠 空氣污染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607020006",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-02 02:22:00",
+        "finishedTime":"2016-07-02 21:06:40",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區東興三街22巷15號 空氣污染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607020004",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-02 00:59:00",
+        "finishedTime":"2016-07-02 21:09:11",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區開元路168號 空氣汙染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607010693",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-01 19:38:00",
+        "finishedTime":"2016-07-04 09:23:46",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區土庫里生達製藥 空氣汙染",
+        "status":"已完工",
+        "serviceName":"髒亂及汙染",
+        "serviceRequestId":"UN201607010674",
+        "serviceItems":"空氣汙染",
+        "requestedTime":"2016-07-01 18:32:00",
+        "finishedTime":"2016-07-04 09:07:04",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區國道一號南下新營休息區 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010459",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 10:11:00",
+        "finishedTime":"2016-07-04 09:35:33",
+        "area":"新營區"
+      },
+      {
+        "description":"新營區國道一號南下新營休息區 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607010459",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-01 10:11:00",
+        "finishedTime":"2016-07-04 09:35:33",
+        "area":"新營區"
+      }
+    ]
+  },
+  {
+    "area":"新化區",
+    "caseCount":"1",
+    "listData":[
+      {
+        "description":"新化區信義路169號 違規停車",
+        "status":"已完工",
+        "serviceName":"違規停車",
+        "serviceRequestId":"UN201607020156",
+        "serviceItems":"違規停車",
+        "requestedTime":"2016-07-02 14:50:00",
+        "finishedTime":"2016-07-02 16:57:04",
+        "area":"新化區"
+      }
+    ]
+  }
+]

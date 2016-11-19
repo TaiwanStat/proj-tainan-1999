@@ -1,0 +1,31 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+body,
+html,
+div,
+p,
+img,
+a,
+h1,
+h2,
+h3,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+
+  /* img elements 圖片元素 */
+  border: medium none;
+  vertical-align: baseline;
+  background: transparent;
+  // font-family: "微軟正黑體","Helvetica Neue",Helvetica,Arial,"Heiti TC","Microsoft JhengHei","Microsoft Yahei","微軟雅黑",sans-serif;
+}
+
+body {
+  line-height: 1;
+}

@@ -1,0 +1,54 @@
+.header{
+	@extend %flex_align_center;
+	@extend %section_setting;
+	justify-content: space-between;
+
+	letter-spacing: $letter-spacing-s;
+  border-bottom: solid 1px $gray;
+
+	.header_left{
+		@extend %flex_align_center;
+
+		> img{
+			width: 100px;
+		}
+
+		#header_title{
+			letter-spacing: $letter-spacing-m;
+	    font-weight: bolder;
+	    font-size: 27px;
+	    margin-top: 9px;
+		}
+	}
+
+	ul.header_right{
+		@extend %position_relative;
+		@extend %flex_align_center;
+		justify-content: space-around;
+		align-self: flex-end;
+		width: 35%;
+    top: 5px;
+	}
+
+	li.item{
+		@extend %flex_align_center;
+		align-self: flex-end;
+		color: $gray;
+
+		> img{
+			width:20%
+		}
+
+		> p{
+			@extend %position_relative;
+			top: -3px;
+			padding-left: 5px;
+		}
+
+		&:hover{
+			cursor: pointer;
+			color: $black;
+		}
+	}
+
+}

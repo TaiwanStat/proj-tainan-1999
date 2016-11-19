@@ -1,42 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>pilikapilirara</title>
-	<script src="d3.v3.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="d3.slider.js"></script>
-    <link rel="stylesheet" href="d3.slider.css">
-    <link rel="stylesheet" href="main.css">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
-	<script src="G.js"></script>
+<html style="height:100%;width:100%;margin:0px;"><head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="Tainan-1999-Open" content="yes"><link rel="stylesheet" href="./lib/normalize.min.css"><link href="http://fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet"><!-- bubble --><link rel="stylesheet" href="./src/d3.slider.css"><link rel="stylesheet" href="src/font-awesome/css/font-awesome.min.css">
+  <title> Tainan-1999</title>
+  <link rel="stylesheet" href="./dist/css/index.css">
+
 </head>
 <body>
-	<div id = "super_container">
-		<div id="title_container">
-<!--			<div id="desc"-->
-			<span id="title">testtest</span>
-			<div id="scroll_container">
-				<div id="show_date">2016-11-09</div>
-				<div id="scroll_bar_container">
-					<div id="scroll_bar"></div>
-				</div>
-				<div id="option_container">
-					<div id="scroll_bar_option">
-						<i id="play_icon" class="fa fa-play fa"></i>
-						<i id="pause_icon" class="fa fa-pause fa"></i>
-						<i id="stop_icon" class="fa fa-stop fa"></i>
-					</div>
-				</div>
-			</div>
-		</div>
-        <br>
-        <div id="show">
-            <div id="description" align="center" style="font-size:2em">違規停車</div>
-    		<div id="chart"></div>
-        </div>
-	</div>
-</body>
-	<script src="main.js"></script>
-</html>
+	<header class="header"><div class="header_left"><img src="./dist/img/color.jpg"><div><p>台南市政府</p><h1 id="header_title">OPEN 19999 統計資訊</h1></div></div><ul class="header_right"><li class="item" id="item_overview"><img src="./dist/img/search.svg"><p>各區比較</p></li><li class="item" id="item_focus"><img src="./dist/img/search.svg"><p>地圖查詢</p></li><li class="item" id="item_bubble"><img src="./dist/img/search.svg"><p>泡泡圖唷</p></li></ul></header>
+	<section class="section" id="overview">
+		<div class="row">  <div class="column"></div></div>	</section>
+
+	<section class="section disable" id="focus">
+		<div id="pie-chart"></div><div id="bar-chart"></div>	</section>
+
+	<section class="section disable" id="bubble">
+		<div id="super_container"><div id="title_container"><span id="title">testtest</span><div id="scroll_container"><div id="show_date">2016-11-09</div><div id="scroll_bar_container"><div id="scroll_bar"></div></div><div id="option_container"><div id="scroll_bar_option"><i id="play_icon" class="fa fa-play fa"></i><i id="pause_icon" class="fa fa-pause fa"></i><i id="stop_icon" class="fa fa-stop fa"></i></div></div></div></div>      <br>      <div id="show">          <div id="description" align="center" style="font-size:2em">違規停車</div>  <div id="bubble_chart"></div>      </div></div>	</section>
+
+<!-- <img src = "./dist/img/color.jpg"> -->
+
+
+<script type="text/javascript" src="./src/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="js/G.js"></script>
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript" src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
+<script src="./src/d3.slider.js"></script>
+
+<script type="text/javascript" src="./dist/js/index.js"></script>
+<script type="text/javascript" src="./dist/js/overview.js"></script>
+<script type="text/javascript" src="./dist/js/focus.js"></script>
+<script type="text/javascript" src="./dist/js/bubble.js"></script>
+</body></html>
