@@ -1,0 +1,63 @@
+@import "compass/support";
+@import "compass/css3";
+@import "reset";
+
+// -----------------
+// PARAMETER
+// -----------------
+
+
+$black: #3d3d3d;
+$gray: #d3d3d5;
+$orange: #f18002;
+
+$letter-spacing-s: 2px ;
+$letter-spacing-m: 4px ;
+
+body{
+	color: $black;
+}
+
+
+// -----------------
+// MODULE
+// -----------------
+
+%position_relative{
+	position: relative;
+}
+
+%section_setting{
+	width: 90%;
+  padding: 10px 5px;
+  margin: auto;
+}
+
+%flex_align_center{
+	display: flex;
+	align-items: center;
+}
+
+%all_center{
+	display:flex;
+	align-items:center ;
+	justify-content:center;
+}
+
+
+@mixin setSize($width , $height) {
+  width: $width ;
+  height: $height ;
+}
+
+@mixin addHeight($a , $b){
+  height: -webkit-calc(#{$a} + #{$b});
+  height:    -moz-calc(#{$a} + #{$b});
+  height:         calc(#{$a} + #{$b});
+}
+
+@mixin transition($property,$duration,$timing){
+	@include transition-property($property);
+  @include transition-duration($duration);
+  @include transition-timing-function($timing);
+}

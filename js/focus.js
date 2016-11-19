@@ -57,7 +57,7 @@ var count = 0;
 var sum = 0;
 
 
-d3.json("fack_areas.json", function(error, data) {
+d3.json("../../src/fack_areas.json", function(error, data) {
     if (error) {
         console.log(error);
     }
@@ -154,7 +154,7 @@ d3.json("fack_areas.json", function(error, data) {
 
 
 //bar chart****************************************************
-d3.json("fack_items.json", function(error, data) {
+d3.json("../../src/fack_items.json", function(error, data) {
 
     // console.log(data);
     // console.log(data);

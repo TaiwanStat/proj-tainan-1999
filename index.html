@@ -1,12 +1,31 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
+<html style="height:100%;width:100%;margin:0px;"><head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="Tainan-1999-Open" content="yes"><link rel="stylesheet" href="./lib/normalize.min.css"><link href="http://fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet">
+  <title> Tainan-1999</title>
+  <link rel="stylesheet" href="./dist/css/index.css">
+
+</head>
 <body>
-	<div id="pie-chart"></div>
-	<div id ="bar-chart"></div>
-    <script src="https://d3js.org/d3.v3.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-    <script type="text/javascript" src="G.js"></script>
-    <link href="http://fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet">
-    <script type="text/javascript" src="index.js"></script>
-    <link rel="stylesheet" href="style.css">
-</body>
+	<header class="header"><div class="header_left"><img src="./dist/img/color.jpg"><div><p>台南市政府</p><h1 id="header_title">OPEN 19999 統計資訊</h1></div></div><ul class="header_right"><li class="item" id="item_overview"><img src="./dist/img/search.svg"><p>各區比較</p></li><li class="item" id="item_focus"><img src="./dist/img/search.svg"><p>地圖查詢</p></li><li class="item" id="item_bubble"><img src="./dist/img/search.svg"><p>泡泡圖唷</p></li></ul></header>
+	<section class="section" id="overview">
+		<div class="row">  <div class="column"></div></div>	</section>
+
+	<section class="section disable" id="focus">
+		<div id="pie-chart"></div><div id="bar-chart"></div>	</section>
+
+	<section class="section disable" id="bubble">
+	</section>
+
+<!-- <img src = "./dist/img/color.jpg"> -->
+
+
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript" src="http://d3js.org/topojson.v1.min.js"></script>
+<script type="text/javascript" src="./src/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="js/G.js"></script>
+
+<script type="text/javascript" src="./dist/js/index.js"></script>
+<script type="text/javascript" src="./dist/js/focus.js"></script>
+<script type="text/javascript" src="./dist/js/overview.js"></script>
+</body></html>

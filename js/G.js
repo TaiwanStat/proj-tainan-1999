@@ -32,17 +32,17 @@
 listData:
 {
 	description: "大內區環湖里57-2號前面 路燈故障",
-	status: "已完工",
-	serviceName: "民生管線",
-	serviceRequestId: "UN201607200642",
-	area: "大內區",
-	serviceItem: "9盞以下路燈故障",
-	updateTime: "2016-07-22 10:57:40",
-	requestedTime": "2016-07-20 14:27:00"
+  status: "已完工",
+  serviceName: "民生管線",
+  serviceRequestId: "UN201607200642",
+  area: "大內區",
+  serviceItem: "9盞以下路燈故障",
+  updateTime: "2016-07-22 10:57:40",
+  requestedTime": "2016-07-20 14:27:00"
 }
 
 
-Global fun:
+Global function:
 
 * It can choose 'serveceName' *
 @getAPIsearch(startDate, endDate, area, serviceName)
@@ -67,8 +67,6 @@ Data 測試：
 // 若是不放service-name 會搜尋滿久的。
 // 一直error loading
 
-先設立一種data取用方式 取用api --> 先幫學弟抓好 overview 所需資料 --> 輸入時間所需資料
-
 // 約超過35秒會要求逾時
 
 */
@@ -77,6 +75,8 @@ var G = {
 	last: $('#overview'),
 	now: $('#overview'),
 	select: _select,
+	colorServiceName: [],
+	colorServiceItem: [],
 	getAreasData: _getAreasData,
 	getItemsData: _getItemsData
 };
@@ -86,11 +86,37 @@ var DB = {
 	url : "http://1999.tainan.gov.tw:83/api/",
 	areasTotal : 37,
 	areas: [],
+	areasE: {},
 	serviceName: [],
 	serviceItems: [],
 	monthAreaData: [],
 	monthItemsData: []
 }
+
+G.colorServiceName = [
+	"#E57373",
+	"#DCE775",
+	"#F06292",
+	"#BA68C8",
+	"#7986CB",
+	"#4DB6AC",
+	"#81C784",
+	"#FF8A65",
+	"#A1887F"
+]
+
+G.colorServiceItem = [
+	"#E57373",
+	"#D4E157","#CDDC39",
+	"#AB47BC","#8E24AA",
+	"#BA68C8",
+	"#9FA8DA","#7986CB","#5C6BC0","#3F51B5","#3949AB","#303F9F",
+	"#283593","#1A237E",
+	"#B2DFDB","#4DB6AC","#009688","#00796B","#004D40",
+	"#A5D6A7","#81C784","#66BB6A","#66BB6A","#43A047","#388E3C","#2E7D32",
+	"#FFCCBC","#FF8A65","#FF5722","#E64A19","#BF360C",
+	"#8D6E63","#6D4C41"
+];
 
 DB.areas = [
 	'新化區', '新營區', '鹽水區', '白河區', '柳營區', '後壁區', '東山區', '麻豆區', 
@@ -99,6 +125,19 @@ DB.areas = [
 	'南化區', '左鎮區', '仁德區', '歸仁區', '關廟區', '龍崎區', '永康區', '東區',
 	'南區', '北區' , '中西區', '安南區',  '安平區'
 ];
+
+DB.areasE = {
+	'新化區':'Xinhua', '新營區':'Xinying', '鹽水區':'Yanshui', '白河區':'Baihe',
+  '柳營區':'Liuying', '後壁區':'Houbi', '東山區':'Dongshan', '麻豆區':'Madou',
+  '下營區':'Xiaying', '六甲區':'Liujia', '官田區':'Guantian', '大內區':'Danei',
+  '佳里區':'Jiali', '學甲區':'Xuejia', '西港區':'Xigang', '七股區':'Qigu',
+  '將軍區':'Jiangjun', '北門區':'Beimen', '善化區':'Shanhua', '新市區':'Xinshi',
+  '安定區':'Anding', '山上區':'Shanshang', '玉井區':'Yujing', '楠西區':'Nanxi',
+  '南化區':'Nanhua', '左鎮區':'Zuozhen', '仁德區':'Rende', '歸仁區':'Guiren',
+  '關廟區':'Guanmiao', '龍崎區':'Longqi', '永康區':'Yongkang', '東區':'East',
+  '南區':'South', '北區':'North' , '中西區':'WestCentral', '安南區':'Annan',
+  '安平區':'Anping' , '全區':'All'
+}
 
 DB.serviceName = [
 	"違規停車",
@@ -115,7 +154,7 @@ DB.serviceName = [
 DB.serviceItems = [
 	"違規停車",
 	"9盞以下路燈故障", "10盞以上路燈故障",
-	"妨礙安寧", "場所連續噪音",
+	"妨害安寧", "場所連續噪音",
 	"騎樓舉發",
 	"路面坑洞", "寬頻管線、孔蓋損壞", "路面下陷、凹陷", "路面掏空、塌陷", "路樹傾倒", "地下道積水",
 	"人孔蓋聲響、凹陷、漏水", "人孔蓋凹陷坑洞",
@@ -153,7 +192,7 @@ function _getAreasData(startDate, endDate, areasArray){
 				status: value.status,
 	  		serviceName: value.service_name,
 	  		serviceRequestId: value.service_request_id,
-	  		serviceItems: (value.subproject === '妨礙安寧')? '妨害安寧':value.subproject,
+	  		serviceItems: formatItemName(value.subproject),
 	  		requestedTime: value.requested_datetime,
 	  		finishedTime: value.updated_datetime,
 	  		area: value.area
@@ -168,13 +207,28 @@ function _getAreasData(startDate, endDate, areasArray){
 
 		console.log(currentArea);
 	}
-	// ask --> 明明是異步 why 成功？
 	return mergeArray;
+
+
+	function formatItemName(name){
+		var outputName = name;
+
+		if (outputName === '妨礙安寧')
+			outputName = '妨害安寧'
+		else if (outputName == '路面油漬')
+			outputName = '市區道路路面油漬';
+		else if (outputName === '公車動態LED跑馬燈資訊顯示異常')
+			outputName = '公車動態 LED 跑馬燈資訊異常'
+
+		return outputName;
+	}	
 }
 
 
 // Items
-// console.log(G.getItemsData('2016-07-01', '2016-07-03', ['新化區','新營區']));
+// var textObject = G.getItemsData('2016-06-01', '2016-07-30', ['新化區', '新營區', '鹽水區', '白河區']);
+// document.write(JSON.stringify(textObject));
+// console.log(textObject);
 function _getItemsData(startDate, endDate, areas){
 	var itemsDataArray = [];
 	var areaData = this.getAreasData(startDate, endDate, areas);
@@ -185,6 +239,7 @@ function _getItemsData(startDate, endDate, areas){
 			var index = DB.serviceItems.indexOf(value.serviceItems);
 			// DB.serviceItems != value.serviceItems 
 			if( index === -1){
+				console.log(value);
 				console.log(value.serviceItems);
 			} else{
 				itemsDataArray[index].caseCount++ ;
