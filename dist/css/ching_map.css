@@ -1,1 +1,0 @@
-.subunit{-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform}.subunit:active,.subunit:focus,.subunit:hover{animation:hover_animations;animation-duration:.5s;animation-direction:alternate}@keyframes hover_animations{0%{opacity:0;stroke-width:4}100%{opacity:1;stroke-width:.5}}
