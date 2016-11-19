@@ -13,10 +13,17 @@ var color = [
 	"#FFCCBC", "#FF8A65", "#FF5722", "#E64A19", "#BF360C",
 	"#8D6E63", "#6D4C41"
 ];
+var area = [
+    '新化區', '新營區', '鹽水區', '白河區', '柳營區', '後壁區', '東山區', '麻豆區',
+    '下營區', '六甲區', '官田區', '大內區', '佳里區', '學甲區', '西港區', '七股區',
+    '將軍區', '北門區', '善化區', '新市區', '安定區', '山上區', '玉井區', '楠西區',
+    '南化區', '左鎮區', '仁德區', '歸仁區', '關廟區', '龍崎區', '永康區', '東區',
+    '南區', '北區' , '中西區', '安南區',  '安平區'
+];
 var height = 600;
 var data;
 var json_data;
-var padding = 2;
+var padding = 6;
 var json_data;
 //parser data, 之後將改成call api的方式, 不需要d3.json
  d3.json("faked.json", function(error, data){
@@ -70,8 +77,33 @@ d3.select('#scroll_bar').call(
 );
 //繪製最初的svg，因為之後都只會更新dom，所以不會再呼叫他了！
 function draw(data){
+    // console.log(data);
+    var detail = data.map(function(d) {
+        return d.item;
+    });
+    console.log(detail);
+    for(var foo in detail){
 
-    bubble_data = bubble.nodes(data_filter(data))
+    }
+    var filted_data = data_filter(data);
+    // for(var foo in filter)
+    console.log(123);
+    console.log(filted_data.children);
+    var all_event_number = [];
+    var init_value = 0;
+    var show_text;
+    for(var foo in filted_data.children){
+        if(filted_data.children[foo].value>=init_value){
+            init_value = filted_data.children[foo].value;
+            show_text = filted_data.children[foo].item;
+        }
+        all_event_number.push(filted_data.children[foo].value);
+    };
+    d3.select("#description").text(show_text);
+    console.log(all_event_number);
+    var mean = d3.quantile(all_event_number,0.1);
+    console.log(mean);
+    bubble_data = bubble.nodes(filted_data)
                         .filter(
                             function(d){
                                 return d.parent;
@@ -95,20 +127,38 @@ function draw(data){
                             return d.item_color;
                         },
 						id: function(d, i){
-							return d.item;
+							return "id" + d.item;
 						},
 						opacity: 0
                     })
 					.on("mouseover", function(){
+                        // console.log(d3.event.pageX);
+                        // console.log("r:" + d3.select(this).attr("r"))
+
 						d3.select(this).attr({
 							"stroke": "rgba(0, 0, 0, 0.2)",
-							"stroke-width": 2,
+							"stroke-width": 3,
 						})
-						d3.select("#description").text(d3.select(this).attr("id"));
-					})
+						d3.select("#description").text(d3.select(this).attr("id").slice(2));
+                        tooltip_div.transition()
+					               .duration(100)
+                                   .style({
+                                        "opacity": 0.9
+                                   });
+                        tooltip_div.html(d3.select(this).attr("id").slice(2)+"<br>")
+                                    .style({
+                                        "left": (d3.event.pageX + 20) + "px",
+                                        "top": (d3.event.pageY + 20) + "px"
+                                    })
+                    })
 					.on("mouseout", function(){
+                        tooltip_div.transition()
+                                   .duration(100)
+                                   .style({
+                                        "opacity": 0
+                                   });
 						d3.select(this).attr({
-								"stroke-width": 0,
+								"stroke-width": 1,
 						});
 					});
 	draw_node.transition()
@@ -130,16 +180,18 @@ function draw(data){
 							"y": function(d){
 								return 0;
 							},
-							"id": "item_text"
+							"id": "item_text",
+                            "color": "#eee"
 						})
 						.style({
-							"text-anchor": "middle"
+							"text-anchor": "middle",
 						})
 						.text(function(d){
-							if(d.value<=0){
-									return;
-							}else{
-									return d.item;
+                            // return ;
+							if(d.value>mean){
+                                if((d3.select("#id"+ d.item).attr("r")/(d.item.length))>=7){
+                                    return d.item;
+                                }
 							}
 						})
 						.transition()
@@ -152,7 +204,20 @@ function draw(data){
 }
 //更新svg的dom！因為api data的順序已經寫死，所以可以利用其對應關係做出更新
 function change(data){
-    bubble_data2 = bubble.nodes(data_filter(data))
+    var filted_data = data_filter(data);
+    var all_event_number = [];
+    var init_value = 0;
+    var show_text;
+    for(var foo in filted_data.children){
+        if(filted_data.children[foo].value>=init_value){
+            init_value = filted_data.children[foo].value;
+            show_text = filted_data.children[foo].item;
+        }
+        all_event_number.push(filted_data.children[foo].value);
+    };
+    d3.select("#description").text(show_text);
+    var mean = d3.quantile(all_event_number,0.1);
+    bubble_data2 = bubble.nodes(filted_data)
                         .filter(
                             function(d){
                                 return d.parent;
@@ -186,11 +251,12 @@ function change(data){
 							"text-anchor": "middle"
 						})
 						.text(function(d){
-							if(d.value<=0){
-									return;
-							}else{
-								return d.item;
-							}
+                            // console.log((d3.select("#id"+ d.item).attr("r")/(d.item.length)));
+                            if(d.value>mean){
+                                if((d3.select("#id"+ d.item).attr("r")/(d.item.length))>=7){
+                                    return d.item;
+                                }
+                            }
 						})
 						.attr({
 							opacity: 0
@@ -278,12 +344,12 @@ function option() {
 			d3.select(".d3-slider-handle")
 				.style({
 					left: "0%"
-					
+
 				});
 		//TODO
 		//改成call api
 		//			json_data = G.getItemsData('2016-11-09', dateGOGO(now_date._d), ['新化區', '新營區']);
-			d3.json("faked2.json", function(error, data){
+			d3.json("faked.json", function(error, data){
 				if (error){
 					console.log(error);
 				}
@@ -293,3 +359,7 @@ function option() {
 		});
 	d3.select("#show_date").text()
 }
+
+var tooltip_div = d3.select("body").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
