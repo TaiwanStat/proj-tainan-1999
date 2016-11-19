@@ -14,6 +14,13 @@ $orange: #f18002;
 $letter-spacing-s: 2px ;
 $letter-spacing-m: 4px ;
 
+
+$base-font: 16px;
+$font-size-s: $base-font*0.7;
+$font-size: $base-font*1;
+$font-size-m: $base-font*1.5;
+$font-size-l: $base-font*2;
+
 body{
 	color: $black;
 }
@@ -25,6 +32,10 @@ body{
 
 %position_relative{
 	position: relative;
+}
+
+%position_absolute{
+	position: absolute;
 }
 
 %section_setting{
@@ -44,6 +55,9 @@ body{
 	justify-content:center;
 }
 
+%black{
+	color: $black !important;
+}
 
 @mixin setSize($width , $height) {
   width: $width ;

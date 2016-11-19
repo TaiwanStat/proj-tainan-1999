@@ -75,6 +75,7 @@ var G = {
 	last: $('#overview'),
 	now: $('#overview'),
 	select: _select,
+	focusArea: _focusArea,
 	colorServiceName: [],
 	colorServiceItem: [],
 	getAreasData: _getAreasData,
@@ -102,7 +103,8 @@ G.colorServiceName = [
 	"#4DB6AC",
 	"#81C784",
 	"#FF8A65",
-	"#A1887F"
+	"#A1887F",
+	"rgba(224, 224, 224, 0.4)"
 ]
 
 G.colorServiceItem = [
@@ -164,17 +166,31 @@ DB.serviceItems = [
 	"遊蕩犬隻捕捉管制", "犬貓急難救援"
 ];
 
-function _select(id){
+function _select(itemId){
+	var id = itemId.split('_')[1];
 	this.last = this.now;
-	this.now = $('#'+id);
+	this.now = $('#' + id);
 	this.last.toggleClass('disable');
 	this.now.toggleClass('disable');
 
 	// set hash
-	window.location.hash = id ;
+	window.location.hash = itemId ;
+	
+	// select nav item 
+	$('.active').removeClass('active')
+	$('#' + itemId).addClass('active');
+	$('html,body').scrollTop(0);
 }
 
-// Overview , map
+function _focusArea(area, i){
+	G.select('item_focus');
+	resetFocus();
+	focus(area, i)
+	
+	$('#item_overview').addClass('active');
+	window.location.hash = "focus" + area ;
+}
+
 // console.log(G.getAreasData('2016-07-01', '2016-07-03', DB.areas));
 function _getAreasData(startDate, endDate, areasArray){
 	

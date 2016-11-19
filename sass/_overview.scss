@@ -1,23 +1,45 @@
+.overview_areaName{
+  cursor: pointer;
+  font-size: $font-size-m ;
+  transition: all 0.1s ease-in;
+  
+  &:hover{
+    fill: $orange;
+  }
+}
+
+.legend{
+  text{
+    font-size: $font-size-s + 2px;
+  }
+}
 
 .row {
-      display: inline-block;
-  vertical-align: top;
+    display: inline-block;
+    vertical-align: top;
 }
-.path, .path_special{
+
+.path,
+.path_special {
     display: inline-block;
     vertical-align: middle;
     transform: translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-/*    backface-visibility: hidden;*/
+    /*    backface-visibility: hidden;*/
     -moz-osx-font-smoothing: grayscale;
     transition-duration: 0.3s;
     transition-property: transform;
 }
 
-.path:hover,.path:focus,.path:active {
+.path:hover,
+.path:focus,
+.path:active {
     transform: scale(1.1);
 }
-.path_special:hover,.path_special:focus,.path_special:active {
+
+.path_special:hover,
+.path_special:focus,
+.path_special:active {
     transform: scale(1.1);
 }
 
