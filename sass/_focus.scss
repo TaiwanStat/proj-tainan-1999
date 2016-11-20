@@ -1,6 +1,9 @@
 #pie-chart{
     text-align:center;
 }
+#bar-chart{
+    text-align:center;
+}
 .bar {
     /*fill: steelblue;*/
     border-radius: 2px;
@@ -19,11 +22,12 @@
 .pie-path:hover,.pie-path:focus,.pie-path:active {
     transform: scale(1.03);
 }
-
+.path{
+  border:2px red;
+}
 
 .grid .tick {
     stroke: #E0E0E0;
-    ;
     stroke-opacity: 0.7;
     shape-rendering: crispEdges;
 }
@@ -53,7 +57,7 @@
   display: none;
 }
 text {
-  font: 10px sans-serif;
+  font: 14px sans-serif;
 }
 
 form {
