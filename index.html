@@ -1,13 +1,26 @@
 <html style="height:100%;width:100%;margin:0px;"><head>
   
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="Tainan-1999-Open" content="yes"><link rel="stylesheet" href="./lib/normalize.min.css"><link href="http://fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet"><!-- bubble --><link rel="stylesheet" href="./src/d3.slider.css"><link rel="stylesheet" href="src/font-awesome/css/font-awesome.min.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="Tainan-1999-Open" content="yes"><link rel="stylesheet" href="./lib/normalize.min.css"><link href="http://fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet"><link href="src/Semantic-UI/semantic.min.css" rel="stylesheet"><!-- bubble --><link rel="stylesheet" href="./src/d3.slider.css"><link rel="stylesheet" href="src/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" href="./dist/css/index.css">
   <title> Tainan-1999</title>
-  <link rel="stylesheet" href="./dist/css/index.css">
-
 </head>
 <body>
-	<header class="header"><div class="header_left"><img src="./dist/img/logo.jpeg"><div><p>台南市政府</p><h1 id="header_title">OPEN 19999 統計資訊</h1></div></div><ul class="header_right"><li class="item active" id="item_overview"><i class="fa fa-th-large" aria-hidden="true"></i><p>各區比較<span class="itemSupportText">(點選區域名稱查看更多資訊唷!)</span></p></li><!-- <li class = "item" id = "item_focus"><i class = "fa fa-search" aria-hidden="true"></i><p>聚焦搜尋</p></li> --><li class="item" id="item_bubble"><i class="fa fa-bullseye" aria-hidden="true"></i><p>動態比較</p></li></ul></header>
+	<header class="header"><div class="header_left"><img src="./dist/img/logo.jpeg"><div><p>台南市政府</p><h1 id="header_title">OPEN 19999 統計資訊</h1></div></div><ul class="header_right"><li class="item active" id="item_overview"><i class="fa fa-th-large" aria-hidden="true"></i><p>各區比較<span class="itemSupportText">(點選區域名稱查看更多資訊唷!)</span></p></li><!-- <li class = "item" id = "item_focus"><i class = "fa fa-search" aria-hidden="true"></i><p>聚焦搜尋</p></li> --><li class="item" id="item_bubble"><i class="fa fa-bullseye" aria-hidden="true"></i><p>動態比較</p></li></ul></header>	
+
 	<section class="section" id="overview">
+
+		<div class="selectAreaFiled">
+			<div class="field">
+				<i class="fa fa-share" aria-hidden="true"></i>
+				移動至
+			</div>
+			<select name="selectArea" class="ui fluid normal dropdown">
+				<option value="Xinhua">新化區</option>
+				<option value="Xinying">新營區</option>
+				<option value="Yanshui">鹽水區</option>
+				<option value="Baihe">白河區</option>
+			</select>
+		</div>
+
 		<div class="row">  <div class="column"></div></div>	</section>
 
 	<section class="section disable" id="focus">
@@ -20,13 +33,14 @@
 
 
 <script type="text/javascript" src="./src/jquery-2.2.4.min.js"></script>
-<script type="text/javascript" src="js/G.js"></script>
-
+<script type="text/javascript" src="src/Semantic-UI/semantic.min.js"></script>
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script type="text/javascript" src="http://d3js.org/topojson.v1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
 <script src="./src/d3.slider.js"></script>
 
+
+<script type="text/javascript" src="js/G.js"></script>
 <script type="text/javascript" src="./dist/js/index.js"></script>
 <script type="text/javascript" src="./dist/js/overview.js"></script>
 <script type="text/javascript" src="./dist/js/focus.js"></script>

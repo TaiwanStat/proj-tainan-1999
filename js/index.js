@@ -3,3 +3,7 @@ $('.item').click(function(){
 	console.log('state: '+this.id.split('_')[1]);
 })
 
+$('.ui.dropdown')
+  .dropdown()
+;
+

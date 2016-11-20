@@ -138,11 +138,11 @@
       .attr({
         'id': name.eName,
         'class': 'overview_areaName',
-        "x": width / 2 - 33,
+        "x": width/2 - 35,
         "y": height - 30
       })
       .text(function(d) {
-        return name.cName;
+        return name.cName + " ›";
       })
       .on("click", function(d){
         G.focusArea(this.id, areaIndex);

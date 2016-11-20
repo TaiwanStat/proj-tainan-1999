@@ -20,3 +20,72 @@
 
 
 
+.selectAreaFiled{
+	@extend %position_relative;
+	float: right;
+	right: 3%;
+	top: 20px;
+	width:20%;
+	display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(34,36,38, 0.15);
+
+  > .field{
+  	width: 135px;
+		letter-spacing: $letter-spacing-s - 1px;
+		padding: .78571429em 5px .78571429em 10px;
+		font-weight: bold;
+  }
+}
+
+.field{
+	border-right: 1px solid rgba(34,36,38, 0.15);
+
+	&:after{
+    @extend %position_absolute;
+    content: '';
+    background: rgba(34,36,38, 0.15);
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: -2px;
+	}
+}
+
+// ---- Semantic-UI
+.ui.selection.dropdown{
+	border-radius: 0;
+	border: none;
+	font-weight: lighter;
+
+	&:focus , &:hover{
+		border: 1px solid $orange;
+	}
+
+	&:after{
+    @extend %position_absolute;
+    content: '';
+    background: $orange;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: -2px;
+	}
+}
+
+.ui.selection.active.dropdown{
+	border-color: $orange;
+	&:hover{
+		border-color: $orange;
+		.menu{
+			border-color: $orange;			
+		}
+	}
+	.menu{
+		border-color: $orange;
+	}
+}
+
+
+
+
