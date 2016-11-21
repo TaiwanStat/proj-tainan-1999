@@ -238,7 +238,7 @@ function _select(itemId){
 function _focusArea(area, i){
 	G.select('item_focus');
 	resetFocus();
-	focus(area, i)
+	focus(area, i,'w')
 	
 	$('#item_overview').addClass('active');
 	window.location.hash = "focus" + area ;
