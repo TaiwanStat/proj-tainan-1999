@@ -14,15 +14,27 @@
       console.log(error);
     }
 
+    var allArray = [//allArray用來存全區資料
+        [0,0,"違規停車"],
+        [1,0,"路燈故障"],
+        [2,0,"噪音舉發"],
+        [3,0,"騎樓舉發"],
+        [4,0,"道路維修"],
+        [5,0,"交通運輸"],
+        [6,0,"髒亂及污染"],
+        [7,0,"民生管線"],
+        [8,0,"動物救援"]
+    ];
+
     data.map(function(d, i) {
-      var areaName = d.area;
-      var array = []; //array用來儲存過濾後可畫圖的資料
-      var count = 0;
-      var otherSum = 0;
-      var nameObj = {
-        cName: areaName,
-        eName: DB.areasE[areaName]
-      }
+        var areaName = d.area;
+        var array = []; //array用來儲存過濾後可畫圖的資料
+        var count = 0;
+        var otherSum = 0;
+        var nameObj = {
+                cName: areaName,
+                eName: DB.areasE[areaName]
+            }
 
       for (var foo in service_name) {
         var temp = [];
@@ -32,32 +44,63 @@
         array.push(temp);
       }
 
-      array = array.sort(function(a, b) { //大到小排序
+      for ( var ii=0 ; ii<9 ; ii++ ){//把每次的資料夾到全區累計
+        allArray[ii][1] += array[ii][1];
+      }
+
+      array = array.sort(function(a, b) {//由大到小排序
         return d3.descending(a[1], b[1]);
       });
 
-      // 取前三高，其他加總到其他
-      array.forEach(function(value, index){
+      array.forEach(function(value, index){//取前三高，其他加總到其他
         if (index > 2){
           otherSum += array[index][1];
         }
       })
 
       array.splice(3, array.length - 3, [9, otherSum, '其他']); //保留前三高，其餘加總到「其他」
-      createDonut(array, nameObj, "column", i); //畫圖
+
+      createDonut(array, nameObj, "column", i); //畫圖(各區)
     })
+
+    allArray = allArray.sort(function(a, b) {//由大到小排序
+        return d3.descending(a[1], b[1]);
+    });
+
+    var allOtherSum = 0;
+    allArray.forEach(function(value, index){//取前三高，其他加總到其他
+        if (index > 2){
+          allOtherSum += allArray[index][1];
+        }
+    })
+
+    allArray.splice(3, allArray.length - 3, [9, allOtherSum, '其他']);
+    var allNameObj = {
+                cName: "台南市",
+                eName: "All"
+            }
+    createDonut(allArray, allNameObj, "column", -1); //畫圖(各區)
   });
 
   //createDonut("all_item.json", "東區" , "column")
   //filename: json filename, name: 區名, column_object: 預計要榜定的tag class
   function createDonut(array, name, column_object, areaIndex) {
     var pie = d3.layout.pie();
-    var svg = d3.select("." + column_object)
-      .append("svg")
-      .attr({
-        "width": width,
-        "height": height,
-      });
+    if( areaIndex<0 ){
+        var svg = d3.select("." + column_object)
+                    .insert("svg",":first-child")
+                    .attr({
+                        "width": width,
+                        "height": height,
+                    });
+    }else{
+        var svg = d3.select("." + column_object)
+                    .append("svg")
+                    .attr({
+                      "width": width,
+                      "height": height,
+                    });
+    }
     var arc = d3.svg.arc()
       .innerRadius((width / 5))
       .outerRadius((width / 5));
