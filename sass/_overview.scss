@@ -1,3 +1,58 @@
+// selectAreaField
+.selectAreaFiled{
+  @extend %position_relative;
+  float: right;
+  right: 3%;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(34,36,38, 0.15);
+  z-index: 2;
+
+  > .field{
+    width: 135px;
+    letter-spacing: $letter-spacing-s - 1px;
+    padding: .78571429em 5px .78571429em 10px;
+    font-weight: bold;
+  }
+}
+
+.field{
+  border-right: 1px solid rgba(34,36,38, 0.15);
+
+  &:after{
+    @extend %position_absolute;
+    content: '';
+    background: rgba(34,36,38, 0.15);
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: -2px;
+  }
+}
+
+// ------------
+
+.overview_title{
+  @extend %position_relative;
+  margin-left: 5%;
+  letter-spacing: $letter-spacing-l + 2px;
+  
+  h2{
+    font-size: $font-size-l + 3px;
+  }
+
+  span{
+    font-size: $font-size-m;
+    color: $dark-gray;
+  }
+
+  .date{
+    letter-spacing: $letter-spacing-m;
+    font-size: $font-size;   
+    padding-left: 10px;
+  }
+}
+
 .overview_areaName{
   cursor: pointer;
   font-size: $font-size-m ;

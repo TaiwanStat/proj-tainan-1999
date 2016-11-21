@@ -1,9 +1,6 @@
-$('.item').click(function(){
-	G.select(this.id);
-	console.log('state: '+this.id.split('_')[1]);
+initG();
+$('.item').click(function() {
+  G.select(this.id);
+  console.log('state: ' + this.id.split('_')[1]);
 })
-
-$('.ui.dropdown')
-  .dropdown()
-;
 

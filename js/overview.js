@@ -5,6 +5,8 @@
   var lengendXparameter;
   var lengendYparameter;
 
+  // init Time
+  initTime()
   // set donutChart size;
   setSize();
   d3.json("../../src/fack_areas.json", function(error, data) {
@@ -208,4 +210,30 @@
       lengendYparameter = 4.1;
     }
   }
+
+  function initTime(){
+    var curTime = G.time.curTime;
+    var lastTime = G.time.lastWTime;
+
+
+
+    $('.overview_title .date').text('( ' + lastTime.split('-')[1] + '/' + lastTime.split('-')[2] + ' ~ ' + curTime.split('-')[1] + '/' + curTime.split('-')[2] + ' )');
+  }
+
+  $('.ui.dropdown.overview_selectArea')
+    .dropdown({
+      action: 'hide',
+      onChange: function(value, text, selectItem){
+
+        $('html, body').animate(
+          { scrollTop: $('#'+value).offset().top - 400 },
+          'easeInBack',
+          function(){
+            window.location.hash = value ;
+          }
+        )
+      }
+    })
+  ;
+
 })()

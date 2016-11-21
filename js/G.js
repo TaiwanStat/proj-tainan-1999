@@ -70,6 +70,32 @@ Data 測試：
 // 約超過35秒會要求逾時
 
 */
+var now = new Date();
+var monthArray = [
+	"一月",
+	"二月",
+	"三月",
+	"四月",
+	"五月",
+	"六月",
+	"七月",
+	"八月",
+	"九月",
+	"十月",
+	"十一月",
+	"十二月"
+];
+
+var weekArray = [
+	"星期日",
+	"星期一",
+	"星期二",
+	"星期三",
+	"星期四",
+	"星期五",
+	"星期六",
+];
+
 
 var G = {
 	last: $('#overview'),
@@ -79,7 +105,8 @@ var G = {
 	colorServiceName: [],
 	colorServiceItem: [],
 	getAreasData: _getAreasData,
-	getItemsData: _getItemsData
+	getItemsData: _getItemsData,
+	time: {}
 };
 
 var DB = {
@@ -165,6 +192,32 @@ DB.serviceItems = [
 	"電信孔蓋鬆動、電信線路掉落、電信桿傾倒", "停電、漏電、電線掉落、孔蓋鬆動", "漏水、停水、消防栓漏水或損壞", "天然氣外洩", "瓦斯管溝修補、孔蓋鬆動",
 	"遊蕩犬隻捕捉管制", "犬貓急難救援"
 ];
+
+function initG(){
+	/*
+		monthNum: 月份的數字（0 代表 一月）
+		monthC: 中文月份
+		date: 日期 ex:21
+		day: 星期幾（ 0 代表星期日）
+		dayC: 星期一
+
+		curTime: '2016-11-21'
+		lastWTime: '2016-11-14'
+		lastMTime: '2016-10-21'
+		lastYTime: '2015-11-21'
+	*/
+	
+	G.time.month = now.getMonth() + 1;
+	G.time.monthC = monthArray[G.time.month - 1];
+	G.time.date = now.getDate();
+	G.time.day = now.getDay();
+	G.time.dayC = weekArray[G.time.day];
+
+	G.time.curTime = getTimeString(now);
+	G.time.lastWTime = getTimeString(DateAdd(now,'w',-1));
+	G.time.lastMTime = getTimeString(DateAdd(now,'m',-1));
+	G.time.lastYTime = getTimeString(DateAdd(now,'y',-1));
+}
 
 function _select(itemId){
 	var id = itemId.split('_')[1];
@@ -332,3 +385,53 @@ function getAPIone(sn){
 
 	return obj;
 }
+
+
+/* ---------- Format Time Func. -----------
+	return '2016-11-21'
+*/
+var getTimeString = function(time) {
+	var now = time;
+  var year = now.getFullYear(); //年
+  var month = now.getMonth() + 1; //月
+  var day = now.getDate(); //日
+
+  var hh = now.getHours(); //时
+  var mm = now.getMinutes(); //分
+
+  var clock = year + "-";
+
+  if (month < 10)
+    clock += "0";
+
+  clock += month + "-";
+
+  if (day < 10)
+    clock += "0";
+
+  clock += day;
+
+  return (clock);
+}
+
+var DateAdd = function(curTime, strInterval, Number) {
+  var dtTmp = curTime;
+  switch (strInterval) {
+    case 's':
+      return new Date(Date.parse(dtTmp) + (1000 * Number));
+    case 'n':
+      return new Date(Date.parse(dtTmp) + (60000 * Number));
+    case 'h':
+      return new Date(Date.parse(dtTmp) + (3600000 * Number));
+    case 'd':
+      return new Date(Date.parse(dtTmp) + (86400000 * Number));
+    case 'w':
+      return new Date(Date.parse(dtTmp) + ((86400000 * 7) * Number));
+    case 'm':
+      return new Date(dtTmp.getFullYear(), (dtTmp.getMonth()) + Number, dtTmp.getDate(), dtTmp.getHours(), dtTmp.getMinutes(), dtTmp.getSeconds());
+    case 'y':
+      return new Date((dtTmp.getFullYear() + Number), dtTmp.getMonth(), dtTmp.getDate(), dtTmp.getHours(), dtTmp.getMinutes(), dtTmp.getSeconds());
+  }
+}
+
+
