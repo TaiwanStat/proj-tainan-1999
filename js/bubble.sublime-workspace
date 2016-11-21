@@ -1,0 +1,284 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tran",
+				"transition-duration"
+			],
+			[
+				"duration_",
+				"duration_day"
+			],
+			[
+				"tool",
+				"bubble_tooltip"
+			],
+			[
+				"d",
+				"d"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"c",
+				"table-column"
+			],
+			[
+				"fil",
+				"fianlted_data"
+			],
+			[
+				"font",
+				"font-size"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 116.0,
+		"last_filter": "Package Control: remo",
+		"selected_items":
+		[
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/kuoteng/proj-tainan-1999/src/d3.slider.js",
+		"/home/kuoteng/proj-tainan-1999/js/focus.js"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"slider_input",
+			"change",
+			"append",
+			"change",
+			"slider",
+			"border",
+			"style",
+			"change_slider",
+			"now_date",
+			"duration_day",
+			"slider_value",
+			"select_date",
+			"slider_value",
+			"now_bar_value",
+			"last_data",
+			"select_date",
+			"now_date",
+			"change",
+			"dispatch",
+			"value",
+			"slider",
+			"data",
+			"faked",
+			"console.log",
+			"areas",
+			"map",
+			"return",
+			"ename",
+			"Ename",
+			"District",
+			"bubble_tooltip",
+			"bubble",
+			"slider",
+			"tooltip",
+			"bubble_chart",
+			"bubble_tooltip",
+			"select",
+			"circle",
+			"div",
+			"jquery",
+			"css",
+			"slider",
+			"class",
+			"bubble_chart",
+			"bubble",
+			"scroll_bar",
+			"select_date",
+			"slider",
+			"left",
+			"bubble_tooltip",
+			"tooltip",
+			"selectAll",
+			"tooltip_div",
+			"tooltip",
+			"tooltip_div",
+			"tooltip",
+			"bubble_tooltip",
+			"tool",
+			"d3-slider",
+			"option",
+			"now_date",
+			"tool",
+			"mean",
+			"stroke",
+			"opacity",
+			"show",
+			"right",
+			"title_container",
+			"mouseover",
+			"item",
+			"right",
+			"float",
+			"mean",
+			"text",
+			"DB.areas",
+			"data_filter",
+			"nodes",
+			"TODO"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "bubble.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 367.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

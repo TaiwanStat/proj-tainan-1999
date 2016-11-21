@@ -64,6 +64,7 @@
 	var duration_day = parseInt((now_date._d - select_date._d) / (1000 * 60 * 60 * 24));
 	var dateGOGO = d3.time.format("%Y-%m-%d");
     var slider = $("input");
+    //draw the slider
     slider.on('mouseenter',function(){
             console.log(slider_value);
             slider.on('click',function(){
@@ -78,6 +79,7 @@
                 change_slider2(slider_value);
             });
           });
+    //change the slider status(color bar)
     function change_slider2(n){
         slider.css({
             'background-image':'-webkit-linear-gradient(left ,#222 0%,#222 '+ n +'%,#eee '+ n +'%, #eee 100%)'
@@ -88,10 +90,9 @@
         slider.css({
             'background-image':'-webkit-linear-gradient(left ,#222 0%,#222 '+ n +'%,#eee '+ n +'%, #eee 100%)'
         });
+        //get the duration of the day which slider bar selected
         var duration_set = moment.duration({'days' : (duration_day/100)*n});
-        console.log(n);
-        // console.log((duration_day/100)*n + 1);
-        // console.log(n);
+        //get the time
         select_date = moment("2016-11-09").add(duration_set);
         d3.selectAll("#show_date").text(dateGOGO(select_date._d));
         if(last_data != dateGOGO(select_date._d))
@@ -110,7 +111,7 @@
     }
 	//繪製最初的svg，因為之後都只會更新dom，所以不會再呼叫他了！
 	function draw(data){
-	    // console.log(data);
+	    // establish the tooltip information named detail
         var detail = {};
         for(var foo in DB.serviceItems)
         {
@@ -118,33 +119,25 @@
         }
         for(var foo in data)
         {
+        	// establish the each district information
             var district ={};
+            // use DB.areas to create the object array whose indice are area names
             for(var bar in DB.areas)
             {
                 district[DB.areas[bar]] = 0;
             }
-            // console.log(district);
-            // console.log(district);
-            // console.log("fuck");
+            // use data.listData column to fetch object array by the evnet area by chinese area names
             for(var bar in data[foo].listData)
             {
                 district[data[foo].listData[bar].area]++;
             }
-            // district = district.sort();
-            // console.log(district);
+            //sorted the ojbect array for choosing the 3 highest areas
             district_sorted = Object.keys(district).sort(function(a,b){return district[b]-district[a]})
-            // console.log(district_sorted);
-            // console.log(123);
-            // console.log(detail[data[foo].item])
+            // store the information
             detail[data[foo].item] = district_sorted[0]  + district[district_sorted[0]] + "件<br>"
                                         + district_sorted[1]  + district[district_sorted[1]] + "件<br>"
                                         + district_sorted[2]  + district[district_sorted[2]] + "件<br>";
-            // console.log(district_sorted[0] + ":" + district[district_sorted[0]] + "件<br>"
-                                        // + district_sorted[1] + ":" + district[district_sorted[1]] + "件<br>"
-                                        // + district_sorted[2] + ":" + district[district_sorted[2]] + "件<br>");
         }
-        // console.log(detail)
-	    // console.log(detail);
 	    var filted_data = data_filter(data);
 	    // for(var foo in filter)
 	    console.log(123);
@@ -261,23 +254,29 @@
 	}
 	//更新svg的dom！因為api data的順序已經寫死，所以可以利用其對應關係做出更新
 	function change(data){
+    	// establish the eahc district information
         var detail = {};
         for(var foo in DB.serviceItems)
         {
             detail[DB.serviceItems[foo]] = "";
         }
+    	// establish the eahc district information
         for(var foo in data)
         {
+        	// establish the each district information
             var district ={};
             for(var bar in DB.areas)
             {
                 district[DB.areas[bar]] = 0;
             }
+            // use data.listData column to fetch object array by the evnet area by chinese area names
             for(var bar in data[foo].listData)
             {
                 district[data[foo].listData[bar].area]++;
             }
+            //sorted the ojbect array for choosing the 3 highest areas
             district_sorted = Object.keys(district).sort(function(a,b){return district[b]-district[a]})
+            // store the information
             detail[data[foo].item] = district_sorted[0]  + district[district_sorted[0]] + "件<br>"
                                         + district_sorted[1]  + district[district_sorted[1]] + "件<br>"
                                         + district_sorted[2]  + district[district_sorted[2]] + "件<br>";
