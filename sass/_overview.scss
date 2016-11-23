@@ -1,28 +1,30 @@
 // selectAreaField
-.selectAreaFiled{
+.selectAreaFiled {
   @extend %position_relative;
   float: right;
-  right: 3%;
+  margin: 1% 3% 0px 5px;
   display: inline-flex;
   align-items: center;
-  border: 1px solid rgba(34,36,38, 0.15);
-  z-index: 2;
-
-  > .field{
-    width: 135px;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  z-index: 1;
+  font-size: $font-size - 1px;
+  > .field {
+    width: 152px;
     letter-spacing: $letter-spacing-s - 1px;
     padding: .78571429em 5px .78571429em 10px;
     font-weight: bold;
+    > i {
+      padding-right: 8px;
+    }
   }
 }
 
-.field{
-  border-right: 1px solid rgba(34,36,38, 0.15);
-
-  &:after{
+.field {
+  border-right: 1px solid rgba(34, 36, 38, 0.15);
+  &:after {
     @extend %position_absolute;
     content: '';
-    background: rgba(34,36,38, 0.15);
+    background: rgba(34, 36, 38, 0.15);
     width: 100%;
     height: 2px;
     left: 0px;
@@ -31,87 +33,92 @@
 }
 
 // ------------
-
-.overview_title{
+.overview_title {
   @extend %position_relative;
   margin-left: 5%;
   letter-spacing: $letter-spacing-l + 2px;
-  
-  h2{
-    font-size: $font-size-l + 3px;
+  h2 {
+    font-size: $font-size-l + 7px;
   }
-
-  span{
-    font-size: $font-size-m;
-    color: $dark-gray;
+  span {
+    font-size: $font-size-m + 3px;
+    color: $orange;
   }
-
-  .date{
+  .date {
     letter-spacing: $letter-spacing-m;
-    font-size: $font-size;   
-    padding-left: 10px;
+    font-size: $font-size;
+    padding: 0px 10px;
+    color: $black;
+  }
+
+  .sub-9-items{
+    font-size: $font-size - 1px;
+    letter-spacing: $letter-spacing-s;
+    cursor: pointer;
+    &:hover{
+      color: $orange;
+    }
   }
 }
 
-.overview_areaName{
+.overview_areaName {
   cursor: pointer;
-  font-size: $font-size-m ;
+  font-size: $font-size-m;
   font-weight: bold;
   transition: all 0.1s ease-in;
   fill: #7986cb;
-  
-  &:hover{
+  &:hover {
     fill: #1a237b;
   }
 }
 
-.legend{
-  text{
+.legend {
+  text {
     font-size: $font-size-s + 2px;
   }
 }
 
 .row {
-    display: inline-block;
-    vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .path,
 .path_special {
-    display: inline-block;
-    vertical-align: middle;
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    /*    backface-visibility: hidden;*/
-    -moz-osx-font-smoothing: grayscale;
-    transition-duration: 0.3s;
-    transition-property: transform;
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  /*    backface-visibility: hidden;*/
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
 }
 
 .path:hover,
 .path:focus,
 .path:active {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .path_special:hover,
 .path_special:focus,
 .path_special:active {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .toolTip {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    position: absolute;
-    display: none;
-    width: auto;
-    height: auto;
-    background: none repeat scroll 0 0 white;
-    border: 0 none;
-    border-radius: 8px 8px 8px 8px;
-    box-shadow: -3px 3px 15px #888888;
-    color: black;
-    font: 12px sans-serif;
-    padding: 5px;
-    text-align: center;
+  position: absolute;
+  display: none;
+  width: auto;
+  height: auto;
+  background: none repeat scroll 0 0 white;
+  border: 0 none;
+  border-radius: 8px 8px 8px 8px;
+  box-shadow: -3px 3px 15px #888888;
+  color: $black;
+  padding: 5px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: $letter-spacing-s;
 }

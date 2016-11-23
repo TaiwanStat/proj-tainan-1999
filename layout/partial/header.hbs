@@ -1,21 +1,37 @@
 <header class = "header">
-	<div class = "header_left">
+	<div class = "header_left" id = "item_overview">
 		<img src = "{{path}}dist/img/logo.jpeg">
 		<div>
 			<p>台南市政府</p>
 			<h1 id = "header_title">OPEN 1999 統計資訊</h1>
 		</div>
+		<div class = "questionBox">
+			<i class="fa fa-question-circle" aria-hidden="true"></i>
+			<div class = "triangleL"></div>
+			<div class = "triangleS"></div>
+			<div class = "supportBox">
+				<p>所有資料皆為台南市政府1999 API 公開即時呈現</p>
+				<p>由用<a href="https://www.taiwanstat.com" target="_blank">數據看台灣團隊</a>協助並幫忙製作</p>
+				<hr>
+				<p align="left">九大分類</p>
+				<div class="itemBox" id = "itemBox9"></div>
+				<hr>
+				<p align="left">三十三項案件</p>
+				<div class="itemBox" id = "itemBox33"></div>
+			</div>
+		</div>
 	</div>
+
 	<ul class = "header_right">
-		<li class = "item active" id = "item_overview">
+		<li class = "header_item" id = "item_focus">
 			<i class = "fa fa-th-large" aria-hidden="true"></i>
-			<p>各區比較<!-- <span class = "itemSupportText">(點選區域名稱查看更多資訊唷!)</span> --></p>
+			<p>各區比較</p>
 		</li>
 <!-- 		<li class = "item" id = "item_focus">
 			<i class = "fa fa-search" aria-hidden="true"></i>
 			<p>聚焦搜尋</p>
 		</li> -->
-		<li class = "item" id = "item_bubble">
+		<li class = "header_item" id = "item_bubble">
 			<i class = "fa fa-bullseye" aria-hidden="true"></i>
 			<p>動態比較</p>
 		</li>

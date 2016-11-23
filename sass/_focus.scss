@@ -57,19 +57,77 @@
   display: none;
 }
 text {
-  font: 14px sans-serif;
+  font-size: 14px;
 }
 
-form {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
+// form {
+//   position: absolute;
+//   right: 10px;
+//   top: 10px;
+// }
+
 text.bartip {
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Noto Sans TC';
   font-size: 13px;
   font-weight: 200;
 }
 text.area_name{
-    font-size: 20px;
+  font-size: $font-size-m;
+}
+
+.time_intaveral{
+  font-size: $font-size;
+}
+
+.infocus.reactive.item{
+  box-sizing: border-box;
+  margin: 0px;
+  &:hover , &:focus{
+    border: 1px solid $orange;
+    background-color: rgba(0,0,0,.05);
+  }
+}
+
+
+.focus_title{
+  @extend %position_relative;
+  margin: 1% 0px 1% 5%;
+  width: 300px;
+  text-align: center;
+  padding: 13px 0px 10px 0px;
+  // border: 2px solid $orange;
+
+
+  h2{
+    color: $orange;
+    font-size: $font-size-m;
+  }
+
+  span{
+    color: $black;
+    font-size: $font-size-l + 3px ;
+    letter-spacing: $letter-spacing-l;
+  }
+
+  > .focus_ulBox{
+    margin: 7px 0px 0px 65px;
+    text-align: left;
+  }
+
+  li{
+    letter-spacing: $letter-spacing-s;
+    padding-top: 6px;
+    cursor: pointer;
+    &:hover{
+      color: $orange;
+    }
+  }
+
+  .noHover{
+    font-weight: bold;
+    cursor: auto;
+    &:hover{
+      color: $black;
+    }
+  }
 }

@@ -18,7 +18,7 @@
 	to{ opacity: 1;}
 }
 
-// ---- Semantic-UI
+// ---- Semantic-UI Rewrite
 .ui.selection.dropdown{
 	border-radius: 0;
 	border: none;
@@ -53,6 +53,17 @@
 	}
 }
 
+.ui.right.floated.menu{
+	margin-top: 1%;
+	border-radius: 0px;
+	font-size: $font-size - 1px;
+}
+
+.ui.compact.menu .item{
+	&:last-child{
+		border-radius: 0px;
+	}
+}
 
 
 

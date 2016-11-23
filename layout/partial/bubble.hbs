@@ -1,25 +1,40 @@
-<div id = "super_container">
-	<div id="title_container">
-		<span id="title">testtest</span>
-		<div id="scroll_container">
-			<div id="show_date">2016-11-09</div>
-			<div id="scroll_bar_container">
-                <br>
-                <input id="slider_input" type="range" min="0" max="100" step="1" value="0">
-			</div>
-			<div id="option_container">
-				<div id="scroll_bar_option">
-					<i id="play_icon" class="fa fa-play fa"></i>
-					<i id="pause_icon" class="fa fa-pause fa"></i>
-					<i id="stop_icon" class="fa fa-stop fa"></i>
-				</div>
+<div id="title_container">
+	<div id="scroll_container">
+		<!-- <div id="show_date">按下播放鍵-播放動畫圖表</div> -->
+		<div id="scroll_bar_container">
+      <input id="slider_input" type="range" min="0" max="100" step="1" value="0">
+		</div>
+		<div id="option_container">
+			<div id="scroll_bar_option">
+				<i id="play_icon" class="bubble_optionButton fa fa-play fa"></i>
+<!-- 					<i id="pause_icon" class="fa fa-pause fa"></i> -->
+				<i id="stop_icon" class="bubble_optionButton fa fa-stop fa"></i>
 			</div>
 		</div>
 	</div>
-      <br>
-      <div id="show">
-          <div id="description" align="center" style="font-size:2em">違規停車</div>
-  		<div id="bubble_chart"></div>
-      </div>
+</div>
+
+<div class = "bubble_title">
+  <h2><span>台南市案件統計</span>時間漸變圖</h2>
+  <ul class = "focus_ulBox">
+	  <li class = "noHover">移動游標顯示此案件發生前三高之地區</li>
+	  <li class = "noHover">按下播放鍵 - 播放動畫圖表</li>
+  </ul>
+</div>
+
+<div id = "super_container">
+	<div class="description" >
+		<h2 class = "descriptionTime"></h2>
+		<div class="descriptionItem" >
+			<p id = "item0"></p>
+			<p id = "item1"></p>
+			<p id = "item2"></p>
+	<!-- 		<p id = "item3"></p>
+			<p id = "item4"></p> -->
+		</div>
+	</div>
+  <div id="show">
+		<div id="bubble_chart"></div>
+  </div>
 </div>
 <div id="bubbule_tooltip"></div>

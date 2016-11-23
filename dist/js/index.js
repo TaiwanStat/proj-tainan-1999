@@ -1,1 +1,1 @@
-initG(),$(".item").click(function(){G.select(this.id),console.log("state: "+this.id.split("_")[1])});
+initG(),$(".header_item").click(function(){G.select(this.id),"item_focus"===this.id&&($(".active").removeClass("active"),$('.item[value="w"]').addClass("active"),G.focusArea("all",-1)),console.log("state: "+this.id.split("_")[1])}),$(".header_left").click(function(){G.select(this.id)});

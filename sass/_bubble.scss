@@ -1,157 +1,179 @@
-@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
-
-html {
-/*
-    background-color: #e6e9e9;
-    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
-*/
-    font-family: 'Noto Sans TC', sans-serif;
-    font-size: 16px;
-	color: #3d3d3d;
-    width:100%;
-    height:100%;
-}
-
 #scroll_container {
-/*  margin: 20px 0 10px 20px;*/
-    float:right;
-    display: table-row;
-    width: 30em;
-    line-height:14px;
+  @extend %position_relative;
+  float: right;
+  display: table-row;
+  width: 28em;
+  padding: 3px;
+  top: 3.5em;
+  right: 2em;
+  z-index: 2;
 }
+
 #title {
-    text-align:center;
+  text-align: center;
 }
+
 #item_text {
-    color: #eee;
+  font-size: $font-size;
+  fill: rgba(250,250,250,1);
+  text-shadow: 0px 0px 25px rgba(0, 0, 0, .5);
+  font-weight: 300;
 }
+
 #title_container {
-    text-align:center;
-    display: block;
+  text-align: center;
+  display: block;
+
+  font-size: $font-size;
+  line-height: 1.5;
+  margin: 1% 3% 0px 10px;
+  z-index: 2;
 }
-#description {
-    margin:0em auto;
-    display:block;
-    /*display: table-row;*/
-    text-align:center;
-    /*width: 400px;*/
-}
+
 #show_date {
-	text-align: center;
-
-	border:1px solid #eee;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
-	/*border-width: 0.001em;*/
+  text-align: center;
+  border: 1px solid $gray;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  /*border-width: 0.001em;*/
 }
+
 #show {
-    display: inline-block;
+  display: inline-block;
 }
+
 #scroll_bar {
-	display: block;
-	margin: 0em auto;
-	margin-top:0.4em;
-	max-width: 20em;
-
+  display: block;
+  margin: 0em auto;
+  margin-top: 0.4em;
+  max-width: 20em;
 }
+
 #scroll_bar_container {
-	display: block;
-	border:1px solid #eee;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
-	height: 2em;
+  display: flex;
+  border: 1px solid $gray;
+  align-items: center;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  height: 2em;
 }
+
 #scroll_bar_option {
-	text-align: center;
+  text-align: center;
 }
-#pause_icon {
-	margin-left: 5em;
-	margin-right: 5em;
+
+
+.bubble_optionButton{
+  margin: 5px 3em;
+  &:hover{
+    cursor: pointer;
+    color: $orange;
+  }
 }
-#play_icon:hover, #pause_icon:hover, #stop_icon:hover{
-    -webkit-animation: opacity 0.5s;
-            animation: opacity 0.5s;
-}
+
 #option_container {
-	border:1px solid #eee;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  border: 1px solid $gray;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 }
+
 #super_container {
-    background: #fff;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-    font-family: 'Noto Sans TC', sans-serif;
-    color: #545454;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0em auto;
-    max-width: 50em;
-    display: block;
+  @extend %position_relative;
+  background: transparent;
+  line-height: 1.5;
+  font-size: $font-size;
+  margin: 0em auto;
+  max-width: 800px;
+  display: block;
 }
+
 div.bubble_tooltip {
-    position: absolute;
-    text-align: center;
-    /*width: 150px;*/
-    max-width: 400px;
-    /*height: 28px;*/
-    max-height: 100px;
-    padding: 2px;
-    /*font: 12px sans-serif;*/
-    color: #eee;
-    background: #123;
-    border: 1px;
-    border-radius: 5px;
-    pointer-events: none;
+  @extend %position_absolute;
+  text-align: center;
+  max-width: 400px;
+  max-height: 100px;
+  background: none repeat scroll 0 0 white;
+  border: none;
+  border-radius: 8px 8px 8px 8px;
+  box-shadow: -3px 3px 15px #888888;
+  padding: 5px;
+  line-height: 1.5;
+  font-size: $font-size - 2px;
+  letter-spacing: $letter-spacing-s;
+  pointer-events: none;
+
+  .bubble_tooltipName{
+    color: $orange;
+
+    font-weight: bold;
+    font-size: $font-size + 2px;
+  }
 }
 
 
-@-webkit-keyframes opacity {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes opacity {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-input[type="range"]{
-    -webkit-appearance: none;
-    border-radius:2px;
-    width:400px;
-    height:3px;
-    background-image:-webkit-linear-gradient(left ,#222 0%,#222 0%,#222 0%, #eee 100%);
-    box-shadow:inset #eee 0 0 5px;
-    outline : none;
-    transition:.1s;
-    display:inline-block;
-    margin:0em auto;
-    vertical-align:middle;
-    /*left: 100%;*/
-    /*border:1px solid #eee;*/
-    /*box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);*/
-}
-input[type="range"]::-moz-range-progress{
-    background:#222;
-    border-radius:2px;
-        display:inline-block;
-    margin:0em auto;
-    height:3px;
-    left:0%;
-}
-input[type="range"]::-webkit-slider-thumb{
+input[type="range"] {
   -webkit-appearance: none;
-  position: relative;
-  width:15px;
-  height:15px;
-  background:#eee;
-  border-radius:50%;
-  border:1px solid #cccccc;
+  border-radius: 2px;
+  width: 400px;
+  height: 3px;
+  background-image: -webkit-linear-gradient(left, #222 0%, #222 0%, $gray 0%, $gray 100%);
+  box-shadow: inset #eee 0 0 5px;
+  outline: none;
+  transition: .1s;
+  display: inline-block;
+  margin: 0em auto;
+  vertical-align: middle;
+}
+
+input[type="range"]::-moz-range-progress {
+  background: #222;
+  border-radius: 2px;
+  display: inline-block;
+  background-color: $gray;
+  margin: 0em auto;
+  height: 3px;
+  left: 0%;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  @extend %position_relative;
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #eee;
+  border-radius: 50%;
+  border: 1px solid #cccccc;
   /*pointer-events: none;*/
   left: 0%;
-  /*transition-duration: 0.1s*/
+}
+
+
+.bubble_title{
+  @extend .focus_title;
+  width: 500px;
+}
+
+.description{
+  @extend %position_absolute;
+  left: -4em;
+  top: 10px;
+
+  font-size: $font-size;
+  line-height: 1.2;
+  letter-spacing: $letter-spacing-s;
+
+  border: 2px solid $orange;
+  padding: 5px 7px;
+  border-radius: 11px;
+  background: white;
+
+  > .descriptionTime{
+    text-align: center;
+    font-family: 'Noto Sans TC' ;
+    font-size: $font-size-m;
+    letter-spacing: $letter-spacing-m;
+  }
+
+  > .descriptionItem{
+    font-family: 'Noto Sans TC' ;
+    font-weight: 200;
+    padding: 5px 0px 0px 9px;
+  }
 }

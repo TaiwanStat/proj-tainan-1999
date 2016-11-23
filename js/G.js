@@ -165,7 +165,7 @@ DB.areasE = {
   '南化區':'Nanhua', '左鎮區':'Zuozhen', '仁德區':'Rende', '歸仁區':'Guiren',
   '關廟區':'Guanmiao', '龍崎區':'Longqi', '永康區':'Yongkang', '東區':'East',
   '南區':'South', '北區':'North' , '中西區':'WestCentral', '安南區':'Annan',
-  '安平區':'Anping' , '全區':'All'
+  '安平區':'Anping' , '台南市':'All'
 }
 
 DB.serviceName = [
@@ -217,6 +217,15 @@ function initG(){
 	G.time.lastWTime = getTimeString(DateAdd(now,'w',-1));
 	G.time.lastMTime = getTimeString(DateAdd(now,'m',-1));
 	G.time.lastYTime = getTimeString(DateAdd(now,'y',-1));
+
+	// init supportBox
+	DB.serviceName.forEach(function(value, index){
+		$('#itemBox9').append('<p class="box"><span style="background-color:' + G.colorServiceName[index] + '"></span>' + value + '</p>&nbsp;');
+	})
+
+	DB.serviceItems.forEach(function(value, index){
+		$('#itemBox33').append('<p class="box"><span style="background-color:' + G.colorServiceItem[index] + '"></span>' + value + '</p>&nbsp;');
+	})
 }
 
 function _select(itemId){
@@ -230,17 +239,18 @@ function _select(itemId){
 	window.location.hash = itemId ;
 	
 	// select nav item 
-	$('.active').removeClass('active')
-	$('#' + itemId).addClass('active');
+	$('.headerItemActive').removeClass('headerItemActive')
+	$('#' + itemId).addClass('headerItemActive');
 	$('html,body').scrollTop(0);
 }
 
-function _focusArea(area, i){
+function _focusArea(area, i, timeInterval){
+	timeInterval = timeInterval || 'w';
+
 	G.select('item_focus');
 	resetFocus();
-	focus(area, i,'w')
-	
-	$('#item_overview').addClass('active');
+	focus(area, i, timeInterval)
+
 	window.location.hash = "focus" + area ;
 }
 

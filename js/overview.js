@@ -7,34 +7,34 @@
 
   // init Time
   initTime()
-  // set donutChart size;
+    // set donutChart size;
   setSize();
   d3.json("../../src/fack_areas.json", function(error, data) {
     if (error) {
       console.log(error);
     }
 
-    var allArray = [//allArray用來存全區資料
-        [0,0,"違規停車"],
-        [1,0,"路燈故障"],
-        [2,0,"噪音舉發"],
-        [3,0,"騎樓舉發"],
-        [4,0,"道路維修"],
-        [5,0,"交通運輸"],
-        [6,0,"髒亂及污染"],
-        [7,0,"民生管線"],
-        [8,0,"動物救援"]
+    var allArray = [ //allArray用來存全區資料
+      [0, 0, "違規停車"],
+      [1, 0, "路燈故障"],
+      [2, 0, "噪音舉發"],
+      [3, 0, "騎樓舉發"],
+      [4, 0, "道路維修"],
+      [5, 0, "交通運輸"],
+      [6, 0, "髒亂及污染"],
+      [7, 0, "民生管線"],
+      [8, 0, "動物救援"]
     ];
 
     data.map(function(d, i) {
-        var areaName = d.area;
-        var array = []; //array用來儲存過濾後可畫圖的資料
-        var count = 0;
-        var otherSum = 0;
-        var nameObj = {
-                cName: areaName,
-                eName: DB.areasE[areaName]
-            }
+      var areaName = d.area;
+      var array = []; //array用來儲存過濾後可畫圖的資料
+      var count = 0;
+      var otherSum = 0;
+      var nameObj = {
+        cName: areaName,
+        eName: DB.areasE[areaName]
+      }
 
       for (var foo in service_name) {
         var temp = [];
@@ -44,16 +44,16 @@
         array.push(temp);
       }
 
-      for ( var ii=0 ; ii<9 ; ii++ ){//把每次的資料夾到全區累計
+      for (var ii = 0; ii < 9; ii++) { //把每次的資料夾到全區累計
         allArray[ii][1] += array[ii][1];
       }
 
-      array = array.sort(function(a, b) {//由大到小排序
+      array = array.sort(function(a, b) { //由大到小排序
         return d3.descending(a[1], b[1]);
       });
 
-      array.forEach(function(value, index){//取前三高，其他加總到其他
-        if (index > 2){
+      array.forEach(function(value, index) { //取前三高，其他加總到其他
+        if (index > 2) {
           otherSum += array[index][1];
         }
       })
@@ -63,22 +63,22 @@
       createDonut(array, nameObj, "column", i); //畫圖(各區)
     })
 
-    allArray = allArray.sort(function(a, b) {//由大到小排序
-        return d3.descending(a[1], b[1]);
+    allArray = allArray.sort(function(a, b) { //由大到小排序
+      return d3.descending(a[1], b[1]);
     });
 
     var allOtherSum = 0;
-    allArray.forEach(function(value, index){//取前三高，其他加總到其他
-        if (index > 2){
-          allOtherSum += allArray[index][1];
-        }
+    allArray.forEach(function(value, index) { //取前三高，其他加總到其他
+      if (index > 2) {
+        allOtherSum += allArray[index][1];
+      }
     })
 
     allArray.splice(3, allArray.length - 3, [9, allOtherSum, '其他']);
     var allNameObj = {
-                cName: "台南市",
-                eName: "All"
-            }
+      cName: "台南市",
+      eName: "All"
+    }
     createDonut(allArray, allNameObj, "column", -1); //畫圖(各區)
   });
 
@@ -86,20 +86,20 @@
   //filename: json filename, name: 區名, column_object: 預計要榜定的tag class
   function createDonut(array, name, column_object, areaIndex) {
     var pie = d3.layout.pie();
-    if( areaIndex<0 ){
-        var svg = d3.select("." + column_object)
-                    .insert("svg",":first-child")
-                    .attr({
-                        "width": width,
-                        "height": height,
-                    });
-    }else{
-        var svg = d3.select("." + column_object)
-                    .append("svg")
-                    .attr({
-                      "width": width,
-                      "height": height,
-                    });
+    if (areaIndex < 0) {
+      var svg = d3.select("." + column_object)
+        .insert("svg", ":first-child")
+        .attr({
+          "width": width,
+          "height": height,
+        });
+    } else {
+      var svg = d3.select("." + column_object)
+        .append("svg")
+        .attr({
+          "width": width,
+          "height": height,
+        });
     }
     var arc = d3.svg.arc()
       .innerRadius((width / 5))
@@ -154,19 +154,19 @@
       .on("mouseout", function(d) {
         tooltip.style("display", "none");
       })
-    // .on("mouseover", function(){
-    //     svg.append("text")
-    //         .attr({
-    //             "class": "subject_" + this.id,
-    //             "x": (width/2),
-    //             "y": (width/2),
-    //             "text-anchor": "middle"
-    //         })
-    //         .text(this.id);
-    // })
-    // .on("mouseout", function(){
-    //     svg.selectAll(".subject_" + this.id).remove();
-    // })
+      // .on("mouseover", function(){
+      //     svg.append("text")
+      //         .attr({
+      //             "class": "subject_" + this.id,
+      //             "x": (width/2),
+      //             "y": (width/2),
+      //             "text-anchor": "middle"
+      //         })
+      //         .text(this.id);
+      // })
+      // .on("mouseout", function(){
+      //     svg.selectAll(".subject_" + this.id).remove();
+      // })
 
     d3.selectAll(".path_special")
       .attr({
@@ -183,13 +183,17 @@
       .attr({
         'id': name.eName,
         'class': 'overview_areaName',
-        "x": width/2 - 35,
+        "x": width / 2 - 35,
         "y": height - 30
       })
       .text(function(d) {
         return name.cName + " ›";
       })
-      .on("click", function(d){
+      .on("click", function(d) {
+
+        // remove semantic's time menu active
+        $('.active').removeClass('active')
+        $('.item[value="w"]').addClass('active');
         G.focusArea(this.id, areaIndex);
       });
 
@@ -239,14 +243,13 @@
     return count;
   }
 
-  function setSize(){
-    if ( $(window).width() <= 1280){
+  function setSize() {
+    if ($(window).width() <= 1280) {
       width = 380;
       height = 380;
       lengendXparameter = 8.2;
       lengendYparameter = 3.5;
-    }
-    else{
+    } else {
       width = 450;
       height = 450;
       lengendXparameter = 10;
@@ -254,29 +257,24 @@
     }
   }
 
-  function initTime(){
+  function initTime() {
     var curTime = G.time.curTime;
     var lastTime = G.time.lastWTime;
-
-
-
-    $('.overview_title .date').text('( ' + lastTime.split('-')[1] + '/' + lastTime.split('-')[2] + ' ~ ' + curTime.split('-')[1] + '/' + curTime.split('-')[2] + ' )');
+    $('.overview_title .date').text('． ' + lastTime.split('-')[1] + '/' + lastTime.split('-')[2] + ' ~ ' + curTime.split('-')[1] + '/' + curTime.split('-')[2] + ' ．');
   }
 
   $('.ui.dropdown.overview_selectArea')
     .dropdown({
       action: 'hide',
-      onChange: function(value, text, selectItem){
+      onChange: function(value, text, selectItem) {
 
-        $('html, body').animate(
-          { scrollTop: $('#'+value).offset().top - 400 },
+        $('html, body').animate({ scrollTop: $('#' + value).offset().top - 400 },
           'easeInBack',
-          function(){
-            window.location.hash = value ;
+          function() {
+            window.location.hash = value;
           }
         )
       }
-    })
-  ;
+    });
 
 })()
