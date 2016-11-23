@@ -15,7 +15,7 @@
     if (error) {
       console.log(error);
     }
-    draw(data);
+    draw(data, 's');
   });
 
 
@@ -86,15 +86,25 @@
         if (error) {
           console.log(error);
         }
-        change(data);
+        draw(data, 'c');
       })
       last_data = dateGOGO(select_date._d);
     }
   }
-  //繪製最初的svg，因為之後都只會更新dom，所以不會再呼叫他了！
-  function draw(data) {
-    // establish the tooltip information named detail
+
+  function draw(data, option) {
+    /*
+      option:
+        's' : start (first time)
+        'c' : change data
+    */
+    option = option || 'c';
+
     var detail = {};
+    var filted_data = data_filter(data);
+    var all_event_number = [];
+    var init_value = 0;
+
     for (var foo in DB.serviceItems) {
       detail[DB.serviceItems[foo]] = "";
     }
@@ -111,23 +121,20 @@
       }
       //sorted the ojbect array for choosing the 3 highest areas
       district_sorted = Object.keys(district).sort(function(a, b) {
-          return district[b] - district[a] })
-        // store the information
+          return district[b] - district[a] 
+        })
+
       detail[data[foo].item] = district_sorted[0] + district[district_sorted[0]] + "件<br>" + district_sorted[1] + district[district_sorted[1]] + "件<br>" + district_sorted[2] + district[district_sorted[2]] + "件<br>";
     }
-    var filted_data = data_filter(data);
-    // for(var foo in filter)
-    var all_event_number = [];
-    var init_value = 0;
-    var show_text;
+
     for (var foo in filted_data.children) {
       if (filted_data.children[foo].value >= init_value) {
         init_value = filted_data.children[foo].value;
-        show_text = filted_data.children[foo].item;
+        // show_text = filted_data.children[foo].item;
       }
       all_event_number.push(filted_data.children[foo].value);
     };
-    // d3.select("#description").text(show_text);
+
     var mean = d3.quantile(all_event_number, 0.1);
     bubble_data = bubble.nodes(filted_data)
       .filter(
@@ -136,7 +143,8 @@
         }
       );
 
-    var draw_node = svg.selectAll("circle")
+    if( option === 's'){
+      var draw_node = svg.selectAll("circle")
       .data(bubble_data)
       .enter()
       .append("circle")
@@ -157,19 +165,25 @@
           return "id" + d.item;
         },
         opacity: 0
-      })
-      .on("mouseover", function() {
+      });
+    }else{
+      var draw_node = svg
+        .selectAll("circle")
+        .data(bubble_data)
+    }
+
+    draw_node
+      .on("mouseover", function(thisData) {
         d3.select(this).attr({
           "stroke": "rgba(0, 0, 0, 0.2)",
           "stroke-width": 3,
         })
-        // d3.select("#description").text(d3.select(this).attr("id").slice(2));
         tooltip_div.transition()
           .duration(100)
           .style({
             "opacity": 0.9
           });
-        tooltip_div.html('<span class = "bubble_tooltipName">' + d3.select(this).attr("id").slice(2) + "</span><br>" + detail[d3.select(this).attr("id").slice(2)])
+        tooltip_div.html('<span class = "bubble_tooltipName">' + d3.select(this).attr("id").slice(2) + "( " + thisData.value + "件 )</span><br>" + detail[d3.select(this).attr("id").slice(2)])
           .style({
             "left": (d3.event.pageX) + "px",
             "top": (d3.event.pageY) + "px"
@@ -185,14 +199,33 @@
           "stroke-width": 1,
         });
       });
-    draw_node.transition()
-      .duration(1000)
-      .attr({
-        opacity: 1,
-        cy: function(d) {
-          return d.y;
-        },
-      })
+
+    if ( option === 's'){
+      draw_node.transition()
+        .duration(1000)
+        .attr({
+          opacity: 1,
+          cy: function(d) {
+            return d.y;
+          },
+        })
+    }else{
+      draw_node.transition()
+        .duration(1000)
+        .attr({
+          cx: function(d) {
+            return d.x;
+          },
+          cy: function(d) {
+            return d.y;
+          },
+          r: function(d) {
+            return d.r;
+          },
+        });
+    }
+
+    resetItemText();
 
     var text_node = svg.selectAll("#item_text")
       .data(bubble_data)
@@ -200,10 +233,10 @@
       .append("text")
       .attr({
         "x": function(d) {
-          return d.x;
+          return d.x - 5;
         },
         "y": function(d) {
-          return 0;
+          return d.y - 5;
         },
         "id": "item_text"
       })
@@ -221,126 +254,6 @@
       .transition()
       .duration(1000)
       .attr({
-        "y": function(d) {
-          return d.y;
-        },
-      })
-
-    // ------- 新增 取前三高的事件數顯示出來 ---------
-    updateSideBox(data);
-  }
-
-  //更新svg的dom！因為api data的順序已經寫死，所以可以利用其對應關係做出更新
-  function change(data) {
-    // establish the eahc district information
-    var detail = {};
-    for (var foo in DB.serviceItems) {
-      detail[DB.serviceItems[foo]] = "";
-    }
-    // establish the eahc district information
-    for (var foo in data) {
-      // establish the each district information
-      var district = {};
-      for (var bar in DB.areas) {
-        district[DB.areas[bar]] = 0;
-      }
-      // use data.listData column to fetch object array by the evnet area by chinese area names
-      for (var bar in data[foo].listData) {
-        district[data[foo].listData[bar].area]++;
-      }
-      //sorted the ojbect array for choosing the 3 highest areas
-      district_sorted = Object.keys(district).sort(function(a, b) {
-          return district[b] - district[a] })
-        // store the information
-      detail[data[foo].item] = district_sorted[0] + district[district_sorted[0]] + "件<br>" + district_sorted[1] + district[district_sorted[1]] + "件<br>" + district_sorted[2] + district[district_sorted[2]] + "件<br>";
-    }
-    var filted_data = data_filter(data);
-    var all_event_number = [];
-    var init_value = 0;
-    var show_text;
-    for (var foo in filted_data.children) {
-      if (filted_data.children[foo].value >= init_value) {
-        init_value = filted_data.children[foo].value;
-        show_text = filted_data.children[foo].item;
-      }
-      all_event_number.push(filted_data.children[foo].value);
-    };
-    // d3.select("#description").text(show_text);
-    var mean = d3.quantile(all_event_number, 0.1);
-    bubble_data2 = bubble.nodes(filted_data)
-      .filter(
-        function(d) {
-          return d.parent;
-        }
-      );
-    var draw_node = svg.selectAll("circle")
-      .data(bubble_data2)
-      .on("mouseover", function() {
-        d3.select(this).attr({
-          "stroke": "rgba(0, 0, 0, 0.2)",
-          "stroke-width": 5,
-        })
-        // d3.select("#description").text(d3.select(this).attr("id").slice(2));
-        tooltip_div.transition()
-          .duration(100)
-          .style({
-            "opacity": 0.9
-          });
-        tooltip_div.html('<span class = "bubble_tooltipName">' + d3.select(this).attr("id").slice(2) + "</span><br>" + detail[d3.select(this).attr("id").slice(2)])
-          .style({
-            "left": (d3.event.pageX) + "px",
-            "top": (d3.event.pageY) + "px"
-          });
-      })
-      .on("mouseout", function() {
-        tooltip_div.transition()
-          .duration(100)
-          .style({
-            "opacity": 0
-          });
-        d3.select(this).attr({
-          "stroke-width": 1,
-        });
-      });
-    draw_node.transition()
-      .duration(1000)
-      .attr({
-        cx: function(d) {
-          return d.x;
-        },
-        cy: function(d) {
-          return d.y;
-        },
-        r: function(d) {
-          return d.r;
-        },
-      });
-    //但text不更新dom，直接重新繪製
-    svg.selectAll("#item_text").remove();
-    var text_node = svg.selectAll("#item_text")
-      .data(bubble_data2)
-      .enter()
-      .append("text")
-      .attr({
-        "id": "item_text"
-      })
-      .style({
-        "text-anchor": "middle"
-      })
-      .text(function(d) {
-        // console.log((d3.select("#id"+ d.item).attr("r")/(d.item.length)));
-        if (d.value > mean) {
-          if ((d3.select("#id" + d.item).attr("r") / (d.item.length)) >= 7) {
-            return d.item;
-          }
-        }
-      })
-      .attr({
-        opacity: 0
-      });
-    text_node.transition()
-      .duration(1000)
-      .attr({
         x: function(d) {
           return d.x;
         },
@@ -350,9 +263,10 @@
         opacity: 1
       })
 
-    // 更新側邊Box
+    // ------- 取前三高的事件數顯示出來 ---------
     updateSideBox(data);
   }
+ 
   //解析api data!，之後可能會因為api更動而需要更改
   function data_filter(data) {
     var new_data = [];
@@ -478,5 +392,9 @@
     for ( var i = 0; i < 3; i++ ){
       $('.descriptionItem>#item' + i).text((i + 1) + '. ' + sortData[i].item + ': '+sortData[i].caseCount + '件');
     }
+  }
+
+  function resetItemText(){
+    svg.selectAll("#item_text").remove();
   }
 })()

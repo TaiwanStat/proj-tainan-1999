@@ -60,7 +60,7 @@
 }
 
 .ui.compact.menu .item{
-	&:last-child{
+	&:last-child, &:first-child{
 		border-radius: 0px;
 	}
 }

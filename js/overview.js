@@ -265,7 +265,6 @@
 
   $('.ui.dropdown.overview_selectArea')
     .dropdown({
-      action: 'hide',
       onChange: function(value, text, selectItem) {
 
         $('html, body').animate({ scrollTop: $('#' + value).offset().top - 400 },

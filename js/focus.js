@@ -30,9 +30,15 @@ function focus(areaEName, fackId, timeInterval) {
 
   $('.infocus .reactive').click(function() {
     var selectedInterval = $(this).attr("value");
-    $('.active').removeClass('active')
-    $(this).addClass('active');
-    G.focusArea(areaEName, fackId, selectedInterval);
+    console.log(selectedInterval.length);
+    if(selectedInterval.length < 2){
+      $('.active').removeClass('active')
+      $(this).addClass('active');
+      G.focusArea(areaEName, fackId, selectedInterval);
+    }
+    else{
+      G.select('item_overview');
+    }
   })
 
   $('.area_name').text(areaCName);
@@ -509,3 +515,11 @@ function resetFocus() {
   d3.select('#pie-chart').selectAll("*").remove();
   d3.select('#bar-chart').selectAll("*").remove();
 }
+
+$('.ui.dropdown.focus_selectArea')
+  .dropdown({
+    onChange: function(value, text) {
+      var setInterval = $('.active').attr('value');
+      G.focusArea(value, 2, setInterval);
+    }
+  });
