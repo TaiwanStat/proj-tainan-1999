@@ -183,7 +183,13 @@
           },
         'y': height / 2 - 10
       })
-      .text(caseCount);
+      .style('opacity', 0)
+      .text(caseCount)
+      .transition()
+      .duration(800)
+      .style({
+        "opacity": 1
+      });
 
     svg.append('text')
       .attr('class', 'overview_caseCountI')
@@ -197,7 +203,13 @@
           return x + caseCountText_x * 19;
       })
       .attr('y', $('#caseCount_' + name.eName).attr('y') - 3)
-      .text('件');
+      .style('opacity', 0)
+      .text('件')
+      .transition()
+      .duration(800)
+      .style({
+        "opacity": 1
+      });
 
     svg.append("text") //區域名稱，放在圖下
       .attr({

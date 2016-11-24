@@ -14,6 +14,7 @@ function focus(areaEName, fackId, timeInterval) {
   var serviceArray = []; //array用來儲存過濾後可畫圖的資料
   var count = 0;
   var otherSum = 0;
+  var caseSum = 0; // 案件總數
 
   var pie_svg = d3.select("#pie-chart").append("svg")
     .attr("width", pie_width)
@@ -29,7 +30,6 @@ function focus(areaEName, fackId, timeInterval) {
   $('.infocus').off('click');
   $('.infocus .reactive').click(function() {
     var selectedInterval = $(this).attr("value");
-    console.log(selectedInterval.length);
     if(selectedInterval.length < 2){
       $('.active').removeClass('active')
       $(this).addClass('active');
@@ -183,11 +183,17 @@ function focus(areaEName, fackId, timeInterval) {
       .attr('class', 'focus_caseCountI')
       .text('件');
 
+    // Append time
+    pie_svg.append("text")
+      .attr({
+        "class": "time_intaveral",
+        "x": 0,
+        "y": 40,
+        "text-anchor": "middle"
+      })
+      .text(qStarTime + " ~ " + qEndTime);
+
   });
-
-  /**********************************************************/
-
-  var caseSum = 0;
 
   /********************* Bar Chart **************************/
 
@@ -298,7 +304,6 @@ function focus(areaEName, fackId, timeInterval) {
       .attr("y", function(d) {
         return y(d.item) + 10;
       })
-      // .attr("width",  function(d) { return Math.abs(x(d.caseCount) - x(0)); })
       .attr("width", 0)
       .attr("height", 20)
       .attr("rx", 5)
@@ -314,18 +319,14 @@ function focus(areaEName, fackId, timeInterval) {
 
     //********* The Second Pie **************//
 
-    var pie = d3.layout.pie().sort(null);
-    var piepie = d3.layout.pie().sort(null);
+    var pieOuter = d3.layout.pie().sort(null);
     var array = dataNoEmpty.map(function(d) {
       return d.caseCount;
     });
-
-    function hasCase(value) {
-      return value > 0;
-    }
-
     var array = array.filter(hasCase);
-    var pie2 = pie(array);
+    var pie2 = pieOuter(array);
+    // console.log(array);
+    var tmp = []; // tmp array to use drawPath()
 
     var donut2_arc1 = d3.svg.arc()
       .innerRadius((radius - 130))
@@ -387,24 +388,33 @@ function focus(areaEName, fackId, timeInterval) {
       d.cx = Math.cos(a) * (radius - 75);
     })
 
-    var tmp = [];
-
+    // ---- Bug:
+    // pie[0] , pie[1] , pie[2]沒有進去
+    // 應該是因為 pie2 那裡有問題（對與不對的時候會不一樣）
+    // ----
     pie_svg.selectAll("text").data(pie2)
       .enter()
       .append("text")
       .attr("text-anchor", "middle")
       .attr('class', 'focus_markerText')
       .attr("x", function(d, i) {
-        return d.x = Math.cos(d.a) * (radius - 20) * 1.3 ;
+        console.log(i);
+        return d.x = Math.cos(d.a) * (radius - 20) * 1.5;
         // return d.x = Math.cos(d.a)>0?400:-400;
       })
       .attr("y", function(d, i) {
-        return d.y = Math.sin(d.a) * (radius - 20);
+        console.log(i);
+        return d.y = Math.sin(d.a) * (radius - 20) * 1.02;
       })
       .text(function(d, i) {
-        if (d.value < caseSum / 40)
+        console.log(i);
+        // console.log(d.value);
+        if (d.value < (caseSum / 40)){
           return "";
-        return item_name[i];
+        }
+        else{
+          return item_name[i] + ' ' + formatFloat((d.value / caseSum) * 100, 1) + '%';
+        }
       })
       .each(function(d, i) {
         var bbox = this.getBBox();
@@ -429,8 +439,6 @@ function focus(areaEName, fackId, timeInterval) {
       .attr("cy", 5)
       .style("fill-opacity", 0.6)
       .attr("r", 5);
-
-
 
     //The Second pie end
     //sort the data
@@ -485,14 +493,6 @@ function focus(areaEName, fackId, timeInterval) {
       .attr("transform", "translate(" + x(0) + ",0)")
       .call(yAxis);
 
-    pie_svg.append("text")
-      .attr({
-        "class": "time_intaveral",
-        "x": 0,
-        "y": 40,
-        "text-anchor": "middle"
-      })
-      .text(qStarTime + " ~ " + qEndTime);
   });
 
   function drawPath(pie_svg, pie2) {
@@ -501,7 +501,7 @@ function focus(areaEName, fackId, timeInterval) {
       .append("path")
       .attr("class", function(d) {
         var className;
-        if (d.value > caseSum / 40)
+        if (d.value > (caseSum / 40))
           className = "pointer"
         else
           className = "foo"
@@ -529,11 +529,23 @@ function focus(areaEName, fackId, timeInterval) {
       }
     }
   }
+
+  function hasCase(value) {
+    console.log(value);
+    return value > 0;
+  }
+
 }
 
 function resetFocus() {
   d3.select('#pie-chart').selectAll("*").remove();
   d3.select('#bar-chart').selectAll("*").remove();
+}
+
+function formatFloat(num, pos)
+{
+  var size = Math.pow(10, pos);
+  return Math.round(num * size) / size;
 }
 
 $('.ui.dropdown.focus_selectArea')

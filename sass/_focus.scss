@@ -1,61 +1,68 @@
-#pie-chart{
-    text-align:center;
-}
-#bar-chart{
-    text-align:center;
-}
-.bar {
-    /*fill: steelblue;*/
-    border-radius: 2px;
-}
-.pie-path{
-    display: inline-block;
-    vertical-align: middle;
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-/*    backface-visibility: hidden;*/
-    -moz-osx-font-smoothing: grayscale;
-    transition-duration: 0.3s;
-    transition-property: transform;
+#pie-chart {
+  text-align: center;
 }
 
-.pie-path:hover,.pie-path:focus,.pie-path:active {
-    transform: scale(1.03);
+#bar-chart {
+  text-align: center;
 }
-.path{
-  border:2px red;
+
+.bar {
+  /*fill: steelblue;*/
+  border-radius: 2px;
+}
+
+.pie-path {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  /*    backface-visibility: hidden;*/
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.pie-path:hover,
+.pie-path:focus,
+.pie-path:active {
+  transform: scale(1.03);
+}
+
+.path {
+  border: 2px red;
 }
 
 .grid .tick {
-    stroke: #E0E0E0;
-    stroke-opacity: 0.7;
-    shape-rendering: crispEdges;
+  stroke: #E0E0E0;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
 }
 
 .grid path {
-    stroke-width: 0;
+  stroke-width: 0;
 }
 
 .axis text {
-    font: 15px sans-serif;
-    font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 300;
-    color: #3d3d3d;
-    letter-spacing: 1.5px;
+  font: 300 $font-size 'Noto Sans TC', sans-serif;
+  color: $black;
+  letter-spacing: 1.5px;
 }
+
 .axis path,
 .axis line {
-    fill: none;
-    stroke: #E0E0E0;
-    shape-rendering: crispEdges;
+  fill: none;
+  stroke: #E0E0E0;
+  shape-rendering: crispEdges;
 }
 
 .axis path {
-    display: none;
+  display: none;
 }
+
 .x {
   display: none;
 }
+
 text {
   font-size: 14px;
 }
@@ -65,85 +72,75 @@ text {
 //   right: 10px;
 //   top: 10px;
 // }
-
 text.bartip {
-  font-family: 'Noto Sans TC';
-  font-size: 13px;
-  font-weight: 200;
+  font: 200 $font-size 'Noto Sans TC';
 }
 
-.time_intaveral{
+.time_intaveral {
   font: $font-size + 2px 'Noto Sans TC';
   fill: $light-black;
   letter-spacing: $letter-spacing-s - 1px;
 }
 
-.infocus.reactive.item{
+.infocus.reactive.item {
   box-sizing: border-box;
   margin: 0px;
   z-index: 2;
-  &:hover , &:focus{
+  &:hover,
+  &:focus {
     border: 1px solid $orange;
-    background-color: rgba(0,0,0,.05);
+    background-color: rgba(0, 0, 0, .05);
   }
 }
 
-
-.focus_title{
+.focus_title {
   @extend %position_relative;
   margin: 1% 0px 1% 5%;
   width: 300px;
   text-align: center;
   padding: 13px 0px 10px 0px;
   // border: 2px solid $orange;
-
-
-  h2{
+  h2 {
     color: $orange;
     font-size: $font-size-m;
   }
-
-  span{
+  span {
     color: $black;
-    font-size: $font-size-l + 3px ;
+    font-size: $font-size-l + 3px;
     letter-spacing: $letter-spacing-l;
   }
-
-  > .focus_ulBox{
+  > .focus_ulBox {
     margin: 7px 0px 0px 65px;
     text-align: left;
   }
-
-  li{
+  li {
     letter-spacing: $letter-spacing-s;
     padding-top: 6px;
     cursor: pointer;
-    &:hover{
+    &:hover {
       color: $orange;
     }
   }
-
-  .noHover{
+  .noHover {
     font-weight: normal;
     cursor: auto;
-    &:hover{
+    &:hover {
       color: $black;
     }
   }
 }
 
-.focus_markerText{
+.focus_markerText {
   font-size: $font-size;
   letter-spacing: 1px;
   font-weight: 500;
 }
 
-.focus_caseCount{
+.focus_caseCount {
   @extend .overview_caseCount;
   font-size: $font-size-l * 2.8 !important;
 }
 
-.focus_caseCountI{
+.focus_caseCountI {
   font-size: $font-size-l;
 }
-
