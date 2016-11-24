@@ -325,7 +325,6 @@ function focus(areaEName, fackId, timeInterval) {
     });
     var array = array.filter(hasCase);
     var pie2 = pieOuter(array);
-    // console.log(array);
     var tmp = []; // tmp array to use drawPath()
 
     var donut2_arc1 = d3.svg.arc()
@@ -355,7 +354,6 @@ function focus(areaEName, fackId, timeInterval) {
               return G.colorServiceItem[key]; //color的array
             }
           }
-
         },
         "d": donut2_arc1,
         "class": "pie-path",
@@ -390,7 +388,7 @@ function focus(areaEName, fackId, timeInterval) {
 
     // ---- Bug:
     // pie[0] , pie[1] , pie[2]沒有進去
-    // 應該是因為 pie2 那裡有問題（對與不對的時候會不一樣）
+    // 應該是因為 pie2 那裡有問題（正確的時候 可以吃到全部 與 不正確的時候 index 從3開始吃）
     // ----
     pie_svg.selectAll("text").data(pie2)
       .enter()
@@ -398,16 +396,13 @@ function focus(areaEName, fackId, timeInterval) {
       .attr("text-anchor", "middle")
       .attr('class', 'focus_markerText')
       .attr("x", function(d, i) {
-        console.log(i);
         return d.x = Math.cos(d.a) * (radius - 20) * 1.5;
         // return d.x = Math.cos(d.a)>0?400:-400;
       })
       .attr("y", function(d, i) {
-        console.log(i);
         return d.y = Math.sin(d.a) * (radius - 20) * 1.02;
       })
       .text(function(d, i) {
-        console.log(i);
         // console.log(d.value);
         if (d.value < (caseSum / 40)){
           return "";
@@ -531,7 +526,7 @@ function focus(areaEName, fackId, timeInterval) {
   }
 
   function hasCase(value) {
-    console.log(value);
+    // console.log(value);
     return value > 0;
   }
 
