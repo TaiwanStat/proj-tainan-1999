@@ -4,6 +4,7 @@
   var height;
   var lengendXparameter;
   var lengendYparameter;
+  var caseCountText_x;
 
   // init Time
   initTime()
@@ -60,7 +61,7 @@
 
       array.splice(3, array.length - 3, [9, otherSum, '其他']); //保留前三高，其餘加總到「其他」
 
-      createDonut(array, nameObj, "column", i); //畫圖(各區)
+      createDonut(array, nameObj, "column", d.caseCount, i); //畫圖(各區)
     })
 
     allArray = allArray.sort(function(a, b) { //由大到小排序
@@ -68,10 +69,12 @@
     });
 
     var allOtherSum = 0;
-    allArray.forEach(function(value, index) { //取前三高，其他加總到其他
+    var allSum = 0;
+    allArray.forEach(function(value, index) { 
       if (index > 2) {
         allOtherSum += allArray[index][1];
       }
+      allSum += allArray[index][1];
     })
 
     allArray.splice(3, allArray.length - 3, [9, allOtherSum, '其他']);
@@ -79,12 +82,12 @@
       cName: "台南市",
       eName: "All"
     }
-    createDonut(allArray, allNameObj, "column", -1); //畫圖(各區)
+    createDonut(allArray, allNameObj, "column", allSum, -1); //畫圖(各區)
   });
 
   //createDonut("all_item.json", "東區" , "column")
   //filename: json filename, name: 區名, column_object: 預計要榜定的tag class
-  function createDonut(array, name, column_object, areaIndex) {
+  function createDonut(array, name, column_object, caseCount, areaIndex) {
     var pie = d3.layout.pie();
     if (areaIndex < 0) {
       var svg = d3.select("." + column_object)
@@ -154,19 +157,6 @@
       .on("mouseout", function(d) {
         tooltip.style("display", "none");
       })
-      // .on("mouseover", function(){
-      //     svg.append("text")
-      //         .attr({
-      //             "class": "subject_" + this.id,
-      //             "x": (width/2),
-      //             "y": (width/2),
-      //             "text-anchor": "middle"
-      //         })
-      //         .text(this.id);
-      // })
-      // .on("mouseout", function(){
-      //     svg.selectAll(".subject_" + this.id).remove();
-      // })
 
     d3.selectAll(".path_special")
       .attr({
@@ -178,6 +168,36 @@
       .attr({
         "d": arc2
       });
+
+    svg.append('text')
+      .attr({
+        'id': 'caseCount_' + name.eName,
+        'class':'overview_caseCount',
+        'x': function(d){
+            if (caseCount < 10)
+              return width / 2 - caseCountText_x * 5;
+            else if (caseCount < 100)
+              return width / 2 - caseCountText_x * 9;
+            else if (caseCount < 1000)
+              return width / 2 - caseCountText_x * 11;
+          },
+        'y': height / 2 - 10
+      })
+      .text(caseCount);
+
+    svg.append('text')
+      .attr('class', 'overview_caseCountI')
+      .attr('x', function(d){
+        var x = parseInt($('#caseCount_' + name.eName).attr('x'));
+        if (caseCount < 10)
+          return x + caseCountText_x * 7;
+        else if (caseCount < 100)
+          return x + caseCountText_x * 13;
+        else if (caseCount < 1000)
+          return x + caseCountText_x * 19;
+      })
+      .attr('y', $('#caseCount_' + name.eName).attr('y') - 3)
+      .text('件');
 
     svg.append("text") //區域名稱，放在圖下
       .attr({
@@ -197,13 +217,19 @@
         G.focusArea(this.id, areaIndex);
       });
 
+
+    // ------ Map colorArray ------- //
+
     var items = Object.keys(service_name);
     var lengedColor = array.map(function(d) {
       return [color[d[0]], items[d[0]]];
     })
 
+    // 把其他移掉
+    lengedColor.pop();
+
     var legendRectSize = 18;
-    var legendSpacing = 4;
+    var legendSpacing = 3;
     var legend = svg.selectAll('.legend')
       .data(lengedColor)
       .enter()
@@ -244,16 +270,18 @@
   }
 
   function setSize() {
-    if ($(window).width() <= 1280) {
+    if ($(window).width() <= 1520) {
       width = 380;
       height = 380;
-      lengendXparameter = 8.2;
-      lengendYparameter = 3.5;
+      lengendXparameter = 8.3;
+      lengendYparameter = 6.3;
+      caseCountText_x = 5;
     } else {
       width = 450;
       height = 450;
       lengendXparameter = 10;
-      lengendYparameter = 4.1;
+      lengendYparameter = 7.8;
+      caseCountText_x = 7;
     }
   }
 

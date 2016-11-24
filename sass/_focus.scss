@@ -71,17 +71,17 @@ text.bartip {
   font-size: 13px;
   font-weight: 200;
 }
-text.area_name{
-  font-size: $font-size-m;
-}
 
 .time_intaveral{
-  font-size: $font-size;
+  font: $font-size + 2px 'Noto Sans TC';
+  fill: $light-black;
+  letter-spacing: $letter-spacing-s - 1px;
 }
 
 .infocus.reactive.item{
   box-sizing: border-box;
   margin: 0px;
+  z-index: 2;
   &:hover , &:focus{
     border: 1px solid $orange;
     background-color: rgba(0,0,0,.05);
@@ -124,11 +124,26 @@ text.area_name{
   }
 
   .noHover{
-    font-weight: bold;
+    font-weight: normal;
     cursor: auto;
     &:hover{
       color: $black;
     }
   }
+}
+
+.focus_markerText{
+  font-size: $font-size;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.focus_caseCount{
+  @extend .overview_caseCount;
+  font-size: $font-size-l * 2.8 !important;
+}
+
+.focus_caseCountI{
+  font-size: $font-size-l;
 }
 

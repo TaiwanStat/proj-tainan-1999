@@ -27,7 +27,6 @@ function focus(areaEName, fackId, timeInterval) {
 
   // unbind click event
   $('.infocus').off('click');
-
   $('.infocus .reactive').click(function() {
     var selectedInterval = $(this).attr("value");
     console.log(selectedInterval.length);
@@ -153,7 +152,36 @@ function focus(areaEName, fackId, timeInterval) {
       .attr({
         "d": arc2
       });
+    
+    pie_svg.append('text')
+      .attr('x', function(){
+          var caseCount = d.caseCount;
+          if (caseCount < 10)
+            return -25;
+          else if (caseCount < 100)
+            return -60;
+          else if (caseCount < 1000)
+            return -90;
+        })
+      .attr('y', 0)
+      .attr('id', 'focus_caseCount_' + areaEName)
+      .attr('class', 'focus_caseCount')
+      .text(d.caseCount);
 
+    pie_svg.append('text')
+      .attr('x', function(){
+          var x = parseInt($('#focus_caseCount_' + areaEName).attr('x'));
+          var caseCount = d.caseCount;
+          if (caseCount < 10)
+            return x + 55;
+          else if (caseCount < 100)
+            return x + 100;
+          else if (caseCount < 1000)
+            return x + 160;
+        })
+      .attr('y', -4)
+      .attr('class', 'focus_caseCountI')
+      .text('件');
 
   });
 
@@ -365,6 +393,7 @@ function focus(areaEName, fackId, timeInterval) {
       .enter()
       .append("text")
       .attr("text-anchor", "middle")
+      .attr('class', 'focus_markerText')
       .attr("x", function(d, i) {
         return d.x = Math.cos(d.a) * (radius - 20) * 1.3 ;
         // return d.x = Math.cos(d.a)>0?400:-400;
@@ -458,18 +487,9 @@ function focus(areaEName, fackId, timeInterval) {
 
     pie_svg.append("text")
       .attr({
-        "class": "area_name",
-        "x": 0,
-        "y": -10,
-        "text-anchor": "middle"
-      })
-      .text(areaCName);
-
-    pie_svg.append("text")
-      .attr({
         "class": "time_intaveral",
         "x": 0,
-        "y": 30,
+        "y": 40,
         "text-anchor": "middle"
       })
       .text(qStarTime + " ~ " + qEndTime);

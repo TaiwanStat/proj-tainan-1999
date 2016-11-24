@@ -372,8 +372,6 @@
       $('#play_icon')
     			.removeClass('fa-pause')
     			.addClass('fa-play')
-
-      // $('#show_date').text('按下播放鍵-播放動畫圖表')
     });
 
   function updateSideBox(data){

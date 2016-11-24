@@ -35,7 +35,7 @@
 // ------------
 .overview_title {
   @extend %position_relative;
-  margin-left: 5%;
+  margin: 1% 5% 0px 5%;
   letter-spacing: $letter-spacing-l + 2px;
   h2 {
     font-size: $font-size-l + 7px;
@@ -59,6 +59,15 @@
       color: $orange;
     }
   }
+}
+
+.overview_caseCount{
+  font:500 $font-size-l * 1.8 'Noto Sans TC';
+  fill: $light-black;
+}
+
+.overview_caseCountI{
+  font: $font-size-m 'Noto Sans TC';
 }
 
 .overview_areaName {
@@ -121,4 +130,15 @@
   line-height: 1.2;
   text-align: center;
   letter-spacing: $letter-spacing-s;
+}
+
+@media screen and (min-width: 1520px){
+  .overview_caseCount{
+    font-size: $font-size-l * 2.3;
+  }
+
+  .overview_caseCountI{
+    font-size: $font-size-m;
+  }
+
 }
