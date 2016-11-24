@@ -7,8 +7,8 @@
   border-bottom: solid 1px $gray;
 
 	.header_left{
-		@extend %position_relative;
 		@extend %flex_align_center;
+		position: relative; // Firefox 一定要這樣吃
 		font-size: $font-size-s;
 		cursor: pointer;
 
@@ -48,11 +48,13 @@
 		justify-content: space-around;
 		align-self: flex-end;
 		top: -6px;
+		-moz-transform: translateY(-20%); // 因為 Firefox 比較短，所以要提高一些
 		font-size: $font-size + 2px;
 	}
 
 	li.header_item{
 		@extend %flex_align_center;
+		position: relative;
 		align-self: flex-end;
 		margin: 0px 12px;
 		color: $gray;
@@ -79,9 +81,11 @@
 			@extend %position_absolute;
 			opacity: 0;
 	    content: '';
-	    width: 50%;
+	    width: 100%;
 	    height: 5px;
+	    left: 0px;
 	    bottom: -13px;
+	    -moz-bottom: -8px;
 	    background: $orange;
 	    border-radius: 20px;
 		}
@@ -97,15 +101,12 @@
 	}
 }
 
-#item_bubble:after{
-	left: 51%;
-}
 
 .questionBox{
-	@extend %position_relative;
+	position: relative;
   align-self: flex-end;
   padding: 11px;
-  z-index: 2;
+  z-index: 3;
   cursor: help;
   font-size: $font-size-s;
 
@@ -145,7 +146,7 @@
   top: 9px;
   border-width: 0 11px 19px;
 	border-color:transparent transparent rgba(253, 253, 253, 1);	
-	z-index: 3;
+	z-index: 4;
 }
 
 .supportBox{
@@ -156,7 +157,7 @@
 	padding: 5px;
 	width: 33em;
 	border: 2px solid $orange;
-	z-index: 2;
+	z-index: 3;
 
 	text-align: center;
 	font-size: $font-size-s + 1px;
@@ -180,7 +181,7 @@
 	}
 
 	.box{
-		@extend %position_relative;
+		position: relative;
     padding-left: 20px;
 	}
 

@@ -68,7 +68,7 @@
 }
 
 #super_container {
-  @extend %position_relative;
+  position: relative;
   background: transparent;
   line-height: 1.5;
   font-size: $font-size;
