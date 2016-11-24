@@ -8,9 +8,9 @@
 
   // init Time
   initTime()
-    // set donutChart size;
+  // set donutChart size;
   setSize();
-  d3.json("../../src/fack_areas.json", function(error, data) {
+  d3.json("../src/fack_areas.json", function(error, data) {
     if (error) {
       console.log(error);
     }
@@ -152,7 +152,8 @@
         tooltip.style("left", d3.event.pageX + 10 + "px");
         tooltip.style("top", d3.event.pageY - 25 + "px");
         tooltip.style("display", "inline-block");
-        tooltip.html(array[i][2] + "<br>" + array[i][1] + "件");
+        var percent = (parseFloat(array[i][1]) / caseCount * 100).toFixed(1);
+        tooltip.html(array[i][2] + "<br>" + percent + "％");
       })
       .on("mouseout", function(d) {
         tooltip.style("display", "none");

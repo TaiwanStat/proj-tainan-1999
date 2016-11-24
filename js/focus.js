@@ -1,5 +1,4 @@
 function focus(areaEName, fackId, timeInterval) {
-
   var margin = {
     top: 50,
     right: 300,
@@ -70,7 +69,7 @@ function focus(areaEName, fackId, timeInterval) {
 
   // ******use fake data
 
-  d3.json("../../src/fack_areas.json", function(error, data) {
+  d3.json("../src/fack_areas.json", function(error, data) {
     if (error) {
       console.log(error);
     }
@@ -206,7 +205,7 @@ function focus(areaEName, fackId, timeInterval) {
   //*******use fake_items data
   // Beacuse ude fake data , we can't choose correct things.
   // 除非給我們用真的API 才能選
-  d3.json("../../src/fack_items.json", function(error, data) {
+  d3.json("../src/fack_items.json", function(error, data) {
 
     //outer donut chart & bar chart
 
@@ -519,7 +518,7 @@ function focus(areaEName, fackId, timeInterval) {
   function findAreaCName(areaEName) {
     //find areaCName
     for (var key in DB.areasE) {
-      if (DB.areasE[key] === areaEName) {
+      if (DB.areasE[key].toLowerCase() === areaEName.toLowerCase()) {
         return key;
       }
     }

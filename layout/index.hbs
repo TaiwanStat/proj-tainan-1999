@@ -11,15 +11,15 @@
 	
 	{{> header}}
 
-	<section class = "section" id = "overview">
+	<section class="section disable" id="section-overview">
 		{{> overview}}
 	</section>
 
-	<section class = "section disable" id = "focus">
+	<section class = "section disable" id="section-focus">
 		{{> focus}}
 	</section>
 
-	<section class = "section disable" id = "bubble">
+	<section class = "section disable" id="section-bubble">
 		{{> bubble}}
 	</section>
 
@@ -39,4 +39,7 @@
 <script type="text/javascript" src = "{{path}}dist/js/overview.js"></script>
 <script type="text/javascript" src = "{{path}}dist/js/focus.js"></script>
 <script type="text/javascript" src = "{{path}}dist/js/bubble.js"></script>
+<script type="text/javascript">
+  G.initPage();
+</script>
 </html>

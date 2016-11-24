@@ -98,16 +98,18 @@ var weekArray = [
 
 
 var G = {
-	last: $('#overview'),
-	now: $('#overview'),
+	last: null,
+	now: null,
 	select: _select,
 	focusArea: _focusArea,
 	colorServiceName: [],
 	colorServiceItem: [],
 	getAreasData: _getAreasData,
 	getItemsData: _getItemsData,
-	time: {}
+	time: {},
+	initPage: initPage
 };
+
 
 var DB = {
 	key : "0x8209A3AA4B5607A5C644BE908F83A350361A8B8ECFCDCCE5E105379B92C62F1E",
@@ -229,16 +231,27 @@ function initG(){
 }
 
 function _select(itemId){
-	var id = itemId.split('_')[1];
+  var id;
+  var arr = itemId.split('-');
+  var isInit = this.last ? false : true;
+
+  if (arr.length > 1)
+	  id = arr[1];
+	else
+	  id = 'overview';
+
 	this.last = this.now;
-	this.now = $('#' + id);
-	this.last.toggleClass('disable');
+  if (!isInit) {
+	  this.last.toggleClass('disable');
+  }
+  console.log(itemId, this.now);
+	this.now = $('#section-' + id);
 	this.now.toggleClass('disable');
 
 	// set hash
-	window.location.hash = itemId ;
-	
-	// select nav item 
+	window.location.hash = itemId;
+
+	// select nav item
 	$('.headerItemActive').removeClass('headerItemActive')
 	$('#' + itemId).addClass('headerItemActive');
 	$('html,body').scrollTop(0);
@@ -247,11 +260,10 @@ function _select(itemId){
 function _focusArea(area, i, timeInterval){
 	timeInterval = timeInterval || 'w';
 
-	G.select('item_focus');
+	G.select('area-focus');
 	resetFocus();
 	focus(area, i, timeInterval)
-
-	window.location.hash = "focus" + area ;
+	window.location.hash = "area-" + i + "-" + area.toLowerCase();
 }
 
 // console.log(G.getAreasData('2016-07-01', '2016-07-03', DB.areas));
@@ -444,4 +456,25 @@ var DateAdd = function(curTime, strInterval, Number) {
   }
 }
 
+function initPage() {
+  var hash = window.location.hash;
+  var arr = hash.split('-');
 
+  if (hash.indexOf('area') > 0) {
+    $('#section-overview').addClass('disable');
+    $('.active').removeClass('active')
+    $('.item[value="w"]').addClass('active');
+    this.now = $('#section-focus');
+    this.focusArea(arr[2], parseInt(arr[1]));
+  }
+  else if (hash.indexOf('bubble') > 0) {
+    $('#section-overview').addClass('disable');
+    this.now = $('#section-bubble');
+    G.select('dynamic-bubble');
+    bubbleChart();
+  }
+  else {
+    this.now = $('#section-overview');
+    G.select('overview');
+  }
+}

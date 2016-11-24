@@ -2,13 +2,16 @@ initG();
 $('.header_item').click(function() {
   G.select(this.id);
 
-  if(this.id === 'item_focus'){
+  if(this.id === 'area-focus'){
   	// remove semantic's time menu active
     $('.active').removeClass('active')
     $('.item[value="w"]').addClass('active');
-    G.focusArea('all', -1);
+    G.focusArea('all', 38);
   }
-  console.log('state: ' + this.id.split('_')[1]);
+  else if (!isBubbleExist){
+    bubbleChart();
+  }
+  console.log('state: ' + this.id.split('-')[1]);
 })
 
 $('.header_left').click(function(){

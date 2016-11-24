@@ -1,5 +1,6 @@
-(function() {
-
+var isBubbleExist = false;
+var bubbleChart = function() {
+  isBubbleExist = true;
   var width = 800;
   var height = 600;
   var json_data;
@@ -11,7 +12,7 @@
     .attr("opacity", 1);
 
   //parser data, 之後將改成call api的方式, 不需要d3.json
-  d3.json("../../src/faked.json", function(error, data) {
+  d3.json("../src/faked.json", function(error, data) {
     if (error) {
       console.log(error);
     }
@@ -380,8 +381,10 @@
         return 1;
       }
       else if (a.caseCount > b.caseCount){
-        return -1;  
+        return -1;
+
       }else{
+
         return 0; // a 必須等於 b
       }
     })
@@ -395,4 +398,4 @@
   function resetItemText(){
     svg.selectAll("#item_text").remove();
   }
-})()
+}
