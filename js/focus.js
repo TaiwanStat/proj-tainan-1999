@@ -151,47 +151,49 @@ function focus(areaEName, fackId, timeInterval) {
       .attr({
         "d": arc2
       });
-    
-    pie_svg.append('text')
-      .attr('x', function(){
-          var caseCount = d.caseCount;
-          if (caseCount < 10)
-            return -25;
-          else if (caseCount < 100)
-            return -60;
-          else if (caseCount < 1000)
-            return -90;
+
+    function drawText() {
+      pie_svg.append('text')
+        .attr('x', function(){
+            var caseCount = d.caseCount;
+            if (caseCount < 10)
+              return -25;
+            else if (caseCount < 100)
+              return -60;
+            else if (caseCount < 1000)
+              return -90;
+          })
+        .attr('y', 0)
+        .attr('id', 'focus_caseCount_' + areaEName)
+        .attr('class', 'focus_caseCount')
+        .text(d.caseCount);
+
+      pie_svg.append('text')
+        .attr('x', function(){
+            var x = parseInt($('#focus_caseCount_' + areaEName).attr('x'));
+            var caseCount = d.caseCount;
+            if (caseCount < 10)
+              return x + 55;
+            else if (caseCount < 100)
+              return x + 100;
+            else if (caseCount < 1000)
+              return x + 160;
+          })
+        .attr('y', -4)
+        .attr('class', 'focus_caseCountI')
+        .text('件');
+
+      // Append time
+      pie_svg.append("text")
+        .attr({
+          "class": "time_intaveral",
+          "x": 0,
+          "y": 40,
+          "text-anchor": "middle"
         })
-      .attr('y', 0)
-      .attr('id', 'focus_caseCount_' + areaEName)
-      .attr('class', 'focus_caseCount')
-      .text(d.caseCount);
-
-    pie_svg.append('text')
-      .attr('x', function(){
-          var x = parseInt($('#focus_caseCount_' + areaEName).attr('x'));
-          var caseCount = d.caseCount;
-          if (caseCount < 10)
-            return x + 55;
-          else if (caseCount < 100)
-            return x + 100;
-          else if (caseCount < 1000)
-            return x + 160;
-        })
-      .attr('y', -4)
-      .attr('class', 'focus_caseCountI')
-      .text('件');
-
-    // Append time
-    pie_svg.append("text")
-      .attr({
-        "class": "time_intaveral",
-        "x": 0,
-        "y": 40,
-        "text-anchor": "middle"
-      })
-      .text(qStarTime + " ~ " + qEndTime);
-
+        .text(qStarTime + " ~ " + qEndTime);
+    }
+    setTimeout(drawText, 0);
   });
 
   /********************* Bar Chart **************************/
@@ -416,6 +418,7 @@ function focus(areaEName, fackId, timeInterval) {
         d.ox = d.x + bbox.width / 2 + 2;
         d.sy = d.oy = d.y + 5;
         tmp.push(d);
+        console.log(tmp);
         if (i === pie2.length - 1) {
           drawPath(pie_svg, tmp);
         }
