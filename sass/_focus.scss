@@ -144,3 +144,17 @@ text.bartip {
 .focus_caseCountI {
   font-size: $font-size-l;
 }
+input.infocus{
+  width:100px;
+}
+
+.ui.form{
+  padding:30px;
+  border-style:hidden;
+}
+.field{
+  border-style: hidden !important;
+}
+.ui.modal .actions>.button {
+    margin-left: 0;
+}

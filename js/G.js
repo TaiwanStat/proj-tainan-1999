@@ -257,12 +257,12 @@ function _select(itemId){
 	$('html,body').scrollTop(0);
 }
 
-function _focusArea(area, i, timeInterval){
+function _focusArea(area, i, timeInterval,startDate,endDate){
 	timeInterval = timeInterval || 'w';
 
 	G.select('area-focus');
 	resetFocus();
-	focus(area, i, timeInterval)
+	focus(area, i, timeInterval,startDate,endDate);
 	window.location.hash = "area-" + i + "-" + area.toLowerCase();
 }
 
@@ -465,7 +465,7 @@ function initPage() {
     $('.active').removeClass('active')
     $('.item[value="w"]').addClass('active');
     this.now = $('#section-focus');
-    this.focusArea(arr[2], parseInt(arr[1]));
+    this.focusArea(arr[2], parseInt(arr[1]),'','');
   }
   else if (hash.indexOf('bubble') > 0) {
     $('#section-overview').addClass('disable');
