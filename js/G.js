@@ -257,12 +257,12 @@ function _select(itemId){
 	$('html,body').scrollTop(0);
 }
 
-function _focusArea(area, i, timeInterval,startDate,endDate){
+function _focusArea(area, i, timeInterval, startDate, endDate){
 	timeInterval = timeInterval || 'w';
 
 	G.select('area-focus');
 	resetFocus();
-	focus(area, i, timeInterval,startDate,endDate);
+	focus(area, i, timeInterval, startDate, endDate);
 	window.location.hash = "area-" + i + "-" + area.toLowerCase();
 }
 

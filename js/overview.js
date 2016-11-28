@@ -203,7 +203,7 @@
         else if (caseCount < 1000)
           return x + caseCountText_x * 19;
       })
-      .attr('y', $('#caseCount_' + name.eName).attr('y') - 3)
+      .attr('y', $('#caseCount_'+name.eName).attr('y') - 3)
       .style('opacity', 0)
       .text('件')
       .transition()
