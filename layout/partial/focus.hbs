@@ -9,7 +9,39 @@
   <a class="infocus reactive item" value ='y'>
     一年內
   </a>
+  <a class="infocus reactive item" id="self-define" value='s'>
+    自訂區間
+  </a>
 </div>
+
+<div class="ui modal">
+<div class="ui form">
+    <div class="two fields">
+      <div class="field">
+        <div class="ui calendar" id="rangestart">
+          <div class="ui input left icon">
+            <i class="calendar icon"></i>
+            <input type="text" placeholder="開始日期" id="startDate">
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui calendar" id="rangeend">
+          <div class="ui input left icon">
+            <i class="calendar icon"></i>
+            <input type="text" placeholder="結束日期" id="endDate">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="actions">
+    <div class="ui fluid large approve button">OK</div>
+  </div>
+  </div>
+</div>
+
+
+        
 
 <div class="infocus ui right floated compact menu">
   <a class="infocus reactive item" value = 'overview' ><i class="angle double left icon"></i><b>總覽</b></a>
@@ -23,7 +55,7 @@
     <option value="Houbi">後壁區</option>
     <option value="Dongshan">東山區</option>
     <option value="Madou">麻豆區</option>
-    <option value="Xaying">下營區</option>
+    <option value="Xiaying">下營區</option>
     <option value="Liujia">六甲區</option>
     <option value="Guantian">官田區</option>
     <option value="Danei">大內區</option>

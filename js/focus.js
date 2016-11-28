@@ -1,4 +1,35 @@
-function focus(areaEName, fackId, timeInterval) {
+$('#rangestart').calendar({
+  type: 'date',
+  inline: true,
+  endCalendar: $('#rangeend'),
+  formatter: {
+    date: function(date, settings) {
+      if (!date) return '';
+      var day = date.getDate();
+      var month = date.getMonth() + 1;
+      var year = date.getFullYear();
+      var dateString = year + '-' + month + '-' + day;
+      return dateString;
+    }
+  }
+});
+$('#rangeend').calendar({
+  type: 'date',
+  inline: true,
+  startCalendar: $('#rangestart'),
+  formatter: {
+    date: function(date, settings) {
+      if (!date) return '';
+      var day = date.getDate();
+      var month = date.getMonth() + 1;
+      var year = date.getFullYear();
+      var dateString = year + '-' + month + '-' + day;
+      return dateString;
+    }
+  }
+});
+
+function focus(areaEName, fackId, timeInterval, startDate, endDate) {
   var margin = {
     top: 50,
     right: 300,
@@ -14,6 +45,8 @@ function focus(areaEName, fackId, timeInterval) {
   var count = 0;
   var otherSum = 0;
   var caseSum = 0; // 案件總數
+  var qStarTime = '';
+  var qEndTime = '';
 
   var pie_svg = d3.select("#pie-chart").append("svg")
     .attr("width", pie_width)
@@ -29,18 +62,39 @@ function focus(areaEName, fackId, timeInterval) {
   $('.infocus').off('click');
   $('.infocus .reactive').click(function() {
     var selectedInterval = $(this).attr("value");
-    if(selectedInterval.length < 2){
+    if (selectedInterval.length < 2) {
       $('.active').removeClass('active')
       $(this).addClass('active');
-      G.focusArea(areaEName, fackId, selectedInterval);
+      G.focusArea(areaEName, fackId, selectedInterval, qStarTime, qEndTime);
+    } else {
+      G.select('item_overview');
     }
-    else{
+  })
+  $('#self-define').off('click');
+  $('#self-define').click(function() {
+    $('.ui.modal')
+      .modal({
+        onApprove: function() {
+          qStarTime = $("#startDate").val();
+          qEndTime = $("#endDate").val();
+          
+          if (qStarTime === '' || qEndTime === '') 
+            return;
+          G.focusArea(areaEName, fackId, 's', qStarTime, qEndTime);
+        }
+      })
+      .modal('show');
+
+    var selectedInterval = $(this).attr("value");
+    if (selectedInterval.length < 2) {
+      $('.active').removeClass('active')
+      $(this).addClass('active');
+    } else {
       G.select('item_overview');
     }
   })
 
   $('.area_name').text(areaCName);
-
   console.log("state:focus-" + areaCName)
 
 
@@ -60,8 +114,13 @@ function focus(areaEName, fackId, timeInterval) {
 
   //****** uncomment to connect 1999 api
   // area = "東區"
-  var qStarTime = getTimeString(DateAdd(now, timeInterval, -1));
-  var qEndTime = getTimeString(now);
+  if (!(timeInterval === 's')) {
+    qStarTime = getTimeString(DateAdd(now, timeInterval, -1));
+    qEndTime = getTimeString(now);
+  } else {
+    qStarTime = startDate;
+    qEndTime = endDate;
+  }
   // console.log(qStarTime + "/" + qEndTime + "/" + area);
   // var qData = G.getAreasData(qStarTime, qEndTime, [area])
   // console.log(qData)
@@ -151,9 +210,10 @@ function focus(areaEName, fackId, timeInterval) {
       .attr({
         "d": arc2
       });
-    
-    pie_svg.append('text')
-      .attr('x', function(){
+
+    function drawText() {
+      pie_svg.append('text')
+        .attr('x', function() {
           var caseCount = d.caseCount;
           if (caseCount < 10)
             return -25;
@@ -162,13 +222,13 @@ function focus(areaEName, fackId, timeInterval) {
           else if (caseCount < 1000)
             return -90;
         })
-      .attr('y', 0)
-      .attr('id', 'focus_caseCount_' + areaEName)
-      .attr('class', 'focus_caseCount')
-      .text(d.caseCount);
+        .attr('y', 0)
+        .attr('id', 'focus_caseCount_' + areaEName)
+        .attr('class', 'focus_caseCount')
+        .text(d.caseCount);
 
-    pie_svg.append('text')
-      .attr('x', function(){
+      pie_svg.append('text')
+        .attr('x', function() {
           var x = parseInt($('#focus_caseCount_' + areaEName).attr('x'));
           var caseCount = d.caseCount;
           if (caseCount < 10)
@@ -178,20 +238,21 @@ function focus(areaEName, fackId, timeInterval) {
           else if (caseCount < 1000)
             return x + 160;
         })
-      .attr('y', -4)
-      .attr('class', 'focus_caseCountI')
-      .text('件');
+        .attr('y', -4)
+        .attr('class', 'focus_caseCountI')
+        .text('件');
 
-    // Append time
-    pie_svg.append("text")
-      .attr({
-        "class": "time_intaveral",
-        "x": 0,
-        "y": 40,
-        "text-anchor": "middle"
-      })
-      .text(qStarTime + " ~ " + qEndTime);
-
+      // Append time
+      pie_svg.append("text")
+        .attr({
+          "class": "time_intaveral",
+          "x": 0,
+          "y": 40,
+          "text-anchor": "middle"
+        })
+        .text(qStarTime + " ~ " + qEndTime);
+    }
+    setTimeout(drawText, 0);
   });
 
   /********************* Bar Chart **************************/
@@ -385,10 +446,6 @@ function focus(areaEName, fackId, timeInterval) {
       d.cx = Math.cos(a) * (radius - 75);
     })
 
-    // ---- Bug:
-    // pie[0] , pie[1] , pie[2]沒有進去
-    // 應該是因為 pie2 那裡有問題（正確的時候 可以吃到全部 與 不正確的時候 index 從3開始吃）
-    // ----
     pie_svg.selectAll("text").data(pie2)
       .enter()
       .append("text")
@@ -403,10 +460,9 @@ function focus(areaEName, fackId, timeInterval) {
       })
       .text(function(d, i) {
         // console.log(d.value);
-        if (d.value < (caseSum / 40)){
+        if (d.value < (caseSum / 40)) {
           return "";
-        }
-        else{
+        } else {
           return item_name[i] + ' ' + formatFloat((d.value / caseSum) * 100, 1) + '%';
         }
       })
@@ -489,6 +545,7 @@ function focus(areaEName, fackId, timeInterval) {
 
   });
 
+
   function drawPath(pie_svg, pie2) {
     // console.log(pie2);
     pie_svg.selectAll("path.pointer").data(pie2).enter()
@@ -513,7 +570,7 @@ function focus(areaEName, fackId, timeInterval) {
           return "M" + d.ox + "," + d.oy + "L" + d.sx + "," + d.sy + " " + d.cx + "," + d.cy;
         }
       });
-  }
+  } 
 
   function findAreaCName(areaEName) {
     //find areaCName
@@ -536,8 +593,7 @@ function resetFocus() {
   d3.select('#bar-chart').selectAll("*").remove();
 }
 
-function formatFloat(num, pos)
-{
+function formatFloat(num, pos) {
   var size = Math.pow(10, pos);
   return Math.round(num * size) / size;
 }
@@ -546,6 +602,9 @@ $('.ui.dropdown.focus_selectArea')
   .dropdown({
     onChange: function(value, text) {
       var setInterval = $('.active').attr('value');
-      G.focusArea(value, 2, setInterval);
+      var qStarTime = $('#startDate').val();
+      var qEndTime = $('#endDate').val();
+
+      G.focusArea(value, 2, setInterval, qStarTime, qEndTime);
     }
   });

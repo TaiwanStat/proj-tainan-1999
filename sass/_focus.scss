@@ -67,11 +67,6 @@ text {
   font-size: 14px;
 }
 
-// form {
-//   position: absolute;
-//   right: 10px;
-//   top: 10px;
-// }
 text.bartip {
   font: 200 $font-size 'Noto Sans TC';
 }
@@ -143,4 +138,18 @@ text.bartip {
 
 .focus_caseCountI {
   font-size: $font-size-l;
+}
+input.infocus{
+  width:100px;
+}
+
+.ui.form{
+  padding:30px;
+  border-style:hidden;
+}
+.field{
+  border-style: hidden !important;
+}
+.ui.modal .actions>.button {
+    margin-left: 0;
 }
