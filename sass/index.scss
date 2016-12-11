@@ -4,13 +4,19 @@
 @import 'overview';
 @import 'bubble';
 
+html {
+  height:100%;
+  width:100%;
+  margin:0px;
+}
+
 .disable{
 	display: none !important;
 }
 
 .section{
 	@extend %section_setting;
-	@include animation(show 0.1s linear);		
+	@include animation(show 0.1s linear);
 }
 
 @include keyframes(show) {
@@ -46,7 +52,7 @@
 	&:hover{
 		border-color: $orange;
 		.menu{
-			border-color: $orange;			
+			border-color: $orange;
 		}
 	}
 	.menu{
@@ -65,6 +71,3 @@
 		border-radius: 0px;
 	}
 }
-
-
-
