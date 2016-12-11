@@ -328,7 +328,7 @@ var bubbleChart = function () {
               clearInterval(event);
             }
           } else {
-            clearIntnterval(event);
+            clearInterval(event);
           }
         }, 2000);
       } else if (playState === 'play') {

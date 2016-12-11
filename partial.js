@@ -1,6 +1,6 @@
-var fs = require("fs");
+var fs = require('fs');
 
-module.exports= function (hbs) {
+module.exports = function (hbs) {
   // register partials
   hbs.registerPartial('head', getPartials('head'));
   hbs.registerPartial('header', getPartials('header'));
@@ -10,7 +10,6 @@ module.exports= function (hbs) {
 };
 
 function getPartials(filename) {
-  var template = fs.readFileSync('./layout/partial/'+filename+'.hbs', 'utf8');
-  template = template.replace(/[\t\n]/g, '');
+  var template = fs.readFileSync('./layout/partial/' + filename + '.hbs', 'utf8');
   return template;
 }
