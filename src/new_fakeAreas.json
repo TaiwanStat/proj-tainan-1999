@@ -1,0 +1,2883 @@
+{
+  "count": 3876,
+  "areasArray": [
+    {
+      "area": "安平區",
+      "caseCount": 265,
+      "listData": [
+        {
+          "caseCount": 119,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "安平區"
+        },
+        {
+          "caseCount": 40,
+          "serviceName": "騎樓舉發",
+          "serviceItems": "騎樓舉發",
+          "area": "安平區"
+        },
+        {
+          "caseCount": 20,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "安平區"
+        },
+        {
+          "caseCount": 18,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "安平區"
+        },
+        {
+          "caseCount": 9,
+          "serviceName": "噪音舉發",
+          "serviceItems": "場所連續噪音",
+          "area": "安平區"
+        },
+        {
+          "caseCount": 9,
+          "serviceName": "民生管線",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "安平區"
+        },
+        {
+          "caseCount": 6,
+          "serviceName": "道路維修",
+          "serviceItems": "路面坑洞",
+          "area": "安平區"
+        },
+        {
+          "caseCount": 6,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "環境髒亂",
+          "area": "安平區"
+        },
+        {
+          "caseCount": 6,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "空氣汙染",
+          "area": "安平區"
+        },
+        {
+          "caseCount": 6,
+          "serviceName": "交通運輸",
+          "serviceItems": "佔用道路",
+          "area": "安平區"
+        },
+        {
+          "caseCount": 4,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "道路散落物",
+          "area": "安平區"
+        },
+        {
+          "caseCount": 4,
+          "serviceName": "路燈故障",
+          "serviceItems": "10盞以上路燈故障",
+          "area": "安平區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "交通運輸",
+          "serviceItems": "號誌故障",
+          "area": "安平區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "場所連續噪音",
+          "area": "安平區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "道路維修",
+          "serviceItems": "人孔蓋聲響、凹陷、漏水",
+          "area": "安平區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "違規停車",
+          "serviceItems": "佔用道路",
+          "area": "安平區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "小廣告、旗幟",
+          "area": "安平區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "動物救援",
+          "serviceItems": "遊蕩犬隻捕捉管制",
+          "area": "安平區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "寬頻管線、孔蓋損壞",
+          "area": "安平區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "安平區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "地震通報",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "安平區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "電信孔蓋鬆動、電信線路掉落、電信桿傾倒",
+          "area": "安平區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "安平區"
+        }
+      ]
+    },
+    {
+      "area": "安南區",
+      "caseCount": 237,
+      "listData": [
+        {
+          "caseCount": 40,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 31,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 28,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 19,
+          "serviceName": "道路維修",
+          "serviceItems": "路面坑洞",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 17,
+          "serviceName": "噪音舉發",
+          "serviceItems": "場所連續噪音",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 15,
+          "serviceName": "民生管線",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 8,
+          "serviceName": "交通運輸",
+          "serviceItems": "號誌故障",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 8,
+          "serviceName": "交通運輸",
+          "serviceItems": "交通疏導",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 8,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "空氣汙染",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 7,
+          "serviceName": "動物救援",
+          "serviceItems": "遊蕩犬隻捕捉管制",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 6,
+          "serviceName": "交通運輸",
+          "serviceItems": "佔用道路",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 6,
+          "serviceName": "動物救援",
+          "serviceItems": "犬貓急難救援",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 5,
+          "serviceName": "道路維修",
+          "serviceItems": "路面下陷、凹陷",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 4,
+          "serviceName": "路燈故障",
+          "serviceItems": "10盞以上路燈故障",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 4,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "其他汙染舉發",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 4,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 4,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "道路散落物",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "民生管線",
+          "serviceItems": "停電、漏電、電線掉落、孔蓋鬆動",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "道路維修",
+          "serviceItems": "路面掏空、塌陷",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "場所連續噪音",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "環境髒亂",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "寬頻管線、孔蓋損壞",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "寬頻管線、孔蓋損壞",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "地震通報",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "道路散落物",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "電信孔蓋鬆動、電信線路掉落、電信桿傾倒",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "電信孔蓋鬆動、電信線路掉落、電信桿傾倒",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "反射鏡",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "地震通報",
+          "serviceItems": "路面掏空、塌陷",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "市區道路路面油漬",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "路樹傾倒",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "人孔蓋凹陷坑洞",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "人孔蓋聲響、凹陷、漏水",
+          "area": "安南區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "違規停車",
+          "serviceItems": "佔用道路",
+          "area": "安南區"
+        }
+      ]
+    },
+    {
+      "area": "中西區",
+      "caseCount": 905,
+      "listData": [
+        {
+          "caseCount": 669,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 32,
+          "serviceName": "民生管線",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 30,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 26,
+          "serviceName": "噪音舉發",
+          "serviceItems": "場所連續噪音",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 21,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 21,
+          "serviceName": "交通運輸",
+          "serviceItems": "佔用道路",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 19,
+          "serviceName": "騎樓舉發",
+          "serviceItems": "騎樓舉發",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 15,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "空氣汙染",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 13,
+          "serviceName": "道路維修",
+          "serviceItems": "路面坑洞",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 6,
+          "serviceName": "交通運輸",
+          "serviceItems": "號誌故障",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 5,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "環境髒亂",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 5,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 5,
+          "serviceName": "騎樓舉發",
+          "serviceItems": "佔用道路",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 5,
+          "serviceName": "違規停車",
+          "serviceItems": "佔用道路",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 5,
+          "serviceName": "地震通報",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 4,
+          "serviceName": "民生管線",
+          "serviceItems": "人孔蓋聲響、凹陷、漏水",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 4,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "道路散落物",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "交通運輸",
+          "serviceItems": "交通疏導",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "道路維修",
+          "serviceItems": "寬頻管線、孔蓋損壞",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "道路維修",
+          "serviceItems": "人孔蓋聲響、凹陷、漏水",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "其他汙染舉發",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "噪音舉發",
+          "serviceItems": "其他汙染舉發",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "騎樓舉發",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "停電、漏電、電線掉落、孔蓋鬆動",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "違規停車",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "路燈故障",
+          "serviceItems": "違規停車",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "市區道路路面油漬",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "違規停車",
+          "serviceItems": "騎樓舉發",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "動物救援",
+          "serviceItems": "犬貓急難救援",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "人孔蓋或溝蓋聲響",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "電信孔蓋鬆動、電信線路掉落、電信桿傾倒",
+          "area": "中西區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "路燈故障",
+          "serviceItems": "10盞以上路燈故障",
+          "area": "中西區"
+        }
+      ]
+    },
+    {
+      "area": "北區",
+      "caseCount": 460,
+      "listData": [
+        {
+          "caseCount": 201,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "北區"
+        },
+        {
+          "caseCount": 78,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "北區"
+        },
+        {
+          "caseCount": 32,
+          "serviceName": "民生管線",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "北區"
+        },
+        {
+          "caseCount": 21,
+          "serviceName": "噪音舉發",
+          "serviceItems": "場所連續噪音",
+          "area": "北區"
+        },
+        {
+          "caseCount": 21,
+          "serviceName": "交通運輸",
+          "serviceItems": "佔用道路",
+          "area": "北區"
+        },
+        {
+          "caseCount": 20,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "北區"
+        },
+        {
+          "caseCount": 10,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "北區"
+        },
+        {
+          "caseCount": 10,
+          "serviceName": "交通運輸",
+          "serviceItems": "號誌故障",
+          "area": "北區"
+        },
+        {
+          "caseCount": 7,
+          "serviceName": "道路維修",
+          "serviceItems": "路面坑洞",
+          "area": "北區"
+        },
+        {
+          "caseCount": 6,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "道路散落物",
+          "area": "北區"
+        },
+        {
+          "caseCount": 5,
+          "serviceName": "地震通報",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "北區"
+        },
+        {
+          "caseCount": 4,
+          "serviceName": "動物救援",
+          "serviceItems": "遊蕩犬隻捕捉管制",
+          "area": "北區"
+        },
+        {
+          "caseCount": 4,
+          "serviceName": "騎樓舉發",
+          "serviceItems": "騎樓舉發",
+          "area": "北區"
+        },
+        {
+          "caseCount": 4,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "環境髒亂",
+          "area": "北區"
+        },
+        {
+          "caseCount": 4,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "場所連續噪音",
+          "area": "北區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "交通運輸",
+          "serviceItems": "交通疏導",
+          "area": "北區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "空氣汙染",
+          "area": "北區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "道路維修",
+          "serviceItems": "寬頻管線、孔蓋損壞",
+          "area": "北區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "違規停車",
+          "serviceItems": "佔用道路",
+          "area": "北區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "道路維修",
+          "serviceItems": "鬆動人孔蓋凹陷坑洞",
+          "area": "北區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "民生管線",
+          "serviceItems": "停電、漏電、電線掉落、孔蓋鬆動",
+          "area": "北區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "道路維修",
+          "serviceItems": "人孔蓋或溝蓋聲響",
+          "area": "北區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "道路維修",
+          "serviceItems": "人孔蓋聲響、凹陷、漏水",
+          "area": "北區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "小廣告、旗幟",
+          "area": "北區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "人孔蓋聲響、凹陷、漏水",
+          "area": "北區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "市區道路路面油漬",
+          "area": "北區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "天然氣外洩",
+          "area": "北區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "10盞以上路燈故障",
+          "area": "北區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "10盞以上路燈故障",
+          "area": "北區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "動物救援",
+          "serviceItems": "犬貓急難救援",
+          "area": "北區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "路面下陷、凹陷",
+          "area": "北區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "其他汙染舉發",
+          "area": "北區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "電信孔蓋鬆動、電信線路掉落、電信桿傾倒",
+          "area": "北區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "路面凹陷",
+          "area": "北區"
+        }
+      ]
+    },
+    {
+      "area": "南區",
+      "caseCount": 356,
+      "listData": [
+        {
+          "caseCount": 218,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "南區"
+        },
+        {
+          "caseCount": 24,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "南區"
+        },
+        {
+          "caseCount": 22,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "南區"
+        },
+        {
+          "caseCount": 15,
+          "serviceName": "民生管線",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "南區"
+        },
+        {
+          "caseCount": 8,
+          "serviceName": "交通運輸",
+          "serviceItems": "號誌故障",
+          "area": "南區"
+        },
+        {
+          "caseCount": 8,
+          "serviceName": "噪音舉發",
+          "serviceItems": "場所連續噪音",
+          "area": "南區"
+        },
+        {
+          "caseCount": 7,
+          "serviceName": "交通運輸",
+          "serviceItems": "佔用道路",
+          "area": "南區"
+        },
+        {
+          "caseCount": 5,
+          "serviceName": "動物救援",
+          "serviceItems": "遊蕩犬隻捕捉管制",
+          "area": "南區"
+        },
+        {
+          "caseCount": 5,
+          "serviceName": "騎樓舉發",
+          "serviceItems": "騎樓舉發",
+          "area": "南區"
+        },
+        {
+          "caseCount": 5,
+          "serviceName": "路燈故障",
+          "serviceItems": "10盞以上路燈故障",
+          "area": "南區"
+        },
+        {
+          "caseCount": 5,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "空氣汙染",
+          "area": "南區"
+        },
+        {
+          "caseCount": 4,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "道路散落物",
+          "area": "南區"
+        },
+        {
+          "caseCount": 4,
+          "serviceName": "道路維修",
+          "serviceItems": "路面坑洞",
+          "area": "南區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "道路維修",
+          "serviceItems": "鬆動人孔蓋凹陷坑洞",
+          "area": "南區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "南區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "地震通報",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "南區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "交通運輸",
+          "serviceItems": "交通疏導",
+          "area": "南區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "民生管線",
+          "serviceItems": "電信孔蓋鬆動、電信線路掉落、電信桿傾倒",
+          "area": "南區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "交通運輸",
+          "serviceItems": "道路散落物",
+          "area": "南區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "場所連續噪音",
+          "area": "南區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "動物救援",
+          "serviceItems": "犬貓急難救援",
+          "area": "南區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "路面下陷、凹陷",
+          "area": "南區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "路樹傾倒",
+          "area": "南區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "停電、漏電、電線掉落、孔蓋鬆動",
+          "area": "南區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "違規停車",
+          "area": "南區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "違規停車",
+          "serviceItems": "佔用道路",
+          "area": "南區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "環境髒亂",
+          "area": "南區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "南區"
+        }
+      ]
+    },
+    {
+      "area": "東區",
+      "caseCount": 614,
+      "listData": [
+        {
+          "caseCount": 385,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "東區"
+        },
+        {
+          "caseCount": 53,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "東區"
+        },
+        {
+          "caseCount": 26,
+          "serviceName": "民生管線",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "東區"
+        },
+        {
+          "caseCount": 22,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "東區"
+        },
+        {
+          "caseCount": 19,
+          "serviceName": "交通運輸",
+          "serviceItems": "佔用道路",
+          "area": "東區"
+        },
+        {
+          "caseCount": 15,
+          "serviceName": "道路維修",
+          "serviceItems": "路面坑洞",
+          "area": "東區"
+        },
+        {
+          "caseCount": 11,
+          "serviceName": "噪音舉發",
+          "serviceItems": "場所連續噪音",
+          "area": "東區"
+        },
+        {
+          "caseCount": 11,
+          "serviceName": "交通運輸",
+          "serviceItems": "號誌故障",
+          "area": "東區"
+        },
+        {
+          "caseCount": 7,
+          "serviceName": "交通運輸",
+          "serviceItems": "交通疏導",
+          "area": "東區"
+        },
+        {
+          "caseCount": 6,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "空氣汙染",
+          "area": "東區"
+        },
+        {
+          "caseCount": 6,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "環境髒亂",
+          "area": "東區"
+        },
+        {
+          "caseCount": 6,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "東區"
+        },
+        {
+          "caseCount": 5,
+          "serviceName": "動物救援",
+          "serviceItems": "犬貓急難救援",
+          "area": "東區"
+        },
+        {
+          "caseCount": 4,
+          "serviceName": "騎樓舉發",
+          "serviceItems": "騎樓舉發",
+          "area": "東區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "地震通報",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "東區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "道路維修",
+          "serviceItems": "人孔蓋或溝蓋聲響",
+          "area": "東區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "場所連續噪音",
+          "area": "東區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "道路維修",
+          "serviceItems": "寬頻管線、孔蓋損壞",
+          "area": "東區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "違規停車",
+          "serviceItems": "佔用道路",
+          "area": "東區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "路燈故障",
+          "serviceItems": "10盞以上路燈故障",
+          "area": "東區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "大型廢棄物清運",
+          "area": "東區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "交通運輸",
+          "serviceItems": "道路散落物",
+          "area": "東區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "民生管線",
+          "serviceItems": "停電、漏電、電線掉落、孔蓋鬆動",
+          "area": "東區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "其他汙染舉發",
+          "area": "東區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "道路維修",
+          "serviceItems": "路面下陷、凹陷",
+          "area": "東區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "市區道路路面油漬",
+          "area": "東區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "騎樓舉發",
+          "area": "東區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "路燈故障",
+          "serviceItems": "違規停車",
+          "area": "東區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "動物救援",
+          "serviceItems": "遊蕩犬隻捕捉管制",
+          "area": "東區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "人孔蓋聲響、凹陷、漏水",
+          "area": "東區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "人孔蓋聲響、凹陷、漏水",
+          "area": "東區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "道路散落物",
+          "area": "東區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "違規停車",
+          "serviceItems": "妨害安寧",
+          "area": "東區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "號誌秒差調整",
+          "area": "東區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "寬頻管線、孔蓋損壞",
+          "area": "東區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "騎樓舉發",
+          "serviceItems": "佔用道路",
+          "area": "東區"
+        }
+      ]
+    },
+    {
+      "area": "永康區",
+      "caseCount": 455,
+      "listData": [
+        {
+          "caseCount": 234,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 42,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 27,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 19,
+          "serviceName": "民生管線",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 18,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "空氣汙染",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 15,
+          "serviceName": "噪音舉發",
+          "serviceItems": "場所連續噪音",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 11,
+          "serviceName": "交通運輸",
+          "serviceItems": "號誌故障",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 9,
+          "serviceName": "交通運輸",
+          "serviceItems": "佔用道路",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 7,
+          "serviceName": "騎樓舉發",
+          "serviceItems": "騎樓舉發",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 6,
+          "serviceName": "道路維修",
+          "serviceItems": "路面坑洞",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 6,
+          "serviceName": "交通運輸",
+          "serviceItems": "交通疏導",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 6,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 6,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "道路散落物",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 5,
+          "serviceName": "動物救援",
+          "serviceItems": "犬貓急難救援",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 5,
+          "serviceName": "動物救援",
+          "serviceItems": "遊蕩犬隻捕捉管制",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 4,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "其他汙染舉發",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "違規停車",
+          "serviceItems": "佔用道路",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "大型廢棄物清運",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "地震通報",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "路燈故障",
+          "serviceItems": "10盞以上路燈故障",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "交通運輸",
+          "serviceItems": "號誌秒差調整",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "場所連續噪音",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "民生管線",
+          "serviceItems": "電信孔蓋鬆動、電信線路掉落、電信桿傾倒",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "騎樓舉發",
+          "serviceItems": "佔用道路",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "市區道路路面油漬",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "道路維修",
+          "serviceItems": "路面下陷、凹陷",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "道路維修",
+          "serviceItems": "人孔蓋聲響、凹陷、漏水",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "人孔蓋聲響、凹陷、漏水",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "市區道路路面油漬",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "噪音舉發",
+          "serviceItems": "其他汙染舉發",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "天然氣外洩",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "停電、漏電、電線掉落、孔蓋鬆動",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "佔用道路",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "公車動態 LED 跑馬燈資訊異常",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "道路散落物",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "環境髒亂",
+          "area": "永康區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "路面凹陷",
+          "area": "永康區"
+        }
+      ]
+    },
+    {
+      "area": "龍崎區",
+      "caseCount": 1,
+      "listData": [
+        {
+          "caseCount": 1,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "龍崎區"
+        }
+      ]
+    },
+    {
+      "area": "關廟區",
+      "caseCount": 15,
+      "listData": [
+        {
+          "caseCount": 4,
+          "serviceName": "動物救援",
+          "serviceItems": "犬貓急難救援",
+          "area": "關廟區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "空氣汙染",
+          "area": "關廟區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "道路散落物",
+          "area": "關廟區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "動物救援",
+          "serviceItems": "遊蕩犬隻捕捉管制",
+          "area": "關廟區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "電信孔蓋鬆動、電信線路掉落、電信桿傾倒",
+          "area": "關廟區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "關廟區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "噪音舉發",
+          "serviceItems": "場所連續噪音",
+          "area": "關廟區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "關廟區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "關廟區"
+        }
+      ]
+    },
+    {
+      "area": "歸仁區",
+      "caseCount": 69,
+      "listData": [
+        {
+          "caseCount": 26,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "歸仁區"
+        },
+        {
+          "caseCount": 11,
+          "serviceName": "民生管線",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "歸仁區"
+        },
+        {
+          "caseCount": 6,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "歸仁區"
+        },
+        {
+          "caseCount": 5,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "空氣汙染",
+          "area": "歸仁區"
+        },
+        {
+          "caseCount": 4,
+          "serviceName": "道路維修",
+          "serviceItems": "路面坑洞",
+          "area": "歸仁區"
+        },
+        {
+          "caseCount": 4,
+          "serviceName": "動物救援",
+          "serviceItems": "犬貓急難救援",
+          "area": "歸仁區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "動物救援",
+          "serviceItems": "遊蕩犬隻捕捉管制",
+          "area": "歸仁區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "地震通報",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "歸仁區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "噪音舉發",
+          "serviceItems": "場所連續噪音",
+          "area": "歸仁區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "道路散落物",
+          "area": "歸仁區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "路燈故障",
+          "serviceItems": "10盞以上路燈故障",
+          "area": "歸仁區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "地震通報",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "歸仁區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "歸仁區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "歸仁區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "停電、漏電、電線掉落、孔蓋鬆動",
+          "area": "歸仁區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "路面掏空、塌陷",
+          "area": "歸仁區"
+        }
+      ]
+    },
+    {
+      "area": "仁德區",
+      "caseCount": 73,
+      "listData": [
+        {
+          "caseCount": 12,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "空氣汙染",
+          "area": "仁德區"
+        },
+        {
+          "caseCount": 11,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "仁德區"
+        },
+        {
+          "caseCount": 8,
+          "serviceName": "民生管線",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "仁德區"
+        },
+        {
+          "caseCount": 6,
+          "serviceName": "交通運輸",
+          "serviceItems": "交通疏導",
+          "area": "仁德區"
+        },
+        {
+          "caseCount": 5,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "仁德區"
+        },
+        {
+          "caseCount": 5,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "仁德區"
+        },
+        {
+          "caseCount": 4,
+          "serviceName": "道路維修",
+          "serviceItems": "路面坑洞",
+          "area": "仁德區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "動物救援",
+          "serviceItems": "犬貓急難救援",
+          "area": "仁德區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "道路散落物",
+          "area": "仁德區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "交通運輸",
+          "serviceItems": "佔用道路",
+          "area": "仁德區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "民生管線",
+          "serviceItems": "人孔蓋聲響、凹陷、漏水",
+          "area": "仁德區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "噪音舉發",
+          "serviceItems": "場所連續噪音",
+          "area": "仁德區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "號誌故障",
+          "area": "仁德區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "違規停車",
+          "serviceItems": "交通疏導",
+          "area": "仁德區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "寬頻管線、孔蓋損壞",
+          "area": "仁德區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "市區道路路面油漬",
+          "area": "仁德區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "犬貓急難救援",
+          "area": "仁德區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "人孔蓋或溝蓋聲響、鬆動",
+          "area": "仁德區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "路面掏空、塌陷",
+          "area": "仁德區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "其他汙染舉發",
+          "area": "仁德區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "違規停車",
+          "serviceItems": "佔用道路",
+          "area": "仁德區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "動物救援",
+          "serviceItems": "遊蕩犬隻捕捉管制",
+          "area": "仁德區"
+        }
+      ]
+    },
+    {
+      "area": "左鎮區",
+      "caseCount": 2,
+      "listData": [
+        {
+          "caseCount": 1,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "左鎮區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "電信孔蓋鬆動、電信線路掉落、電信桿傾倒",
+          "area": "左鎮區"
+        }
+      ]
+    },
+    {
+      "area": "南化區",
+      "caseCount": 0,
+      "listData": []
+    },
+    {
+      "area": "楠西區",
+      "caseCount": 1,
+      "listData": [
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "楠西區"
+        }
+      ]
+    },
+    {
+      "area": "玉井區",
+      "caseCount": 9,
+      "listData": [
+        {
+          "caseCount": 2,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "玉井區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "動物救援",
+          "serviceItems": "遊蕩犬隻捕捉管制",
+          "area": "玉井區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "路燈故障",
+          "serviceItems": "10盞以上路燈故障",
+          "area": "玉井區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "道路散落物",
+          "area": "玉井區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "動物救援",
+          "serviceItems": "犬貓急難救援",
+          "area": "玉井區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "人孔蓋聲響、凹陷、漏水",
+          "area": "玉井區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "玉井區"
+        }
+      ]
+    },
+    {
+      "area": "山上區",
+      "caseCount": 3,
+      "listData": [
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "道路散落物",
+          "area": "山上區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "空氣汙染",
+          "area": "山上區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "地震通報",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "山上區"
+        }
+      ]
+    },
+    {
+      "area": "安定區",
+      "caseCount": 15,
+      "listData": [
+        {
+          "caseCount": 3,
+          "serviceName": "路燈故障",
+          "serviceItems": "10盞以上路燈故障",
+          "area": "安定區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "環境髒亂",
+          "area": "安定區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "安定區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "騎樓舉發",
+          "serviceItems": "騎樓舉發",
+          "area": "安定區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "動物救援",
+          "serviceItems": "犬貓急難救援",
+          "area": "安定區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "安定區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "動物救援",
+          "serviceItems": "遊蕩犬隻捕捉管制",
+          "area": "安定區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "佔用道路",
+          "area": "安定區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "安定區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "道路散落物",
+          "area": "安定區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "安定區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "號誌故障",
+          "area": "安定區"
+        }
+      ]
+    },
+    {
+      "area": "新市區",
+      "caseCount": 83,
+      "listData": [
+        {
+          "caseCount": 55,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "新市區"
+        },
+        {
+          "caseCount": 5,
+          "serviceName": "民生管線",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "新市區"
+        },
+        {
+          "caseCount": 4,
+          "serviceName": "噪音舉發",
+          "serviceItems": "場所連續噪音",
+          "area": "新市區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "道路散落物",
+          "area": "新市區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "新市區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "空氣汙染",
+          "area": "新市區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "新市區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "動物救援",
+          "serviceItems": "犬貓急難救援",
+          "area": "新市區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "地震通報",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "新市區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "佔用道路",
+          "area": "新市區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "新市區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "號誌秒差調整",
+          "area": "新市區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "交通疏導",
+          "area": "新市區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "路面坑洞",
+          "area": "新市區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "市區道路路面油漬",
+          "area": "新市區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "其他汙染舉發",
+          "area": "新市區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "騎樓舉發",
+          "serviceItems": "騎樓舉發",
+          "area": "新市區"
+        }
+      ]
+    },
+    {
+      "area": "善化區",
+      "caseCount": 35,
+      "listData": [
+        {
+          "caseCount": 14,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "善化區"
+        },
+        {
+          "caseCount": 4,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "善化區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "動物救援",
+          "serviceItems": "遊蕩犬隻捕捉管制",
+          "area": "善化區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "道路散落物",
+          "area": "善化區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "民生管線",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "善化區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "其他汙染舉發",
+          "area": "善化區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "動物救援",
+          "serviceItems": "犬貓急難救援",
+          "area": "善化區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "人孔蓋聲響、凹陷、漏水",
+          "area": "善化區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "停電、漏電、電線掉落、孔蓋鬆動",
+          "area": "善化區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "善化區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "善化區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "號誌故障",
+          "area": "善化區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "環境髒亂",
+          "area": "善化區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "佔用道路",
+          "area": "善化區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "場所連續噪音",
+          "area": "善化區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "路燈故障",
+          "serviceItems": "10盞以上路燈故障",
+          "area": "善化區"
+        }
+      ]
+    },
+    {
+      "area": "北門區",
+      "caseCount": 1,
+      "listData": [
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "佔用道路",
+          "area": "北門區"
+        }
+      ]
+    },
+    {
+      "area": "將軍區",
+      "caseCount": 3,
+      "listData": [
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "號誌故障",
+          "area": "將軍區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "環境髒亂",
+          "area": "將軍區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "將軍區"
+        }
+      ]
+    },
+    {
+      "area": "七股區",
+      "caseCount": 13,
+      "listData": [
+        {
+          "caseCount": 3,
+          "serviceName": "動物救援",
+          "serviceItems": "犬貓急難救援",
+          "area": "七股區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "七股區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "交通運輸",
+          "serviceItems": "號誌故障",
+          "area": "七股區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "其他汙染舉發",
+          "area": "七股區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "騎樓舉發",
+          "serviceItems": "騎樓舉發",
+          "area": "七股區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "停電、漏電、電線掉落、孔蓋鬆動",
+          "area": "七股區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "佔用道路",
+          "area": "七股區"
+        }
+      ]
+    },
+    {
+      "area": "西港區",
+      "caseCount": 7,
+      "listData": [
+        {
+          "caseCount": 1,
+          "serviceName": "路燈故障",
+          "serviceItems": "10盞以上路燈故障",
+          "area": "西港區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "10盞以上路燈故障",
+          "area": "西港區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "西港區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "號誌秒差調整",
+          "area": "西港區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "空氣汙染",
+          "area": "西港區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "西港區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "動物救援",
+          "serviceItems": "犬貓急難救援",
+          "area": "西港區"
+        }
+      ]
+    },
+    {
+      "area": "學甲區",
+      "caseCount": 12,
+      "listData": [
+        {
+          "caseCount": 3,
+          "serviceName": "路燈故障",
+          "serviceItems": "10盞以上路燈故障",
+          "area": "學甲區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "學甲區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "交通運輸",
+          "serviceItems": "佔用道路",
+          "area": "學甲區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "噪音舉發",
+          "serviceItems": "場所連續噪音",
+          "area": "學甲區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "道路散落物",
+          "area": "學甲區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "學甲區"
+        }
+      ]
+    },
+    {
+      "area": "佳里區",
+      "caseCount": 26,
+      "listData": [
+        {
+          "caseCount": 9,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "佳里區"
+        },
+        {
+          "caseCount": 4,
+          "serviceName": "噪音舉發",
+          "serviceItems": "場所連續噪音",
+          "area": "佳里區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "佳里區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "動物救援",
+          "serviceItems": "遊蕩犬隻捕捉管制",
+          "area": "佳里區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "違規停車",
+          "serviceItems": "佔用道路",
+          "area": "佳里區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "道路散落物",
+          "area": "佳里區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "佳里區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "佳里區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "環境髒亂",
+          "area": "佳里區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "空氣汙染",
+          "area": "佳里區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "其他汙染舉發",
+          "area": "佳里區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "騎樓舉發",
+          "serviceItems": "騎樓舉發",
+          "area": "佳里區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "動物救援",
+          "serviceItems": "犬貓急難救援",
+          "area": "佳里區"
+        }
+      ]
+    },
+    {
+      "area": "大內區",
+      "caseCount": 1,
+      "listData": [
+        {
+          "caseCount": 1,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "大內區"
+        }
+      ]
+    },
+    {
+      "area": "官田區",
+      "caseCount": 7,
+      "listData": [
+        {
+          "caseCount": 2,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "官田區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "動物救援",
+          "serviceItems": "犬貓急難救援",
+          "area": "官田區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "官田區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "空氣汙染",
+          "area": "官田區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "路面坑洞",
+          "area": "官田區"
+        }
+      ]
+    },
+    {
+      "area": "六甲區",
+      "caseCount": 7,
+      "listData": [
+        {
+          "caseCount": 1,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "六甲區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "道路散落物",
+          "area": "六甲區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "空氣汙染",
+          "area": "六甲區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "動物救援",
+          "serviceItems": "犬貓急難救援",
+          "area": "六甲區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "民生管線",
+          "serviceItems": "停電、漏電、電線掉落、孔蓋鬆動",
+          "area": "六甲區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "六甲區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "佔用道路",
+          "area": "六甲區"
+        }
+      ]
+    },
+    {
+      "area": "下營區",
+      "caseCount": 6,
+      "listData": [
+        {
+          "caseCount": 3,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "下營區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "下營區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "動物救援",
+          "serviceItems": "犬貓急難救援",
+          "area": "下營區"
+        }
+      ]
+    },
+    {
+      "area": "麻豆區",
+      "caseCount": 41,
+      "listData": [
+        {
+          "caseCount": 11,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "麻豆區"
+        },
+        {
+          "caseCount": 8,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "麻豆區"
+        },
+        {
+          "caseCount": 7,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "麻豆區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "交通運輸",
+          "serviceItems": "佔用道路",
+          "area": "麻豆區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "空氣汙染",
+          "area": "麻豆區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "道路維修",
+          "serviceItems": "路面坑洞",
+          "area": "麻豆區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "道路維修",
+          "serviceItems": "人孔蓋或溝蓋聲響、鬆動",
+          "area": "麻豆區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "人孔蓋聲響、凹陷、漏水",
+          "area": "麻豆區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "麻豆區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "噪音舉發",
+          "serviceItems": "場所連續噪音",
+          "area": "麻豆區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "路面下陷、凹陷",
+          "area": "麻豆區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "其他汙染舉發",
+          "area": "麻豆區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "違規停車",
+          "serviceItems": "佔用道路",
+          "area": "麻豆區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "動物救援",
+          "serviceItems": "遊蕩犬隻捕捉管制",
+          "area": "麻豆區"
+        }
+      ]
+    },
+    {
+      "area": "東山區",
+      "caseCount": 0,
+      "listData": []
+    },
+    {
+      "area": "後壁區",
+      "caseCount": 15,
+      "listData": [
+        {
+          "caseCount": 10,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "後壁區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "空氣汙染",
+          "area": "後壁區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "後壁區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "小廣告、旗幟",
+          "area": "後壁區"
+        }
+      ]
+    },
+    {
+      "area": "柳營區",
+      "caseCount": 10,
+      "listData": [
+        {
+          "caseCount": 3,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "空氣汙染",
+          "area": "柳營區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "柳營區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "柳營區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "大型廢棄物清運",
+          "area": "柳營區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "道路散落物",
+          "area": "柳營區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "柳營區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "號誌故障",
+          "area": "柳營區"
+        }
+      ]
+    },
+    {
+      "area": "白河區",
+      "caseCount": 6,
+      "listData": [
+        {
+          "caseCount": 3,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "白河區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "動物救援",
+          "serviceItems": "遊蕩犬隻捕捉管制",
+          "area": "白河區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "白河區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "白河區"
+        }
+      ]
+    },
+    {
+      "area": "鹽水區",
+      "caseCount": 16,
+      "listData": [
+        {
+          "caseCount": 5,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "鹽水區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "環境髒亂",
+          "area": "鹽水區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "動物救援",
+          "serviceItems": "犬貓急難救援",
+          "area": "鹽水區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "鹽水區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "違規停車",
+          "serviceItems": "佔用道路",
+          "area": "鹽水區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "空氣汙染",
+          "area": "鹽水區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "騎樓舉發",
+          "serviceItems": "騎樓舉發",
+          "area": "鹽水區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "號誌故障",
+          "area": "鹽水區"
+        }
+      ]
+    },
+    {
+      "area": "新營區",
+      "caseCount": 83,
+      "listData": [
+        {
+          "caseCount": 45,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "新營區"
+        },
+        {
+          "caseCount": 12,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "新營區"
+        },
+        {
+          "caseCount": 5,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "新營區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "動物救援",
+          "serviceItems": "犬貓急難救援",
+          "area": "新營區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "道路散落物",
+          "area": "新營區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "其他",
+          "serviceItems": "外國人反應",
+          "area": "新營區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "交通運輸",
+          "serviceItems": "佔用道路",
+          "area": "新營區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "市區道路路面油漬",
+          "area": "新營區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "噪音舉發",
+          "serviceItems": "場所連續噪音",
+          "area": "新營區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "號誌故障",
+          "area": "新營區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "交通運輸",
+          "serviceItems": "號誌秒差調整",
+          "area": "新營區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "空氣汙染",
+          "area": "新營區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "路面坑洞",
+          "area": "新營區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "騎樓舉發",
+          "serviceItems": "佔用道路",
+          "area": "新營區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "違規停車",
+          "serviceItems": "佔用道路",
+          "area": "新營區"
+        }
+      ]
+    },
+    {
+      "area": "新化區",
+      "caseCount": 24,
+      "listData": [
+        {
+          "caseCount": 5,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "道路散落物",
+          "area": "新化區"
+        },
+        {
+          "caseCount": 5,
+          "serviceName": "民生管線",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "新化區"
+        },
+        {
+          "caseCount": 4,
+          "serviceName": "路燈故障",
+          "serviceItems": "9盞以下路燈故障",
+          "area": "新化區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "違規停車",
+          "serviceItems": "違規停車",
+          "area": "新化區"
+        },
+        {
+          "caseCount": 3,
+          "serviceName": "髒亂及汙染",
+          "serviceItems": "空氣汙染",
+          "area": "新化區"
+        },
+        {
+          "caseCount": 2,
+          "serviceName": "地震通報",
+          "serviceItems": "漏水、停水、消防栓漏水或損壞",
+          "area": "新化區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "噪音舉發",
+          "serviceItems": "妨害安寧",
+          "area": "新化區"
+        },
+        {
+          "caseCount": 1,
+          "serviceName": "道路維修",
+          "serviceItems": "路面掏空、塌陷",
+          "area": "新化區"
+        }
+      ]
+    }
+  ]
+}

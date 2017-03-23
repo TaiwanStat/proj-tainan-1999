@@ -2,6 +2,8 @@ var $ = window.$;
 /*
 【 G 】 API data controller
 
+時間到搜尋日期的 23:59:59 !
+
 - parameter
 @last : last state
 @now : current state
@@ -13,61 +15,32 @@ var $ = window.$;
 
   ex:
     G.getAreasData('2016-07-01', '2016-07-10', ['新化區', '新營區', ...])
-
-    return array = [{
-      area: '新化區',
-      caseCount: 1,
-      listData:[{...},{...}]
-    }]
+      return {
+        "count": 3876,
+        "areasArray": [{
+          "area": "安平區",
+          "caseCount": 265,
+          "listData": [{...}, {...}, ...]
+        },{ ... }]
+      }
 
 
     G.getItemsData('2016-07-01', '2016-07-03', ['新化區', '新營區', ...])
+      return {
+        "count": 3876,
+        "itemsArray": [{
+          "item": "違規停車",
+          "caseCount": 265,
+        },{ ... }]
+      }
 
-    return array = [{
-      item: '違規道路',
-      caseCount: 3,
-      listData:[{...},{...},{...}]
-    }]
-
-- the new list data:
-listData:
-{
-  description: '大內區環湖里57-2號前面 路燈故障',
-  status: '已完工',
-  serviceName: '民生管線',
-  serviceRequestId: 'UN201607200642',
-  area: '大內區',
-  serviceItem: '9盞以下路燈故障',
-  updateTime: '2016-07-22 10:57:40',
-  requestedTime': '2016-07-20 14:27:00'
-}
-
-
-Global function:
-
-* It can choose 'serveceName' *
-@getAPIsearch(startDate, endDate, area, serviceName)
-  return {
-    CaseCount: ..,
-    ListData: [...]
-  }
-
-* use requestId to search *
-@getAPIone(sn)
-  return {
-    CaseCount: ..,
-    ListData: [{...}]
-  }
------
-
-Data 測試：
-// 成功的 Msg = ''
-// 失敗的 Msg = '查無案件資料'
-// 若是不放service-name 會搜尋滿久的。
-// 一直error loading
-
-// 約超過35秒會要求逾時
-
+    listData:
+    {
+      "caseCount": 119,
+      "serviceName": "違規停車",
+      "serviceItems": "違規停車",
+      "area": "安平區"
+    }
 */
 var now = new Date();
 var monthArray = [
@@ -189,7 +162,7 @@ DB.areasE = {
   '南化區': 'Nanhua', '左鎮區': 'Zuozhen', '仁德區': 'Rende', '歸仁區': 'Guiren',
   '關廟區': 'Guanmiao', '龍崎區': 'Longqi', '永康區': 'Yongkang', '東區': 'East',
   '南區': 'South', '北區': 'North', '中西區': 'WestCentral', '安南區': 'Annan',
-  '安平區': 'Anping', '台南市': 'All'
+  '安平區': 'Anping', '台南市': 'Focus'
 };
 
 DB.serviceName = [
@@ -273,47 +246,63 @@ function _select(itemId) {
   $('html,body').scrollTop(0);
 }
 
-function _focusArea(area, i, timeInterval, startDate, endDate) {
+function _focusArea(area, timeInterval, startDate, endDate) {
   timeInterval = timeInterval || 'w';
+  startDate = startDate || G.time.lastWTime;
+  endDate = endDate || G.time.curTime;
 
   G.select('area-focus');
   window.resetFocus();
-  focus(area, i, timeInterval, startDate, endDate);
-  window.location.hash = 'area-' + i + '-' + area.toLowerCase();
+  focus(area, timeInterval, startDate, endDate);
+  window.location.hash = 'area-' + area.toLowerCase();
 }
 
-// console.log(G.getAreasData('2016-07-01', '2016-07-03', DB.areas));
-function _getAreasData(startDate, endDate, areasArray) {
+// console.log(G.getAreasData('2016-01-01', '2016-07-03', DB.areas));
+// This inputs one area in API per time...
+// NO INPUT ALL AREAS in one time!! Cuz the name will be wrong...(除非server修好這個bug)
+function _getAreasData(startDate, endDate, inptAreasArray) {
+  var obj = {
+    count: 0,
+    areasArray: [],
+  };
 
-  var mergeArray = [];
-  areasArray = areasArray || [];
+  inptAreasArray = inptAreasArray || [];
 
-  while (areasArray.length !== 0) {
-    var currentArea = areasArray.pop();
+  while (inptAreasArray.length !== 0) {
+    var currentArea = inptAreasArray.pop();
     var data = getAPIsearch(startDate, endDate, currentArea);
     var newListData = [];
+    var caseCount = 0;
 
-    data.ListData.forEach(function(value, index) {
-      newListData.push({
-        description: value.description,
-        status: value.status,
-        serviceName: value.service_name,
-        serviceRequestId: value.service_request_id,
-        serviceItems: formatItemName(value.subproject),
-        requestedTime: value.requested_datetime,
-        finishedTime: value.updated_datetime,
-        area: value.area
+    if(data.CaseCount === '0') {
+      obj.areasArray.push({
+        area: currentArea,
+        caseCount: 0,
+        listData: []
       });
-    });
+    } else{
+      data.ListAreaData[0].Subprojects.forEach(function(value, index) {
+        newListData.push({
+          caseCount: parseInt(value.count),
+          serviceName: value.service,
+          serviceItems: formatItemName(value.subproject),
+          area: currentArea
+        });
 
-    mergeArray.push({
-      area: currentArea,
-      caseCount: data.CaseCount,
-      listData: newListData
-    });
+        caseCount += parseInt(value.count);
+      });
+
+      obj.areasArray.push({
+        area: currentArea,
+        caseCount: caseCount,
+        listData: newListData
+      });
+    }
+
+    obj.count += caseCount;
   }
-  return mergeArray;
 
+  return obj;
 
   function formatItemName(name) {
     var outputName = name;
@@ -331,62 +320,62 @@ function _getAreasData(startDate, endDate, areasArray) {
 
 
 // Items
-// var textObject = G.getItemsData('2016-06-01', '2016-07-30', ['新化區', '新營區', '鹽水區', '白河區']);
-// document.write(JSON.stringify(textObject));
-// console.log(textObject);
 function _getItemsData(startDate, endDate, areas) {
-  var itemsDataArray = [];
+  var data = initItemsData();
   var areaData = this.getAreasData(startDate, endDate, areas);
 
-  initItemArray(itemsDataArray);
-  areaData.forEach(function(value) {
+  data.areasArray = areaData.areasArray;
+  areaData.areasArray.forEach(function(value) {
+    data.count += value.caseCount;
+
     value.listData.forEach(function(value) {
       var index = DB.serviceItems.indexOf(value.serviceItems);
       if (index !== -1) {
-        itemsDataArray[index].caseCount++;
-        itemsDataArray[index].listData.push(value);
+        data.itemsArray[index].caseCount += value.caseCount;
       }
     });
   });
 
-  return itemsDataArray;
+  return data;
 }
 
-function initItemArray(array) {
+function initItemsData() {
+  var obj = {
+    count: 0,
+    itemsArray: [],
+    areasArray: [],
+  };
   DB.serviceItems.forEach(function(value, index) {
-    array.push({
+    obj.itemsArray.push({
       item: value,
       caseCount: 0,
-      listData: []
     });
   });
-  return array;
+  return obj;
 }
 
-// getAPIone('UN201607020156');
-// console.log(getAPIsearch('2016-07-02', '2016-07-07', '歸仁區', '違規停車'));
-function getAPIsearch(startDate, endDate, area, serviceName) {
+// console.log(getAPIsearch('2017-03-01', '2017-03-', '中西區'))
+function getAPIsearch(startDate, endDate, area) {
   var obj = {};
   var send = {
-    QFPlanStartDateS: startDate,
-    QFPlanStartDateE: endDate,
-    QUArea: area
+    startAt: startDate,
+    endAt: endDate
   };
 
-  serviceName = serviceName || false;
+  area = area || false;
 
-  if (serviceName) {
-    send.QUMainItems = serviceName;
+  if (area) {
+    send.area = area;
   }
 
   $.ajax({
     contentType: 'application/json; charset=utf-8',
-    url: DB.url + 'servicerequestsquery',
+    url: DB.url + 'DataVisualization',
     headers: { 'Authorization': DB.key },
     async: false, // 為了可以回傳值，要改成同步
-    type: 'POST',
+    type: 'GET',
     dataType: 'json',
-    data: JSON.stringify(send),
+    data: send,
     success: function(data, textStatus, xhr) {
       obj = data;
     },
@@ -424,12 +413,12 @@ function getAPIone(sn) {
 */
 var getTimeString = function(time) {
   var now = time;
-  var year = now.getFullYear(); //年
-  var month = now.getMonth() + 1; //月
-  var day = now.getDate(); //日
+  var year = now.getFullYear(); // 年
+  var month = now.getMonth() + 1; // 月
+  var day = now.getDate(); // 日
 
-  var hh = now.getHours(); //时
-  var mm = now.getMinutes(); //分
+  var hh = now.getHours(); // 时
+  var mm = now.getMinutes(); // 分
 
   var clock = year + '-';
 
@@ -472,13 +461,13 @@ var dateAdd = function(curTime, strInterval, Number) {
 function initPage() {
   var hash = window.location.hash;
   var arr = hash.split('-');
-
+  console.log(arr);
   if (hash.indexOf('area') > 0) {
     $('#section-overview').addClass('disable');
     $('.active').removeClass('active');
     $('.item[value="w"]').addClass('active');
     this.now = $('#section-focus');
-    this.focusArea(arr[2], parseInt(arr[1]), '', '');
+    this.focusArea(arr[1], '', '');
   } else if (hash.indexOf('bubble') > 0) {
     $('#section-overview').addClass('disable');
     this.now = $('#section-bubble');
@@ -487,5 +476,6 @@ function initPage() {
   } else {
     this.now = $('#section-overview');
     G.select('overview');
+    window.overview();
   }
 }
