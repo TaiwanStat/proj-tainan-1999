@@ -25,8 +25,9 @@
 
   window.overview = overview;
 
-  function overview() {
-    var qData = G.getAreasData(startDate, endDate, DB.areas);
+  // function overview() {
+    // var qData = G.getAreasData(startDate, endDate, DB.areas);
+  d3.json('../src/new_fakeAreas.json', function (error, qData) {
     console.log(11);
 
     if (error) {
@@ -103,7 +104,9 @@
       eName: 'Focus'
     };
     createDonut(allArray, allNameObj, 'column', allSum, -1); // 畫圖(各區) 
-  }
+
+  });
+  // }
 
   function createDonut(array, name, column_object, caseCount, areaIndex) {
     var pie = d3.layout.pie();

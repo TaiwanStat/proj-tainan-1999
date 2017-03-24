@@ -30,7 +30,7 @@ gulp.task('sass',function(){
 gulp.task('js', function(){
 	return gulp.src(['./js/**/*.js'])
 		.pipe(plumber())	
-		.pipe(uglify())
+		// .pipe(uglify())
 		.pipe(rename(function(path){
 			logPath(path , "yellow");
     }))

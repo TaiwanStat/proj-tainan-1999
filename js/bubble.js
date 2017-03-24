@@ -21,19 +21,23 @@ var bubbleChart = function () {
 
   var jsonData;
   // parser data, 之後將改成call api的方式, 不需要d3.json
-  d3.json('../src/faked.json', function (error, data) {
-    if (error) {
-      console.log(error);
-    }
-    draw(data, 's');
-  });
+  // d3.json('../src/faked.json', function (error, data) {
+  //   if (error) {
+  //     console.log(error);
+  //   }
+  //   draw(data, 's');
+  // });
 
 
   /* TODO:改成call api 並且改變最早時間 ---------
-  /* jsonData = G.getItemsData('2016-11-09', '2016-11-09', ['新化區', '新營區']);
+  /* jsonData = G.getItemsData('2017-01-01', '2017-01-01', ['新化區', '新營區']);
   /* draw(data);
   /* 預先設置pack layout
   /*/
+
+  jsonData = G.getItemsData('2017-01-01', '2017-01-01', ['新化區', '新營區']);
+  draw(jsonData);
+
   var bubble = d3.layout.pack()
     .sort(null)
     .size([width, height])
@@ -47,8 +51,9 @@ var bubbleChart = function () {
       'id': 'bubble_chart'
     });
 
-  var selectDate = moment('2016-11-09'); // TODO:設定最早時間
-  var lastData = '2016-11-09';
+  var startDate = '2017-01-01';
+  var selectDate = moment(startDate); // TODO:設定最早時間
+  var lastData = startDate;
   var nowDate = new moment(); // 取得當前時間
 
   var sliderValue = 0;  // sliderValue save the slider percent
@@ -82,12 +87,12 @@ var bubbleChart = function () {
     // get the duration of the day which slider bar selected
     var durationSet = moment.duration({ 'days': (durationDay / 100) * n });
     // get the time
-    selectDate = moment('2016-11-09').add(durationSet);
+    selectDate = moment(startDate).add(durationSet);
     // d3.selectAll('#show_date').text(dateGOGO(selectDate._d));
     if (lastData !== dateGOGO(selectDate._d)) {
       // TODO
       // 改成call api
-      // jsonData = G.getItemsData('2016-11-09', dateGOGO(selectDate._d), ['新化區', '新營區']);
+      // jsonData = G.getItemsData(startDate, dateGOGO(selectDate._d), ['新化區', '新營區']);
       d3.json('../../src/faked2.json', function (error, data) {
         if (error) {
           console.log(error);

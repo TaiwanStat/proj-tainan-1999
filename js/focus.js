@@ -9,6 +9,7 @@
         var setInterval = $('.active').attr('value');
         var qStarTime = $('#startDate').val();
         var qEndTime = $('#endDate').val();
+        console.log(setInterval);
         G.focusArea(value, setInterval, qStarTime, qEndTime);
       }
     });
@@ -36,7 +37,13 @@
 
     var tooltip = d3.select('#pie-chart').append('tooltip').attr('class', 'toolTip');
     var areaCName = findAreaCName(areaEName);
-    console.log(areaEName);
+
+    // Data Setting
+    var qData;
+    var areasData;
+    var itemsData;
+    var caseSum;
+
     // unbind click event
     $('.infocus').off('click');
     $('.infocus .reactive').click(function () {
@@ -88,7 +95,7 @@
       return count;
     }
 
-    // Check timeInterval
+    // Check if it is 'self-control'
     if (!(timeInterval === 's')) {
       qStarTime = window.getTimeString(window.dateAdd(window.now, timeInterval, -1));
       qEndTime = window.getTimeString(window.now);
@@ -102,10 +109,9 @@
      */
     // Check if it is 'All'
     if (areaCName === '台南市') {
-      console.log("yoyoyo");
-      var qData = G.getItemsData(qStarTime, qEndTime, DB.areas);
       var newListData = [];
-      var areasData = [{
+      qData = G.getItemsData(qStarTime, qEndTime, DB.areas);
+      areasData = [{
         'area': '台南市',
         'caseCount': 0,
         'listData': newListData,
@@ -116,12 +122,12 @@
       });
       qData.areasArray = areasData;
     }else {
-      var qData = G.getItemsData(qStarTime, qEndTime, [areaCName]);
-      var areasData = qData.areasArray;
+      qData = G.getItemsData(qStarTime, qEndTime, [areaCName]);
+      areasData = qData.areasArray;
     }
 
-    var itemsData = qData.itemsArray; 
-    var caseSum = qData.count; // 案件總數
+    itemsData = qData.itemsArray; 
+    caseSum = qData.count; // 案件總數
     // console.log(qStarTime + '/' + qEndTime + '/' + area);
     console.log(qData, areasData)
 
@@ -143,6 +149,7 @@
         return element[1];
       })
     );
+
     var arc = d3.svg.arc()
       .innerRadius(radius - 195)
       .outerRadius(radius - 145);
@@ -232,8 +239,6 @@
 
     /********************* Bar Chart **************************/
 
-    // d3.json('../src/fack_items.json', function (error, data) {
-
     //outer donut chart & bar chart
     var dataNoEmpty = [];
     
@@ -316,6 +321,7 @@
       .attr('fill', function (d, i) {
         for (var key in DB.areas) {
           if (DB.serviceItems[key] === d.item) {
+            console.log(key, DB.serviceItems[key], d.item);
             return G.colorServiceItem[key]; // color的array
           }
         }
@@ -351,12 +357,16 @@
       return d.item;
     });
 
+    /*
+     * BUG: 若是點擊台南市的話 Array 沒有進來（沒有執行attr）
+     */
     var path = arcs.append('path')
       .attr({
         'fill': function (d, i) {
           for (var key in DB.areas) {
+            console.log(DB.serviceItems[key], itemName[i], i);
             if (DB.serviceItems[key] === itemName[i]) {
-              return G.colorServiceItem[key]; //color的array
+              return G.colorServiceItem[key]; // color的array
             }
           }
         },
@@ -384,7 +394,6 @@
       });
 
     // pie marker
-
     pie2.forEach(function (d) {
       var a = d.a = d.startAngle + (d.endAngle - d.startAngle) / 2 - Math.PI / 2;
       d.cy = Math.sin(a) * (radius - 75);

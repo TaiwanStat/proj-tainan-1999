@@ -250,6 +250,7 @@ function _focusArea(area, timeInterval, startDate, endDate) {
   timeInterval = timeInterval || 'w';
   startDate = startDate || G.time.lastWTime;
   endDate = endDate || G.time.curTime;
+  console.log(timeInterval);
 
   G.select('area-focus');
   window.resetFocus();
@@ -476,6 +477,5 @@ function initPage() {
   } else {
     this.now = $('#section-overview');
     G.select('overview');
-    window.overview();
   }
 }

@@ -1,1 +1,343 @@
-!function(){function t(){var t=G.getAreasData(d,p,DB.areas);console.log(11),error&&console.log(error);var n=[[0,0,"違規停車"],[1,0,"路燈故障"],[2,0,"噪音舉發"],[3,0,"騎樓舉發"],[4,0,"道路維修"],[5,0,"交通運輸"],[6,0,"髒亂及污染"],[7,0,"民生管線"],[8,0,"動物救援"],[9,0,"其他"]];t.areasArray.map(function(t,r){var i=t.area,o=[],s=0,c={cName:i,eName:DB.areasE[i]};for(var l in u){var d=[];d.push(u[l]),d.push(a(t,"serviceName",l)),d.push(l),o.push(d)}for(var p=0;p<10;p++)n[p][1]+=o[p][1];o=o.sort(function(t,e){return d3.descending(t[1],e[1])}),o.forEach(function(t,e){e>2&&(s+=o[e][1])}),o.splice(3,o.length-3,[9,s,"其他"]),e(o,c,"column",t.caseCount,r)}),n=n.sort(function(t,e){return d3.descending(t[1],e[1])});var r=0,i=0;n.forEach(function(t,e){e>2&&(r+=n[e][1]),i+=n[e][1]}),n.splice(3,n.length-3,[9,r,"其他"]);var o={cName:"台南市",eName:"Focus"};e(n,o,"column",i,-1)}function e(t,e,a,n,r){var d=d3.layout.pie();if(r<0)var p=d3.select("."+a).insert("svg",":first-child").attr({width:i,height:o});else var p=d3.select("."+a).append("svg").attr({width:i,height:o});var v=d3.svg.arc().innerRadius(i/5).outerRadius(i/5),f=d3.svg.arc().innerRadius(i/4).outerRadius(i/3),m=d3.svg.arc().innerRadius(i/3).outerRadius(i/2.5),h=d(t.map(function(t,e,a){return t[1]})),y=p.selectAll("g.arc").data(h).enter().append("g").attr({class:"arc",transform:"translate("+i/2+", "+i/2+")"}),g=d3.select(".row").append("tooltip").attr("class","toolTip"),w=G.colorServiceName,x=y.append("path").attr({fill:function(e,a){return w[t[a][0]]},d:v,class:function(t,e){return 0===e?"path_special":"path"},id:function(e,a){return t[a][2]}}).on("mousemove",function(e,a){var r=(parseFloat(t[a][1])/n*100).toFixed(1);g.style("left",d3.event.pageX+10+"px").style("top",d3.event.pageY-25+"px").style("display","inline-block").html(t[a][2]+"<br>"+r+"％")}).on("mouseout",function(t){g.style("display","none")});d3.selectAll(".path_special").attr({d:m}),x.transition().duration(1e3).attr({d:f}),p.append("text").attr({id:"caseCount_"+e.eName,class:"overview_caseCount",x:function(t){return n<10?i/2-5*l:n<100?i/2-9*l:n<1e3?i/2-11*l:void 0},y:o/2-10}).style("opacity",0).text(n).transition().duration(800).style({opacity:1}),p.append("text").attr("class","overview_caseCountI").attr("x",function(t){var a=parseInt($("#caseCount_"+e.eName).attr("x"));return n<10?a+7*l:n<100?a+13*l:n<1e3?a+19*l:void 0}).attr("y",$("#caseCount_"+e.eName).attr("y")-3).style("opacity",0).text("件").transition().duration(800).style({opacity:1}),p.append("text").attr({id:e.eName,class:"overview_areaName",x:i/2-35,y:o-30}).text(function(t){return e.cName+" ›"}).on("click",function(t){$(".active").removeClass("active"),$('.item[value="w"]').addClass("active"),G.focusArea(this.id,r)});var N=Object.keys(u),C=t.map(function(t){return[w[t[0]],N[t[0]]]});C.pop();var _=18,A=3,D=p.selectAll(".legend").data(C).enter().append("g").attr("class","legend").attr("transform",function(t,e){var a=_+A,n=a*C.length/2,r=s*_,i=e*a+c*n;return"translate("+r+","+i+")"});D.append("rect").attr("width",_).attr("height",_).style("fill",function(t){return t[0]}).style("stroke",w),D.append("text").attr("x",_+A).attr("y",_-A).text(function(t){return t[1]})}function a(t,e,a){var n=0;for(var r in t.listData)t.listData[r][e]===a&&(n+=t.listData[r].caseCount);return n}function n(){$(window).width()<=1520?(i=380,o=380,s=8.3,c=6.3,l=5):(i=450,o=450,s=10,c=7.8,l=7)}function r(){var t=G.time.curTime,e=G.time.lastWTime;$(".overview_title .date").text("． "+e.split("-")[1]+"/"+e.split("-")[2]+" ~ "+t.split("-")[1]+"/"+t.split("-")[2]+" ．")}var i,o,s,c,l,u={"違規停車":0,"路燈故障":1,"噪音舉發":2,"騎樓舉發":3,"道路維修":4,"交通運輸":5,"髒亂及汙染":6,"民生管線":7,"動物救援":8,"其他":9};r(),n();var d=G.time.lastWTime,p=G.time.curTime;window.overview=t,$(".ui.dropdown.overview_selectArea").dropdown({onChange:function(t,e,a){$("html, body").animate({scrollTop:$("#"+t).offset().top-400},"easeInBack",function(){window.location.hash=t})}})}();
+(function () {
+  var serviceName = {
+    '違規停車': 0,
+    '路燈故障': 1,
+    '噪音舉發': 2,
+    '騎樓舉發': 3,
+    '道路維修': 4,
+    '交通運輸': 5,
+    '髒亂及汙染': 6,
+    '民生管線': 7,
+    '動物救援': 8,
+    '其他': 9
+  };
+
+  var width;
+  var height;
+  var lengendXparameter;
+  var lengendYparameter;
+  var caseCountTextX;
+
+  initTime();
+  setChartSize();
+  var startDate = G.time.lastWTime;
+  var endDate = G.time.curTime;
+
+  window.overview = overview;
+
+  // function overview() {
+    // var qData = G.getAreasData(startDate, endDate, DB.areas);
+  d3.json('../src/new_fakeAreas.json', function (error, qData) {
+    console.log(11);
+
+    if (error) {
+      console.log(error);
+    }
+
+    var allArray = [ // 用來存全區資料
+      [0, 0, '違規停車'],
+      [1, 0, '路燈故障'],
+      [2, 0, '噪音舉發'],
+      [3, 0, '騎樓舉發'],
+      [4, 0, '道路維修'],
+      [5, 0, '交通運輸'],
+      [6, 0, '髒亂及污染'],
+      [7, 0, '民生管線'],
+      [8, 0, '動物救援'],
+      [9, 0, '其他']
+    ];
+
+    qData.areasArray.map(function (d, areaIndex) {
+      var areaName = d.area;
+      var array = []; // array用來儲存過濾後可畫圖的資料
+      var otherSum = 0;
+      var nameObj = {
+        cName: areaName,
+        eName: DB.areasE[areaName]
+      };
+
+      for (var name in serviceName) {
+        var temp = [];
+        temp.push(serviceName[name]); // 類別對應數字
+        temp.push(filtJSON(d, 'serviceName', name)); // 類別之事件發生數
+        temp.push(name); // 類別名稱
+        array.push(temp);
+      }
+
+      for (var i = 0; i < 10; i++) {
+        // 把每次的資料夾到全區累計
+        allArray[i][1] += array[i][1];
+      }
+
+      array = array.sort(function (a, b) { 
+        // 由大到小排序
+        return d3.descending(a[1], b[1]);
+      });
+
+      array.forEach(function (value, index) { 
+        // 取前三高，其他加總到其他
+        if (index > 2) {
+          otherSum += array[index][1];
+        }
+      })
+      // console.log(array, nameObj);
+      array.splice(3, array.length - 3, [9, otherSum, '其他']); //保留前三高，其餘加總到「其他」
+      createDonut(array, nameObj, 'column', d.caseCount, areaIndex); //畫圖(各區)
+    });
+
+    allArray = allArray.sort(function (a, b) { // 由大到小排序
+      return d3.descending(a[1], b[1]);
+    });
+
+    var allOtherSum = 0;
+    var allSum = 0;
+    allArray.forEach(function (value, index) {
+      if (index > 2) {
+        allOtherSum += allArray[index][1];
+      }
+      allSum += allArray[index][1];
+    });
+
+    allArray.splice(3, allArray.length - 3, [9, allOtherSum, '其他']);
+    var allNameObj = {
+      cName: '台南市',
+      eName: 'Focus'
+    };
+    createDonut(allArray, allNameObj, 'column', allSum, -1); // 畫圖(各區) 
+
+  });
+  // }
+
+  function createDonut(array, name, column_object, caseCount, areaIndex) {
+    var pie = d3.layout.pie();
+    if (areaIndex < 0) {
+      var svg = d3.select('.' + column_object)
+        .insert('svg', ':first-child')
+        .attr({
+          'width': width,
+          'height': height
+        });
+    } else {
+      var svg = d3.select('.' + column_object)
+        .append('svg')
+        .attr({
+          'width': width,
+          'height': height
+        });
+    }
+
+    var arc = d3.svg.arc()
+      .innerRadius((width / 5))
+      .outerRadius((width / 5));
+    var arc2 = d3.svg.arc()
+      .innerRadius((width / 4))
+      .outerRadius((width / 3));
+    var arc3 = d3.svg.arc()
+      .innerRadius((width / 3))
+      .outerRadius((width / 2.5));
+
+    var pieData = pie(
+      array.map( // 遍尋處理每個array element，並取得特定欄位 = 數量
+        function (element, index, array) {
+          return element[1];
+        })
+      );
+
+    var arcs = svg.selectAll('g.arc')
+      .data(pieData)
+      .enter()
+      .append('g')
+      .attr({
+        'class': 'arc',
+        'transform': 'translate(' + (width / 2) + ', ' + (width / 2) + ')'
+      });
+
+    var tooltip = d3.select('.row').append('tooltip').attr('class', 'toolTip');
+    var color = G.colorServiceName;
+    var path = arcs.append('path')
+      .attr({
+        'fill': function (d, i) {
+          return color[array[i][0]]; //color的array
+        },
+        'd': arc,
+        'class': function (d, i) {
+          if (i === 0) { //最大的有特效
+            return 'path_special';
+          }
+          return 'path';
+        },
+        'id': function (d, i) {
+          return array[i][2];
+        }
+      })
+      .on('mousemove', function (d, i) {
+        var percent = (parseFloat(array[i][1]) / caseCount * 100).toFixed(1);
+
+        tooltip.style('left', d3.event.pageX + 10 + 'px')
+               .style('top', d3.event.pageY - 25 + 'px')
+               .style('display', 'inline-block')
+               .html(array[i][2] + '<br>' + percent + '％');
+      })
+      .on('mouseout', function (d) {
+        tooltip.style('display', 'none');
+      });
+
+    d3.selectAll('.path_special')
+      .attr({
+        'd': arc3
+      });
+
+    path.transition()
+      .duration(1000)
+      .attr({
+        'd': arc2
+      });
+
+    svg.append('text')
+      .attr({
+        'id': 'caseCount_' + name.eName,
+        'class': 'overview_caseCount',
+        'x': function (d) {
+          if (caseCount < 10)
+            return width / 2 - caseCountTextX * 5;
+          else if (caseCount < 100)
+            return width / 2 - caseCountTextX * 9;
+          else if (caseCount < 1000)
+            return width / 2 - caseCountTextX * 11;
+        },
+        'y': height / 2 - 10
+      })
+      .style('opacity', 0)
+      .text(caseCount)
+      .transition()
+      .duration(800)
+      .style({
+        'opacity': 1
+      });
+
+    svg.append('text')
+      .attr('class', 'overview_caseCountI')
+      .attr('x', function (d) {
+        var x = parseInt($('#caseCount_' + name.eName).attr('x'));
+        if (caseCount < 10)
+          return x + caseCountTextX * 7;
+        else if (caseCount < 100)
+          return x + caseCountTextX * 13;
+        else if (caseCount < 1000)
+          return x + caseCountTextX * 19;
+      })
+      .attr('y', $('#caseCount_'+name.eName).attr('y') - 3)
+      .style('opacity', 0)
+      .text('件')
+      .transition()
+      .duration(800)
+      .style({
+        'opacity': 1
+      });
+
+    svg.append('text') //區域名稱，放在圖下
+      .attr({
+        'id': name.eName,
+        'class': 'overview_areaName',
+        'x': width / 2 - 35,
+        'y': height - 30
+      })
+      .text(function (d) {
+        return name.cName + ' ›';
+      })
+      .on('click', function (d) {
+
+        // remove semantic's time menu active
+        $('.active').removeClass('active');
+        $('.item[value="w"]').addClass('active');
+        G.focusArea(this.id, areaIndex);
+      });
+
+
+    // ------ Map colorArray ------- //
+
+    var items = Object.keys(serviceName);
+    var lengedColor = array.map(function (d) {
+      return [color[d[0]], items[d[0]]];
+    });
+
+    // 把其他移掉
+    lengedColor.pop();
+
+    var legendRectSize = 18;
+    var legendSpacing = 3;
+    var legend = svg.selectAll('.legend')
+      .data(lengedColor)
+      .enter()
+      .append('g')
+      .attr('class', 'legend')
+      .attr('transform', function (d, i) {
+        var height = legendRectSize + legendSpacing;
+        var offset = height * lengedColor.length / 2;
+        var horz = lengendXparameter * legendRectSize;
+        var vert = i * height + lengendYparameter * offset;
+        return 'translate(' + horz + ',' + vert + ')';
+      });
+
+    legend.append('rect')
+      .attr('width', legendRectSize)
+      .attr('height', legendRectSize)
+      .style('fill', function (d) {
+        return d[0];
+      })
+      .style('stroke', color);
+
+    legend.append('text')
+      .attr('x', legendRectSize + legendSpacing)
+      .attr('y', legendRectSize - legendSpacing)
+      .text(function (d) {
+        return d[1];
+      });
+  }
+
+  function filtJSON(data, key, value) {
+    var count = 0;
+    for (var foo in data.listData) { //serviceName
+      if (data.listData[foo][key] === value) {
+        count += data.listData[foo].caseCount;
+      }
+    }
+    return count;
+  }
+
+  function setChartSize() {
+    if ($(window).width() <= 1520) {
+      width = 380;
+      height = 380;
+      lengendXparameter = 8.3;
+      lengendYparameter = 6.3;
+      caseCountTextX = 5;
+    } else {
+      width = 450;
+      height = 450;
+      lengendXparameter = 10;
+      lengendYparameter = 7.8;
+      caseCountTextX = 7;
+    }
+  }
+
+  function initTime() {
+    var curTime = G.time.curTime;
+    var lastTime = G.time.lastWTime;
+    $('.overview_title .date').text('． ' + lastTime.split('-')[1] + '/' +
+        lastTime.split('-')[2] + ' ~ ' + curTime.split('-')[1] + '/' +
+        curTime.split('-')[2] + ' ．');
+  }
+
+  $('.ui.dropdown.overview_selectArea')
+    .dropdown({
+      onChange: function (value, text, selectItem) {
+        $('html, body').animate({ scrollTop: $('#' + value).offset().top - 400 },
+          'easeInBack',
+          function () {
+            window.location.hash = value;
+          }
+        );
+      }
+    });
+})();

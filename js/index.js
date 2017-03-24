@@ -7,7 +7,7 @@ $('.header_item').click(function() {
     $('.active').removeClass('active')
     $('.item[value="w"]').addClass('active');
     $('.focus_selectArea > .text').text('台南市');
-    G.focusArea('Focus', 38);
+    G.focusArea('Focus', 'w');
   }
   else if (!isBubbleExist) {
     bubbleChart();
