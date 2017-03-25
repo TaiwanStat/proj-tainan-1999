@@ -250,7 +250,7 @@
         // remove semantic's time menu active
         $('.active').removeClass('active');
         $('.item[value="w"]').addClass('active');
-        G.focusArea(this.id, areaIndex);
+        G.focusArea(this.id, 'w');
       });
 
 
