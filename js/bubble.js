@@ -29,30 +29,28 @@ var bubbleChart = function () {
   // });
 
 
-  /* TODO:改成call api 並且改變最早時間 ---------
-  /* jsonData = G.getItemsData('2017-01-01', '2017-01-01', ['新化區', '新營區']);
-  /* draw(data);
+
   /* 預先設置pack layout
   /*/
-
-  jsonData = G.getItemsData('2017-01-01', '2017-01-01', ['新化區', '新營區']);
-  draw(jsonData);
-
-  var bubble = d3.layout.pack()
-    .sort(null)
-    .size([width, height])
-    .padding(padding);
-
-  var svg = d3.select('#bubble_chart')
+    var svg = d3.select('#bubble_chart')
     .append('svg')
     .attr({
       'width': width,
       'height': height,
       'id': 'bubble_chart'
     });
+  var bubble = d3.layout.pack()
+    .sort(null)
+    .size([width, height])
+    .padding(padding);
 
-  var startDate = '2017-01-01';
-  var selectDate = moment(startDate); // TODO:設定最早時間
+
+
+
+
+  var start = '2017-01-01'; //最早時間
+  var startDate = moment(start);
+  var selectDate = moment(start); 
   var lastData = startDate;
   var nowDate = new moment(); // 取得當前時間
 
@@ -61,17 +59,22 @@ var bubbleChart = function () {
   var dateGOGO = d3.time.format('%Y-%m-%d');
   var slider = $('input');
 
+  jsonData = G.getItemsData(dateGOGO(startDate._d), dateGOGO(selectDate._d), ['新化區', '新營區']);
+  draw(jsonData,'s');
+
+
   // draw the slider
   slider.on('mouseenter', function () {
     slider.on('click', function () {
-      sliderValue = slider.val();
+      sliderValue = slider[2].value;
       changeSlider(sliderValue);
     });
     slider.on('mousemove', function () {
-      sliderValue = slider.val();
+      sliderValue = slider[2].value;
       changeSlider2(sliderValue);
     });
   });
+
 
   // change the slider status(color bar)
   function changeSlider2(n) {
@@ -84,21 +87,12 @@ var bubbleChart = function () {
     slider.css({
       'background-image': '-webkit-linear-gradient(left ,#222 0%,#222 ' + n + '%,#d3d3d5 ' + n + '%, #d3d3d5 100%)'
     });
-    // get the duration of the day which slider bar selected
-    var durationSet = moment.duration({ 'days': (durationDay / 100) * n });
     // get the time
-    selectDate = moment(startDate).add(durationSet);
-    // d3.selectAll('#show_date').text(dateGOGO(selectDate._d));
+    selectDate = moment(start).add( (durationDay / 100.00) * n, 'days');
     if (lastData !== dateGOGO(selectDate._d)) {
-      // TODO
-      // 改成call api
-      // jsonData = G.getItemsData(startDate, dateGOGO(selectDate._d), ['新化區', '新營區']);
-      d3.json('../../src/faked2.json', function (error, data) {
-        if (error) {
-          console.log(error);
-        }
-        draw(data, 'c');
-      });
+      jsonData = G.getItemsData(dateGOGO(startDate._d), dateGOGO(selectDate._d), ['新化區', '新營區']);
+      console.log(jsonData);
+      draw(jsonData, 'c');
       lastData = dateGOGO(selectDate._d);
     }
   }
@@ -112,48 +106,32 @@ var bubbleChart = function () {
     option = option || 'c';
 
     var detail = {};
-    var filtedData = dataFilter(data);
+    var filtedData = dataFilter(data.itemsArray);
     var allEventNumber = [];
     var initValue = 0;
-
+    var value=0,count=0;
     for (var itemName in DB.serviceItems) {
       detail[DB.serviceItems[itemName]] = '';
     }
 
-    for (var foo in data) {
-      // establish the each district information
-      var district = {};
-      // use DB.areas to create the object array whose indice are area names
-      for (var bar in DB.areas) {
-        district[DB.areas[bar]] = 0;
-      }
-      // use data.listData column to fetch object array by the evnet area by chinese area names
-      for (var bar in data[foo].listData) {
-        district[data[foo].listData[bar].area]++;
-      }
-      // sorted the ojbect array for choosing the 3 highest areas
-      var districtSorted = Object.keys(district).sort(function (a, b) {
-        return district[b] - district[a];
-      });
 
-      detail[data[foo].item] = districtSorted[0] + district[districtSorted[0]] + '件<br>' +
-                               districtSorted[1] + district[districtSorted[1]] + '件<br>' +
-                               districtSorted[2] + district[districtSorted[2]] + '件<br>';
+    for (var foo in data.itemsArray) {
+      for(var bar in data.itemsArray[foo].topAreas[0]) {
+        detail[data.itemsArray[foo].item] += bar + data.itemsArray[foo].topAreas[0][bar] + '件<br>';
+      }
     }
 
     for (var foo in filtedData.children) {
-      if (filtedData.children[foo].value >= initValue) {
-        initValue = filtedData.children[foo].value;
+      if(filtedData.children[foo].value) {
+        value+=filtedData.children[foo].value;
+        count+=1;
       }
-      allEventNumber.push(filtedData.children[foo].value);
     }
-
-    var mean = d3.quantile(allEventNumber, 0.1);
+    var mean = Math.round(value/count);
     var bubbleData = bubble.nodes(filtedData)
-      .filter(function (d) {
-        return d.parent;
-      });
-
+                          .filter(function (d) {
+                            return d.parent;
+                          });
     if (option === 's') {
       var drawNode = svg.selectAll('circle')
                          .data(bubbleData)
@@ -170,9 +148,9 @@ var bubbleChart = function () {
                             return d.r;
                            },
                            fill: function (d, i) {
-                             return d.itemColor;
+                             return G.colorServiceItem[i];
                            },
-                           id: function (d, i) {
+                           id: function (d) {
                              return 'id' + d.item;
                            },
                            opacity: 0
@@ -235,9 +213,10 @@ var bubbleChart = function () {
             return d.r;
           }
         });
+      resetItemText();
     }
 
-    resetItemText();
+    
 
     var textNode = svg.selectAll('#item_text')
       .data(bubbleData)
@@ -257,10 +236,11 @@ var bubbleChart = function () {
       })
       .text(function (d) {
         // return ;
-        if (d.value > mean) {
-          if ((d3.select('#id' + d.item).attr('r') / (d.item.length)) >= 7) {
+        console.log(mean);
+        if (d.value >= mean) {
+          // if ((d3.select('#id' + d.item).attr('r') / (d.item.length)) >= 7) {
             return d.item;
-          }
+          // }
         }
       })
       .transition()
@@ -276,7 +256,7 @@ var bubbleChart = function () {
       });
 
     // ------- 取前三高的事件數顯示出來 ---------
-    updateSideBox(data);
+    updateSideBox(data.itemsArray);
   }
 
   // 解析api data!，之後可能會因為api更動而需要更改
@@ -289,7 +269,8 @@ var bubbleChart = function () {
       newData.push({
         value: value,
         itemColor: itemColor,
-        item: d.item
+        item: d.item,
+        topAreas: d.topAreas,
       });
     });
     // 因為只需要一個pack，所以將data包於children中

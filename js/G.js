@@ -324,21 +324,43 @@ function _getAreasData(startDate, endDate, inptAreasArray) {
 function _getItemsData(startDate, endDate, areas) {
   var data = initItemsData();
   var areaData = this.getAreasData(startDate, endDate, areas);
-
   data.areasArray = areaData.areasArray;
+  var districted
   areaData.areasArray.forEach(function(value) {
     data.count += value.caseCount;
 
-    value.listData.forEach(function(value) {
-      var index = DB.serviceItems.indexOf(value.serviceItems);
+    value.listData.forEach(function(listDataValue) {
+      var index = DB.serviceItems.indexOf(listDataValue.serviceItems);
+      var areasIndex = DB.areas.indexOf(listDataValue.area);
       if (index !== -1) {
-        data.itemsArray[index].caseCount += value.caseCount;
+        data.itemsArray[index].caseCount += listDataValue.caseCount;
+        var district = {};
+        for (var trav in DB.areas) {
+          district[DB.areas[trav]] = 0;
+        }
+        areaData.areasArray.forEach(function(value) {
+          value.listData.forEach(function(areasDataValue) {
+            if(areasDataValue.serviceItems === listDataValue.serviceItems) {
+              district[areasDataValue.area] += areasDataValue.caseCount;
+            }
+          });
+        });
+        var districtSorted = Object.keys(district).sort(function (a, b) {
+          return district[b] - district[a];
+        });
+        var obj1 = {};
+        obj1[districtSorted[0]] = district[districtSorted[0]];
+        obj1[districtSorted[0]] = district[districtSorted[0]];
+        obj1[districtSorted[0]] = district[districtSorted[0]];
+        data.itemsArray[index].topAreas.push(obj1);
+         console.log(data.itemsArray[index].topAreas);
       }
     });
   });
 
   return data;
 }
+
 
 function initItemsData() {
   var obj = {
@@ -350,6 +372,7 @@ function initItemsData() {
     obj.itemsArray.push({
       item: value,
       caseCount: 0,
+      topAreas: [],
     });
   });
   return obj;
