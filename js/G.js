@@ -252,7 +252,7 @@ function _focusArea(area, timeInterval, startDate, endDate) {
   endDate = endDate || G.time.curTime;
   console.log(timeInterval);
 
-  G.select('area-focus');
+  G.select('section-focus');
   window.resetFocus();
   focus(area, timeInterval, startDate, endDate);
   window.location.hash = 'area-' + area.toLowerCase();

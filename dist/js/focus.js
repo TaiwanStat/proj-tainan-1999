@@ -128,7 +128,7 @@
 
     itemsData = qData.itemsArray; 
     caseSum = qData.count; // 案件總數
-    // console.log(qStarTime + '/' + qEndTime + '/' + area);
+    
     console.log(qData, areasData)
 
     // inner donut chart
