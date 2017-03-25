@@ -59,7 +59,7 @@ var bubbleChart = function () {
   var dateGOGO = d3.time.format('%Y-%m-%d');
   var slider = $('input');
 
-  jsonData = G.getItemsData(dateGOGO(startDate._d), dateGOGO(selectDate._d), ['新化區', '新營區']);
+  jsonData = G.getItemsData(dateGOGO(startDate._d), dateGOGO(selectDate._d), ['新化區', '新營區', '東區', '中西區']);
   draw(jsonData,'s');
 
 
@@ -90,8 +90,9 @@ var bubbleChart = function () {
     // get the time
     selectDate = moment(start).add( (durationDay / 100.00) * n, 'days');
     if (lastData !== dateGOGO(selectDate._d)) {
-      jsonData = G.getItemsData(dateGOGO(startDate._d), dateGOGO(selectDate._d), ['新化區', '新營區']);
+      jsonData = G.getItemsData(dateGOGO(startDate._d), dateGOGO(selectDate._d), ['新化區', '新營區', '東區', '中西區']);
       console.log(jsonData);
+      console.log(dateGOGO(selectDate._d));
       draw(jsonData, 'c');
       lastData = dateGOGO(selectDate._d);
     }
