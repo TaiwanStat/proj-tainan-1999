@@ -347,8 +347,9 @@ function _getItemsData(startDate, endDate, areas) {
           return district[b] - district[a];
         });
         var obj1 = {};
-        // console.log(districtSorted, district[districtSorted[0]])
         obj1[districtSorted[0]] = district[districtSorted[0]];
+        obj1[districtSorted[1]] = district[districtSorted[1]];
+        obj1[districtSorted[2]] = district[districtSorted[2]];
         if(isEmptyObj(data.itemsArray[index].topAreas)) {
           data.itemsArray[index].topAreas.push(obj1);
         }
