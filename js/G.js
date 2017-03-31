@@ -162,7 +162,7 @@ DB.areasE = {
   '南化區': 'Nanhua', '左鎮區': 'Zuozhen', '仁德區': 'Rende', '歸仁區': 'Guiren',
   '關廟區': 'Guanmiao', '龍崎區': 'Longqi', '永康區': 'Yongkang', '東區': 'East',
   '南區': 'South', '北區': 'North', '中西區': 'WestCentral', '安南區': 'Annan',
-  '安平區': 'Anping', '台南市': 'Focus'
+  '安平區': 'Anping', '台南市': 'Tainan'
 };
 
 DB.serviceName = [
@@ -250,9 +250,8 @@ function _focusArea(area, timeInterval, startDate, endDate) {
   timeInterval = timeInterval || 'w';
   startDate = startDate || G.time.lastWTime;
   endDate = endDate || G.time.curTime;
-  console.log(timeInterval);
 
-  G.select('section-focus');
+  G.select('area-focus');
   window.resetFocus();
   focus(area, timeInterval, startDate, endDate);
   window.location.hash = 'area-' + area.toLowerCase();
@@ -328,7 +327,6 @@ function _getItemsData(startDate, endDate, areas) {
   var districted
   areaData.areasArray.forEach(function(value) {
     data.count += value.caseCount;
-
     value.listData.forEach(function(listDataValue) {
       var index = DB.serviceItems.indexOf(listDataValue.serviceItems);
       var areasIndex = DB.areas.indexOf(listDataValue.area);
@@ -349,15 +347,15 @@ function _getItemsData(startDate, endDate, areas) {
           return district[b] - district[a];
         });
         var obj1 = {};
+        // console.log(districtSorted, district[districtSorted[0]])
         obj1[districtSorted[0]] = district[districtSorted[0]];
-        obj1[districtSorted[0]] = district[districtSorted[0]];
-        obj1[districtSorted[0]] = district[districtSorted[0]];
+        obj1[districtSorted[1]] = district[districtSorted[1]];
+        obj1[districtSorted[2]] = district[districtSorted[2]];
         data.itemsArray[index].topAreas.push(obj1);
-         console.log(data.itemsArray[index].topAreas);
       }
     });
   });
-
+  console.log(data);
   return data;
 }
 

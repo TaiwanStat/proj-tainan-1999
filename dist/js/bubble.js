@@ -20,19 +20,7 @@ var bubbleChart = function () {
                       .attr('opacity', 1);
 
   var jsonData;
-  // parser data, 之後將改成call api的方式, 不需要d3.json
-  // d3.json('../src/faked.json', function (error, data) {
-  //   if (error) {
-  //     console.log(error);
-  //   }
-  //   draw(data, 's');
-  // });
-
-
-
-  /* 預先設置pack layout
-  /*/
-    var svg = d3.select('#bubble_chart')
+  var svg = d3.select('#bubble_chart')
     .append('svg')
     .attr({
       'width': width,
@@ -43,9 +31,6 @@ var bubbleChart = function () {
     .sort(null)
     .size([width, height])
     .padding(padding);
-
-
-
 
 
   var start = '2017-01-01'; //最早時間
@@ -59,9 +44,10 @@ var bubbleChart = function () {
   var dateGOGO = d3.time.format('%Y-%m-%d');
   var slider = $('input');
 
+
+  //  GET DATA!!!!
   jsonData = G.getItemsData(dateGOGO(startDate._d), dateGOGO(selectDate._d), ['新化區', '新營區', '東區', '中西區']);
   draw(jsonData,'s');
-
 
   // draw the slider
   slider.on('mouseenter', function () {
@@ -87,12 +73,11 @@ var bubbleChart = function () {
     slider.css({
       'background-image': '-webkit-linear-gradient(left ,#222 0%,#222 ' + n + '%,#d3d3d5 ' + n + '%, #d3d3d5 100%)'
     });
-    // get the time
     selectDate = moment(start).add( (durationDay / 100.00) * n, 'days');
     if (lastData !== dateGOGO(selectDate._d)) {
+
+      // IF CHANGE, GET DATA!!
       jsonData = G.getItemsData(dateGOGO(startDate._d), dateGOGO(selectDate._d), ['新化區', '新營區', '東區', '中西區']);
-      console.log(jsonData);
-      console.log(dateGOGO(selectDate._d));
       draw(jsonData, 'c');
       lastData = dateGOGO(selectDate._d);
     }
@@ -114,7 +99,6 @@ var bubbleChart = function () {
     for (var itemName in DB.serviceItems) {
       detail[DB.serviceItems[itemName]] = '';
     }
-
 
     for (var foo in data.itemsArray) {
       for(var bar in data.itemsArray[foo].topAreas[0]) {
@@ -217,8 +201,6 @@ var bubbleChart = function () {
       resetItemText();
     }
 
-    
-
     var textNode = svg.selectAll('#item_text')
       .data(bubbleData)
       .enter()
@@ -236,12 +218,9 @@ var bubbleChart = function () {
         'text-anchor': 'middle'
       })
       .text(function (d) {
-        // return ;
-        console.log(mean);
+        // console.log(mean);
         if (d.value >= mean) {
-          // if ((d3.select('#id' + d.item).attr('r') / (d.item.length)) >= 7) {
-            return d.item;
-          // }
+          return d.item;
         }
       })
       .transition()
@@ -260,7 +239,7 @@ var bubbleChart = function () {
     updateSideBox(data.itemsArray);
   }
 
-  // 解析api data!，之後可能會因為api更動而需要更改
+  // 解析api data!(若 API 更動，就需要更改）
   function dataFilter(data) {
     var newData = [];
     data.forEach(function (d, i) {

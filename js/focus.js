@@ -1,3 +1,5 @@
+var isFocusExist = false;
+
 (function (window) {
   window.focus = focus;
   window.resetFocus = resetFocus;
@@ -15,6 +17,7 @@
     });
 
   function focus(areaEName, timeInterval, startDate, endDate) {
+    isFocusExist = true;
     var margin = {
       top: 50,
       right: 300,
@@ -128,8 +131,6 @@
 
     itemsData = qData.itemsArray; 
     caseSum = qData.count; // 案件總數
-    
-    console.log(qData, areasData)
 
     // inner donut chart
     var d = areasData[0];
@@ -321,15 +322,13 @@
       .attr('fill', function (d, i) {
         for (var key in DB.areas) {
           if (DB.serviceItems[key] === d.item) {
-            console.log(key, DB.serviceItems[key], d.item);
             return G.colorServiceItem[key]; // color的array
           }
         }
       })
       .style('fill-opacity', 0.2);
 
-
-    // Second Pie
+    // Outer Pie
     var pieOuter = d3.layout.pie().sort(null);
     array = dataNoEmpty.map(function (d) {
       return d.caseCount;
@@ -358,22 +357,22 @@
     });
 
     /*
-     * BUG: 若是點擊台南市的話 Array 沒有進來（沒有執行attr）
+     * BUG: 若是點擊台南市的話 Array 沒有進來（沒有執行fill，可是其他得屬性都有進去）
      */
     var path = arcs.append('path')
       .attr({
-        'fill': function (d, i) {
-          for (var key in DB.areas) {
-            console.log(DB.serviceItems[key], itemName[i], i);
-            if (DB.serviceItems[key] === itemName[i]) {
-              return G.colorServiceItem[key]; // color的array
-            }
-          }
-        },
         'd': donut2Arc1,
         'class': 'pie-path',
         'id': function (d, i) {
-          return itemName[i] + '_inner';
+          return itemName[i] + '_outer';
+        }
+      })
+      .style('fill', function (d, i) {
+        for (var key in DB.areas) {
+          console.log(DB.serviceItems[key], itemName[i], i);
+          if (DB.serviceItems[key] === itemName[i]) {
+            return G.colorServiceItem[key]; // color的array
+          }
         }
       })
       .on('mousemove', function (d, i) {
@@ -522,6 +521,9 @@
           }
         });
     }
+    function hasCase(value) {
+      return value > 0;
+    }     
 
     function findAreaCName(areaEName) {
       // find areaCName
@@ -530,10 +532,6 @@
           return key;
         }
       }
-    }
-
-    function hasCase(value) {
-      return value > 0;
     }
   }
 
