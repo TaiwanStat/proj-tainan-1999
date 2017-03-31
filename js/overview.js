@@ -26,13 +26,11 @@
   window.overview = overview;
 
   // function overview() {
-    // var qData = G.getAreasData(startDate, endDate, DB.areas);
-  d3.json('../src/new_fakeAreas.json', function (error, qData) {
-    console.log(11);
-
-    if (error) {
-      console.log(error);
-    }
+    var qData = G.getAreasData(startDate, endDate, ['新化區', '新營區', '東區', '中西區']);
+  // d3.json('../src/new_fakeAreas.json', function (error, qData) {
+  //   if (error) {
+  //     console.log(error);
+  //   }
 
     var allArray = [ // 用來存全區資料
       [0, 0, '違規停車'],
@@ -101,11 +99,11 @@
     allArray.splice(3, allArray.length - 3, [9, allOtherSum, '其他']);
     var allNameObj = {
       cName: '台南市',
-      eName: 'Focus'
+      eName: 'Tainan'
     };
     createDonut(allArray, allNameObj, 'column', allSum, -1); // 畫圖(各區) 
 
-  });
+  // });
   // }
 
   function createDonut(array, name, column_object, caseCount, areaIndex) {
