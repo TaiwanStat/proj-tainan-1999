@@ -324,7 +324,7 @@ function _getItemsData(startDate, endDate, areas) {
   var data = initItemsData();
   var areaData = this.getAreasData(startDate, endDate, areas);
   data.areasArray = areaData.areasArray;
-  var districted
+
   areaData.areasArray.forEach(function(value) {
     data.count += value.caseCount;
     value.listData.forEach(function(listDataValue) {
@@ -349,14 +349,21 @@ function _getItemsData(startDate, endDate, areas) {
         var obj1 = {};
         // console.log(districtSorted, district[districtSorted[0]])
         obj1[districtSorted[0]] = district[districtSorted[0]];
-        obj1[districtSorted[1]] = district[districtSorted[1]];
-        obj1[districtSorted[2]] = district[districtSorted[2]];
-        data.itemsArray[index].topAreas.push(obj1);
+        if(isEmptyObj(data.itemsArray[index].topAreas)) {
+          data.itemsArray[index].topAreas.push(obj1);
+        }
       }
     });
   });
   console.log(data);
   return data;
+}
+
+function isEmptyObj(obj) {
+  for(var trav in obj) {
+    return false;
+  }
+  return true;
 }
 
 
