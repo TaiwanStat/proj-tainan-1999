@@ -356,7 +356,7 @@ function _getItemsData(startDate, endDate, areas) {
       }
     });
   });
-  console.log(data);
+  // console.log(data);
   return data;
 }
 
@@ -491,7 +491,6 @@ var dateAdd = function(curTime, strInterval, Number) {
 function initPage() {
   var hash = window.location.hash;
   var arr = hash.split('-');
-  console.log(arr);
   if (hash.indexOf('area') > 0) {
     $('#section-overview').addClass('disable');
     $('.active').removeClass('active');

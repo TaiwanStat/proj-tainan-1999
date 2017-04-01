@@ -46,8 +46,8 @@ var bubbleChart = function () {
 
 
   //  GET DATA!!!!
-  jsonData = G.getItemsData(dateGOGO(startDate._d), dateGOGO(selectDate._d), ['新化區', '新營區', '東區', '中西區']);
-  draw(jsonData,'s');
+  jsonData = G.getItemsData(dateGOGO(selectDate._d), dateGOGO(selectDate._d), ['新化區', '新營區', '東區', '中西區']);
+  draw(jsonData, 's');
 
   // draw the slider
   slider.on('mouseenter', function () {
@@ -77,7 +77,7 @@ var bubbleChart = function () {
     if (lastData !== dateGOGO(selectDate._d)) {
 
       // IF CHANGE, GET DATA!!
-      jsonData = G.getItemsData(dateGOGO(startDate._d), dateGOGO(selectDate._d), ['新化區', '新營區', '東區', '中西區']);
+      jsonData = G.getItemsData(dateGOGO(selectDate._d), dateGOGO(selectDate._d), ['新化區', '新營區', '東區', '中西區']);
       draw(jsonData, 'c');
       lastData = dateGOGO(selectDate._d);
     }
@@ -96,6 +96,10 @@ var bubbleChart = function () {
     var allEventNumber = [];
     var initValue = 0;
     var value=0,count=0;
+
+    // if count = 0, set 0 to 'cx', 'cy', 'r'
+    var isCountZero = (data.count === 0)? true : false;
+
     for (var itemName in DB.serviceItems) {
       detail[DB.serviceItems[itemName]] = '';
     }
@@ -119,27 +123,27 @@ var bubbleChart = function () {
                           });
     if (option === 's') {
       var drawNode = svg.selectAll('circle')
-                         .data(bubbleData)
-                         .enter()
-                         .append('circle')
-                         .attr({
-                           cx: function (d) {
-                             return d.x;
-                           },
-                           cy: function (d) {
-                             return 0;
-                           },
-                           r: function (d) {
+                        .data(bubbleData)
+                        .enter()
+                        .append('circle')
+                        .attr({
+                          cx: function (d) {
+                            return d.x;
+                          },
+                          cy: function (d) {
+                            return 0;
+                          },
+                          r: function (d) {
                             return d.r;
-                           },
-                           fill: function (d, i) {
-                             return G.colorServiceItem[i];
-                           },
-                           id: function (d) {
-                             return 'id' + d.item;
-                           },
-                           opacity: 0
-                         });
+                          },
+                          fill: function (d, i) {
+                            return G.colorServiceItem[i];
+                          },
+                          id: function (d) {
+                            return 'id' + d.item;
+                          },
+                          opacity: 0
+                        });
     } else {
       var drawNode = svg
         .selectAll('circle')
@@ -177,7 +181,7 @@ var bubbleChart = function () {
 
     if (option === 's') {
       drawNode.transition()
-        .duration(1000)
+        .duration(800)
         .attr({
           opacity: 1,
           cy: function (d) {
@@ -186,15 +190,18 @@ var bubbleChart = function () {
         });
     } else {
       drawNode.transition()
-        .duration(1000)
+        .duration(800)
         .attr({
           cx: function (d) {
+            if(isCountZero) return 0;
             return d.x;
           },
           cy: function (d) {
+            if(isCountZero) return 0;
             return d.y;
           },
           r: function (d) {
+            if(isCountZero) return 0;
             return d.r;
           }
         });
@@ -207,9 +214,11 @@ var bubbleChart = function () {
       .append('text')
       .attr({
         'x': function (d) {
+          if(isCountZero) return 0;
           return d.x - 5;
         },
         'y': function (d) {
+          if(isCountZero) return 0;
           return d.y - 5;
         },
         'id': 'item_text'
@@ -224,12 +233,14 @@ var bubbleChart = function () {
         }
       })
       .transition()
-      .duration(1000)
+      .duration(800)
       .attr({
         x: function (d) {
+          if(isCountZero) return 0;
           return d.x;
         },
         y: function (d) {
+          if(isCountZero) return 0;
           return d.y;
         },
         opacity: 1
@@ -275,8 +286,7 @@ var bubbleChart = function () {
           { scrollTop: $('#scroll_container').offset().top - 5}, 'easeInBack'
         );
 
-        // 以set interval來達到輪播更動
-        // $('<style>input[type='range']::-webkit-slider-thumb{left:' + 0 + '%;}</style>').appendTo('head');
+        // use setInterval to control slider
         event = setInterval(function () {
           // 以now_bar_value紀錄當前bar的數值，對齊作加減，假如等於now_data即不再更新
           // $('#header_id').remove();
