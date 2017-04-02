@@ -257,16 +257,16 @@ function _focusArea(area, timeInterval, startDate, endDate) {
   window.location.hash = 'area-' + area.toLowerCase();
 }
 
-// console.log(G.getAreasData('2016-01-01', '2016-07-03', DB.areas));
-// This inputs one area in API per time...
-// NO INPUT ALL AREAS in one time!! Cuz the name will be wrong...(除非server修好這個bug)
+
+
+// inputAreasArray can be empty
 function _getAreasData(startDate, endDate, inptAreasArray) {
   var obj = {
     count: 0,
     areasArray: [],
   };
 
-  inptAreasArray = inptAreasArray || [];
+  if(!inptAreasArray) inptAreasArray = [false];
 
   while (inptAreasArray.length !== 0) {
     var currentArea = inptAreasArray.pop();
@@ -276,27 +276,65 @@ function _getAreasData(startDate, endDate, inptAreasArray) {
 
     if(data.CaseCount === '0') {
       obj.areasArray.push({
-        area: currentArea,
+        area: (!currentArea)? '台南市': currentArea,
         caseCount: 0,
         listData: []
       });
-    } else{
-      data.ListAreaData[0].Subprojects.forEach(function(value, index) {
-        newListData.push({
-          caseCount: parseInt(value.count),
-          serviceName: value.service,
-          serviceItems: formatItemName(value.subproject),
-          area: currentArea
+    } else {
+      if(!currentArea) {
+        DB.areas.forEach(function(DBareaName, DBareaIndex) {
+          var findIndexList = [];
+          var findAreaCount = 0;
+          var findAreaListData = [];
+
+          // Find areaName
+          data.ListAreaData.forEach(function(value, index) {
+            if (DBareaName.indexOf(value.area) > -1) {
+              findIndexList.push(index);
+            }
+          });
+
+          findIndexList.forEach(function(findIndex) {
+            // If findIndexList.length > 1, then many cause BUG!!
+            data.ListAreaData[findIndex].Subprojects.forEach(function(value, index) {
+              findAreaListData.push({
+                caseCount: parseInt(value.count),
+                serviceName: value.service,
+                serviceItems: formatItemName(value.subproject),
+                area: DBareaName
+              });
+
+              findAreaCount += parseInt(value.count);
+            });
+          });
+
+          obj.areasArray.push({
+            area: DBareaName,
+            caseCount: findAreaCount,
+            listData: findAreaListData
+          });
+
+          // Add to obj.count
+          obj.count += findAreaCount;
+        });
+      }else {
+        data.ListAreaData[0].Subprojects.forEach(function(value, index) {
+          newListData.push({
+            caseCount: parseInt(value.count),
+            serviceName: value.service,
+            serviceItems: formatItemName(value.subproject),
+            area: currentArea
+          });
+
+          caseCount += parseInt(value.count);
         });
 
-        caseCount += parseInt(value.count);
-      });
-
-      obj.areasArray.push({
-        area: currentArea,
-        caseCount: caseCount,
-        listData: newListData
-      });
+        obj.areasArray.push({
+          area: currentArea,
+          caseCount: caseCount,
+          listData: newListData
+        });
+      }
     }
 
     obj.count += caseCount;
@@ -321,6 +359,8 @@ function _getAreasData(startDate, endDate, inptAreasArray) {
 
 // Items
 function _getItemsData(startDate, endDate, areas) {
+  areas = areas || false;
+
   var data = initItemsData();
   var areaData = this.getAreasData(startDate, endDate, areas);
   data.areasArray = areaData.areasArray;
@@ -384,7 +424,7 @@ function initItemsData() {
   return obj;
 }
 
-// console.log(getAPIsearch('2017-03-01', '2017-03-', '中西區'))
+// console.log(getAPIsearch('2017-03-01', '2017-03-31', '中西區'))
 function getAPIsearch(startDate, endDate, area) {
   var obj = {};
   var send = {

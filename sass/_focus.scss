@@ -134,6 +134,10 @@ text.bartip {
 .focus_caseCount {
   @extend .overview_caseCount;
   font-size: $font-size-l * 2.8 !important;
+
+  &.case10000up {
+    font-size: $font-size-l * 2 !important;    
+  }
 }
 
 .focus_caseCountI {

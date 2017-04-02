@@ -25,86 +25,78 @@
 
   window.overview = overview;
 
-  // function overview() {
-    var qData = G.getAreasData(startDate, endDate, ['新化區', '新營區', '東區', '中西區']);
-  // d3.json('../src/new_fakeAreas.json', function (error, qData) {
-  //   if (error) {
-  //     console.log(error);
-  //   }
+  var qData = G.getAreasData(startDate, endDate);
+  var allArray = [ // 用來存全區資料
+    [0, 0, '違規停車'],
+    [1, 0, '路燈故障'],
+    [2, 0, '噪音舉發'],
+    [3, 0, '騎樓舉發'],
+    [4, 0, '道路維修'],
+    [5, 0, '交通運輸'],
+    [6, 0, '髒亂及污染'],
+    [7, 0, '民生管線'],
+    [8, 0, '動物救援'],
+    [9, 0, '其他']
+  ];
 
-    var allArray = [ // 用來存全區資料
-      [0, 0, '違規停車'],
-      [1, 0, '路燈故障'],
-      [2, 0, '噪音舉發'],
-      [3, 0, '騎樓舉發'],
-      [4, 0, '道路維修'],
-      [5, 0, '交通運輸'],
-      [6, 0, '髒亂及污染'],
-      [7, 0, '民生管線'],
-      [8, 0, '動物救援'],
-      [9, 0, '其他']
-    ];
+  qData.areasArray.map(function (d, areaIndex) {
+    var areaName = d.area;
+    var array = []; // array用來儲存過濾後可畫圖的資料
+    var otherSum = 0;
+    var nameObj = {
+      cName: areaName,
+      eName: DB.areasE[areaName]
+    };
 
-    qData.areasArray.map(function (d, areaIndex) {
-      var areaName = d.area;
-      var array = []; // array用來儲存過濾後可畫圖的資料
-      var otherSum = 0;
-      var nameObj = {
-        cName: areaName,
-        eName: DB.areasE[areaName]
-      };
+    for (var name in serviceName) {
+      var temp = [];
+      temp.push(serviceName[name]); // 類別對應數字
+      temp.push(filtJSON(d, 'serviceName', name)); // 類別之事件發生數
+      temp.push(name); // 類別名稱
+      array.push(temp);
+    }
 
-      for (var name in serviceName) {
-        var temp = [];
-        temp.push(serviceName[name]); // 類別對應數字
-        temp.push(filtJSON(d, 'serviceName', name)); // 類別之事件發生數
-        temp.push(name); // 類別名稱
-        array.push(temp);
-      }
+    for (var i = 0; i < 10; i++) {
+      // 把每次的資料夾到全區累計
+      allArray[i][1] += array[i][1];
+    }
 
-      for (var i = 0; i < 10; i++) {
-        // 把每次的資料夾到全區累計
-        allArray[i][1] += array[i][1];
-      }
-
-      array = array.sort(function (a, b) { 
-        // 由大到小排序
-        return d3.descending(a[1], b[1]);
-      });
-
-      array.forEach(function (value, index) { 
-        // 取前三高，其他加總到其他
-        if (index > 2) {
-          otherSum += array[index][1];
-        }
-      })
-      // console.log(array, nameObj);
-      array.splice(3, array.length - 3, [9, otherSum, '其他']); //保留前三高，其餘加總到「其他」
-      createDonut(array, nameObj, 'column', d.caseCount, areaIndex); //畫圖(各區)
-    });
-
-    allArray = allArray.sort(function (a, b) { // 由大到小排序
+    array = array.sort(function (a, b) { 
+      // 由大到小排序
       return d3.descending(a[1], b[1]);
     });
 
-    var allOtherSum = 0;
-    var allSum = 0;
-    allArray.forEach(function (value, index) {
+    array.forEach(function (value, index) { 
+      // 取前三高，其他加總到其他
       if (index > 2) {
-        allOtherSum += allArray[index][1];
+        otherSum += array[index][1];
       }
-      allSum += allArray[index][1];
-    });
+    })
+    // console.log(array, nameObj);
+    array.splice(3, array.length - 3, [9, otherSum, '其他']); //保留前三高，其餘加總到「其他」
+    createDonut(array, nameObj, 'column', d.caseCount, areaIndex); //畫圖(各區)
+  });
 
-    allArray.splice(3, allArray.length - 3, [9, allOtherSum, '其他']);
-    var allNameObj = {
-      cName: '台南市',
-      eName: 'Tainan'
-    };
-    createDonut(allArray, allNameObj, 'column', allSum, -1); // 畫圖(各區) 
+  allArray = allArray.sort(function (a, b) { // 由大到小排序
+    return d3.descending(a[1], b[1]);
+  });
 
-  // });
-  // }
+  var allOtherSum = 0;
+  var allSum = 0;
+  allArray.forEach(function (value, index) {
+    if (index > 2) {
+      allOtherSum += allArray[index][1];
+    }
+    allSum += allArray[index][1];
+  });
+
+  allArray.splice(3, allArray.length - 3, [9, allOtherSum, '其他']);
+  var allNameObj = {
+    cName: '台南市',
+    eName: 'Tainan'
+  };
+  createDonut(allArray, allNameObj, 'column', allSum, -1); // 畫圖(各區) 
+
 
   function createDonut(array, name, column_object, caseCount, areaIndex) {
     var pie = d3.layout.pie();
@@ -202,6 +194,9 @@
             return width / 2 - caseCountTextX * 9;
           else if (caseCount < 1000)
             return width / 2 - caseCountTextX * 11;
+          else if (caseCount < 10000)
+            return width / 2 - caseCountTextX * 14;
+
         },
         'y': height / 2 - 10
       })
@@ -222,7 +217,9 @@
         else if (caseCount < 100)
           return x + caseCountTextX * 13;
         else if (caseCount < 1000)
-          return x + caseCountTextX * 19;
+          return x + caseCountTextX * 20;
+        else if (caseCount < 10000)
+          return x + caseCountTextX * 26;
       })
       .attr('y', $('#caseCount_'+name.eName).attr('y') - 3)
       .style('opacity', 0)

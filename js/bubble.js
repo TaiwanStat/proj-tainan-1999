@@ -46,7 +46,7 @@ var bubbleChart = function () {
 
 
   //  GET DATA!!!!
-  jsonData = G.getItemsData(dateGOGO(selectDate._d), dateGOGO(selectDate._d), ['新化區', '新營區', '東區', '中西區']);
+  jsonData = G.getItemsData(dateGOGO(selectDate._d), dateGOGO(selectDate._d));
   draw(jsonData, 's');
 
   // draw the slider
@@ -77,7 +77,7 @@ var bubbleChart = function () {
     if (lastData !== dateGOGO(selectDate._d)) {
 
       // IF CHANGE, GET DATA!!
-      jsonData = G.getItemsData(dateGOGO(selectDate._d), dateGOGO(selectDate._d), ['新化區', '新營區', '東區', '中西區']);
+      jsonData = G.getItemsData(dateGOGO(selectDate._d), dateGOGO(selectDate._d));
       draw(jsonData, 'c');
       lastData = dateGOGO(selectDate._d);
     }
@@ -105,8 +105,9 @@ var bubbleChart = function () {
     }
 
     for (var foo in data.itemsArray) {
+      var rankCount = 1;
       for(var bar in data.itemsArray[foo].topAreas[0]) {
-        detail[data.itemsArray[foo].item] += bar + data.itemsArray[foo].topAreas[0][bar] + '件<br>';
+        detail[data.itemsArray[foo].item] += rankCount++ + '. ' + bar + data.itemsArray[foo].topAreas[0][bar] + '件<br>';
       }
     }
 
@@ -162,7 +163,7 @@ var bubbleChart = function () {
           .style({
             'opacity': 0.9
           });
-        tooltipDiv.html('<span class="bubble_tooltipName">' + d3.select(this).attr('id').slice(2) + '( ' + thisData.value + '件 )</span><br>' + detail[d3.select(this).attr('id').slice(2)])
+        tooltipDiv.html('<span class="bubble_tooltipName">' + d3.select(this).attr('id').slice(2) + '(' + thisData.value + '件 )</span><br>' + detail[d3.select(this).attr('id').slice(2)])
           .style({
             'left': (d3.event.pageX) + 'px',
             'top': (d3.event.pageY) + 'px'
@@ -247,7 +248,7 @@ var bubbleChart = function () {
       });
 
     // ------- 取前三高的事件數顯示出來 ---------
-    updateSideBox(data.itemsArray);
+    updateSideBox(data);
   }
 
   // 解析api data!(若 API 更動，就需要更改）
@@ -334,7 +335,7 @@ var bubbleChart = function () {
     });
 
   function updateSideBox(data) {
-    var sortData = data.sort(function (a, b) {
+    var sortData = data.itemsArray.sort(function (a, b) {
       if (a.caseCount < b.caseCount) {
         return 1;
       } else if (a.caseCount > b.caseCount) {
@@ -344,7 +345,7 @@ var bubbleChart = function () {
       }
     });
 
-    $('.descriptionTime').text(dateGOGO(selectDate._d));
+    $('.descriptionTime').text(dateGOGO(selectDate._d) + '（' + data.count + '件)');
     for ( var i = 0; i < 3; i++ ) {
       $('.descriptionItem>#item' + i).text((i + 1) + '. ' +
         sortData[i].item + ': ' + sortData[i].caseCount + '件');
