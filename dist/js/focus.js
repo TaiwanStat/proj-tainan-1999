@@ -113,7 +113,7 @@ var isFocusExist = false;
     // Check if it is 'All'
     if (areaCName === '台南市') {
       var newListData = [];
-      qData = G.getItemsData(qStarTime, qEndTime, DB.areas);
+      qData = G.getItemsData(qStarTime, qEndTime, DB.areas.slice());
       areasData = [{
         'area': '台南市',
         'caseCount': 0,
@@ -356,9 +356,6 @@ var isFocusExist = false;
       return d.item;
     });
 
-    /*
-     * BUG: 若是點擊台南市的話 Array 沒有進來（沒有執行fill，可是其他得屬性都有進去）
-     */
     var path = arcs.append('path')
       .attr({
         'd': donut2Arc1,
