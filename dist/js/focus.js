@@ -11,7 +11,7 @@ var isFocusExist = false;
         var setInterval = $('.active').attr('value');
         var qStarTime = $('#startDate').val();
         var qEndTime = $('#endDate').val();
-        console.log(setInterval);
+        // console.log(setInterval);
         G.focusArea(value, setInterval, qStarTime, qEndTime);
       }
     });
@@ -113,7 +113,7 @@ var isFocusExist = false;
     // Check if it is 'All'
     if (areaCName === '台南市') {
       var newListData = [];
-      qData = G.getItemsData(qStarTime, qEndTime, DB.areas.slice());
+      qData = G.getItemsData(qStarTime, qEndTime);
       areasData = [{
         'area': '台南市',
         'caseCount': 0,
@@ -205,10 +205,19 @@ var isFocusExist = false;
             return -60;
           else if (caseCount < 1000)
             return -90;
+          else if (caseCount < 10000)
+            return -115;
+          else if (caseCount < 1000000)
+            return -125;
         })
         .attr('y', 0)
         .attr('id', 'focus_caseCount_' + areaEName)
-        .attr('class', 'focus_caseCount')
+        .attr('class', function() {
+          if (d.caseCount >= 10000)
+            return 'focus_caseCount case10000up';
+          else
+            return 'focus_caseCount';
+        })
         .text(d.caseCount);
 
       pieSvg.append('text')
@@ -221,6 +230,10 @@ var isFocusExist = false;
             return x + 100;
           else if (caseCount < 1000)
             return x + 160;
+          else if (caseCount < 10000)
+            return x + 205;
+          else if (caseCount < 1000000)
+            return x + 216;
         })
         .attr('y', -4)
         .attr('class', 'focus_caseCountI')
@@ -366,7 +379,6 @@ var isFocusExist = false;
       })
       .style('fill', function (d, i) {
         for (var key in DB.areas) {
-          console.log(DB.serviceItems[key], itemName[i], i);
           if (DB.serviceItems[key] === itemName[i]) {
             return G.colorServiceItem[key]; // color的array
           }
@@ -494,7 +506,6 @@ var isFocusExist = false;
       .call(yAxis);
 
     function drawPath(pieSvg, pie2) {
-      // console.log(pie2);
       pieSvg.selectAll('path.pointer').data(pie2).enter()
         .append('path')
         .attr('class', function (d) {
