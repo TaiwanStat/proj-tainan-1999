@@ -302,10 +302,10 @@
 
   function setChartSize() {
     if ($(window).width() <= 1520) {
-      width = 380;
-      height = 380;
-      lengendXparameter = 8.3;
-      lengendYparameter = 6.3;
+      width = (G.isMobile)? 340 : 380;
+      height = (G.isMobile)? 340 : 380;
+      lengendXparameter = (G.isMobile)? 7.3 : 8.3;
+      lengendYparameter = (G.isMobile)? 5.5 : 6.3;
       caseCountTextX = 5;
     } else {
       width = 450;
