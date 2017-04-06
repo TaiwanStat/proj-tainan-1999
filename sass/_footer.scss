@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: $light-black;
+  width: 50%;
+  margin: 5% auto auto;
+  padding: 1em;
+  border-top: solid 1px $gray;
+  border-radius: 2px;
+  text-align:center;
+  p {
+    padding: 0px 1em;
+    font-weight: bold;
+    // color: $orange;
+  }
+  a{
+    color: $light-black;
+    font-weight: normal;
+    text-decoration: none;
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  @media (max-width: map-get($break-point, table-s)) {
+    width: 80%;
+  }
+}
