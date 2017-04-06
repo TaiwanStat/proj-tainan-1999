@@ -17,7 +17,8 @@
 </head>
 <body>
 	<header class="header">
-		<div class="header_left headerItemActive" id="overview">
+		<!-- Screen header -->
+		<div class="header_left header_item headerItemActive" id="overview" data-myid="overview">
 			<img src="./dist/img/logo.jpeg">
 			<div>
 				<p>台南市政府</p>
@@ -39,13 +40,49 @@
 				</div>
 			</div>
 		</div>
+		
+		<!-- Mobile-Header -->
+		<div class="header_left mob-header mob-active">
+			<div>
+				<p>台南市政府</p>
+				<h1>OPEN 1999</h1>
+			</div>
+	
+			<i class="mob-menu-icon fa fa-align-left" aria-hidden="true"></i>
+		</div>
+	
+		<div class="mob-menu">
+			<div class="mob-header-title mob-active">
+				<p>台南市政府</p>
+				<h1>OPEN 1999<i class="mob-menu-icon fa fa-align-left" aria-hidden="true"></i></h1>
+			</div>
+	
+			<h2 class="header_item" data-myid="overview">最近一星期概況<i class="fa fa-chevron-right" aria-hidden="true"></i></h2>
+			<h2 class="header_item" data-myid="area-focus">各區熱點比較<i class="fa fa-chevron-right" aria-hidden="true"></i></h2>
+			<h2 class="header_item" data-myid="dynamic-bubble">時間動態比較<i class="fa fa-chevron-right" aria-hidden="true"></i></h2>
+	
+			<div class="mob-support">
+				<i id="mob-support-icon" class="fa fa-question-circle" aria-hidden="true"></i>
+	
+				<div class="supportBox">
+					<p>所有資料皆為台南市政府1999 API 公開即時呈現</p>
+					<p>由用<a href="https://www.taiwanstat.com" target="_blank">數據看台灣團隊</a>協助並幫忙製作</p>
+					<hr>
+					<p align="left">九大分類</p>
+					<div class="itemBox" id="mob-itemBox9"></div>
+					<hr>
+					<p align="left">三十三項案件</p>
+					<div class="itemBox" id="mob-itemBox33"></div>
+				</div>
+			</div>
+		</div>
 	
 		<ul class="header_right">
-			<li class="header_item" id="area-focus">
+			<li class="header_item" id="area-focus" data-myid="area-focus">
 				<i class="fa fa-th-large" aria-hidden="true"></i>
 				<p>各區比較</p>
 			</li>
-			<li class="header_item" id="dynamic-bubble">
+			<li class="header_item" id="dynamic-bubble" data-myid="dynamic-bubble">
 				<i class="fa fa-bullseye" aria-hidden="true"></i>
 				<p>動態比較</p>
 			</li>
@@ -53,6 +90,10 @@
 	</header>
 
 	<section class="section disable" id="section-overview">
+		<div class="overview_title">
+			<h2>台南各區一星期<span>概況</span></h2>
+			<p><span class="date"></span><!--． <span class = "sub-9-items">9大類說明 ›</span> --></p>
+		</div>
 		<div class="selectAreaFiled">
 			<div class="field">
 				<i class="fa fa-share" aria-hidden="true"></i>移動至
@@ -98,17 +139,20 @@
 				<option value="Anping">安平區</option>
 			</select>
 		</div>
-		
-		<div class="overview_title">
-			<h2>台南各區一星期<span>概況</span></h2>
-			<p><span class="date"></span><!--． <span class = "sub-9-items">9大類說明 ›</span> --></p>
-		</div>
 		<div class="row">
 		  	<div class="column"></div>
 		</div>
 	</section>
 
 	<section class="section disable" id="section-focus">
+		<div class="focus_title">
+		  <h2><span class="area_name">台南市</span>詳細統計</h2>
+		  <ul class="focus_ulBox">
+		    <li class="noHover">外圈: 33 項案件資訊</li>
+		    <li class="noHover">內圈:&nbsp;&nbsp;9&nbsp;大類別資訊</li>
+		  </ul>
+		</div>
+		
 		<div class="infocus ui right floated compact menu">
 		  <div class="infocus item"><i class="Hourglass End icon" href="/"></i><b>時間</b></div>
 		  <a class="infocus reactive item active" value="w">
@@ -196,52 +240,41 @@
 		  </select>
 		</div>
 		
-		<div class="focus_title">
-		  <h2><span class="area_name">台南市</span>詳細統計</h2>
-		  <ul class="focus_ulBox">
-		    <li class="noHover">外圈: 33 項案件資訊</li>
-		    <li class="noHover">內圈:&nbsp;&nbsp;9&nbsp;大類別資訊</li>
-		  </ul>
-		</div>
-		
 		<div id="pie-chart"></div>
 		<div id="bar-chart"></div>
 	</section>
 
 	<section class="section disable" id="section-bubble">
-		<div id="title_container">
-			<div id="scroll_container">
-				<!-- <div id="show_date">按下播放鍵-播放動畫圖表</div> -->
-				<div id="scroll_bar_container">
-		      <input id="slider_input" type="range" min="0" max="100" step="1" value="0">
-				</div>
-				<div id="option_container">
-					<div id="scroll_bar_option">
-						<i id="play_icon" class="bubble_optionButton fa fa-play fa"></i>
-		<!-- 					<i id="pause_icon" class="fa fa-pause fa"></i> -->
-						<i id="stop_icon" class="bubble_optionButton fa fa-stop fa"></i>
-					</div>
-				</div>
-			</div>
-		</div>
-		
 		<div class="bubble_title">
-		  <h2><span>台南市案件統計</span>時間漸變圖</h2>
+		  <h2><span>台南市案件統計</span><wbr>時間漸變圖</h2>
 		  <ul class="focus_ulBox">
-			  <li class="noHover">移動游標顯示此案件發生前三高之地區</li>
-			  <li class="noHover">按下播放鍵 - 播放動畫圖表</li>
+		    <li class="noHover">移動游標顯示此案件發生前三高之地區</li>
+		    <li class="noHover">按下播放鍵 - 播放動畫圖表</li>
 		  </ul>
 		</div>
 		
-		<div id="super_container">
-			<div class="description">
-				<h2 class="descriptionTime"></h2>
-				<div class="descriptionItem">
-					<p id="item0"></p>
-					<p id="item1"></p>
-					<p id="item2"></p>
-				</div>
-			</div>
+		<div class="description">
+		  <h2 class="descriptionTime"></h2>
+		  <div class="descriptionItem">
+		    <p id="item0"></p>
+		    <p id="item1"></p>
+		    <p id="item2"></p>
+		  </div>
+		</div>
+		
+		<div id="scroll_container">
+		  <div id="scroll_bar_container">
+		    <input id="slider_input" type="range" min="0" max="100" step="1" value="0">
+		  </div>
+		  <div id="option_container">
+		    <div id="scroll_bar_option">
+		      <i id="play_icon" class="bubble_optionButton fa fa-play fa"></i>
+		      <i id="stop_icon" class="bubble_optionButton fa fa-stop fa"></i>
+		    </div>
+		  </div>
+		</div>
+		
+		<div id="bubble_container">
 		  <div id="show">
 				<div id="bubble_chart"></div>
 		  </div>

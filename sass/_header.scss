@@ -42,6 +42,10 @@
 		}
 	}
 
+	.mob-header, .mob-menu{
+		display: none;
+	}
+
 	ul.header_right{
 		@extend %position_relative;
 		@extend %flex_align_center;
@@ -102,7 +106,7 @@
 }
 
 
-.questionBox{
+.questionBox, .mob-support{
 	position: relative;
   align-self: flex-end;
   padding: 11px;
@@ -118,7 +122,7 @@
 		box-shadow: 1px 2px 3px 2px rgba(0,0,0,0.2);
 
 		.supportBox, .triangleL, .triangleS{
-			display: block !important;
+			display: block ;
 		}
 		.fa-question-circle{
 			color: $orange;
@@ -204,3 +208,124 @@
 		opacity: 1 !important;
 	}
 }
+
+
+@media (max-width: map-get($break-point, screen-s)) {
+	.header {
+		.header_left, ul.header_right{
+			display: none;
+		}
+
+		.mob-menu{
+			display: block;
+		}
+
+		.mob-header{
+	    display: inline-flex;
+	    align-items: center;
+	    margin-left: 10%;
+			&:after {
+				opacity: 1;
+			}
+		}
+
+		.mob-menu-icon {
+			font-size: 2em;
+			margin: 1em 1em 0px;
+		}
+		
+		.mob-menu {
+	    position: fixed;
+      width: 90%;
+	    height: 100%;
+	    left: -100%;
+	    top: 0px;
+			background-color: $orange;
+			z-index: 100;
+			color: white;
+			cursor: initial;
+			box-shadow: 3px 0px 3px 1px rgba(51, 51, 51, 0.5);
+	    overflow-y: scroll;
+	    @include transition(all, .3s, ease-in);
+
+			h2 {
+				margin: 5% 10%;
+				font-weight: 400;
+				cursor: pointer;
+
+				&:nth-child(2) {
+					margin-top: 8%;
+				}
+			}
+
+			.fa{
+				font-size: .7em;
+				padding-left: .6em;
+			}
+
+			&.mob-menu-active{
+				left: 0%;
+			}
+		}
+
+		.mob-header-title {
+			position: relative;
+	    margin: 10% 10% 5% 10%;
+			letter-spacing: .5em;
+			cursor: pointer;
+			.fa-align-left {
+				margin-left: 0px;
+			}
+	    &:after {
+	    	content: '';
+	    	position: absolute;
+		    left: -2.5%;
+		    top: 110%;
+		    width: 105%;
+		    height: 2px;
+		    background: #f7e227;
+	    }
+		}
+
+		.mob-support {
+			box-shadow: none;
+			background: transparent;
+
+			.fa-question-circle {
+				font-size: $font-size-m + 2px;
+				margin-left: 8%;
+			}
+
+	    .supportBox {
+	    	@include animation(show 0.1s linear);
+	    	display: none;
+				position: static;
+				width: auto;
+				margin-top: 1em;
+	    	color: $light-black;
+				&.active {
+					display: block ;
+				}
+	    }
+
+	    &:hover {
+	    	.fa-question-circle {
+					color: white;
+				}
+	    }
+		}
+	}
+
+	.questionBox{
+		display: none;
+	}
+}
+
+@media (max-width: map-get($break-point, table-s)) {
+	.header {
+		.mob-header {
+			margin: auto;
+		}
+	}
+}
+

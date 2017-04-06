@@ -24,9 +24,9 @@
   border-right: 1px solid rgba(34, 36, 38, 0.15);
 }
 
-// ------------
 .overview_title {
   @extend %position_relative;
+  float: left;
   margin: 1% 5% 0px 5%;
   letter-spacing: $letter-spacing-l + 2px;
   h2 {
@@ -133,4 +133,39 @@
     font-size: $font-size-m;
   }
 
+}
+
+@media (max-width: map-get($break-point, screen-s)) {
+  .selectAreaFiled {
+    float: left;
+    margin-left: 5%;
+  }
+  .overview_title {
+    h2 {
+      font-size: $font-size-m + 7px;
+    }
+    span {
+      font-size: $font-size + 3px ;
+    }
+  }
+}
+
+@media (max-width: map-get($break-point, table-s)){
+  .selectAreaFiled {
+    float: none;
+    margin: auto;
+  }
+  .overview_title {
+    float: none;
+    margin: 2% auto;
+    h2 {
+      font-size: $font-size-m ;
+    }
+    span {
+      font-size: $font-size-s;
+    }
+    .date {
+      font-size: $font-size-s;
+    }
+  }
 }

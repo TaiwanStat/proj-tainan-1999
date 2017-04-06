@@ -71,3 +71,9 @@ html {
 		border-radius: 0px;
 	}
 }
+
+@media (max-width: map-get($break-point, table-s)) {
+  .section {
+    text-align: center;
+  }
+}

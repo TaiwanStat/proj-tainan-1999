@@ -282,9 +282,9 @@ var bubbleChart = function () {
         $('#play_icon')
           .removeClass('fa-play')
           .addClass('fa-pause');
-
+          
         $('html, body').animate(
-          { scrollTop: $('#scroll_container').offset().top - 5}, 'easeInBack'
+          { scrollTop: $('.description').offset().top - 20}, 'easeInBack'
         );
 
         // use setInterval to control slider

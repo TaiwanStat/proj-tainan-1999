@@ -79,7 +79,8 @@ var G = {
   getAreasData: _getAreasData,
   getItemsData: _getItemsData,
   time: {},
-  initPage: initPage
+  initPage: initPage,
+  isMobile: false
 };
 
 
@@ -218,11 +219,17 @@ function initG() {
   // init supportBox
   DB.serviceName.forEach(function(value, index) {
     $('#itemBox9').append('<p class="box"><span style="background-color:' + G.colorServiceName[index] + '""></span>' + value + '</p>&nbsp;');
+    $('#mob-itemBox9').append('<p class="box"><span style="background-color:' + G.colorServiceName[index] + '""></span>' + value + '</p>&nbsp;');
   });
 
   DB.serviceItems.forEach(function(value, index) {
     $('#itemBox33').append('<p class="box"><span style="background-color:' + G.colorServiceItem[index] + '""></span>' + value + '</p>&nbsp;');
+    $('#mob-itemBox33').append('<p class="box"><span style="background-color:' + G.colorServiceItem[index] + '""></span>' + value + '</p>&nbsp;');
   });
+
+  if($(window).width() < 500) {
+    G.isMobile = true;
+  }
 }
 
 function _select(itemId) {

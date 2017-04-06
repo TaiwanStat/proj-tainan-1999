@@ -18,14 +18,21 @@ var isFocusExist = false;
 
   function focus(areaEName, timeInterval, startDate, endDate) {
     isFocusExist = true;
-    var margin = {
+    var margin = (G.isMobile)
+    ? {
+      top: 20,
+      right: 60,
+      bottom: 20,
+      left: 100
+    }
+    : {
       top: 50,
-      right: 300,
+      right: $(window).width()/4 - 50,
       bottom: 40,
-      left: 350
+      left: $(window).width()/4
     };
     var pieWidth = $('#pie-chart').width();
-    var pieHeight = 600;
+    var pieHeight = (G.isMobile)? 250 : 600;
     var radius = Math.min(pieWidth, pieHeight) / 2;
 
     var serviceArray = []; // array用來儲存過濾後可畫圖的資料
@@ -110,7 +117,6 @@ var isFocusExist = false;
     /*
      * GET DATA!
      */
-    // Check if it is 'All'
     if (areaCName === '台南市') {
       var newListData = [];
       qData = G.getItemsData(qStarTime, qEndTime);
@@ -255,7 +261,7 @@ var isFocusExist = false;
 
     //outer donut chart & bar chart
     var dataNoEmpty = [];
-    
+    var barMaxWidth = ($(window).width() > 1000)? 1000: ($(window).width() - 50)
     itemsData.forEach(function(value, index){
       if (value.caseCount > 0) {
         dataNoEmpty.push(value);
@@ -263,7 +269,7 @@ var isFocusExist = false;
       }
     })
 
-    var barWidth = 1000 - margin.left - margin.right;
+    var barWidth =  barMaxWidth - margin.left - margin.right;
     var barHeight = itemsData.length * 46 - margin.top - margin.bottom;
 
     var barSvg = d3.select('#bar-chart').append('svg')

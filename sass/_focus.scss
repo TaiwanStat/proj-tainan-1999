@@ -90,6 +90,7 @@ text.bartip {
 
 .focus_title {
   @extend %position_relative;
+  float: left;
   margin: 1% 0px 1% 5%;
   width: 300px;
   text-align: center;
@@ -156,4 +157,62 @@ input.infocus{
 }
 .ui.modal .actions>.button {
     margin-left: 0;
+}
+
+
+@media (max-width: map-get($break-point, screen-s)) {
+  .ui.right.floated.menu {
+    float: left;
+    margin-top: 3%;
+
+    > .infocus.item {
+      &:nth-child(5) {
+        display: none;
+      }
+    }
+  }
+
+  .focus_markerText {
+    font-size: $font-size - 3px;
+  }
+
+  .time_intaveral {
+    font-size: $font-size;
+  }
+}
+
+@media (max-width: map-get($break-point, table-l)) {
+  .ui.selection.dropdown .menu {
+    max-height: 13rem;
+  }
+}
+
+@media (max-width: map-get($break-point, table-s)) {
+  .focus_title {
+    float: none;
+    margin: 2% auto;
+    h2 {
+      font-size: $font-size;
+    }
+    span {
+      font-size: $font-size-m + 3px;
+    }
+  }
+
+  .ui.right.floated.menu {
+    font-size: $font-size - 3px;
+    float: none;
+    margin: 2% auto;
+  }
+
+  .axis text {
+    font-size: $font-size - 2px;
+  }
+  
+  #pie-chart{
+    path.pointer, .focus_markerText, g.arc, g.arcs {
+      display: none;
+    }
+  }
+
 }

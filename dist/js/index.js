@@ -1,8 +1,9 @@
 initG();
 
 $('.header_item').click(function() {
-  G.select(this.id);
-  if(this.id === 'area-focus') {
+  var section = $(this).data('myid');
+  G.select(section);
+  if(section === 'area-focus') {
     if(!isFocusExist) {
       // remove semantic's time menu active
       $('.active').removeClass('active');
@@ -14,9 +15,18 @@ $('.header_item').click(function() {
   else if (!isBubbleExist) {
     bubbleChart();
   }
+
+  // If Mobile, disappear menu
+  $('.mob-menu').removeClass('mob-menu-active');
 })
 
-$('.header_left').click(function() {
-  G.select(this.id);
+$('#mob-support-icon').click(function() {
+  $('.mob-support .supportBox').toggleClass('active');
 })
+
+$('.mob-active').click(function() {
+  $('.mob-menu').toggleClass('mob-menu-active');
+})
+
+
 

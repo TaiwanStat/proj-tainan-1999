@@ -2,10 +2,23 @@
 @import "compass/css3";
 @import "reset";
 
+/*
+ *  Breakpoint
+ */
+
+$break-point:(
+  mobile-s: 240px,
+  mobile-l: 320px,
+  table-s:  480px,
+  table-l:  768px,
+  screen-s: 1024px,
+  screen-l: 1280px,
+  screen-xl:1350px
+);
+
 // -----------------
 // PARAMETER
 // -----------------
-
 
 $black: #3d3d3d;
 $light-black: #676060;

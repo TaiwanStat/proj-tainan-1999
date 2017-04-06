@@ -23,7 +23,7 @@
   var startDate = G.time.lastWTime;
   var endDate = G.time.curTime;
 
-  window.overview = overview;
+  // window.overview = overview;
 
   var qData = G.getAreasData(startDate, endDate);
   var allArray = [ // 用來存全區資料
